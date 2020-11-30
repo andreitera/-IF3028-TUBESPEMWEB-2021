@@ -110,6 +110,5 @@ anchor tag.
 
 ### About :honeybee:
 
-Dosen       : Rajif Agung Yunmar, S.Kom., M.Cs.	,Ahmad Luky Ramdani, S.Komp., M.Kom. ,
-Arief Ichwani, S.Kom., M.Cs., Andre Febrianto, S.Kom., M.Eng, Ilham Firman Ashari, S.Kom., M.T
+Dosen       : Dicky Prima Satya, M.T., Andre Febrianto, S.Kom., M.Eng, Amirul Iqbal, S.Kom., M.Eng.
 
