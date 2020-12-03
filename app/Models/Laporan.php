@@ -17,6 +17,8 @@ class Laporan extends Model
         'from',
         'title',
         'contents',
+        'aspect',
+        'file',
         'token'
     ];
 }

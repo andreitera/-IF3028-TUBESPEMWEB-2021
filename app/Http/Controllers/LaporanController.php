@@ -8,6 +8,7 @@ use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Validation\Rule;
 
 class LaporanController extends Controller
 {
@@ -32,9 +33,11 @@ class LaporanController extends Controller
     function rule()
     {
         return [
-            "from" => ['nullable', 'max:20', 'regex:/[a-zA-Z ]+/'],
+            "from" => ['required', 'max:20', 'regex:/[a-zA-Z ]+/'],
             "title" => ['required', 'max:50', 'regex:/[a-zA-Z ]+/'],
-            "contents" => ['required', 'max:1000', 'regex:/[a-zA-Z ]+/']
+            "contents" => ['required', 'max:1000', 'regex:/[a-zA-Z ]+/'],
+            "file" => ['nullable', 'max:5120', 'image'],
+            "aspect" => ['required', Rule::in(['Dosen', 'Staff', 'Mahasiswa', 'Infrastruktur', 'Pengajaran'])]
         ];
     }
     /**
@@ -55,7 +58,7 @@ class LaporanController extends Controller
      */
     public function create()
     {
-        return view();
+
     }
 
     /**
@@ -68,6 +71,12 @@ class LaporanController extends Controller
     {
         $request->validate($this->rule());
         $req = $request->all();
+        if ($request->hasFile('file') and $request->file('file')
+            ->isValid())
+        {
+            $path = $request->file('file')->store('image');
+            $req['file'] = $path;
+        }
         $req['token'] = $this->gen_token();
         Laporan::create($req);
         return response()->json(["token" => $req['token']]);
@@ -84,7 +93,7 @@ class LaporanController extends Controller
         $laporan = $request->laporan;
         if(Laporan::where('id', $laporan)->exist()){
             $data = Laporan::find($laporan);
-            return response()->json($data);
+            return response()->json($data->makeHidden('token'));
         }
         else{
             return response()->json([], 404);
@@ -130,7 +139,14 @@ class LaporanController extends Controller
             $laporan = Laporan::where('token', $token)->first();
             $now = Carbon::now('Asia/Jakarta');
             if($now->diffInHours($laporan->created_at) < 24){
-                $laporan->update($request);
+                $req = $request->all();
+                if ($request->hasFile('file') and $request->file('file')
+                    ->isValid())
+                {
+                    $path = $request->file('file')->store('image');
+                    $req['file'] = $path;
+                }
+                $laporan->update($req);
                 return response()->json(["status" => "sukses"]);
             }
             else{
