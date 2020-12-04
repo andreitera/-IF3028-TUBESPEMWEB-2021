@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LaporanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,9 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::post('edit', "LaporanController@edit");
-Route::post('update', "LaporanController@update");
-Route::post('create', "LaporanController@create");
-Route::post('index', "LaporanController@index");
-Route::post('show', "LaporanController@show");
-Route::post('delete', "LaporanController@destroy");
+Route::post('edit', [LaporanController::class, 'edit']);
+Route::post('update', [LaporanController::class, 'update']);
+Route::post('create', [LaporanController::class, 'create']);
+Route::post('index', [LaporanController::class, 'index']);
+Route::post('show', [LaporanController::class, 'show']);
+Route::post('delete', [LaporanController::class, 'delete']);
