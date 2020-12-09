@@ -1,0 +1,67 @@
+body{
+    font-family: 'Lato', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+}
+
+h1{
+    margin: 0px;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0px 20px;
+    padding: 6px;
+    text-align: center;
+}
+
+/* Begin css home.php */
+.search{
+    margin: 4.2rem 20px 0rem 20px;
+    text-align: center;
+}
+
+.search input{
+    width: 40%;
+    height: 30px;
+}
+
+.search button{
+    width: 5%;
+    height: 36px;
+}
+
+.buat-lapor{
+    margin: 5px 20px;
+    text-align: center;
+}
+
+.buat-lapor a{
+    color: black;
+    text-decoration: none;
+}
+
+.buat-lapor a:hover{
+    background-color: whitesmoke;
+}
+
+.buat-lapor img{
+    border: 1px solid black;
+    border-radius: 55%;
+    width: 10px;
+
+}
+.container-laporan{
+    margin: 10px 20px;
+}
+
+.line{
+    margin-top: -8px;
+    height: 1px;
+    background-color: black;
+}
+/* end css home.php */
