@@ -1,117 +1,54 @@
-## Simple `LAPOR` :heavy_exclamation_mark:
-Anda mengetahui aplikasi `lapor` yang dibuat oleh pemerintah republik indonesia? jika tidak silahkan kunjungi 
-http://lapor.go.id, maka anda akan mendapatkan laman seperti gambar di bawah
+### Cara Install Codeigniter
+Seperti awal pembahasan bahwa codeigniter ini adalah sebuah framework yang sangat sederhana, sehingga cara install codeigniter sendiri tidak terlalu sulit bahkan sangat mudah, dimana kita hanya memerlukan sebuah web server pada komputer kita
+1. Step 1: Download file Codeigniter
 
-![](tampilan/lapor.png)
+Silahkan klik link https://codeigniter.com/ lalu download framework codeigniter terbaru, saat ini yang terbaru adalah versi 4.0.4, dan akan terus berlanjut ke versi berikutnya.
 
-Kali ini kita akan membuat aplikasi web seperti `lapor` untuk mengumpulkan laporan/komentar terkait layanan
-di program studi teknik informatika ITERA.
-**Luangkan waktu untuk membaca spesifikasi ini sampai selesai.** :kissing_heart:
+2. Step 2: Ekstrak dan Install Codeigniter Framework
 
-### Anggota Tim :cyclone:
-Project dikerjakan secara **berkelompok** dengan maksimal jumlah anggota adalah 2-3 orang mahasiswa.
+Setelah anda download maka anda akan mendapatkan sebuah file bernama CodeIgniter-4.0.4.zip, silahkan ekstrak file tersebut setelah itu akan muncul folder bernama CodeIgniter-4.0.4, silahkan anda rename menjadi codeigniter lalu salin folder tersebut ke folder root anda, yaitu di htdocs, sedangkan linux di folder www/html.
 
-### Petunjuk Pengerjaan :umbrella:
-1. Fork pada repository ini dengan akun github anda.
-2. Silakan commit pada repository anda (hasil fork). Lakukan berberapa commit dengan pesan yang bermakna,
-contoh: fix css, membuat post done, jangan seperti final, benerin dikit, oke deh, update deh dll. 
-Disarankan untuk tidak melakukan commit dengan perubahan yang besar karena akan mempengaruhi 
-penilaian (contoh: hanya melakukan satu commit kemudian dikumpulkan).
-3. Minimal commit sebanyak personil anggota tim dengan masing-masing personil tim melakukan commit sesuai dengan kesepakatan tim, penilaian individu akan dilihat.
-4. Ubah **Penjelasan Teknis** pada bagian bawah readme.md ini dengan menjelaskan bagaimana cara anda:
-   - Instalasi Framework, Koneksi basis data 
-   - Melakukan validasi pada client-side
-   - Melakukan AJAX (mulai dari pengguna melakukan klik pada tombol LAPOR! sampai laporan/komentar terkirim).
-5. Pull request dari repository anda ke repository ini dengan 
-format **NIM** - **Nama Lengkap**. **Waktu terkahir proses pull request adalah 4 hari setelah 
-ujian akhir semester (UAS)**
-6. Data yang dikumpulkan adalah:
-   - Source code aplikasi
-   - Basis data, dan
-   - Cara instalasi aplikasi anda
-7. Penilaian:
-   - Kerjasama tim
-   - Kesesuaian dengan spesifikasi
-   - Pemahaman dalam penggunaan framework, penilaian efisiensi query
-   - Antarmuka aplikasi
-   - Bug free :beetle:
-   
-### Tools :hammer:
-1. Untuk backend, wajib menggunakan PHP framework apapun (Contoh: Codeigniter, Laravel, Slim, Yii dll).
-2. Gunakan MySQL atau basis data relasional lain untuk menyimpan data.
-3. Untuk frontend, gunakan Javascript, HTML dan CSS. **Tidak boleh menggunakan library atau framework CSS atau JS seperti 
-JQuery atau Bootstrap.** CSS sebisa mungkin ada di file yang berbeda (tidak inline styling/embeding styling).
+3. Step 3: Konfigurasi Base URL Codeigniter
 
-### Spesifikasi Simple LAPOR!
-#### Tampilan :soccer:
-Anda diminta untuk membuat tampilan sedemikian hingga mirip dengan tampilan berikut. Website yang diminta tidak harus 
-responsive. Desain tampilan tidak perlu dibuat indah. Icon dan jenis font tidak harus sama dengan contoh. Warna font, 
-garis pemisah, dan perbedaan ukuran font harus terlihat sesuai contoh. Perhatikan juga tata letak elemen-elemen.
+Setelah anda selesai melakukan instalasi codeigniter maka selanjutkan melakukan konfigurasi base url yang terdapat di folder application/config/config.php silahkan anda buka dengan teks editor yang anda sukai. Lalu pada bagian kode dibawah ini:
 
-![](tampilan/utama.png)
-- Search bar diletakkan di bagian paling atas dibawah judul.
-- Tombol "cari" berada di sebelah kanan search bar.
-- **Buat LAPOR!** digunakan untuk mengirimkan laporan/komentar baru.
-- Tampilan search bar ini harus tetap ada walaupun anda tidak mengimplementasikan fitur search.
-- Tampilan pertanyaan tidak harus urut berdasarkan "Laporan/Komentar terakhir", 
-namun tulisan "Laporan/komentar Terakhir" ini harus ada.
+   $config['base_url'] = '';
+Ubahlah menjadi dibawah ini:
 
-![](tampilan/buat.png)
-- Tampilan di atas digunakan untuk mengajukan atau mengubah laporan/komentar.
-- Perhatikan label dari field pada form berada di dalam field (tidak di luar)
-- Apek yang dilaporkan ditampilkan dalam bentuk `select`
+   $config['base_url'] = 'http://localhost/codeigniter';
+Nilai tersebut harus sesuai dengan alamat/nama folder yang anda tentukan ketika anda menyalin file codeigniter ke dalam folder root web server anda.
 
-![](tampilan/detail.png)
-- Bagian ini menampilkan laporan/komentar. Bagian `datetime` harus ada. Tanda `kuote` tidak harus ada
-- Perhatikan label dari field pada form berada di dalam field (tidak di luar)
+### Cara Install Xampp di Windows
+1. Jika sebelumnya telah download xampp silahkan untuk mengikuti instruksi cara install xampp berikut ini, apabila belum memilikinya silahkan download versi Bitnami for xampp.
 
-### List laporan/komentar
-Halaman utama berisi daftar judul pertanyaan, siapa yang bertanya, dan isi pertanyaan. Isi pertanyaan yang terlalu 
-panjang harus dipotong. Silakan definisikan sendiri seberapa panjang agar tetap baik terlihat di layout yang Anda buat.
+Klik dua kali pada aplikasi xampp yang telah di download, akan mucul alert notifikasi biasanya ini akan muncul hanya untuk memastikan apakah anda benar ingin meng-install xampp, klik yes saja.
 
-Pada masing-masing elemen list, terdapat menu untuk mengubah dan menghapus pertanyaan.
+2. Lalu selanjutnya akan muncul splash screen bitnami, setelah itu akan ada peringatan error, ini terjadi terkait masalah permission atau hak akses, klik OK  karena nantinya akan di konfigurasi ke hard drive lain.
 
-View Laporan ditampilkan secara terurut dimulai dari laporan terakhir yang diberikan highlight
+3. Setelah itu akan muncul bagian awal instalasi Setup Wizard xamp, klik Next untuk memulai instalasi.
 
-### Kirim laporan/komentar `LAPOR!`
-Pengguna dapat mengajukan laporan/komentar. Form yang digunakan memiliki komentar (textarea), 
-data lapiran berupa gambar 
-dan file berekstention `doc, docx, xls, xlsx, ppt, pptx, pdf``. Gunakan HTTP POST.
+4. Setelah itu akan muncul halaman pemilihan komponen apa saja yang ingin di install di dalam web server xampp ini, silahkan untuk di sesuaikan, anda dapat meminimalisir modul-modul instalasi sesuai kebutuhan, tetapi di dalam tutorial ini saya membiarkan semuanya terinstall. jika sudah klik Next.
 
-### Ubah Laporan/komentar
-Pengguna dapat mengubah laporan/komentar yang sudah dibuat. Form yang digunakan memiliki tampilan yang sama dengan 
-form untuk bertanya, namun field-field yang ada sudah terisi. Gunakan HTTP POST untuk menyimpan perubahan.
+5. Selanjutnya anda akan di arahkan untuk penempatan folder instalasi xampp, jika secara bawaan akan di arahkan ke drive C, karena masalah hak akses yang terjadi di awal tadi sehingga perlu di arahkan ke hard drive lain, sebagai contoh saya mengarahkan ke drive G, silahkan di sesuaikan dengan part hard drive yang tersedia pada komputer anda. setelah itu klik Next.
 
-### Hapus Laporan/komentar
-Pengguna dapat menghapus laporan/komentar yang sudah dibuat. Lakukan konfirmasi penghapusan dengan `javascript`.
+6. Langkah berikutnya adalah tampilan promosi bitnami menawarkan cara menginstall cms seperti WordPress dan lain-lain. Pada langkah ini ada sebuah checkbox pada bagian Learn more about Bitname for Xampp silahkan di hilangkan ceklis yang secara bawaan telah ada jika tidak ingin mengikuti petunjuk instalasi CMS. jika sudah klik Next.
 
-### Lihat Laporan/komentar
-Pengguna dapat melihat laporan/komentar. Pada halaman ini terdapat informasi aspek yang dilaporkan.
-(Dosen, Staff, Mahasiswa, Infrastruktur dan Pengajaran ), isi laporan/komentar, waktu pengiriman komentar `datetime` 
-dan file lapiran. 
+7. Pada langkah berikutnya Ready to Install ini sebenarnya hanya untuk memastikan apakah anda sudah yakin pada tahap-tahap sebelumnya, jika di rasa anda kurang yakin bisa menekan tombol back, tetapi dalam tutorial ini telah di uji coba langkah-langkah instalasi xampp sebagai web server lokal di tutorial ini. Jika sudah klik Next.
 
-### Validasi
-Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript** bukan HTML 5 input type, yaitu:
-- Setiap field pada form tidak boleh kosong.
-- minimal jumlah kata dalam laporan/komentar adalah 20 kata.
+8. Selanjutnya adalah proses extract file-file xampp ke dalam hard drive folder yang telah di tetapkan sebelumnya, tunggu sampai proses instalasi selesai dimana proses ini tidak memakan waktu lama. Jika sudah klik Next.
 
-### Bonus
-Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
+9. Langkah berikutnya anda akan di bawa ke bagian Completing the Xampp Setup Wizard ini adalah langkah terakhir dalam rangkaian proses instalasi.  Terdapat checkbox Do you want to start the Control Panel now? biarkan saja ceklis tersebut, atau jika tidak ada ceklis maka silahkan berikan ceklis agar setelah ini Xampp control panel secara otomatis berjalan. Jika sudah klik finish.
 
-### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+10. Sampai disini proses intalasi telah selesai, anda bisa mengecek langsung ke folder yang sebelumnya telah di arahkan. Karena pada tahap terakhir kita memberikan ceklis agar xampp control panel secara otomatis tampil maka tunggu sampai control panel tersebut muncul.
 
-### Knowledge
-Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
-- CSS: margin, padding, header tag, font-size, text-align, float, clear, border, color, div, span, placeholder, 
-anchor tag.
-- Javascript : XMLHTTPRequest.
-- PHP Framework : [Codeigniter](https://codeigniter.com/en/docs), [Laravel](https://laravel.com/docs/6.x) dll.
-- SQL query: SELECT, INSERT, UPDATE, DELETE, WHERE, operator LIKE.
+Jika Control Panel Xampp sudah muncul silahkan klik start pada Apache dan Mysql hingga tulisan Apache dan Mysql di block warna hijau, dibawah ini adalah contoh gambar Control Panel Xampp yang pada bagian apache dan mysql sudah berjalan.
 
-:telephone: Jika ada pertanyaan silakan tanyakan lewat `Asisten`.
+Coba perhatian pemberitahuan berwarna merah di pada gambar Control Panel Xampp, hal itu di sebabkan karena pada port 80 sudah di jalankan di aplikasi lain sehingga menyebabkan modul Apache tidak dapat berjalan, untuk error tersebut saya telah merubahnya ke port 8080 agar tidak terjadi bentrok pada port 80.
 
-### About :honeybee:
+Untuk menguji jika semua sudah berjalan dengan baik silahakan buka browser anda dan arahkan ke alamat http://localhost/ atau http://127.0.0.1/ ini adalah alamat umum komputer lokal. Jika berhasil seharusnya di arahkan ke halaman Xampp, seperti gambar dibawah.
 
-Dosen       : Dicky Prima Satya, M.T., Andre Febrianto, S.Kom., M.Eng., Amirul Iqbal, S.Kom., M.Eng.
+### Melakukan Client side Validation
 
+Validasi client side adalah validasi yang dilakukan di dalam browser. Sebelum data dikirimkan ke server, data diperiksa kebenarannya terlebih dahulu oleh browser web. Setelah data yang dimasukkan benar (valid), browser baru mengirimkan ke server untuk kemudian diproses atau disimpan ke dalam database.
+
+Proses validasi client side dilakukan dengan menggunakan JavaScript atau VBScript, disesuaikan dengan browser yang modul yang dikembangkan oleh pengembangnya.
