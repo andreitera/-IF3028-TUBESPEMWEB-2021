@@ -115,7 +115,7 @@
     </div>
     <div class="row" width="100%">
       <h2>DEVELOPER</h2>
-          <img src="assets/firman.png" alt="Firman" style="width:7%">
+          <img src="assets/firman.jpg" alt="Firman" style="width:7%">
           <div class="container-team">
             <h2>Yusuf Firmansyah W. P.</h2>
             <p class="title">Teknik Informatika - 14116097</p>
