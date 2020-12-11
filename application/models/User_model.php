@@ -43,7 +43,7 @@ class User_model extends CI_Model {
     $hal = $this->input->post('hal');
     $status = "MENUNGGU";
 
-    $config['allowed_types']	= 'gif|jpeg|jpg|png|pdf|docx|doc|GIF|JPEG|JPG|PNG|DOCX|DOC|PDF';
+    $config['allowed_types']	= 'jpeg|jpg|png|pdf|docx|doc|ppt|pptx|xls|xlsx|JPEG|JPG|PNG|DOCX|DOC|PDF|PPT|PPTX|XLS|XLSX';
 		$config['max_size'] 			= '8192';
 		$config['upload_path'] 		= './assets/lampiran';
 

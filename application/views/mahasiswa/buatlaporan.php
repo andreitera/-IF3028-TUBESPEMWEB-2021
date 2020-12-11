@@ -101,7 +101,7 @@
             <input type="tel" size="13" maxlength="13" name="cp" placeholder="ex: 082281718656" required autocomplete="off"><br><br>
 
             <label for="subject">Hal</label>
-            <textarea name="hal" placeholder="Hal..." style="height:200px" required autocomplete="off"></textarea>
+            <textarea name="hal" placeholder="Hal..." style="height:200px" required autocomplete="off" minlength="20"></textarea>
 
             <label for="berkas">Berkas : </label><br><br>
             <input type="file" name="berkas">
