@@ -125,17 +125,16 @@
       color: white;
     }}
     </style>
-    <title>ADMINISTRATOR</title>
+    <title>MAHASISWA</title>
   </head>
   <body>
     <div class="sidebar">
       <img src="<?php echo base_url('assets/avatar.png'); ?>" style="height:8%; weight:8%; display:block; margin-left:auto; margin-right:auto; margin-top:15%;"alt="">
-      <h4 style="text-align:center;">Administrator</h4>
+      <h4 style="text-align:center;"><?php echo $this->session->userdata("nim"); ?></h4>
       <br>
-      <a href="<?php echo base_url('admin/beranda'); ?>">Laporan</a>
-      <a href="<?php echo base_url('admin/mahasiswa'); ?>">Mahasiswa</a>
-      <a href="<?php echo base_url('admin/pengaturan'); ?>">Pengaturan</a>
-      <a href="<?php echo base_url('auth/logout') ?>">Keluar</a>
+      <a href="<?php echo base_url('mahasiswa/beranda'); ?>">Laporan</a>
+      <a href="<?php echo base_url('mahasiswa/ubah/'.$this->session->userdata("nim")); ?>">Pengaturan</a>
+      <a href="<?php echo base_url('authm/logout') ?>">Keluar</a>
     </div>
 
     <div class="content">
@@ -152,7 +151,7 @@
       <div class="laporan">
         <h2 style="text-align:center;">DETAIL LAPORAN</h2>
         <br>
-        <a style="float:left;"href="<?php echo base_url('admin/beranda/'); ?>">
+        <a style="float:left;"href="<?php echo base_url('mahasiswa/beranda/'); ?>">
           <i class="arrow right" style="transform: rotate(135deg); -webkit-transform: rotate(135deg);"></i>
           Kembali
         </a>
@@ -173,10 +172,8 @@
         <p>Waktu : <?php echo $laporan['created']; ?></p>
         <br>
 
-        <a onclick="return confirm('Apakah anda yakin?')" class="btn danger"href="<?php echo base_url('admin/hapusl/'); ?><?php echo $laporan['id_laporan']; ?>"> Hapus</a>
-        <?php if ($laporan['status'] == "MENUNGGU"): ?>
-          <a onclick="return confirm('Proses laporan?')" class="btn success"href="<?php echo base_url('admin/prosesl/'); ?><?php echo $laporan['id_laporan']; ?>"> Proses</a>
-        <?php endif; ?>
+        <a onclick="return confirm('Apakah anda yakin?')" class="btn danger"href="<?php echo base_url('mahasiswa/hapuslaporan/'); ?><?php echo $laporan['id_laporan']; ?>"> Hapus</a>
+
 
 
       </div>

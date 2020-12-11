@@ -59,8 +59,23 @@ class Mahasiswa extends CI_Controller
     redirect('mahasiswa/beranda');
   }
 
+  function detail($nim)
+  {
+    $data['laporan'] = $this->admin_model->getinfolaporan($nim);
+    $data['mahasiswa'] = $this->mahasiswa_model->getinfomhs($nim);
+    $this->load->view('mahasiswa/detaillapor', $data);
+  }
 
+    function hapuslaporan($id_laporan)
+  {
+    $data['laporan'] = $this->admin_model->getinfolaporan($id_laporan);
+    $file = $data['laporan']['lampiran'];
+    unlink(FCPATH.'assets/lampiran/'.$file);
 
+    $this->admin_model->hapuslaporan($id_laporan);
+    $this->session->set_flashdata('pesan', 'Laporan berhasil dihapus.');
+    redirect('mahasiswa/beranda');
+  }
 
 
 }

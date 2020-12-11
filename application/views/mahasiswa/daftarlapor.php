@@ -155,6 +155,7 @@
         </form>
       </div>
       <hr>
+      
       <div class="laporan">
         <h1 style="text-align:center;">DAFTAR LAPORAN</h1>
         <a href="<?php echo base_url('mahasiswa/buatlaporan/'.$this->session->userdata("nim")); ?>" class="btn buat">BUAT LAPORAN</a>
@@ -165,12 +166,16 @@
           <?php echo $this->session->flashdata('pesan'); ?>
         </div>
         <?php endif; ?>
+        
         <div class="row" width="100%">
           <?php $i=1; ?>
           <?php foreach ($laporan as $daftar) : ?>
           <div class="column">
             <div class="card">
               <div class="container-team" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+              <a style="float:right;"href="<?php echo base_url('mahasiswa/detail/'); ?><?php echo $daftar['id_laporan']; ?>">Lihat Selengkapnya
+                  <i class="arrow right" style="transform: rotate(-45deg); -webkit-transform: rotate(-45deg);"></i>
+                </a>
                 <br>
                 <h2><?php echo $daftar['nama']; ?></h2>
                 <p class="title"><?php echo $daftar['prodi']; ?> - <?php echo $daftar['nim']; ?></p>
