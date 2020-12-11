@@ -36,7 +36,7 @@
     </div>
     <div class="topnav">
       <a href="<?php echo base_url('beranda'); ?>">BERANDA</a>
-      <a href="<?php echo base_url('laporan') ?>">LAPORAN</a>
+      <a href="<?php echo base_url('laporan'); ?>">LAPORAN</a>
       <a onclick="document.getElementById('id01').style.display='block'">MASUK</a>
 
       <div id="id01" class="modal">
