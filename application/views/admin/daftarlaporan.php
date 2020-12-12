@@ -118,8 +118,8 @@
       <hr>
       <div class="searchbar" style="">
         <form class="" action="<?php echo base_url('admin/beranda'); ?>" method="post">
-          <input type="text" name="keyword" id="keyword" placeholder="Cari Laporan" autocomplete="off">
-          <button type="submit" name="carilaporan">Cari</button>
+          <input type="text" name="keyword" class="keyword" id="keyword" placeholder="Cari Laporan" autocomplete="off">
+          <button type="submit" class="carilaporan" id="carilaporan" name="carilaporan">Cari</button>
         </form>
       </div>
       <hr>
@@ -132,6 +132,7 @@
         </div>
         <?php endif; ?>
 
+      <div class="containerlaporan" id="containerlaporan">
         <div class="row" width="100%">
           <?php $i=1; ?>
           <?php foreach ($laporan as $daftar) : ?>
@@ -157,11 +158,35 @@
           <?php $i++; ?>
           <?php endforeach ?>
         </div>
+      </div>
 
       </div>
     </div>
     </div>
 
+        <!-- AJAX Search Laporan -->
+      <script>
+      
+        const cari = document.querySelector('.carilaporan');
+        const keyword = document.querySelector('.keyword');
+        const container = document.querySelector('.containerlaporan');
+
+        keyword.addEventListener('keyup', function () {
+
+          const xhr = new XMLHttpRequest();
+
+          xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+              container.innerHTML = xhr.responseText;
+            }
+          };
+
+          xhr.open('get', '../ajax/carilaporan.php?keyword='+keyword.value);
+          xhr.send();
+
+        });
+      
+      </script>
 
   </body>
 </html>
