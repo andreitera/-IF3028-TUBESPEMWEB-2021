@@ -7,7 +7,7 @@ $keyword = $_GET['keyword'];
   $query = "
             SELECT * 
             FROM mahasiswa AS m 
-            WHERE m.nama LIKE '%$keyword%' OR m.prodi LIKE '%$keyword%'  
+            WHERE m.nama LIKE '%$keyword%' OR m.prodi LIKE '%$keyword%' OR m.nim LIKE '%$keyword%'
           ";
 
   $result=mysqli_query($conn,$query);
