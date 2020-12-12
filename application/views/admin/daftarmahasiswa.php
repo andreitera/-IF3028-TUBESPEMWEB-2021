@@ -117,12 +117,12 @@
       <hr>
       <div class="searchbar" style="">
         <form class="" action="" method="post">
-          <input type="text" name="keyword" id="keyword" placeholder="Cari Mahasiswa" autocomplete="off">
-          <button type="submit" name="carimahasiswa">Cari</button>
+          <input type="text" name="keyword" class="keyword" id="keyword" placeholder="Cari Mahasiswa" autocomplete="off">
+          <button type="submit" class="carimahasiswa" name="carimahasiswa">Cari</button>
         </form>
       </div>
       <hr>
-      <div class="laporan">
+      <div class="containerlaporan">
         <h2 style="text-align:center;">DAFTAR MAHASISWA</h2>
         <?php if($this->session->flashdata('pesan')): ?>
         <div class="alert">
@@ -167,6 +167,29 @@
     </div>
     </div>
 
+      <!-- AJAX Search Laporan -->
+      <script>
+      
+        const cari = document.querySelector('.carimahasiswa');
+        const keyword = document.querySelector('.keyword');
+        const container = document.querySelector('.containerlaporan');
+
+        keyword.addEventListener('keyup', function () {
+
+          const xhr = new XMLHttpRequest();
+
+          xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+              container.innerHTML = xhr.responseText;
+            }
+          };
+
+          xhr.open('get', '../ajax/carimahasiswa.php?keyword='+keyword.value);
+          xhr.send();
+
+        });
+      
+      </script>
 
   </body>
 </html>
