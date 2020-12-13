@@ -34,5 +34,26 @@ class Controller extends BaseController
         );
         return redirect('/');
     }
-    //test branch buat pull
+
+
+    public function loginUser(Request $request){
+
+    	$request->validate([
+    		'uname'=> 'min:8|required',
+    		'psw' => 'min:8|required',
+    	]);
+
+    	$user = DB::table('user') -> where ('username',$request->uname)->where('password',$request->psw)->first();
+    	
+    	if ($user) {
+    		return redirect('/halamanlpr');
+    	}else{
+    		return redirect('/register');
+    	}
+
+
+    }
+  //test branch buat pull
+
 }
+

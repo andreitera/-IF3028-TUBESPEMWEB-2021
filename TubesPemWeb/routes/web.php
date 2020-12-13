@@ -29,4 +29,11 @@ Route::get('/register', function () {
     return view('register');
 });
 
+
+Route::get('/halamanlpr', function () {
+    return view('halamanlapor');
+});
+
 Route::post('/registerUser','Controller@registerUser');
+
+Route::post('/loginUser','Controller@loginUser');
