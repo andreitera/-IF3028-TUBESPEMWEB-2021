@@ -25,16 +25,16 @@ class Controller extends BaseController
            
         ]);
         
-        DB::table('user')->insert(
+        $user = DB::table('user')->insert(
             ['nama' => $request->nama,
             'username' => $request->username,
             'email' => $request->email,
             'no_telp' => $request->nohp,
             'password' => $request->psw]
         );
-
         return redirect('/');
     }
+
 
     public function loginUser(Request $request){
 
@@ -53,5 +53,7 @@ class Controller extends BaseController
 
 
     }
+  //test branch buat pull
+
 }
 
