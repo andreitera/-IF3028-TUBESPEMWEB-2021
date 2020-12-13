@@ -14,14 +14,41 @@ h1{
     top: 0;
     left: 0;
     right: 0;
-    margin: 0px 20px;
-    padding: 6px;
+    margin: 0px;
+    padding: 10px;
+    background-color: #daa520;
+}
+
+.logo{
+    position: fixed;
+    top: 3px;
+    left: 4px;
+    margin: 0px;
+    padding: 3px;
+    background-color: #ffffff;
+    border-radius: 6px;
+}
+
+.header h1{
     text-align: center;
+}
+
+.container-laporan{
+    margin: 5rem 10rem 10px 10rem;
+}
+
+.line{
+    margin-top: -8px;
+    height: 1px;
+    background-color: black;
+}
+
+.data{
+    margin: 16px auto;
 }
 
 /* Begin css home.php */
 .search{
-    margin: 4.2rem 20px 0rem 20px;
     text-align: center;
 }
 
@@ -55,13 +82,26 @@ h1{
     width: 10px;
 
 }
-.container-laporan{
-    margin: 10px 20px;
+/* end css home.php */
+
+/* start css formlapor.php */
+.data textarea{
+    width: 99.5%;
+    height: 20rem;
 }
 
-.line{
-    margin-top: -8px;
-    height: 1px;
-    background-color: black;
+.data .aspek{
+    padding: 6px;
 }
-/* end css home.php */
+
+.data .file, .btn-file{
+    padding: 6px;
+}
+
+.data button{
+    margin-bottom: 6px;
+    float: right;
+    padding: 6px;
+}
+
+/* end css formlapor.php */

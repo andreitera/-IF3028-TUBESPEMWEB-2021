@@ -13,3 +13,4 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<div class="header">
 		<h1>LAPOR!</h1>
 	</div>
+	<img class="logo" src="<?php echo base_url() ?>/assets/img/itera.png" width="50" height="55" alt="">
