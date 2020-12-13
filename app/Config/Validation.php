@@ -30,7 +30,27 @@ class Validation
 		'single' => 'CodeIgniter\Validation\Views\single',
 	];
 
+
 	//--------------------------------------------------------------------
 	// Rules
+	public $laporan = [
+		'laporan' => [
+			'rules' => 'required|min_length[5]',
+		],
+		'aspek' => [
+			'rules' => 'required',
+		],
+	];
+
+	public $laporan_errors = [
+		'laporan' => [
+			'required' => '{field} Harus Diisi',
+			'min_length' => '{field} Minimal 5 Karakter',
+		],
+		'aspek' => [
+			'required' => '{field} Harus Diisi',
+		],
+	];
+
 	//--------------------------------------------------------------------
 }
