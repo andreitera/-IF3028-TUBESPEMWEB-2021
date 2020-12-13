@@ -16,9 +16,17 @@
 // });
 
 Route::get('/', function () {
+    return view('home');
+});
+Route::get('/login', function () {
     return view('login');
+});
+Route::get('/masuk', function () {
+    return view('masuk');
 });
 
 Route::get('/register', function () {
     return view('register');
 });
+
+Route::post('/registerUser','Controller@registerUser');
