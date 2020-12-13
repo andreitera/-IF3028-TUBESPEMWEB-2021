@@ -5,7 +5,7 @@
 		</form>
 	</div>
 	<div class="buat-lapor">
-		<a href="<?= base_url('buatlapor')?>">
+		<a href="<?= base_url('formlapor')?>">
 			Buat Laporan/Komentar
 			<img src="<?= base_url()?>/assets/img/Plus.svg" alt="">
 		</a>
