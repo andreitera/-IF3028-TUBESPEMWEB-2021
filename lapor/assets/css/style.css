@@ -1,6 +1,7 @@
 body{
     font-family: 'Lato', Tahoma, Geneva, Verdana, sans-serif;
     margin: auto;
+    background-image: url(../img/template3.png);
 }
 
 h1{
@@ -34,13 +35,16 @@ h1{
 }
 
 .container-laporan{
-    margin: 5rem 10rem 10px 10rem;
+    margin: 4.2rem 9rem 10px 9rem;
+    padding: 0.1rem 1rem;
+    background-color: #ffffff;
+    box-shadow: 13px 12px 23px #d5cfcf;
 }
 
 .line{
     margin-top: -8px;
-    height: 1px;
-    background-color: black;
+    height: 2px;
+    background-color: #d7261e;
 }
 
 .data{
@@ -86,8 +90,11 @@ h1{
 
 /* start css formlapor.php */
 .data textarea{
-    width: 99.5%;
+    width: 98%;
     height: 20rem;
+    padding: 10px;
+    font-family: 'Lato', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
 }
 
 .data .aspek{
