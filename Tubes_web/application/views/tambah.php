@@ -11,7 +11,7 @@
   <legend>Buat Laporan/Komentar</legend>
   <hr>
 
-  <form action="" method="POST" enctype="multipart/form-data">
+  <form action="<?php echo base_url('Tambah/simpan') ?>" method="POST" enctype="multipart/form-data">
     <div class="row">
       <textarea name="isi" placeholder="Laporan/komentar" required></textarea>
     </div>

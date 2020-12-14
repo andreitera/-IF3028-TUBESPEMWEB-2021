@@ -11,21 +11,21 @@
   <hr>
 
   <div class="artikel">
-  <p>isi</p>
+  <p><?php echo $berita->isi ?></p>
   </div>
 
   <br>
 
   <div class="Lampiran">
     <label>Lampiran : </label>
-    <a href="">file</a>
+    <a href=""><img src="<?php echo base_url('asset/file/'.$berita->file) ?>"></a>
   </div>
    
   
   <ul>
-    <li>Waktu: </li>
-    <li>Aspek: </li>
-    <li style="float: right;"><a href="">Hapus Laporan/Komentar</a></li>
+    <li>Waktu: <?php echo $berita->waktu ?></li>
+    <li>Aspek: <?php echo $berita->aspek ?></li>
+    <li style="float: right;"><a href="<?php echo base_url('laporan/delete/'.$berita->id_laporan) ?>">Hapus Laporan/Komentar</a></li>
   </ul>
   <br>
   <br>

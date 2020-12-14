@@ -16,27 +16,33 @@
       </div>
   </form>
 <br>
-  <a href="<?php echo base_url('Tambah') ?>"><h3>Buat laporan/komentar</h3></a>
+  <a href="<?php echo base_url('Tambah') ?>"><h3>Buat laporan/ komentar</h3></a>
 <br>
 <br>
   <legend>laporan/komentar terakhir</legend>
   <hr>
-  <div class="Artikel">s
-    <p>isi berita</p>
+  
+  <?php foreach ($berita as $berita) {?>
+  <div class="Artikel">
+    <p><?php echo $berita->isi ?></p>
     <br>
+
     <ul>
-    <li>Lampiran: </a></li>
-    <li>Waktu: </li>
-    <li style="float: right;"><a href="<?php echo base_url('Laporan')?>">lihat selengkapnya></a></li>
+    <li>Lampiran: <?php echo $berita->file ?></a></li>
+    <li>Waktu: <?php echo $berita->waktu ?></li>
+    <li style="float: right;"><a href="<?php echo base_url('home/read/'.$berita->id_laporan) ?>">lihat selengkapnya></a></li>
     </ul>
     <br>
     <br>
     <hr>
+    <?php } ?>
   </div>
 <br>
 <br>
       <div class="page">
-        <p>page</p>
+        <?php if (isset($page) && $total > $limit) {
+               $page;
+        }?>
         </div>
 
   
