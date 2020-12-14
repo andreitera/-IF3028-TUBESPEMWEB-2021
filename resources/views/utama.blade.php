@@ -7,14 +7,14 @@
 </head>
 <body>
     <h1>SIMPLE LAPOR!</h1>
-    <form action="">
+    <form action="" method="POST">
     <label for="">
         <input type="text" name="cari" autocomplete="off" >
     </label>
-    <button name="caridata">Cari</button>
+    <button name="cari">Cari</button>
     </form>
     <a href="{{ url('/buatlaporan') }}">Buat laporan/komentar</a>
-    
+
     <?php if(!empty($data)) : ?>
     <table cellpadding="10" cellpadding="0" border="1">
         <?php $a = 1;
