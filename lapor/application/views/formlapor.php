@@ -4,7 +4,7 @@
 
         <form action="<?=base_url('formlapor/newLapor')?>" method="post">
             <div class="data">
-                <textarea name="laporan" id="laporan"></textarea>
+                <textarea name="laporan" id="laporan" placeholder="Laporan/Komentar"></textarea>
             </div>
             <div class="data">
                 <select class="aspek" name="aspek" id="aspek">
