@@ -20,7 +20,7 @@ class CreateLaporanTable extends Migration
             $table->longText('content');
             $table->string('file', 255)->nullable();
             $table->string('aspect', 20);
-            $table->string('unique_id', 10)->unique();
+            $table->string('unique_id', 13)->unique();
             $table->timestamps();
         });
     }
