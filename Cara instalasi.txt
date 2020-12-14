@@ -1,0 +1,12 @@
+untuk melakukan instalasi program lakukan engan langkah berikut ini.
+- Download file **lapor.sql** pada folder database
+- Buat database yang bernama **lapor**
+- Kemudian import file **lapor.sql** yang telah didownload
+- Download project ini dan ekstrak file.
+- Install Aplikasi Xampp di Laptop anda kemudian jangan lupa di buka soalnya kalo gak dibuka sama saja bohong.
+- Pindahkan folder hasil ekstrak(programnya, bukan kulit manggisnya) tadi ke folder c:/xampp/htdocs
+- Jalankan/Runing Aplikasi Xampp, aktifkan module **Apache** dan **MySQL**
+- Bukan Browser dan jalankan alamat "localhost/nama_folder"
+- Selesai.
+
+Silahkan Dicoba :)
