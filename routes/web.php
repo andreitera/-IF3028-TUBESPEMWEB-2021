@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', '\App\Http\Controllers\PageController@utama');
+Route::get('/', '\App\Http\Controllers\UtamaController@utama');
 
-Route::get('/buatlaporan', '\App\Http\Controllers\LaporanController@buatlaporan');
+Route::get('/buatlaporan', '\App\Http\Controllers\ReportController@buatlaporan');
+
+Route::get('/reports/{report}', '\App\Http\Controllers\UtamaController@show');
