@@ -12,8 +12,4 @@ class PageController extends Controller
         return view('utama');
     }
 
-    public function buatlaporan()
-    {
-        return view('buatlaporan');
-    }
 }
