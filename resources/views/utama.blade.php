@@ -15,16 +15,13 @@
     </form>
     <a href="{{ url('/buatlaporan') }}">Buat laporan/komentar</a>
 
-    <?php if(!empty($data)) : ?>
-    <table cellpadding="10" cellpadding="0" border="1">
-        <?php $a = 1;
-        foreach ($data as $dt) : ?>
-            <tr>
-                <td><?php echo $dt['laporan']; ?></td>
-            </tr>
-        <?php endforeach ?>
-    </table>
-    <?php endif ?>
-    </form>
+    <ul>
+        @foreach ($reports as $report)
+            <li>
+                {{ $report->laporan }}
+                <a href="/reports/{{ $report->id }}">Lihat Selengkapnya</a>
+            </li>
+        @endforeach
+    </ul>
 </body>
 </html>
