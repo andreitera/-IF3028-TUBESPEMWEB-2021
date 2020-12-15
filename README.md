@@ -17,22 +17,21 @@ Project dikerjakan secara **berkelompok** dengan maksimal jumlah anggota adalah 
 contoh: fix css, membuat post done, jangan seperti final, benerin dikit, oke deh, update deh dll. 
 Disarankan untuk tidak melakukan commit dengan perubahan yang besar karena akan mempengaruhi 
 penilaian (contoh: hanya melakukan satu commit kemudian dikumpulkan).
-3. Minimal commit sebanyak personil anggota tim dengan masing-masing personil tim melakukan commit sesuai dengan kesepakatan tim, penilaian individu akan dilihat.
-4. Ubah **Penjelasan Teknis** pada bagian bawah readme.md ini dengan menjelaskan bagaimana cara anda:
+3. Ubah **Penjelasan Teknis** pada bagian bawah readme.md ini dengan menjelaskan bagaimana cara anda:
    - Instalasi Framework, Koneksi basis data 
    - Melakukan validasi pada client-side
    - Melakukan AJAX (mulai dari pengguna melakukan klik pada tombol LAPOR! sampai laporan/komentar terkirim).
-5. Pull request dari repository anda ke repository ini dengan 
+4. Pull request dari repository anda ke repository ini dengan 
 format **NIM** - **Nama Lengkap**. **Waktu terkahir proses pull request adalah 4 hari setelah 
 ujian akhir semester (UAS)**
-6. Data yang dikumpulkan adalah:
+5. Data yang dikumpulkan adalah:
    - Source code aplikasi
    - Basis data, dan
    - Cara instalasi aplikasi anda
-7. Penilaian:
+6. Penilaian:
    - Kerjasama tim
    - Kesesuaian dengan spesifikasi
-   - Pemahaman dalam penggunaan framework, penilaian efisiensi query
+   - Pemahaman dalam penggunaan framework
    - Antarmuka aplikasi
    - Bug free :beetle:
    
@@ -71,8 +70,6 @@ panjang harus dipotong. Silakan definisikan sendiri seberapa panjang agar tetap 
 
 Pada masing-masing elemen list, terdapat menu untuk mengubah dan menghapus pertanyaan.
 
-View Laporan ditampilkan secara terurut dimulai dari laporan terakhir yang diberikan highlight
-
 ### Kirim laporan/komentar `LAPOR!`
 Pengguna dapat mengajukan laporan/komentar. Form yang digunakan memiliki komentar (textarea), 
 data lapiran berupa gambar 
@@ -100,6 +97,29 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 
 ### Penjelasan Teknis
 `Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+1. Instalasi Framework
+- Download file CodeIgniter pada halaman https://codeigniter.com/
+- Ekstrak dan install / paste  file CodeIgniter Framework ke direktori C:/xampp/htdocs
+- Open folder CodeIgniter dengan code editor ex.Visual Studio Code, Sublime dll.
+- Done.
+2. Koneksi Database
+- Download file **lapor.sql** pada folder database
+- Buat database dengan nama **lapor**
+- Kemudian import file **lapor.sql** yang telah didownload
+3. Validasi Client Side
+- Pada folder 'assets', buat folder 'js' pada CodeIgniter
+- Buat file javascript, 'validasi.js' pada folder js
+- Isikan soure code menggunakan bahasa javascript untuk menampilkan pesan validasi pada form laporkan/komentar
+- Dilakukan pengecekan ketika client mengisikan field komentar, apakah sudah diisikan atau belum. Jika belum akan muncul pesan, "Laporan / Komentar harus diisi!". Lalu jika kata yang dimasukkan dibawa 20 kata, maka akan muncul pesan, "Minimal jumlah kata dalam laporan / komentar adalah 20 kata."
+- Selanjutnya pengecekan pada field aspek pelaporan, apakah client sudah memilih aspek atau belum. Jika belum akan muncul pesan, "Aspek pelaporan harus dipilih!"
+- Pada pengecekan form upload file, apakah client sudah melakukan upload atau belum. jika belum akan muncul pesan "File tidak boleh kosong!". Lalu jika format tidak sesuai akan muncul pesan, "Silakan upload file yang memiliki ekstensi .doc/.docx/.xls/.xlsx/.ppt/.pptx/.pdf"
+4. Cara Instalasi
+- Download project ini dan ekstrak file.
+- Install Aplikasi Xampp di Laptop anda.
+- Pindahkan folder hasil ekstrak tadi ke folder c:/xampp/htdocs
+- Jalankan Aplikasi Xampp, aktifkan module **Apache** dan **MySQL**
+- Bukan Browser dan jalankan alamat "localhost/nama_folder"
+- Selesai.
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
@@ -111,7 +131,5 @@ anchor tag.
 
 :telephone: Jika ada pertanyaan silakan tanyakan lewat `Asisten`.
 
-### About :honeybee:
-
-Dosen       : Dicky Prima Satya, M.T., Andre Febrianto, S.Kom., M.Eng., Amirul Iqbal, S.Kom., M.Eng.
-
+### About :Ceria-ceria WEB
+###Muhammad Wahyudi, Angelica Kirana, M. Khairi Nasution
