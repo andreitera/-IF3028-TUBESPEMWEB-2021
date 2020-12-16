@@ -11,9 +11,17 @@
     -------------------------------
     <p>{{$report->laporan}}</p>
     <p>{{$report->lampiran}}</p>
-    <p>{{$report->datetime}}</p>
+    <p>{{$data->created_at}}</p>
     <p>{{$report->aspek}}</p>
 
-    <button name="hapus">Hapus Laporan/Komentar</button>
+    <form action="{{ route('edit', $data->id) }}" method="POST">
+        @csrf
+        <button type="submit">Edit Laporan/Komentar</button>
+    </form>
+
+    <form action="{{ route('delete', $data->id) }}" method="POST">
+        @csrf
+        <button type="submit">Hapus Laporan/Komentar</button>
+    </form>
 </body>
 </html>
