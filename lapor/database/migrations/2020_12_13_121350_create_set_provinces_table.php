@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSetPrivincesTable extends Migration
+class CreateSetProvincesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateSetPrivincesTable extends Migration
      */
     public function up()
     {
-        Schema::create('set_provincies', function (Blueprint $table) {
+        Schema::create('set_provinces', function (Blueprint $table) {
             $table->id();
             $table->string('name', 80);
             $table->timestamps();
@@ -27,6 +27,6 @@ class CreateSetPrivincesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('set_provincies');
+        Schema::dropIfExists('set_provinces');
     }
 }

@@ -23,7 +23,6 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
-            $table->primary(['role_id']);
             $table->foreign('role_id')->references('id')->on('set_libraries')->cascadeOnDelete();
         });
     }
