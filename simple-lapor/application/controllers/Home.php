@@ -26,4 +26,41 @@ public function user_logged_in(){
 
 public function commentDetail(){
 
+    $this->load->model('M_comment');
+    $data['comm_id'] = $this->uri->segment(3);
+    $data['result'] = $this->M_comment->showCommDetail($data['comm_id']);
+    $this->load->view('home/comm_detail', $data);
+
+}
+ public function logOut()
+  {
+    $this->session->sess_destroy();
+    redirect(base_url('home'));
+  }
+  public function myLapor()
+  {
+    $this->load->model('M_comment');
+    $data['result'] = $this->M_comment->myLapor();
+    $this->load->view('home/myLapor', $data);
+  }
+
+  public function deleteComm()
+  {
+    $comm_id = $this->uri->segment(3);
+    $this->load->model('M_comment');
+    $this->M_comment->deleteComment($comm_id);
+    redirect('home');
+  }
+
+  public function updateComm()
+  {
+    $comm_id = $this->uri->segment(3);
+    $this->load->model('M_comment');
+    $data['result'] = $this->M_comment->showCommDetail($comm_id);
+    // var_dump($data);
+    $this->load->view('home/edit_lapor', $data);
+    if (isset($_POST['edit'])) {
+      $this->M_comment->editComment($comm_id);
+    }
+  }
 }
