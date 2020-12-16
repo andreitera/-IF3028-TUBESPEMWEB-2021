@@ -64,6 +64,14 @@ table {
     display: block;
 } 
 
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.flex-grow-2 {
+    flex-grow: 2;
+}
+
 input, button {
     padding: 10px;
 }
@@ -210,6 +218,14 @@ main h3 {
     background-color: #c13e3e;
     transition: background-color .5s;
 } */
+
+#detail {
+    text-align: justify;
+}
+
+#detail p {
+    margin-bottom: 10px;
+}
 
 footer {
     padding: 25px;
