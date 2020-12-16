@@ -99,7 +99,34 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+Installasi framework 
+ - install composer 
+ - composer create-project laravel/laravel nama_project
+Koneksi Basis Data
+ - setting file .env 
+     
+     DB_CONNECTION=mysql
+     DB_HOST=127.0.0.1
+     DB_PORT=3306
+     DB_DATABASE=laravel
+     DB_USERNAME=root
+     DB_PASSWORD=
+ 
+Validation Javascript
+
+- buat function untuk mengolah data input 
+- berikan atributte tambahan pada tag form yaitu onsubmit
+- ketika button submit di klik javascript melakukan pemangilan fungsi yang sudah dibuat
+- jika form valid maka data akan dikirimkan dengan menggunakan method post
+
+Ajax 
+- fitur search
+- buat sebuah function untuk melakukan ajax
+- buat object request dalam function 
+- lakukan request terhadap server menggunakan method open dan send 
+- kemudian ambil data response dari request yang kita kirimkan
+- implementasikan ke dalam html .
+
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
