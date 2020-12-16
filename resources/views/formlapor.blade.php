@@ -17,7 +17,6 @@
         	Buat Laporan/Komentar
 		</div>
 		<hr>
-		
 	<form method="post" action="#" enctype="multipart/form-data">
     <div class="main">
 		<textarea rows="10" cols="100" name="comment" placeholder="Laporan/Komentar" required></textarea>
