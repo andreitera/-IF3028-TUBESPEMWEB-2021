@@ -13,7 +13,9 @@
         <textarea name="" id="" cols="30" rows="10"></textarea>
         <select name="" id="">
             <option value="" disabled selected>Pilih Aspek Pelaporan/Komentar</option>
-            <option value="1">Agama</option>
+            <?php foreach($aspek as $row){ ?>
+            <option value="<?= $row->id_aspek; ?>"><?= $row->aspek; ?></option>
+            <?php } ?>
         </select>
         <input type="file" accept="image/*,audio/*,video/*,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.pdf,.txt">
         <button type="submit">Buat LAPOR!</button>
