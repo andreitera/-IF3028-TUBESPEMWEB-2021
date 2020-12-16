@@ -15,10 +15,9 @@ class CreateReportsTable extends Migration
     {
         Schema::create('reports', function (Blueprint $table) {
             $table->id();
-            $table->string('laporan', 500);
+            $table->longText('laporan');
             $table->string('aspek');
             $table->string('lampiran');
-            $table->dateTime('datetime', $precision = 6);
             $table->timestamps();
         });
     }
