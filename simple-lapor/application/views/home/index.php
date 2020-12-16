@@ -19,8 +19,8 @@ if (isset($_POST['cari'])) {
   <div class="container1">
     <div class="log-reg">
       <a href="<?= base_url()?>">HOME</a>
-      <a href="<?= base_url('auth') ?>">Login</a>
-      <a href="<?= base_url('auth/register') ?>">Register</a>
+      <a href="<?= base_url('auth') ?>">LOGIN</a>
+      <a href="<?= base_url('auth/register') ?>">REGISTER</a>
     </div>
 
     <div class="heading-icon">
