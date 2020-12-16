@@ -9,15 +9,15 @@
     <h1>SIMPLE LAPOR!</h1>
     <div>Buat Laporan/Komentar</div>
     <hr>
-    <form action="">
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <select name="" id="">
+    <form action="<?= base_url('buat/tambah'); ?>" method="POST" enctype="multipart/form-data">
+        <textarea name="isi" id="input_isi" cols="30" rows="10"></textarea>
+        <select name="id_aspek" id="input_aspek">
             <option value="" disabled selected>Pilih Aspek Pelaporan/Komentar</option>
             <?php foreach($aspek as $row){ ?>
             <option value="<?= $row->id_aspek; ?>"><?= $row->aspek; ?></option>
             <?php } ?>
         </select>
-        <input type="file" accept="image/*,audio/*,video/*,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.pdf,.txt">
+        <input type="file" id="input_lampiran" name="lampiran" accept="image/*,audio/*,video/*,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.pdf,.txt">
         <button type="submit">Buat LAPOR!</button>
     </form>
 </body>
