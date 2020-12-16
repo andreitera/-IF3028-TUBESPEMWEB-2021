@@ -5,6 +5,10 @@
             <link rel="stylesheet" href="{{ asset('css/style.css') }}"type="text/css">
         </head>
 <body>
+@if (session('msg'))
+        {{ session('msg') }}
+    @endif
+
 <div class="container">  
     <div class="content">
 		<div class="header">
@@ -17,25 +21,26 @@
         	Buat Laporan/Komentar
 		</div>
 		<hr>
-	<form method="post" action="#" enctype="multipart/form-data">
+	<form method="post" action="{{ route('store')}}" enctype="multipart/form-data">
+    @csrf
     <div class="main">
-		<textarea rows="10" cols="100" name="comment" placeholder="Laporan/Komentar" required></textarea>
+		<textarea rows="10" cols="100" name="laporan" placeholder="Laporan/Komentar" required></textarea>
 	</div><br>
     <div class="aspek">
         <select name="aspek" required>
-            <option value="">Pilih Aspek Pelaporan/Komentar</option>
-				<option value="Dosen">Dosen</option>
-				<option value="Asprak">Asisten Praktikum</option>
+        <option value="1">Pilih Aspek Pelaporan/Komentar</option> 
+                <option value="Dosen">Dosen</option>
+                <option value="Staff">Staff</option>
                 <option value="Mahasiswa">Mahasiswa</option>
-                <option value="Infrasktruktur">Infrasktruktur</option>
-				<option value="Matkul">Matakuliah</option>			
+                <option value="Infrastruktur">Infrastruktur</option>
+                <option value="Pengajaran">Pengajaran</option> 		
         </select>
 	</div><br>
-    <div class="file">
+   <div class="file">
         <input type="file" name="lampiran" required style="display: block; padding-top: 5px;">
 	</div><br>
     <div class="btn_submit">
-        <button name="buat" style="display: block; padding-top: 5px;">Buat LAPOR!</button>
+        <button type="submit" name="buat" style="display: block; padding-top: 5px;">Buat LAPOR!</button>
     </div>
 	</form><br>
     <hr>
