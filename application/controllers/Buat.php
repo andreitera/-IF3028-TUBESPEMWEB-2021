@@ -24,5 +24,33 @@ class Buat extends CI_Controller {
         $data['aspek'] = $this->db->get('aspek')->result();
         
 		$this->load->view('buat', $data);
-	}
+    }
+    
+    public function tambah()
+    {
+        $config['upload_path'] = './uploads/';
+        $config['allowed_types'] = 'doc|docx|xls|xlsx|ppt|pptx|pdf|txt|png|jpg|jpeg|mp3|mp4|wav|mkv|txt';
+
+        $this->load->library('upload', $config);
+
+        if(! $this->upload->do_upload('lampiran')){
+            $error = array('error' => $this->upload->display_errors());
+            var_dump($error);
+            die;
+        }else{
+			$isi = $_POST['isi'];
+			$id_aspek = $_POST['id_aspek'];
+			$lampiran = $_FILES['lampiran']['name'];
+			$waktu = date("Y-m-d");
+
+			$data = array(
+				'isi' => $isi,
+				'id_aspek' => $id_aspek,
+				'lampiran' => $lampiran,
+				'waktu' => $waktu
+			);
+
+			$this->db->insert('lapor', $data);
+        }
+    }
 }
