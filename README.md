@@ -121,6 +121,8 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 
 1. penginstalan framework
    pertama, download codeigniter di website https://www.codeigniter.com/download
+   kedua, memindahkan file codeigniter kedalam folder htdocs,dan mengganti namanya menjadi Lapor
+   ketiga, melakukan konfigurasi pada CI
 
 ### Knowledge
 
