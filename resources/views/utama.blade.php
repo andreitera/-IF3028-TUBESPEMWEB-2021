@@ -13,7 +13,7 @@
     </label>
     <button name="cari">Cari</button>
     </form>
-    <a href="{{ url('/buatlaporan') }}">Buat laporan/komentar</a>
+    <a href="{{ url('/formlapor') }}">Buat laporan/komentar</a>
 
     <ul>
         @foreach ($reports as $report)
