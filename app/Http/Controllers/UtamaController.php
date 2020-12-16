@@ -13,10 +13,17 @@ class UtamaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function cari(Request $request)
+    {
+        $cari = $request->input('cari');
+        $data = DB::table('reports')->where('laporan', 'like', $cari)->orderByDesc('id')->get();
+        return view('pencarian', ['data' => $data]);
+    }
+
     public function utama()
     {
-        $reports = \App\Models\Report::all();
-        return view('utama', compact('reports'));
+        $reports = DB::table('reports')->orderByDesc('id')->limit(3)->get();
+        return view('utama', ['data' => $reports]);
     }
 
     /**
@@ -46,9 +53,10 @@ class UtamaController extends Controller
      * @param  \App\Models\Utama  $utama
      * @return \Illuminate\Http\Response
      */
-    public function show(Report $report)
+    public function show($id)
     {
-        return view('lihatlaporan', compact('report'));
+        $data = DB::table('reports')->where('id', '=', $id)->first();
+        return view('lihatlaporan', ['data' => $data]);
     }
 
     /**
