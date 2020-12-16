@@ -56,6 +56,10 @@ table {
     color: var(--red-primary);
 }
 
+.white-text {
+    color: white;
+}
+
 .d-flex {
     display: flex;
 }
@@ -72,6 +76,11 @@ table {
     flex-grow: 2;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 input, button {
     padding: 10px;
 }
@@ -84,6 +93,12 @@ input[submit]:hover, button:hover {
     font-size: 2.8rem;
     font-weight: 500;
     margin-bottom: 20px;
+}
+
+.hero {
+    padding: 100px 0;
+    background: url("../images/bg_bggenerator_com.png");
+    color: #fafafa;
 }
 
 .hero h2 {
