@@ -2,6 +2,7 @@
     <html>
         <head>
             <title>Buat Laporan/Komentar</title>
+            <link rel="stylesheet" href="{{ asset('css/style.css') }}"type="text/css">
         </head>
 <body>
 <div class="container">  
