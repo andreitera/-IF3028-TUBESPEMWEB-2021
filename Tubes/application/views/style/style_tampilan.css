@@ -1,0 +1,67 @@
+		* {
+
+			font-family: tahoma;
+
+
+		}
+		
+
+		.container {
+
+			margin: 0 auto;
+			margin-top: 50px;
+			width: 850px;
+			height: auto;
+			border: 1px solid gray;
+			background-color: white;
+
+		}
+
+		.header {
+
+			height: auto;
+			width: auto;
+			text-align: center;
+			font-size: 22px;
+
+
+		}
+
+		a {
+
+			text-decoration: none;
+
+		}
+
+		p {
+
+			text-align: justify;
+
+		}
+
+		.content {
+			
+			margin: 0 auto;
+			margin-top: 50px;
+			width: 700px;
+
+		}
+
+		.detail {
+
+			float: right;
+			margin-top: -35px;
+
+		}
+
+		input{
+
+			width: 92.5%; height: 30px;
+
+		}
+
+		button{
+
+			height: 36px;
+
+		}
