@@ -16,8 +16,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/',                                     'UtamaController@utama')->name('home');
 
-Route::get('/buatlaporan',                          'ReportController@buatlaporan')->name('buat');
-Route::post('/buatlaporan',                         'ReportController@store')->name('store');
+Route::get('/formlapor',                          'ReportController@formlapor')->name('buat');
+Route::post('/formlapor',                         'ReportController@store')->name('store');
 Route::get('listlaporan',                           'ReportController@index')->name('laporan');
 Route::get('/reports/{id}',                         'UtamaController@show')->name('show');
 

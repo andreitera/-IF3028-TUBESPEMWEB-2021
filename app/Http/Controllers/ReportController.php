@@ -16,9 +16,9 @@ class ReportController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function buatlaporan()
+    public function formlapor()
     {
-        return view('buatlaporan');
+        return view('formlapor');
     }
 
     public function index()
