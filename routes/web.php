@@ -14,8 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', '\App\Http\Controllers\UtamaController@utama');
+Route::get('/',                                     'UtamaController@utama')->name('home');
 
-Route::get('/buatlaporan', '\App\Http\Controllers\ReportController@buatlaporan');
+Route::get('/buatlaporan',                          'ReportController@buatlaporan')->name('buat');
+Route::post('/buatlaporan',                         'ReportController@store')->name('store');
+Route::get('listlaporan',                           'ReportController@index')->name('laporan');
+Route::get('/reports/{id}',                         'UtamaController@show')->name('show');
 
-Route::get('/reports/{report}', '\App\Http\Controllers\UtamaController@show');
+Route::get('/hasilpencarian',                       'UtamaController@cari')->name('cari');
+
+Route::post('/laporan/{id}/edit',                   'ReportController@edit')->name('edit');
+Route::post('/laporan/{id}/edit/edit',              'ReportController@update')->name('storeedit');
+Route::post('/laporan/{id}/delete',                 'ReportController@destroy')->name('delete');
+
