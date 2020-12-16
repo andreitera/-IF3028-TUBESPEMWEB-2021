@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Dec 15, 2020 at 02:45 PM
+-- Generation Time: Dec 16, 2020 at 02:19 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.11
 
@@ -53,16 +53,17 @@ CREATE TABLE `lapor` (
   `id_lapor` int(11) NOT NULL,
   `isi` longtext NOT NULL,
   `id_aspek` int(11) NOT NULL,
-  `lampiran` tinytext NOT NULL
+  `lampiran` tinytext NOT NULL,
+  `waktu` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `lapor`
 --
 
-INSERT INTO `lapor` (`id_lapor`, `isi`, `id_aspek`, `lampiran`) VALUES
-(1, 'Laporan baru tentang agama', 1, 'agama.pdf'),
-(2, 'Laporan baru tentang kesehatan', 3, 'kesehatan.pdf');
+INSERT INTO `lapor` (`id_lapor`, `isi`, `id_aspek`, `lampiran`, `waktu`) VALUES
+(1, 'Laporan baru tentang agama', 1, 'agama.pdf', '0000-00-00'),
+(2, 'Laporan baru tentang kesehatan', 3, 'kesehatan.pdf', '0000-00-00');
 
 --
 -- Indexes for dumped tables
