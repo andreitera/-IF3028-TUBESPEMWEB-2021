@@ -20,6 +20,9 @@ class Buat extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('buat');
+        // ambil data aspek
+        $data['aspek'] = $this->db->get('aspek')->result();
+        
+		$this->load->view('buat', $data);
 	}
 }
