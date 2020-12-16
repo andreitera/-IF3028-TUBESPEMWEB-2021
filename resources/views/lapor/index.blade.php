@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('master.master')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+@section('css')
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+@endsection
 
-<body>
-
-</body>
-
-</html>
+@section('isi')
+<div class="home">
+    <img src="{{ asset('image/home-cover.jpg') }}" alt="home-cover" class="home-cover">
+    <img src="{{ asset('image/bawahheader.svg') }}" alt="home-white" class="home-white">
+</div>
+@endsection
