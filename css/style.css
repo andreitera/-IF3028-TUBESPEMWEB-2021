@@ -158,7 +158,7 @@ textarea {
 .select-selected {
 	color: grey;
 	padding: 8px 16px;
-	border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+	border-color: transparent transparent rgba(251, 160, 122, 0.1) transparent;
 	cursor: pointer;
 	user-select: none;
 	font-size: 13px;
@@ -174,7 +174,7 @@ textarea {
 	z-index: 99;
 	border: 1px solid rgb(27, 56, 88);
 	border-radius: 4px;
-	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 8px 16px 0px rgba(251, 160, 122, 0.2);
 	font-size: 13px;
 }
 
@@ -218,23 +218,16 @@ textarea {
 	border: 1px solid rgb(27, 56, 88) !important;
 	color: #fff !important;
 	background-color: rgb(27, 56, 88) !important;
-	box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 8px 8px 0px rgba(251, 160, 122, 0.2);
 	width: 20% !important;
 	padding: 10px !important;
-	/* color: white;
-	background-color: rgb(255, 92, 146);
-	border: 0px solid lightgrey;
-	border-radius: 5px;
-	cursor: pointer;
-	font-size: 12px; */
 	margin-right: -1.6vw;
 	float: right;
-	/* font-weight: bolder; */
 }
 
 #send-button:hover {
 	background-color: #101D2C !important;
-	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 4px 8px 0px rgba(251, 160, 122, 0.2);
 	color: white !important;
 }
 
@@ -265,7 +258,7 @@ textarea {
 /*postingan terakhir*/
 
 
-/* Detail laporan */
+/* Laporan lengkap */
 
 .content-wrapper {
 	width: 70%;
@@ -281,7 +274,7 @@ textarea {
 	width: 100%;
 }
 
-/* Detail laporan */
+/* Laporan lengkap */
 
 /* FRONT END */
 /* font */
@@ -303,7 +296,7 @@ textarea {
 header {
 	width: 100%;
 	height: 120vh;
-	background: linear-gradient(rgba(16, 29, 44, .95), rgba(16, 29, 44, .95)),
+	background: linear-gradient(rgba(251, 160, 122, .95), rgba(251, 160, 122, .95)),
 		url("../images/bg.jpg") center no-repeat;
 	background-size: cover;
 	position: relative;
@@ -319,7 +312,7 @@ header>.container {
 	margin-right: 20vw;
 	margin-left: 20vw;
 	height: 60%;
-	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 8px 16px 0px rgba(251, 160, 122, 0.2);
 }
 
 .container {
@@ -427,7 +420,7 @@ header>.container {
 	user-select: none;
 	background-color: transparent;
 	width: 78px;
-	border: 1px solid #c69963;
+	border: 1px solid #FFA07A;
 	padding: 5px 0 !important;
 	position: relative;
 	font-size: 1rem;
@@ -571,7 +564,7 @@ section {
 	margin-top: -2vh;
 	margin-bottom: 2vh;
 	font-family: 'JosefinSans-Regular', cursive;
-	color: #c69963;
+	color: #FFA07A;
 }
 
 .section-heading h3 {
@@ -585,13 +578,13 @@ section {
 
 .about .btn {
 	width: 150px;
-	color: #c69963 !important;
+	color: #FFA07A !important;
 	transition: background-color 650ms;
 }
 
 .about .btn:hover {
 	color: #fff !important;
-	background-color: #c69963;
+	background-color: #FFA07A;
 }
 
 /* tentang lapor */
@@ -599,7 +592,7 @@ section {
 /* jumlah laporan */
 .laporan {
 	margin-top: 0;
-	background: linear-gradient(rgba(16, 29, 44, .95), rgba(16, 29, 44, .95)),
+	background: linear-gradient(rgba(251, 160, 122, .95), rgba(251, 160, 122, .95)),
 		url("../images/bg-2.jpg") center no-repeat;
 	background-size: cover;
 }
