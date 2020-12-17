@@ -53,10 +53,6 @@ class Home extends CI_Controller
     redirect('home');
   }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> ff08b6ad903b3c97e096d5f485b30fadb6075b6b
   public function updateComm()
   {
     $comm_id = $this->uri->segment(3);
