@@ -20,7 +20,10 @@
       <div class="laporan">
 
         <div class="container1">
+<<<<<<< HEAD
             <a href="<?= base_url()?>">HOME</a>
+=======
+>>>>>>> ff08b6ad903b3c97e096d5f485b30fadb6075b6b
           <h1>Detail Komentar</h1>
         </div>
 

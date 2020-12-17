@@ -57,7 +57,11 @@
         <br>
 
         <div class="file">
+<<<<<<< HEAD
           <input class="file_in" type="file" name="lampiran" value="C:/xampp/htdocs/referensi2/lapor-app/assets/doc/ <?= $result['lampiran'] ?>">
+=======
+          <input class="file_in" type="file" name="lampiran" value="C:/xampp/htdocs/PABW/IF3111-1920/lapor-app/assets/doc/ <?= $result['lampiran'] ?>">
+>>>>>>> ff08b6ad903b3c97e096d5f485b30fadb6075b6b
         </div>
 
         <br>
