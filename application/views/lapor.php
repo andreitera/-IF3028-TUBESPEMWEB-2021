@@ -64,15 +64,16 @@
         <p>Buat Laporan/Komentar</p>
         <hr>
         <div class="form-lapor">
+            <?php echo form_open_multipart('home/tambahLaporan');?>
             <!-- <input type="text" placeholder="Laporan/Komentar"> -->
-            <textarea placeholder="Laporan/Komentar" name="" id="" cols="117" rows="10"></textarea><br>
-            <select style="padding: 10px;" name="" id="">
+            <textarea placeholder="Laporan/Komentar" name="laporan" id="" cols="117" rows="10"></textarea><br>
+            <select style="padding: 10px;" name="aspek" id="">
                 <option value="" disabled selected>Pilih Aspek Pelaporan/Komentar</option>
-                <option value="">Aspek1</option>
-                <option value="">Aspek2</option>
-                <option value="">Aspek3</option>
+                <option value="Aspek1">Aspek1</option>
+                <option value="Aspek2">Aspek2</option>
+                <option value="Aspek3">Aspek3</option>
             </select><br><br>
-            <input type="file"><br><br>
+            <input type="file" name="file"><br><br>
             <input type="submit" placeholder="Buat LAPOR!" class="submit-lapor">
         </div>
     </div>

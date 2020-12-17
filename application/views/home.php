@@ -19,14 +19,6 @@
     }
 
     .search-container {
-        /* max-width: 800px; */
-        /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        padding: 16px;
-        border-radius: 5px;
-        display: flex;
-        position: sticky; */
-        /* top: 10px;
-        background-color: white; */
         margin-left: 25%;
         margin-right: 25%;
     }
@@ -35,7 +27,6 @@
         width: 75%;
         padding: 16px;
         border: 1px solid;
-        /* border-bottom: 1px solid cornflowerblue; */
         font-weight: bold;
     }
         
@@ -52,10 +43,7 @@
         width: 23%;
         cursor: pointer;
         padding: 15px;
-        /* background-color: cornflowerblue; */
-        /* color: white; */
         border: 1;
-        /* text-transform: uppercase; */
     }
 
     .nav{
@@ -86,6 +74,7 @@
         text-decoration: none;
         color: black;
     }
+
 </style>
 </head>
 <body>
@@ -105,6 +94,5 @@
             <button id="searchButtonElement" type="submit">Cari</button>
     </div>
     <a href="<?php echo base_url('lapor'); ?>"><h6>Buat Laporan/Komentar</h6></a>
-  
 </body>
 </html>
