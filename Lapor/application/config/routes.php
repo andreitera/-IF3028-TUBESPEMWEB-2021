@@ -50,5 +50,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 $route['default_controller'] = 'halaman';
+$route['tampil/view/(:any)'] = 'tampil/view/$1';
+$route['tampil/(:any)'] = 'tampil/$1';
+$route['tambah'] = 'tampil/tambah';
+$route['(:any)'] = 'halaman/index/$1';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

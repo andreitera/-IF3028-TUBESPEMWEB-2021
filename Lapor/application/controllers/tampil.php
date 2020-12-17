@@ -15,22 +15,21 @@ class Tampil extends CI_Controller
     public function index($id)
     {
         $data['post_item'] = $this->post_model->get_lapor($id);
-        // $this->load->view('tampilan/laporan', $data);
     }
 
     public function view($id)
     {
         $data['post_item'] = $this->post_model->get_lapor($id);
-        $this->load->view('template/header');
-        $this->load->view('tampilan/laporan', $data);
-        $this->load->view('template/footer');
+        $this->load->view('index');
+        $this->load->view('halaman/tampil', $data);
+        $this->load->view('index');
     }
 
     public function add()
     {
-        $this->load->view('template/header');
-        $this->load->view('tampilan/add');
-        $this->load->view('template/footer');
+        $this->load->view('index');
+        $this->load->view('halaman/tambah');
+        $this->load->view('index');
     }
 
     public function input()
@@ -72,10 +71,10 @@ class Tampil extends CI_Controller
     public function edit($id)
     {
         $searchkey = array('id' => $id);
-        $data['laporan'] = $this->post_model->get_lapor($id);
-        $this->load->view('template/header');
-        $this->load->view('tampilan/edit', $data);
-        $this->load->view('template/footer');
+        $data['tampil'] = $this->post_model->get_lapor($id);
+        $this->load->view('index');
+        $this->load->view('halaman/ubah', $data);
+        $this->load->view('index');
     }
 
     public function update($id)
@@ -88,15 +87,15 @@ class Tampil extends CI_Controller
         );
         $searchkey = array('id' => $id);
         $this->post_model->update_data($searchkey, $data, $this->nama_tabel);
-        redirect('laporan/view/' . $id);
+        redirect('tampil/view/' . $id);
     }
 
     public function search()
     {
         $keyword = $this->input->get('keyword');
         $data['result'] = $this->post_model->search_data($keyword, $this->nama_tabel);
-        $this->load->view('template/header');
-        $this->load->view('tampilan/search_result', $data);
-        $this->load->view('template/footer');
+        $this->load->view('index');
+        $this->load->view('halaman/cari', $data);
+        $this->load->view('index');
     }
 }
