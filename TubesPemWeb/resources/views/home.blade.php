@@ -215,7 +215,7 @@ li a:hover {
 <div id="id01" class="modal">
   
   <form class="modal-content animate" action="/loginUser" method="post">
-    @csrf
+  @csrf
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
       <h2>LOGIN ACCOUNT</h2>
