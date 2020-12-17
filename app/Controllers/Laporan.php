@@ -35,7 +35,7 @@ class Laporan extends ResourceController
                     'created_date' => date("Y-m-d H:i:s")
                 ];
                 $pelatihanModel->insert($data);
-                $upload->move(ROOTPATH . 'public/pelatihan', $lampiran);
+                $upload->move(ROOTPATH . 'public/lampiran', $lampiran);
 
                 // return redirect()->to(site_url('/index'));
             } else {
@@ -47,21 +47,21 @@ class Laporan extends ResourceController
 
     public function updateData()
     {
-        helper('form');
-        $API = $this->request->uri->getSegment(3);
-        $dataprojek = new \App\Models\LaporanModel();
-        $projek = $dataprojek->where('token', $API)->first();
+        // helper('form');
+        // $API = $this->request->uri->getSegment(3);
+        // $dataprojek = new \App\Models\LaporanModel();
+        // $projek = $dataprojek->where('token', $API)->first();
 
-            $data1 = $this->request->getGetPost('datafield_1');
-            $data2 = $this->request->getGetPost('datafield_2');
-            $data3 = $this->request->getGetPost('datafield_3');
+        //     $data1 = $this->request->getGetPost('datafield_1');
+        //     $data2 = $this->request->getGetPost('datafield_2');
+        //     $data3 = $this->request->getGetPost('datafield_3');
             
-        $data = [
-            'datafield_1' => $data1,
-            'datafield_2' => $data2,
-            'datafield_3' => $data3,
-        ];
-        return $this->model->updateData($data, $API);
+        // $data = [
+        //     'datafield_1' => $data1,
+        //     'datafield_2' => $data2,
+        //     'datafield_3' => $data3,
+        // ];
+        // return $this->model->updateData($data, $API);
     }
 
     public function fetch()
@@ -79,6 +79,6 @@ class Laporan extends ResourceController
         $dataprojek = new \App\Models\LaporanModel();
 
         $projek = $dataprojek->deleteData($id);
-        return $this->respond($projek);
+        return redirect()->to(site_url('home/index'));
     }
 }
