@@ -19,7 +19,7 @@ class Home extends CI_Controller
     $this->load->model('M_comment');
     $data['result'] = $this->M_comment->showAllComments();
     $data['title'] = "Halaman Utama";
-    // var_dump($data);
+   
     $this->load->view('templates/userloggin_header', $data);
     $this->load->view('home/user_logged_in', $data);
     $this->load->view('templates/footer');
@@ -53,35 +53,6 @@ class Home extends CI_Controller
     redirect('home');
   }
 
-<<<<<<< HEAD
-    $this->load->model('M_comment');
-    $data['comm_id'] = $this->uri->segment(3);
-    $data['result'] = $this->M_comment->showCommDetail($data['comm_id']);
-    $this->load->view('home/comm_detail', $data);
-
-}
- public function logOut()
-  {
-    $this->session->sess_destroy();
-    redirect(base_url('home'));
-  }
-  public function myLapor()
-  {
-    $this->load->model('M_comment');
-    $data['result'] = $this->M_comment->myLapor();
-    $this->load->view('home/myLapor', $data);
-  }
-
-  public function deleteComm()
-  {
-    $comm_id = $this->uri->segment(3);
-    $this->load->model('M_comment');
-    $this->M_comment->deleteComment($comm_id);
-    redirect('home');
-  }
-
-=======
->>>>>>> 0b43cbe8d36fe347d68f7105d986540c2580d7df
   public function updateComm()
   {
     $comm_id = $this->uri->segment(3);
