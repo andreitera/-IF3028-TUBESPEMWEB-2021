@@ -14,3 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'LaporController@listView')->name('listView');
+Route::get('/profil', 'ProfileController@showProfile')->name('showProfile');
