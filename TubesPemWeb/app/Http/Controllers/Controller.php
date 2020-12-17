@@ -51,14 +51,61 @@ class Controller extends BaseController
     	$user = DB::table('user') -> where ('username',$request->uname)->where('password',$request->psw)->first();
     	
     	if ($user) {
-    		return redirect('/halamanlpr');
+            $request->session()->put('login','Diki Alfarabi Hadi');
+    		return redirect('/buatlaporan');
     	}else{
     		return redirect('/register');
-    	}
-
-
+        }
     }
   //test branch buat pull
+  public function buatLaporan(Request $request){
+        
+    if($request->session()->has('login')){
+        return view('buatLaporan');
+    }else{
+        echo 'Login Dulu Cess';
+    }    
+}
 
+public function logout(Request $request){
+    $request->session()->forget('login');
+    return redirect('/');
+
+}
+
+public function simpanlaporan(Request $request){
+    
+    $request->validate([
+        'judul' => 'required',
+        'isi' => 'min:200|required',
+        'tipe'=> 'required',
+        'tanggal' => 'required|date',
+        'file' => 'required|file|mimes:doc,docx,xls,xlsx,ppt,pptx,pdf|max:2048',
+    ]);
+    
+    $file = $request->file('file');
+    $dir_upload = "assets/upload";
+    $fileName = time().'.'.$request->file->extension();
+
+    if($file->move($dir_upload,$fileName)){
+        $laporan = DB::table('laporan')->insert(
+            ['tipe_laporan' => $request->tipe,
+            'judul_laporan' => $request->judul,
+            'isi_laporan' => $request->isi,
+            'tgl_kejadian' => $request->tanggal,
+            'lampiran' => $fileName,
+            'anonimitas' => $request->anonim,
+            'id_user' => 3
+            ]
+        );
+        if($laporan){
+            return redirect('/tampilkanlaporan');
+        }
+    }
+}
+
+public function tampilkanlaporan(Request $request){
+    dd($request);
+}
 }
 
