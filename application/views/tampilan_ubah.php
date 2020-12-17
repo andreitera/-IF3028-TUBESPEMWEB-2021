@@ -2,9 +2,8 @@
 <html>
 <head>
 	<title>SIMPLE LAPOR!</title>
-	<!-- file css ada di asset/css -->
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/asset/css/style.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/asset/css/reset.css">
+	
+	
 </head>
 <body>
 
@@ -12,11 +11,13 @@
 	<h1>SIMPLE LAPOR!</h1>
     <h4>Buat Laporan/Komentar</h4>
    <hr />
+
    <?php 
    if(validation_errors()):
-   echo validation_errors(); 
+    echo validation_errors(); 
    endif;
 	?>
+
    <?php echo form_open_multipart('ubah.php/Home/ubah/'.$lapor["id"]); ?>
 	    <textarea rows="16" cols="136" style="width: 800px;" name="isi" ><?php echo $lapor["isi"]; ?></textarea><br \>
 		<select name="aspek">
