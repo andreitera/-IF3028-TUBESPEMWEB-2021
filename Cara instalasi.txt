@@ -5,7 +5,6 @@ untuk melakukan instalasi program lakukan engan langkah berikut ini.
 - Download project ini dan ekstrak file.
 - Pastikan XAMPP/MAMP/WAMP sudah terinstall di device, lalu start server untuk menginisiasi localhost
 - Pindahkan folder hasil ekstrak(programnya, bukan kulit manggisnya) tadi ke folder c:/xampp/htdocs
-- Jalankan/Runing Aplikasi Xampp, aktifkan module **Apache** dan **MySQL**
 - Bukan Browser dan jalankan alamat "localhost/nama_folder"
 - Selesai.
 
