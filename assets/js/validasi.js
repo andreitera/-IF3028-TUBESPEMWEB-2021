@@ -20,7 +20,7 @@ function validasi(form){
     
     // validasi field aspek pelaporan
     if (form.aspek.value =="pilih"){
-        alert("Aspek pelaporan harus dipilih!");
+        alert("Pilih Salah Satu Aspek Laporan!");
         return (false);
     }
     // validasi field file
@@ -30,7 +30,7 @@ function validasi(form){
         return (false);
     }
     if(!ekstensiOk.exec(pathFile)){
-        alert('Silakan upload file yang memiliki ekstensi .doc/.docx/.xls/.xlsx/.ppt/.pptx/.pdf');
+        alert('Upload file yang memiliki ekstensi .doc/.docx/.xls/.xlsx/.ppt/.pptx/.pdf');
         inputFile.value = '';
         return (false);
     }
@@ -39,14 +39,14 @@ function validasi(form){
 }
 
 function confirmDelete(delUrl) {
-    if (confirm("Apakah yakin dihapus?")) {
+    if (confirm("Anda Yakin?")) {
       document.location = delUrl;
     }
   }
 
 function pencarian(form){
     if (form.keyword.value == ''){
-        alert("Pencarian Tidak Boleh Kosong");
+        alert("Isi Kolom Pencarian!");
         form.laporan.focus();
         return (false);
     }
