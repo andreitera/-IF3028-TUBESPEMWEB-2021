@@ -21,9 +21,12 @@ Route::get('/masuk', function () {
 Route::get('/register', function () {
     return view('register');
 });
+
+
+Route::get('/halamanlpr', function () {
+    return view('halamanlapor');
+});
+
 Route::post('/registerUser','Controller@registerUser');
+
 Route::post('/loginUser','Controller@loginUser');
-Route::get('/buatlaporan','Controller@buatLaporan');
-Route::post('/simpanlaporan','Controller@simpanlaporan');
-Route::get('/tampilkanlaporan','Controller@tampilkanlaporan');
-Route::get('/logout','Controller@logout');

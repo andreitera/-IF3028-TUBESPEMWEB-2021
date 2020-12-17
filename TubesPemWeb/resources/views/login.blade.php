@@ -140,11 +140,11 @@ span.psw {
     </div>
 
     <div class="container">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+      <label for="username"><b>username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" required>
 
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+      <label for="password"><b>password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required>
         
       <button type="submit">Login</button>
       <label>
@@ -154,7 +154,7 @@ span.psw {
 
     <div class="container" style="background-color:#f1f1f1">
       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
+      <span class="password">Forgot <a href="/">password?</a></span>
     </div>
   </form>
 </div>
