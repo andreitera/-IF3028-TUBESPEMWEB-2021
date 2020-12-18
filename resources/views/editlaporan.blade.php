@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buat Laporan/Komentar</title>
+    <link rel="stylesheet" href=" {{ asset('css/styleSearch.css') }} ">
 </head>
 <body>
     <h1>SIMPLE LAPOR!</h1>
@@ -23,5 +24,6 @@
             <button type="submit" style="display: block; padding-top: 5px;">Ganti LAPOR!</button>
             --------------------------------------
     </form>
+    
 </body>
 </html>
