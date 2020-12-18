@@ -55,7 +55,6 @@ responsive. Desain tampilan tidak perlu dibuat indah. Icon dan jenis font tidak 
 garis pemisah, dan perbedaan ukuran font harus terlihat sesuai contoh. Perhatikan juga tata letak elemen-elemen.
 
 ![](dukumenstasii/Halaman_awal.PNG)
-
 - Search bar diletakkan di bagian paling atas dibawah judul.
 - Tombol "cari" berada di sebelah kanan search bar.
 - **Buat LAPOR!** digunakan untuk mengirimkan laporan/komentar baru.
@@ -64,13 +63,11 @@ garis pemisah, dan perbedaan ukuran font harus terlihat sesuai contoh. Perhatika
   namun tulisan "Laporan/komentar Terakhir" ini harus ada.
 
 ![](dukumenstasii/halaman_buat_laporan.PNG)
-
 - Tampilan di atas digunakan untuk mengajukan atau mengubah laporan/komentar.
 - Perhatikan label dari field pada form berada di dalam field (tidak di luar)
 - Apek yang dilaporkan ditampilkan dalam bentuk `select`
 
 ![](dukumenstasii/detail.PNG)
-
 - Bagian ini menampilkan laporan/komentar. Bagian `datetime` sudah ada.
 - Perhatikan label dari field pada form berada di dalam field (tidak di luar)
 
@@ -123,17 +120,14 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 `Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
 
 1. ![](dukumenstasii/appflowchart.gif)
-
 - flowchart web, cara kerja web
 
 2. Instalasi CI
-
 - Download file zip CodeIgniter pada halaman https://codeigniter.com/
 - Ekstrak file CodeIgniter Framework ke direktori C:/xampp/htdocs
 - Open menggunakan software code editor seperti visual studio code, sublime, atom , dll
 
 3. Cara Instalasi
-
 - Pastikan anda sudah menginstal XAMPP,
 - Jalankan software XAMPP , dan aktifkan **Apache** dan **MySQL**
 - Download file lapor.sql
