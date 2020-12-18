@@ -7,5 +7,8 @@
         protected $table = 'laporan';
         protected $useTimeStamps = true;
         protected $allowedFields = ['isi', 'lampiran', 'aspek'];
+        public function tampil(){
+            return $this->table('laporan')->findAll();
+        }
     }
 ?>

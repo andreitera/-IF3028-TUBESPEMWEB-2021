@@ -10,8 +10,9 @@ class Home extends BaseController
 	}
 	public function index()
 	{
+		$data['laporan'] = $this->homeModel->tampil();
 		echo view('templates/header');
-		echo view('index');
+		echo view('index', $data);
 		echo view('templates/footer');
 	}
 
