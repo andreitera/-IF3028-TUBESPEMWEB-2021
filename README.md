@@ -141,7 +141,7 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 - import file lapor.sql yang telah didwonload tadi.
 - Download file.zip project ini
 - Ekstrak file.zip ke direktori C:/xampp/htdocs
-- sesuaikan nama folder hasil ekstrak dengan base url (terdapat pada direktori C:/xampp/htdocs/application/config/config.php) `$config['base_url'] = 'http://localhost/`014_108 `';`
+- sesuaikan nama folder hasil ekstrak dengan base url (terdapat pada direktori C:/xampp/htdocs/application/config/config.php) `$config['base_url'] = 'http://localhost/` **014_108** `';`
 - Buka Browser dan jalankan "localhost/014_108"
 
 ### Knowledge
