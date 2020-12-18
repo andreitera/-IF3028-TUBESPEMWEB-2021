@@ -1,0 +1,79 @@
+<div style="background-color: #; 
+	border: 1px solid #17202A; 
+	height: auto; 
+	margin: 10px 0px; 
+	padding: 5px; 
+	text-align: right; width: auto;">
+	Cari
+</div>
+
+form {
+    width:100%;
+    margin:50px auto;
+    /* padding-top:20px;
+    padding-bottom; 0px;*/
+    position: relative;
+
+}
+.search {
+	padding: 20px 15px;
+	background-color: white;
+	border: 1px solid black;
+	margin-left: 300px;
+	width: 700px;
+	
+}
+.button{
+	position: relative;
+	padding: 20px 15px;
+	left:-8px;
+	border: 1px solid black;
+	color: black;
+}
+.button:hover {
+	background-color: white;
+	color:black;
+}
+.body1 p{
+	font-size: 15px;
+	text-align: justify;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.body2 p{
+	font-size: 15px;
+	text-align: justify;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.body2 span{
+	float:right;
+}
+.body3 p{
+	font-size: 15px;
+	text-align: justify;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.body3 span{
+	float:right;
+}
+.body4 p{
+	font-size: 15px;
+	text-align: justify;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.body4 span{
+	float:right;
+}
+.space1{
+	width: 25px;
+	height: 25px;
+	background: black;
+	border-radius: 100%;
+	margin-left: 650px;
+}

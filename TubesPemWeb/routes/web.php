@@ -27,3 +27,4 @@ Route::get('/buatlaporan','Controller@buatLaporan');
 Route::post('/simpanlaporan','Controller@simpanlaporan');
 Route::get('/tampilkanlaporan','Controller@tampilkanlaporan');
 Route::get('/logout','Controller@logout');
+Route::get('/listlaporan','Controller@listlaporan');

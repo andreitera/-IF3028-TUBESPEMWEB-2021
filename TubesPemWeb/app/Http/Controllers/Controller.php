@@ -107,5 +107,10 @@ public function simpanlaporan(Request $request){
 public function tampilkanlaporan(Request $request){
     dd($request);
 }
+public function listlaporan()
+{
+    return view('listlaporan');
+    
+}
 }
 
