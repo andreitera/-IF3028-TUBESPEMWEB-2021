@@ -1,13 +1,3 @@
-### Catatan
-Klo terjadi error saat akses, bisa coba diganti base urlnya di 'app/config/App.php'
-< br>
-baseURL = 'http://localhost/IF3028-TUBESPEMWEB-2021/public/'
-atau < br>
-baseURL = 'http://localhost:8080/
-atau < br>
-baseURL = 'http://localhost:8080/IF3028-TUBESPEMWEB-2021/public/'
-
-
 ## Simple `LAPOR` :heavy_exclamation_mark:
 Anda mengetahui aplikasi `lapor` yang dibuat oleh pemerintah republik indonesia? jika tidak silahkan kunjungi
 http://lapor.go.id, maka anda akan mendapatkan laman seperti gambar di bawah
