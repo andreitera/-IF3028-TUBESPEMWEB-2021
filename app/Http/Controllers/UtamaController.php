@@ -16,8 +16,9 @@ class UtamaController extends Controller
     public function cari(Request $request)
     {
         $cari = $request->input('cari');
-        $data = DB::table('reports')->where('laporan', 'like', $cari)->orderByDesc('id')->get();
-        return view('pencarian', ['data' => $data]);
+        $cari = '%' . $cari . '%';
+        $data = DB::table('reports')->where('judul', 'like', $cari)->orderByDesc('id')->get();
+        return view('Page.hasilPencarian', ['data' => $data]);
     }
 
     public function utama()
