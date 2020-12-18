@@ -18,10 +18,10 @@ Route::get('/',                                     'UtamaController@utama')->na
 
 Route::get('/formlapor',                          'ReportController@formlapor')->name('buat');
 Route::post('/formlapor',                         'ReportController@store')->name('store');
-Route::get('listlaporan',                           'ReportController@index')->name('laporan');
+Route::get('/listlaporan',                           'ReportController@index')->name('laporan');
 Route::get('/reports/{id}',                         'UtamaController@show')->name('show');
 
-Route::get('/hasilpencarian',                       'UtamaController@cari')->name('cari');
+Route::post('/hasilpencarian',                       'UtamaController@cari')->name('cari');
 
 Route::post('/laporan/{id}/edit',                   'ReportController@edit')->name('edit');
 Route::post('/laporan/{id}/edit/edit',              'ReportController@update')->name('storeedit');
