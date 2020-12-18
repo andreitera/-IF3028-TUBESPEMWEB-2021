@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">    
 
     <link rel="stylesheet" href="{{ asset('asset/css/Mainstyle.css') }}">
-
+    @yield('css')
 </head>
 <body>
     
@@ -25,9 +25,9 @@
                     
                     {{-- Menu --}}
                     <ul class="d-flex menus-nav">
-                        <li><a href="">menu</a></li>
-                        <li><a href="">menu</a></li>
-                        <li><a href="">menu</a></li>
+                        <li><a href="">TENTANG LAPOR!</a></li>
+                        <li><a href="">LAPORAN</a></li>
+                        <li><a href="">CARI ADUAN</a></li>
                     </ul>
                 </div>
 

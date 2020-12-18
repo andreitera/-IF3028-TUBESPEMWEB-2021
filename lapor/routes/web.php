@@ -15,3 +15,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'LaporController@listView')->name('listView');
 Route::get('/profil', 'ProfileController@showProfile')->name('showProfile');
+Route::get('/comment', 'LaporController@viewComment')->name('viewComment');
+Route::get('/lapor', 'LaporController@viewLapor')->name('viewLapor');
