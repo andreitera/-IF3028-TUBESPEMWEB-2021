@@ -22,6 +22,8 @@
 	font-weight: bold;
 }
 
+
+
 .container input{
 	border-radius: 10px;
 	margin-right: -6px;
@@ -62,6 +64,7 @@
 	color: red;
 	background-color: black;
 }
+
 
 footer {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
