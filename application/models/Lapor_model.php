@@ -12,7 +12,7 @@ class Lapor_model extends CI_Model
         date_default_timezone_set('Asia/Jakarta');
         $tanggal = date("Y-m-d H:i:s");
 
-        $file = $_FILES['file'];
+        $file = $_FILES['File'];
         if ($file = '') {
         } else {
             $config['upload_path'] = './asset/file';
@@ -33,6 +33,6 @@ class Lapor_model extends CI_Model
             "file" => $file
         ];
 
-        $this->db->insert('lapor', $this);
+        $this->db->insert('lapor', $data);
     }
 }
