@@ -4,10 +4,6 @@
    */
   class Model extends CI_model
   {
-    public function getusername($username)
-    {
-      return $this->db->query("SELECT * FROM user WHERE username='$username'");
-    }
     public function getakun($username,$password)
     {
       return $this->db->query("SELECT * FROM user WHERE username='$username' AND password='$password'");

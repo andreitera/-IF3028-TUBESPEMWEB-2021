@@ -6,7 +6,6 @@
     {
       parent::__construct();
       $this->load->model('Model');
-      $this->load->model('Model_data', 'md');
     }
 
     public function index()
@@ -26,7 +25,6 @@
       $username = $this->input->post('username');
       $password = $this->input->post('password');
       $getuser = $this->Model->getakun($username,$password);
-
       if($getuser->num_rows()>0)
       {
         $data =
@@ -41,7 +39,7 @@
       else
       {
         $this->session->set_flashdata('message', 'User tidak terdaftar');
-        redirect('home');
+        redirect('Home');
       }
     }
   }

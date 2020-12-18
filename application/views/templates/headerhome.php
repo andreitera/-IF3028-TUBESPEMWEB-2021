@@ -3,6 +3,7 @@
 <head>
 	<title>Simple Lapor</title>
 	<link rel="stylesheet" type="text/css" href="./assets/css/gaya.css">
+	<link rel="stylesheet" href="<?= base_url('/assets/css/style.css');?>">
 </head>
 <body>
 

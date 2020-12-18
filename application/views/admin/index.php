@@ -1,5 +1,5 @@
       <div class="content">
-        <button class="button button1" >Buat Laporan</button>
+        <button class="button button1" onclick="location.href='<?php echo base_url();?>crud/buat'">Buat Laporan</button>
         <div class="card">
           <?php
             function admin($text)
@@ -10,10 +10,7 @@
               }
             }
           ?>
-            <h4><b><?php foreach ($profil->result() as $row)
-            {
-            ?> <?= admin($row->username);  ?>
-          <?php } ?> </b></h4>
+            <h4><b><?= $this->session->userdata('username');  ?></b></h4>
             <p>Architect & Engineer</p>
         </div>
         <div>

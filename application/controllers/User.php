@@ -6,7 +6,7 @@
     {
       parent::__construct();
       $this->load->model('Model');
-      $this->load->model('Model_data','md');
+      $this->load->model('Model_data', 'md');
     }
 
     public function index()
@@ -25,8 +25,8 @@
         }
         else
         {
-          $sessionUser=$this->session->userdata('username');
-          if ($sessionUser=="admin")
+          $sessionUser = $this->session->userdata('username');
+          if ($sessionUser=='admin')
           {
             $isi['profil'] = $this->md->getdataadmin();
             $isi['data'] = $this->md->getdatalapor();
@@ -36,7 +36,6 @@
           }
           else
           {
-            $isi['user'] = $this->Model->getusername('$sessionUser');
             $isi['data'] = $this->md->getdatalapor();
             $isi['content'] = 'user/index';
             $this->load->view('templates/template_home', $isi);
