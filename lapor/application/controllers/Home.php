@@ -30,4 +30,10 @@ class Home extends CI_Controller {
 		$this->load->view('header');
 		$this->load->view('editlapor',$data);
 	}
+
+	public function cari($cari){
+		$data['laporan'] = $this->Model_laporan->cari($cari); //getlapor() ada di model Model_lapor
+		$data['coba'] = $cari;
+		$this->load->view('cari',$data);
+	}
 }

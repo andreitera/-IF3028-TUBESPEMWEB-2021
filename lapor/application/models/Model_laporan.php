@@ -40,9 +40,15 @@ class Model_laporan extends CI_Model {
   
   public function detail($id){
 		return $this->db->get_where('laporan', array('id'=>$id))->row_array();
-	
-	
-	}	
+  }	
+  
+  public function cari($cari){
+		$this->db->like('komentar', $cari);
+		$this->db->or_like('waktu', $cari);
+		$this->db->or_like('aspek', $cari);
+
+		return $this->db->get('laporan')->result_array();
+	}
 
 	public function edit($id){
 
