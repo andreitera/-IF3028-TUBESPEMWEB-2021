@@ -11,5 +11,9 @@
             $data["laporan"] = $this->Laporan_model->getAll();
             $this->load->view("tampilan_view", $data);
         }
+
+        public function tambah(){
+            $this->load->view("tambah_view");
+        }
     }
 ?>

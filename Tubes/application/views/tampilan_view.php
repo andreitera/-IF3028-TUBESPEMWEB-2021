@@ -31,7 +31,7 @@
 
 		<br>
 		<center>
-		<a href="#">Buat Laporan/Komentar</a>
+		<a href="<?php  echo site_url('Laporan_controller/tambah') ?>">Buat Laporan/Komentar</a>
 		</center>
 		
 
