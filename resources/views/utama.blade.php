@@ -7,16 +7,17 @@
 </head>
 <body>
     <h1>SIMPLE LAPOR!</h1>
-    <form action="" method="POST">
+    <form action="{{ route('cari')}}" method="POST">
     <label for="">
         <input type="text" name="cari" autocomplete="off" >
     </label>
     <button name="cari">Cari</button>
     </form>
     <a href="{{ url('/formlapor') }}">Buat laporan/komentar</a>
+    <a href="{{ url('/listlaporan') }}">Lihat Semua Laporan/Komentar</a>
 
     <ul>
-        @foreach ($reports as $report)
+        @foreach ($data as $report)
             <li>
                 {{ $report->laporan }}
                 <a href="/reports/{{ $report->id }}">Lihat Selengkapnya</a>
