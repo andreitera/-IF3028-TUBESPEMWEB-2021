@@ -228,7 +228,7 @@ li a:hover {
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
         <br>
-      <button class="btn-login" type="submit">Login</button>
+      <center><button class="btn-login" type="submit">Login</button></center>
      
     </div>
 

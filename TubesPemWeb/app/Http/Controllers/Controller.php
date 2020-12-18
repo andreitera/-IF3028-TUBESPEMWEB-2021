@@ -141,4 +141,12 @@ class Controller extends BaseController
             return view('listlaporan',['laporan'=>$laporan]);
         }
     }
+    public function hapusLaporan($id_laporan){
+        $hapus = DB::table('laporan')->where('id_laporan',$id_laporan)->delete();
+        if($hapus){
+            return redirect('/listlaporan');
+        }else{
+            echo 'Gagal Hapus';
+        }
+    }
 }
