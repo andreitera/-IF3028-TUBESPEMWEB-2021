@@ -1,55 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
     <style>
-    h1{
-        text-align: center;
-    }
-    body {
-        margin: 0;
-        padding: 0;
-    }
+        h1 {
+            text-align: center;
+        }
 
-    .nav{
-        text-align: right;
-        background-color: #2E8B57;
-        padding: 5px;
-        position: sticky;
-        top: 0;
-    }
+        body {
+            margin: 0;
+            padding: 0;
+        }
 
-    .nav a{
-        font-size: 18px;
-        font-weight: 400;
-        text-decoration: none;
-        color: white;
-    }
+        .nav {
+            text-align: right;
+            background-color: #2E8B57;
+            padding: 5px;
+            position: sticky;
+            top: 0;
+        }
 
-    .nav a:hover{
-        font-weight: bold;
-    }
+        .nav a {
+            font-size: 18px;
+            font-weight: 400;
+            text-decoration: none;
+            color: white;
+        }
 
-    .nav li{
-        display: inline;
-        list-style-type: none;
-        margin-right: 20px;
-    }
-    .container{
-        margin-left: 25%;
-        margin-right: 25%;
-    }
-    textarea{
-        resize: none;
-    }
-    .submit-lapor{
-        float: right;
-    }
+        .nav a:hover {
+            font-weight: bold;
+        }
+
+        .nav li {
+            display: inline;
+            list-style-type: none;
+            margin-right: 20px;
+        }
+
+        .container {
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .submit-lapor {
+            float: right;
+        }
     </style>
 </head>
+
 <body>
     <div class="nav">
         <ul>
@@ -64,7 +70,7 @@
         <p>Buat Laporan/Komentar</p>
         <hr>
         <div class="form-lapor">
-            <?php echo form_open_multipart('home/tambahLaporan');?>
+            <?php echo form_open_multipart('home/tambahLaporan'); ?>
             <!-- <input type="text" placeholder="Laporan/Komentar"> -->
             <textarea placeholder="Laporan/Komentar" name="laporan" id="" cols="117" rows="10"></textarea><br>
             <select style="padding: 10px;" name="aspek" id="">
@@ -78,4 +84,5 @@
         </div>
     </div>
 </body>
+
 </html>
