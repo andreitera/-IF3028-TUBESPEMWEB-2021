@@ -113,16 +113,27 @@ class Controller extends BaseController
         }
     }
 
+
     public function tampilkanlaporan(Request $request)
     {
         echo "Berhasil upload";
     }
+
 
     public function detailLaporan($id_laporan){
         $laporan = DB::table('laporan')->where('id_laporan',$id_laporan)->first();
         // dd($laporan);
         if ($laporan) {
             return view('laporan',['laporan'=>$laporan]);
+   
+       }
+
+    }
+    public function listlaporan(){
+        $laporan = DB::table('laporan')->get();
+        
+        if ($laporan) {
+            return view('listlaporan',['laporan'=>$laporan]);
         }
     }
 }

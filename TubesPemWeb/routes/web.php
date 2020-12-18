@@ -28,3 +28,4 @@ Route::post('/simpanlaporan','Controller@simpanlaporan');
 Route::get('/tampilkanlaporan','Controller@tampilkanlaporan');
 Route::get('/laporan/{id_laporan}','Controller@detailLaporan');
 Route::get('/logout','Controller@logout');
+Route::get('/listlaporan','Controller@listlaporan');
