@@ -5,7 +5,7 @@
 
 
 
-	<link rel="stylesheet" type="text/css" href="style/style_tampilan.css">
+	<link rel="stylesheet" href="<?php  echo base_url('style/style_tampilan.css') ?>">
 
 </head>
 <body>
