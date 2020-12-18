@@ -34,7 +34,8 @@
 	<?php echo form_close(); ?>
 	<hr>
 	<footer>
-		&copyCopyright 2019 - itera.ac.id
+		&copyCopyright 2020 - INFORMATIKA ITERA 2018
+		<br>Rahmat Ramadhan - Siraz Tri Denira - Rahmat Setiawan</br>
 	</footer>
 
 </div>
