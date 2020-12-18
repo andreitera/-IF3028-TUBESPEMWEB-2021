@@ -36,6 +36,10 @@ class Model_laporan extends CI_Model {
 		];
 
 		$this->db->insert('laporan', $data);
-	}
+  }
+  
+  public function detail($id){
+		return $this->db->get_where('laporan', array('id'=>$id))->row_array();
+	}	
 
 }

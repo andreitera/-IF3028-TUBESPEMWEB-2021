@@ -15,4 +15,11 @@ class Home extends CI_Controller {
 		$this->load->view('header');
 		$this->load->view('home',$data);
 	}
+
+	public function detail($id)
+	{	
+		$data['laporan'] = $this->Model_laporan->detail($id); //getlapor() ada di model Model_laporan
+		$this->load->view('header');
+		$this->load->view('detaillapor',$data);
+	}
 }

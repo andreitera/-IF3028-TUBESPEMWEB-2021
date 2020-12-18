@@ -24,8 +24,8 @@
 				<?php } ?>
 				<p> Lampiran : <?= $value["lampiran"];?></p>
 				<label>Waktu : <?= $value["waktu"];?></label>
-				<label>Aspek : <?= $value["lampiran"];?></label>
-				<a href="<?= base_url() ?>/Home/detail/<?php echo $value["id"] ?>"><p>Selengkapnya ></p></a>
+				<label>Aspek : <?= $value["aspek"];?></label>
+				<a href="<?= base_url() ?>/home/detail/<?php echo $value["id"] ?>"><p>Selengkapnya ></p></a>
 				<div class="line"></div>
 			</div>	
 		<?php }?>
