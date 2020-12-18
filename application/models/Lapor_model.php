@@ -33,7 +33,7 @@ class Lapor_model extends CI_model
 	// 	$this->db->update('lapor');
 	// }
 	public function uploadLaporan($table, $data)
-    {
-        return $this->db->insert($table, $data);
+	{
+		return $this->db->insert($table, $data);
 	}
 }
