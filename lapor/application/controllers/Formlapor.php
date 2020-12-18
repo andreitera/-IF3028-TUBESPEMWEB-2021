@@ -17,10 +17,10 @@ class Formlapor extends CI_Controller {
 
 	public function newLapor()
 	{
-		$this->form_validation->set_rules('komentar', 'komentar', 'required');
+		$this->form_validation->set_rules('komentar', 'Komentar', 'required|min_length[250]');
 		if($this->form_validation->run() == FALSE){
 			$this->load->view('header');
-			$this->load->view('home');
+			$this->load->view('formlapor');
 
 		}else{
 			$this->Model_laporan->tambah();
