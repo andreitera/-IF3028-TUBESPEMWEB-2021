@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class tampil extends CI_Controller
+class Tampil extends CI_Controller
 {
     public $nama_tabel = 'lapor';
 
@@ -36,16 +36,16 @@ class tampil extends CI_Controller
     {
         $isi = $this->input->post('isi-laporan');
         $aspek = $this->input->post('aspek');
-        $file = $_FILES['file']['name'];
+        $lampiran = $_FILES['lampiran']['name'];
 
-        if ($file = '') {
+        if ($lampiran = '') {
         } else {
-            $config['upload_path']   = './file/';
+            $config['upload_path']   = './lampiran/';
             $config['allowed_types'] = 'gif|jpg|png';
             $config['file_name']    = date('Y-m-d H-i-s', time());
             $this->load->library('upload', $config);
 
-            if ($this->upload->do_upload('file')) {
+            if ($this->upload->do_upload('lampiran')) {
                 $file = $this->upload->data('file_name');
             } else {
             }
@@ -53,7 +53,7 @@ class tampil extends CI_Controller
             $data = array(
                 'isi'       => $isi,
                 'aspek'     => $aspek,
-                'file'  => $file
+                'lampiran'  => $lampiran
             );
 
             $this->post_model->input_laporan($this->nama_tabel, $data);

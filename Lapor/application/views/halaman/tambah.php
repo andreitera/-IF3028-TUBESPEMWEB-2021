@@ -4,7 +4,7 @@
             <div class="buat-laporan">
                 <!-- <p>Buat Laporan/Komentar</p>
 				<hr> -->
-                <?php echo form_open_multipart('laporan/input', array('id' => 'form_laporan')); ?>
+                <?php echo form_open_multipart('tampil/input', array('id' => 'form_laporan')); ?>
                 <textarea placeholder="Ketik Laporan Anda..." name="isi-laporan" class="form_field" id="isi_laporan"></textarea>
 
                 <div class="custom-select">
@@ -19,7 +19,7 @@
                 </div>
                 <input type="file" name="lampiran" class="form_field" id="real-file" hidden="hidden" />
                 <button type="button" id="custom-button">pilih File</button>
-                <span id="custom-text">No file chosen, yet.</span>
+                <span id="custom-text">Belum Pilih File.</span>
                 <br>
 
                 <input class="btn px-5" type="submit" name="send" id="send-button" value="LAPOR!">
@@ -29,4 +29,4 @@
     </div>
 </section>
 
-<script src="<?php echo base_url(); ?>js/script2.js"></script>
+<script src="<?php echo base_url(); ?>js/script1.js"></script>

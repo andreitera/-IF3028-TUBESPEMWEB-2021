@@ -12,8 +12,8 @@
             <span>Aspek : <?php echo $post_item['aspek']; ?></span><br>
             <span>Dibuat pada : <?php echo $post_item['waktu']; ?> </span>
             <?php $id = $post_item['id']; ?>
-            <a class="black" href="<?php echo base_url('tampil/hapus/') . $id; ?>">Hapus</a>
-            <a class="black" href="<?php echo base_url('tampil/ubah/') . $id; ?>">Edit</a>
+            <a class="black" href="<?php echo base_url('tampil/delete/') . $id; ?>">Hapus</a>
+            <a class="black" href="<?php echo base_url('tampil/edit/') . $id; ?>">Edit</a>
         </div>
     </div>
 </section>

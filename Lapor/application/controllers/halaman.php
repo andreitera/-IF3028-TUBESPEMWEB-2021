@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class halaman extends CI_Controller
+class Halaman extends CI_Controller
 {
     public function index($page = 'home')
     {

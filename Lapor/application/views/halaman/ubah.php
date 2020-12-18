@@ -4,12 +4,12 @@
             <div class="buat-laporan">
                 <!-- <p>Buat Laporan/Komentar</p>
 				<hr> -->
-                <?php echo form_open_multipart('laporan/update/' . $laporan['id'], array('id' => 'form_laporan')); ?>
-                <textarea placeholder="Ketik Laporan Anda..." name="isi-laporan" class="form_field" id="isi_laporan"><?php echo $laporan['isi']; ?></textarea>
+                <?php echo form_open_multipart('tampil/update/' . $tampil['id'], array('id' => 'form_laporan')); ?>
+                <textarea placeholder="Ketik Laporan Anda..." name="isi-laporan" class="form_field" id="isi_laporan"><?php echo $tampil['isi']; ?></textarea>
 
                 <div class="custom-select">
                     <select name="aspek" class="form_field" id="aspek">
-                        <?php $default_aspek = $laporan['aspek'] ?>
+                        <?php $default_aspek = $tampil['aspek'] ?>
                         <option value"" hidden d>Pilih Kategori Pelaporan</option>
                         <option value="Dosen" <?php echo ($default_aspek == "Dosen") ? "selected" : ""; ?>>Dosen</option>
                         <option value="Staff" <?php echo ($default_aspek == "Staff") ? "selected" : ""; ?>>Staff</option>
@@ -20,7 +20,7 @@
                 </div>
                 <input type="file" name="lampiran" class="form_field" id="real-file" hidden="hidden" />
                 <button type="button" id="custom-button">Pilih File</button>
-                <span id="custom-text">No file chosen, yet.</span>
+                <span id="custom-text">Belum Pilih File.</span>
                 <br>
 
                 <input class="btn px-5" type="submit" name="send" id="send-button" value="LAPOR!">
@@ -30,4 +30,4 @@
     </div>
 </section>
 
-<script src="<?php echo base_url(); ?>js/script2.js"></script>
+<script src="<?php echo base_url(); ?>js/script1.js"></script>

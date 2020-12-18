@@ -1,5 +1,5 @@
 <section class="about" id="laporan-akhir">
-    <form class="searchbar" action="<?php echo base_url('tampil/cari') ?>" method="GET">
+    <form class="searchbar" action="<?php echo base_url('tampil/search') ?>" method="GET">
         <input type="search" name="keyword" id="search" placeholder="Kata kunci atau tracking ID...">
         <input type="submit" class="hidden">
     </form>
@@ -18,7 +18,7 @@
                             <p class="isi"><?php echo substr($post['isi'], 0, 400) . '...'; ?></p>
                         <?php } ?>
                         <p class="waktu">Waktu: <?php echo $post['waktu']; ?></p>
-                        <a class="btn mt-4 mb-5" href="<?php echo base_url() . 'tampil/view/' . $post['id']; ?>">Baca Selengkapya</a>
+                        <a class="btn mt-4 mb-5" href="<?php echo base_url() . 'tampil/view/' . $post['id']; ?>">Selengkapya</a>
                         <hr>
                     <?php endforeach; ?>
                 </div>
