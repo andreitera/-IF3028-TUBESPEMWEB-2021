@@ -33,7 +33,7 @@ class Home extends BaseController
 			'aspek' => $this->request->getPost('aspek'),
 			'lampiran' => $namaLampiran
 		]);
-		return redirect()->to('index');
+		return redirect()->to('/');
 	}
 	//--------------------------------------------------------------------
 
