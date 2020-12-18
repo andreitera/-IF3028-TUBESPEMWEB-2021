@@ -121,8 +121,9 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 ### Penjelasan Teknis
 
 `Penjelasan Teknis dan cara Instalasi.`
-** Brian Adam Sembiring | 14116014 | Front-End & Back-End **
-** M. Ryan Laksmana | 14116014 | Front-End & Back-End **
+
+Brian Adam Sembiring | 14116014 | Front-End & Back-End
+M. Ryan Laksmana | 14116014 | Front-End & Back-End
 
 1. ![](dukumenstasii/appflowchart.gif)
 
