@@ -8,7 +8,7 @@ class Laporan extends ResourceController
 {
     protected $modelName = 'App\Models\LaporanModel';
     protected $format    = 'json';
-    
+
     public function __construct()
     {
         helper('form');
@@ -55,7 +55,7 @@ class Laporan extends ResourceController
         //     $data1 = $this->request->getGetPost('datafield_1');
         //     $data2 = $this->request->getGetPost('datafield_2');
         //     $data3 = $this->request->getGetPost('datafield_3');
-            
+
         // $data = [
         //     'datafield_1' => $data1,
         //     'datafield_2' => $data2,

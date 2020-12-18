@@ -27,17 +27,16 @@ $submit = [
 $session = session();
 $errors = $session->getFlashdata('errors');
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lapor</title>
+    <title>SIMPLE LAPOR!</title>
 </head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="<?= base_url('css'); ?>/style.css">
-
 <body>
     <p>
         <?php if ($errors != null) : ?>
@@ -54,29 +53,33 @@ $errors = $session->getFlashdata('errors');
             </div>
         <?php endif ?>
     </p>
-    <h1>Simpel Lapor</h1>
-    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
-    <div>
-        <button id="myBtn">Lapor</button>
-    </div>
-    <hr>
-    <table id="myTable">
-        <tr class="header">
-            <th style="width:60%;">laporan</th>
-        </tr>
-        <?php foreach ($all as $data) : ?>
-            <tr>
-                <td>
-                    <?= $data->laporan ;?>
-                    <div>
-                    <p>Lampiran : <?= $data->lampiran ;?></p>
-                    <a href="<?= base_url('home/detail/'. $data->id)  ;?>">Lihat Selengkapnya</a>
-                    <p><?= $data->created_date ;?></p>
-                    </div>
-                </td>
-            </tr>
-        <?php endforeach; ?>
-    </table>
+
+    <center>
+      <h1>SIMPLE LAPOR!</h1>
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+      <br>
+      <button id="myBtn">Lapor</button>
+
+      <table id="myTable">
+          <tr class="header">
+              <th style="width:60%;">Laporan/Komentar terakhir</th>
+          </tr>
+          <?php foreach ($all as $data) : ?>
+              <tr>
+                  <td>
+                      <?= $data->laporan ;?>
+                      <div>
+                        <p>Lampiran : <?= $data->lampiran ;?></p>
+                        <a href="<?= base_url('home/detail/'. $data->id)  ;?>">Lihat Selengkapnya</a>
+                        <p><?= $data->created_date ;?></p>
+                        <hr style="background-color: black;">
+                      </div>
+                  </td>
+              </tr>
+          <?php endforeach; ?>
+      </table>
+    </center>
+
     <!-- modal -->
     <div id="myModal" class="modal">
         <!-- Modal content -->
@@ -115,7 +118,7 @@ $errors = $session->getFlashdata('errors');
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
 
-        // When the user clicks the button, open the modal 
+        // When the user clicks the button, open the modal
         btn.onclick = function() {
             modal.style.display = "block";
         }
@@ -170,6 +173,3 @@ $errors = $session->getFlashdata('errors');
 </body>
 
 </html>
-
-
-<!-- modal insert data -->
