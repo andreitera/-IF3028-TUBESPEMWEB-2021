@@ -21,7 +21,6 @@
     width: 80%; 
     padding: 30px 5px;
     padding-bottom: 5px;
-    background-color: #F7F8F9;
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
 }
@@ -80,8 +79,7 @@
 }
 
 .background{
-    padding: 30px 0;
-    background-color:  #F7F8F9;
+    padding: 0px 0;
 }
 
 .date{
