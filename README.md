@@ -143,6 +143,7 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 - Ekstrak file.zip ke direktori C:/xampp/htdocs
 - sesuaikan nama folder hasil ekstrak dengan base url (terdapat pada direktori C:/xampp/htdocs/application/config/config.php) `$config['base_url'] = 'http://localhost/` **014_108** `';`
 - Buka Browser dan jalankan "localhost/014_108"
+- Selesai
 
 ### Knowledge
 
