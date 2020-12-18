@@ -21,6 +21,7 @@
                 $this->session->set_flashdata('success','Berhasil dikirim');
             }
 
+            public function tambah();
             $this->load->view("tambah_view");
         }
     }
