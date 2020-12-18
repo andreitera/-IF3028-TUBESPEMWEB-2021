@@ -31,7 +31,7 @@
 
         
         <div class="data" style="float: right;"> 
-            <button class="submit" type="submit">Edit Laporan/Komentar</button>    
+            <a href="<?= base_url()?>home/edit/<?= $laporan["id"]?>"><button class="submit" type="submit">Edit Laporan/Komentar</button></a>    
             <button class="submit" type="submit">Hapus Laporan/Komentar</button>        
         </div>
 

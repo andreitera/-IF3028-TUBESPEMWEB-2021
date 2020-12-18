@@ -22,4 +22,12 @@ class Home extends CI_Controller {
 		$this->load->view('header');
 		$this->load->view('detaillapor',$data);
 	}
+
+	public function edit($id)
+	{
+		$data['aspek'] = ['Pilih Aspek Pelaporan/Komentar','Akademik','Fasilitas','Infrastruktur','Keamanan','Keuangan'];
+		$data['laporan'] = $this->Model_laporan->detail($id);
+		$this->load->view('header');
+		$this->load->view('editlapor',$data);
+	}
 }

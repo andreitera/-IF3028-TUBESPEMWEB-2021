@@ -33,4 +33,25 @@ class Formlapor extends CI_Controller {
 		}
 	}
 
+	public function edit($id){
+		
+		//validasi form
+		$this->form_validation->set_rules('komentar', 'Komentar', 'required|min_length[250]');
+		if($this->form_validation->run() == FALSE){
+			$data['aspek'] = ['Pilih Aspek Pelaporan/Komentar','Akademik','Fasilitas','Infrastruktur','Keamanan','Keuangan'];
+			$data['laporan'] = $this->Model_laporan->detail($id);
+			$this->load->view('editlapor',$data);
+			
+		}else{
+			$this->Model_laporan->edit($id);
+			echo "
+				<script>
+					alert('berhasil update data');
+					document.location.href='../../';
+				</script>
+				";
+		}
+		
+	}
+
 }
