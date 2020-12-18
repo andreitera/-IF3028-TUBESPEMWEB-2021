@@ -116,6 +116,23 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
       </li>
       <li>Jika proses telah selesai, aplikasi anda akan tersedia di dalam folder [nama_aplikasi_anda]</li>
    </ul>
+   <li>Pengaturan Database</li>
+   <ul>
+      <li>Pertama, buat database anda di localhost</li>
+      <li>Buka file `.env` di dalam folder aplikasi anda</li>
+      <li>Ubah line `DB_~` sesuai dengan konfigurasi database yang sudah anda buat. Contoh :
+         <pre>
+            <code>
+               DB_CONNECTION=mysql
+               DB_HOST=127.0.0.1
+               DB_PORT=3306
+               DB_DATABASE=tubespemweb
+               DB_USERNAME=root
+               DB_PASSWORD=
+            </code>
+         </pre>
+      </li>
+   </ul>
 </ol>
          
 ### Knowledge
