@@ -11,10 +11,7 @@
             $data["laporan"] = $this->Laporan_model->getAll();
             $this->load->view("tampilan_view", $data);
         }
-<<<<<<< HEAD
 
-        public function tambah(){
-=======
         public function add(){
             $laporan = $this->Laporan_model;
             $validation = $this->form_validation;
@@ -24,9 +21,9 @@
                 $laporan->save();
                 $this->session->set_flashdata('success','Berhasil dikirim');
             }
+        }
 
-            public function tambah();
->>>>>>> 4f26862da5afff580fe8a0506c19742490cc21fe
+            public function tambah(){
             $this->load->view("tambah_view");
         }
     }

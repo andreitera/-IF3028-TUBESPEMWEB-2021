@@ -2,14 +2,9 @@
 <html>
 <head>
 	<title>Tampilan Laporan</title>
-
-
-
-<<<<<<< HEAD
 	<link rel="stylesheet" href="<?php echo base_url('style/style_tampilan.css') ?>">
-=======
-	<link rel="stylesheet" href="<?php  echo base_url('style/style_tampilan.css') ?>">
->>>>>>> 45b750ce7d4734a0fd294388a90497972e844d98
+
+
 
 </head>
 <body>

@@ -2,6 +2,8 @@
 <html>
     <head>
         <meta charset="UTF-8">
+
+        
         <title>Tampilan Buat Laporan</title>
         <link rel="stylesheet" href="<?php echo base_url('style/style_tambah.css') ?>">
     </head>
