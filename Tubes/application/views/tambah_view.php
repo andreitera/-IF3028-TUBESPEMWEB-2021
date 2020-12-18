@@ -3,32 +3,34 @@
     <head>
         <meta charset="UTF-8">
         <title>Tampilan Buat Laporan</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style/style_tambah.css"></link>
+        <link rel="stylesheet" href="<?php echo base_url('style/style_tambah.css') ?>">
     </head>
     <body>
         <div class="container">
             <div class="content">
                 <h1>Layanan Aspirasi dan Pengajuan Online Mahasiswa IF ITERA</h1>
-                <form method="POST" enctype="multipart/form-data">
+                <form method="POST">
                     <p>Buat Laporan/Komentar</p>
                     <hr><br>
-                    <div class="form-group">
-                        <textarea placeholder="Laporan/Komentar" class="textarea"></textarea>
+                    <div>
+                        <textarea name="isi" placeholder="Laporan/Komentar" class="textarea"></textarea>
                     </div><br>
-                    <div class="form-group">
-                        <select class="select">
+                    <div>
+                        <select name="aspek" class="select">
                             <option>Pilih Aspek Pelaporan/Komentar</option>
-                            <option>Pelaporan</option>
-                            <option>Komentar</option>
+                            <option>Dosen</option>
+                            <option>Staff</option>
+                            <option>Mahasiswa</option>
+                            <option>Infrastruktur</option> 
+                            <option>Pengajaran</option> 
                         </select>
                     </div>
-                    <div class="form-group">
+                    <div>
                         <br>
-                        <input type="file" class="file">
+                        <input type="file" name="lampiran" class="file">
                     </div>
                     <br>
-                    <button type="submit" class="btn">Buat LAPOR!</button>
+                    <button type="submit" class="btn_tambah">Buat LAPOR!</button>
                     <hr><br><br>
                 </form>
             </div>
