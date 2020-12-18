@@ -6,7 +6,7 @@
 @section('content')
     <div class="center">
         <div>
-            <img src="{{ asset('asset/images/icons/profile.png') }}" class="profile-pict"/> 
+            <img src="{{ asset('asset/images/user-icon.png') }}" class="profile-pict"/> 
         </div>
         <div class="d-in-block width-91">
             <div class="date">30 Februari 2077, 23:59</div>
@@ -42,7 +42,7 @@
                 </div>
                 <div class="comment">
                     <div>
-                        <img src="{{ asset('asset/images/icons/profile.png') }}" class="profile-pict"/>
+                        <img src="{{ asset('asset/images/user-icon.png') }}" class="profile-pict"/>
                     </div>
                     <div class="d-in-block width-91">
                         <div class="date">
@@ -58,7 +58,7 @@
                 </div>
                 <div>
                     <div>
-                        <img src="{{ asset('asset/images/icons/profile.png') }}" class="profile-pict"/>
+                        <img src="{{ asset('asset/images/user-icon.png') }}" class="profile-pict"/>
                     </div>
                     <div class="d-in-block">
                         <form action=#>

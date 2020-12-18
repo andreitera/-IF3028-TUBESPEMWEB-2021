@@ -22,4 +22,9 @@ class LaporController extends Controller
         return view('Lapor.page.viewComment');
     }
 
+    public function viewSearch()
+    {
+        return view('Lapor.page.search');
+    }
+
 }
