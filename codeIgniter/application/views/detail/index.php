@@ -41,7 +41,8 @@
 	</ul>
 
 	<footer>
-		&copyCopyright 2019 - itera.ac.id		
+		&copyCopyright 2019 - itera.ac.id
+<br>Rahmat Ramadhan - Siraz Tri Denira - Rahmat Setiawan</br>		
 	</footer>
 </div>
 
