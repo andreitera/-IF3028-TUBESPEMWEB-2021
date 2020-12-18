@@ -1,9 +1,22 @@
+<<<<<<< HEAD
+ <!DOCTYPE html>
+<html lang="en">
+=======
 <!DOCTYPE html>
 <html>
+>>>>>>> 4805d50917ed9b573540c2dff9c9953345918049
 <head>
     <title>Lihat Laporan</title>
+    <link rel="stylesheet" href=" {{ asset('css/style.css') }} ">
 </head>
 <body>
+<<<<<<< HEAD
+    <h1>SIMPLE LAPOR!</h1>
+    <p>Detail Laporan/Komentar</p>
+    -------------------------------
+    <p>{{$data->laporan}}</p>
+    <p>{{$data->lampiran}}</p>
+=======
 <div class="header">
             <header style="text-align: center;margin: 50px;">
                 <h1>IF SIAGA LAPOR!</h1>
@@ -17,8 +30,9 @@
 
     <p>{{$report->laporan}}</p>
     <p>{{$report->lampiran}}</p>
+>>>>>>> 7426d3faffd160f5122a89c129e48a5f0fa54de3
     <p>{{$data->created_at}}</p>
-    <p>{{$report->aspek}}</p>
+    <p>{{$data->aspek}}</p>
 
     <form action="{{ route('edit', $data->id) }}" method="POST">
         @csrf
