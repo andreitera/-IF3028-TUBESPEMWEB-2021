@@ -8,6 +8,7 @@ use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Validation\Rule;
+use Illuminate\Support\Facades\Storage;
 
 class ReportController extends Controller
 {
@@ -46,26 +47,49 @@ class ReportController extends Controller
     public function store(Request $request)
     {
         $request->validate([
+            'pengirim' => ['nullable', 'max:255'],
+            'judul' => ['required'],
             'laporan' => ['required'],
             'aspek' => [Rule::requiredIf($request->input('aspek') == "1")],
-            'lampiran' => ['max:5120,', 'mimetypes:image/jpeg, image/png']
+            'lampiran' => ['nullable', 'mimetypes:image/jpeg,image/png,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.presentationml.presentation', 'max:10240']
         ]);
+        $pengirim = $request->input('pengirim');
+        $judul = $request->input('judul');
         $laporan = $request->input('laporan');
         $aspek = $request->input('aspek');
         $time = Carbon::now();
         $time = $time->setTimezone('Asia/Jakarta');
+        $filename = uniqid();
+        if ($pengirim == '') {
+            $pengirim = "Anonim";
+        }
+        if ($request->hasFile('lampiran')) {
+            $lampiran = $request->file('lampiran');
+            $path = "public/file";
+            $store = $lampiran->storeAs($path, $filename . '.' . $lampiran->extension());
+            $file = $request->root() . '/storage/file/' . $filename . '.' . $lampiran->extension();
+            if ($store == '') {
+                $file = "Tidak ada lampiran";
+            } else {
+                $lampiran = Storage::url($store);
+                $lampiran = $request->root() . $lampiran;
+            }
+        } else {
+            $file = "Tidak ada lampiran";
+        }
         try {
             DB::table('reports')->insertGetId([
+                'pengirim' => $pengirim,
+                'judul' => $judul,
                 'laporan' => $laporan,
                 'aspek' => $aspek,
-                'lampiran' => 'Tidak ada lampiran',
+                'lampiran' => $file,
                 'created_at' => $time,
             ]);
         } catch (Exception $th) {
             return redirect()->route('buat')->with('msg', "Laporan gagal dibuat");
-            // return redirect()->route('buat');
         }
-        return redirect()->route('home');
+        return redirect()->route('home')->with('msg', "Berhasil buat Laporan");
     }
 
     /**
@@ -101,19 +125,43 @@ class ReportController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
+            'pengirim' => ['nullable', 'max:255'],
+            'judul' => ['required'],
             'laporan' => ['required'],
             'aspek' => [Rule::requiredIf($request->input('aspek') == "1")],
-            'lampiran' => ['max:5120,', 'mimetypes:image/jpeg, image/png']
+            'lampiran' => ['nullable', 'mimetypes:image/jpeg,image/png,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.presentationml.presentation', 'max:10240']
         ]);
+        $pengirim = $request->input('pengirim');
+        $judul = $request->input('judul');
         $laporan = $request->input('laporan');
         $aspek = $request->input('aspek');
         $time = Carbon::now();
         $time = $time->setTimezone('Asia/Jakarta');
+        $filename = uniqid();
+        if ($pengirim == '') {
+            $pengirim = "Anonim";
+        }
+        if ($request->hasFile('lampiran')) {
+            $lampiran = $request->file('lampiran');
+            $path = "public/file";
+            $store = $lampiran->storeAs($path, $filename . '.' . $lampiran->extension());
+            $file = $request->root() . '/storage/file/' . $filename . '.' . $lampiran->extension();
+            if ($store == '') {
+                $file = "Tidak ada lampiran";
+            } else {
+                $lampiran = Storage::url($store);
+                $lampiran = $request->root() . $lampiran;
+            }
+        } else {
+            $file = "Tidak ada lampiran";
+        }
         try {
             DB::table('reports')->where('id', '=', $id)->update([
+                'pengirim' => $pengirim,
+                'judul' => $judul,
                 'laporan' => $laporan,
                 'aspek' => $aspek,
-                'lampiran' => 'lampiran',
+                'lampiran' => $file,
                 'created_at' => $time,
             ]);
         } catch (Exception $th) {
@@ -130,7 +178,7 @@ class ReportController extends Controller
      */
     public function destroy($id)
     {
-        if(DB::table('reports')->where('id', '=', $id)->exists()) {
+        if (DB::table('reports')->where('id', '=', $id)->exists()) {
             try {
                 DB::transaction(function () use ($id) {
                     DB::table('reports')->where('id', '=', $id)->delete();
@@ -139,8 +187,7 @@ class ReportController extends Controller
                 return redirect()->route('show', $id)->with('msg', 'Laporan gagal dihapus');
             }
             return redirect()->route('home')->with('msg', 'Laporan berhasil dihapus');
-        }
-        else {
+        } else {
             return redirect()->route('home')->with('msg', 'Laporan gagal dihapus');
         }
     }
