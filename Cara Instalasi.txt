@@ -1,0 +1,8 @@
+Nama : 1. M Rizki Ramadhan (14117117)
+       2. M Dupan Desradha E (14117118)
+
+Cara Instalasi :
+1. Import database dengan nama lapor
+2. Copy folder web ke dalam direktori server
+4. Atur base url file config.php di application/config sesuai dengan folder
+3. Buka web di web browser
