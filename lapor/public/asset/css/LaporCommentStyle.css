@@ -1,0 +1,153 @@
+/* viewLaporan */
+* {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.d-in-block{
+    display: inline-block;
+}
+
+.width-91{
+    width: 91%;
+}
+
+.center {
+    margin: auto;
+    width: 50%; 
+    padding: 40px;
+    background-color: #F7F8F9;
+    box-shadow: 0 4px 8px 0 grey;
+}
+
+.profile-pict{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    float: left;
+    margin-right: 20px;
+}
+
+.icon{
+    width: 12px;
+    height: 12px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.status{
+    color: grey;
+}
+
+.phone-number{
+    color: rgb(0, 119, 255);
+}
+
+.state{
+    color: rgb(9, 187, 3);
+}
+
+
+.padding-right{
+    padding-right: 10px;
+}
+
+.padding-bottom{
+    padding-bottom: 10px;
+}
+
+.p-left-50{
+    padding-left: 50px;
+}
+
+.p-left-10{
+    padding-left: 10px;
+}
+
+.bottom-border{
+    border-bottom: 1px solid gray;
+}
+
+.bold{
+    font-weight: bold;
+    color: black;
+}
+
+.background{
+    padding: 30px 0;
+    border: 1px solid;
+    background-color: rgb(236, 236, 236);
+}
+
+.date{
+    color: grey;
+    float: right;
+    font-size: 10px;
+}
+
+.profile{
+    padding: 10px 0;
+}
+
+.header{
+    color: rgb(0, 89, 255);
+}
+
+.left-sidebar{
+    width: 10%;
+    height: 100px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+/* viewKomentar */
+.active-comment{
+    color:  rgb(0, 89, 255);
+    border-bottom: 2px solid  rgb(0, 89, 255);
+}
+
+.comment-section{
+    background-color: rgb(236, 236, 236);
+    padding: 10px;
+}
+
+.comment-alert{
+    background-color: rgb(255, 115, 0);
+    color: white;
+    padding: 5px;
+}
+
+.comment{
+    margin: 20px 0;
+}
+
+.add-comment{
+    background-color: white;
+    color: grey;
+    padding: 10px;
+    border: transparent;
+}
+
+.send-button{
+    color: white;
+    background-color:  rgb(0, 89, 255);
+}
+
+.close-button{
+    color: rgb(0, 89, 255);
+    background-color: transparent;
+}
+
+.send-button, .close-button{
+    display: inline-block;
+    text-align: center;
+    width: 70px;
+    height: 30px;
+    border: transparent;
+}
