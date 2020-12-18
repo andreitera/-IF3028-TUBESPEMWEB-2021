@@ -61,7 +61,7 @@
 
 .container a:hover{
 	text-decoration: none; 
-	color: red;
+	color: rgb(255, 230, 0);
 	background-color: black;
 }
 
@@ -106,7 +106,7 @@ select{
 }
 
 #submit:hover, .container form button:hover{
-	background-color: salmon;
+	background-color: rgb(250, 236, 114);
 	color: black;
 	font-weight:bold;
 }
