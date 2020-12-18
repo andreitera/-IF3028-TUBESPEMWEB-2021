@@ -31,7 +31,7 @@ class Model_laporan extends CI_Model {
 		$data = [
 			"komentar" => $this->input->post('komentar'),
 			"aspek" => $this->input->post('aspek'),
-      "lampiran" => $lampiran,
+      "lampiran" => $file,
       "waktu" => $waktu
 		];
 
