@@ -14,7 +14,7 @@
 
 <body>
     <h1>SIMPLE LAPOR!</h1>
-    <form action="{{ route('search') }}" method="POST">
+    <form action="{{ route('cari') }}" method="POST">
         @csrf
         <label for="">
             <input type="text" name="cari" autocomplete="off">
