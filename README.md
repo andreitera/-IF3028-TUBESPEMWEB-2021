@@ -99,8 +99,25 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
-
+<ol>
+   <li>Instalasi Framework Laravel 8 di Windows</li>
+   <ul>
+      <li>Install composer di [getcomposer.org](https://getcomposer.org)</li>
+      <li>Jika composer sudah terinstall, buka terminal dan install aplikasi Laravel Installer secara global (agar memudahkan instalasi untuk berikutnya) dengan menjalankan perintah :
+         <pre>
+            <code>composer global require laravel/installer</code>
+         </pre>
+      </li>
+      <li>Jika Laravel Installer sudah terinstall, pindahkan lokasi proses terminal anda saat ini ke lokasi dimana anda akan menginstall aplikasi laravel</li>
+      <li>Pada terminal anda, jalankan perintah :
+         <pre>
+            <code>laravel new [nama_aplikasi_anda]</code>
+         </pre>
+      </li>
+      <li>Jika proses telah selesai, aplikasi anda akan tersedia di dalam folder [nama_aplikasi_anda]</li>
+   </ul>
+</ol>
+         
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
 - CSS: margin, padding, header tag, font-size, text-align, float, clear, border, color, div, span, placeholder, 
