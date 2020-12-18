@@ -9,10 +9,10 @@
     <h1>SIMPLE LAPOR!</h1>
     <p>Detail Laporan/Komentar</p>
     -------------------------------
-    <p>{{$report->laporan}}</p>
-    <p>{{$report->lampiran}}</p>
+    <p>{{$data->laporan}}</p>
+    <p>{{$data->lampiran}}</p>
     <p>{{$data->created_at}}</p>
-    <p>{{$report->aspek}}</p>
+    <p>{{$data->aspek}}</p>
 
     <form action="{{ route('edit', $data->id) }}" method="POST">
         @csrf
