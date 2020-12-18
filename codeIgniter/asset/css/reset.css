@@ -22,7 +22,11 @@ time, mark, audio, video {
 
 html {
 	background-image: url("https://static.vecteezy.com/system/resources/previews/001/260/919/non_2x/abstract-yellow-black-geometric-overlapping-background-vector.jpg");
+	height: 100%;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
 }
+
 
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
