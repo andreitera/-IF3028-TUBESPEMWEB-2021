@@ -123,6 +123,14 @@
             height: 50px;
             font-size: 20px;
             font-family: Arial, Helvetica, sans-serif;
+            margin-top: 25px;
+        }
+        a {
+          text-decoration: none;
+          color: white;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 20px;
+          margin-top: 25px;
         }
 
     </style>

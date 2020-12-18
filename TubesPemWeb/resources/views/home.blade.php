@@ -7,12 +7,13 @@
         
         /* Full-width input fields */
         input[type=text], input[type=password] {
-          width: 80%;
+          width: 75%;
           padding: 20px 20px 20px 20px;
           margin: 8px 0;
           display: inline-block;
           border: 1px solid #ccc;
           box-sizing: border-box;
+          margin-left: 15px;
         }
         
         /* Set a style for all buttons */
@@ -38,6 +39,7 @@
           margin-right: 22px;
           border: none;
           cursor: pointer;
+          margin-top: 15px;
           /* width: 100%; */
         }
         
@@ -58,10 +60,12 @@
           text-align: center;
           margin: 24px 0 12px 0;
           position: relative;
+          display: block;
+          /* float: left; */
         }
         
         img.avatar {
-          width: 40%;
+          width: 50%;
           border-radius: 50%;
         }
         
@@ -96,7 +100,7 @@
           margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
           border: 1px solid #888;
           width: 30%; /*Could be more or less, depending on screen size */
-          height: 50%;
+          height: 40%;
           padding-left: 20px;
           padding-right: 20px;
         }
@@ -238,8 +242,8 @@ li a:hover {
 
 
 <div class="header">
-    <h1>Layanan Aspirasi dan Pengaduan Online Rakyat</h1>
-    <p>Sampaikan laporan Anda langsung kepada instansi pemerintah berwenang</p>
+    <h1>Layanan Aspirasi dan Pengaduan Online</h1>
+    <p>Sampaikan laporan Anda langsung ke Prodi Informatika</p>
   </div>
 
 
