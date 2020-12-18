@@ -25,28 +25,22 @@
 			</form>
 			<br>
 
-		<center><a href="/buatlaporan"></a></p>Buat Laporan/Komentar <i class="fa fa-plus" aria-hidden="true"></i> </center>
+		<center><a href="/buatlaporan">Buat Laporan/Komentar <img class="tambah" src="{!!asset('assets/img/websatu.jpg')!!}"></a></p> </center>
 
         </br>
 
 	<div class="body1">
 		<p>Laporan/Komentar Terakhir</p>
-		<hr color="black" size="2" width="93%">
-		<p>Lorem ipsum dolor sit amet, consectetuur adipiscing elit. Nunc maximus, nulla ut commado sapittis, sapien dui mattis dui, non pulvinar lorem felis nec erat. torem iptum dolor sit amet, consecterur adipiscing elit. Nunc maximus, rulta ut comnodo sagittin, sapien dui mattis dui, non pulvinar lorem felis nec erat. Lorem psum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, saplen dui mattis pulvinar lorem felis nec erat</p><br>
 	</div>
+	@foreach ($laporan as $lprn)
+	@php($selengkapnya = substr($lprn->isi_laporan,0,300))
 	<div class="body2">
-		<p>Lampiran: Gambar.jpg <span>Waktu <a href="">Lihat Selengkapnya ></a></span></p>
 		<hr color="black" size="2" width="93%">
-		<p>Lorem ipsum dolor sit amet, consectetuur adipiscing elit. Nunc maximus, nulla ut commado sapittis, sapien dui mattis dui, non pulvinar lorem felis nec erat. torem iptum dolor sit amet, consecterur adipiscing elit. Nunc maximus, rulta ut comnodo sagittin, sapien dui mattis dui, non pulvinar lorem felis nec erat. Lorem psum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, saplen dui mattis pulvinar lorem felis nec erat</p><br>
-	</div> 
-	<div class="body3">
-		<p>Lampiran: Gambar.doc <span>Waktu <a href="">Lihat Selengkapnya ></a></span></p>
-		<hr color="black" size="2" width="93%">
-		<p>Lorem ipsum dolor sit amet, consectetuur adipiscing elit. Nunc maximus, nulla ut commado sapittis, sapien dui mattis dui, non pulvinar lorem felis nec erat. torem iptum dolor sit amet, consecterur adipiscing elit. Nunc maximus, rulta ut comnodo sagittin, sapien dui mattis dui, non pulvinar lorem felis nec erat. Lorem psum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, saplen dui mattis pulvinar lorem felis nec erat</p><br>
+		<h3>{{$lprn->judul_laporan}}</h3>
+		<p>{{$selengkapnya}} ......</p>
+		<p>Lampiran: {{$lprn->lampiran}} <span>Waktu : {{$lprn->tgl_kejadian}} <a href="/laporan/{{$lprn->id_laporan}}">Lihat Selengkapnya ></a></span></p>
 	</div>
-	<div class="body4">
-		<p>Lampiran: Gambar.jpg <span>Waktu <a href="">Lihat Selengkapnya ></a></span></p><hr color="black" size="2" width="93%">
-	</div>
+	@endforeach 
 	<div class="space1"></div><br>
 	<div class="space1"></div><br>
 	<div class="space1"></div>
