@@ -15,7 +15,7 @@
 		<button type="submit" name="submit">CARI</button>
 	</form>
 
-	<a href="" ><h3>Buat Laporan / Komentar</h3></a>
+	<a href="" ><h3>Buat Keluhan +</h3></a>
 	<h4>laporan / komentar terakhir</h4>
 	<hr />
 	<ul>
@@ -24,7 +24,7 @@
 			<h4 style="margin-bottom: 20px;"><?php echo $value["isi"]; ?></h4>
 			<h4 class="lampiran">lampiran : foto.jpg</h4>
 			<a href=""><h4 class="detail">selengkapnya>></h4></a>
-			<h4 class="waktu" style="margin-right: 10px;">waktu : <?php echo $value["tanggal"]; ?></h4>
+			<h4 class="waktu" style="margin-right: 10px;">Tanggal : <?php echo $value["tanggal"]; ?></h4>
 			<div style="clear: both"></div>
 		</li>
 		<hr />
