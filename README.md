@@ -1,7 +1,7 @@
 KELAS  : PABW RD 2020
 ANGGOTA: TIO FAZRI FAHMI SAPUTRA (14116123)
          M ICHSAN AL-FATIH (14116126)
-         LIGA SEPTIAN ()
+         LIGA SEPTIAN (14117039)
 ======================PENJELASAN TEKNIS=========================
 
 1. Instalasi framework
