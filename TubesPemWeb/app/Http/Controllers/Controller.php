@@ -43,7 +43,12 @@ class Controller extends BaseController
                 'password' => $request->psw
             ]
         );
-        return redirect('/');
+
+        if($user) {
+            $request->session()->put('login',$user);
+            return redirect('/buatlaporan');
+        }
+
     }
 
     public function loginUser(Request $request)
@@ -57,7 +62,7 @@ class Controller extends BaseController
         $user = DB::table('user')->where('username', $request->uname)->where('password', $request->psw)->first();
 
         if ($user) {
-            $request->session()->put('login', 'Diki Alfarabi Hadi');
+            $request->session()->put('login',$user);
             return redirect('/buatlaporan');
         } else {
             return redirect('/register');
