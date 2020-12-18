@@ -26,4 +26,5 @@ Route::post('/loginUser','Controller@loginUser');
 Route::get('/buatlaporan','Controller@buatLaporan');
 Route::post('/simpanlaporan','Controller@simpanlaporan');
 Route::get('/tampilkanlaporan','Controller@tampilkanlaporan');
+Route::get('/laporan/{id_laporan}','Controller@detailLaporan');
 Route::get('/logout','Controller@logout');

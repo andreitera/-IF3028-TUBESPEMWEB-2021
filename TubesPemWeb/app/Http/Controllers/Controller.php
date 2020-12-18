@@ -117,4 +117,12 @@ class Controller extends BaseController
     {
         echo "Berhasil upload";
     }
+
+    public function detailLaporan($id_laporan){
+        $laporan = DB::table('laporan')->where('id_laporan',$id_laporan)->first();
+        // dd($laporan);
+        if ($laporan) {
+            return view('laporan',['laporan'=>$laporan]);
+        }
+    }
 }
