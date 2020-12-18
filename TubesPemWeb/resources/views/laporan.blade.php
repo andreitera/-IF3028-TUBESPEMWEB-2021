@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>{{$laporan->judul_laporan}} | SIMPLE LAPOR!</title>
     <style> 
     .container {
             width: 1000px;
@@ -31,7 +31,7 @@
             list-style: none;
         }
         .hapus {
-            margin-left: 600px;
+            margin-left: 550px;
         }
         .edit {
             margin-left: 10px;
@@ -60,7 +60,7 @@
             <span>Aspek : {{$laporan->tipe_laporan}}</span>
             <span>Dibuat pada : {{$laporan->tgl_kejadian}}</span>
             
-            <a class="hapus" href="">Hapus</a>
+            <a class="hapus" href="/hapuslaporan/{{$laporan->id_laporan}}">Hapus</a>
             <a class="edit" href="">Edit</a>
 
         </div>
