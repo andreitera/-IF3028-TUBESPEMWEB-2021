@@ -13,10 +13,31 @@
             <input type="text" class="search_bar">
             <button class="search_btn">CARI</button>
         </form>
-        <a href="<?php base_url();?>buat">Buat Laporan/Komentar</a>
+        <a class="komentar" href="<?php base_url();?>buat">Buat Laporan/Komentar</a>
     <br>
         <p>Laporan/Komentar Terakhir</p>
     <hr>
+    <?php foreach($lapor as $u) { ?>
+        <?php echo $u -> isi ?>
+        <br>
+        <br>
+        <div class="waktu">
+            <div class="row40">
+                <p>Lampiran : <?php echo $u -> lampiran ?> </p>
+            </div>
+            <div class="row40">
+                <p class="right">Waktu : <?php echo $u -> waktu ?> </p>
+            </div>
+            <div class="row20">
+                <a class="right lihat" href="">lihat Selengkapnya</a>
+            </div>
+        </div>
+        <hr>
+
+    <?php
+    }
+    ?>
+
     <br>
         <img src="asset/icon/menu.png" class="more_pic" alt="TITIK3">
     <br>

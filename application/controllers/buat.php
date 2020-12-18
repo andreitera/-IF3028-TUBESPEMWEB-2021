@@ -41,9 +41,4 @@ class Buat extends CI_Controller {
             redirect('home');
         }
 	}
-    
-    public function home()
-	{
-		echo "abc";
-	}
 }

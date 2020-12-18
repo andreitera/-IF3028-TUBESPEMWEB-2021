@@ -8,6 +8,10 @@ h1 {
     text-align: center;
 }
 
+p {
+    margin: 0;
+}
+
 .search_bar {
     width: 100%;
     height: 50px;
@@ -25,16 +29,40 @@ h1 {
     justify-content: center;
 }
 
-a {
+.komentar {
     margin-top: 20px;
     text-decoration: none;
     display: flex;
     justify-content: center;
     color: black;
+    cursor: pointer;
 }
 
 .more_pic {
     margin: 0 auto;
     display: block;
     height: 30px;
+}
+
+.waktu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row40 {
+    flex: 40%;
+}
+
+.row20 {
+    flex: 20%;
+}
+
+.right {
+    float: right;
+}
+
+.lihat {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
 }
