@@ -9,22 +9,14 @@
     <link rel="stylesheet" href=" {{ asset('css/style.css') }} ">
 </head>
 <body>
-<p>LAPOR!</p>
-<p>Tentang Lapor!</p>
-<p>Laporan</p>
-<p>Cari Aduan</p>
 
 <h1>Berikut hasil pencarian</h1>
 
-<form action="" method="POST">
-        @csrf
-        <button type="submit">Cari Aduan</button>
-    </form>
-
-    <ul>
+    @foreach ($data as $report)
         <li>
-            <a href="">Lihat Selengkapnya</a>
+            {{ $report->laporan }}
+            <a href="/reports/{{ $report->id }}">Lihat Selengkapnya</a>
         </li>
-    </ul>
+    @endforeach
 </body>
 </html>
