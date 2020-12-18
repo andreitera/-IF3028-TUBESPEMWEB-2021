@@ -26,5 +26,9 @@
             public function tambah(){
             $this->load->view("tambah_view");
         }
+
+        public function detail(){
+            $this->load->view("detail_view");
+        }
     }
 ?>
