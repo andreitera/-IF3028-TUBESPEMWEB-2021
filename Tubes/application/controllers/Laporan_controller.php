@@ -11,5 +11,17 @@
             $data["laporan"] = $this->Laporan_model->getAll();
             $this->load->view("tampilan_view", $data);
         }
+        public function add(){
+            $laporan = $this->Laporan_model;
+            $validation = $this->form_validation;
+            $validation->set_rules($laporan->rules());
+
+            if($validation->run()){
+                $laporan->save();
+                $this->session->set_flashdata('success','Berhasil dikirim');
+            }
+
+            $this->load->view("tambah_view");
+        }
     }
 ?>
