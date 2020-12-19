@@ -99,7 +99,9 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+- Instalasi framework: melakukan download file Codeigniter 3 melalui website codeigniter lalu extract ke folder tubes utama.
+- Koneksi database: mengkoneksikan database simple_lapor dengan mengkonfigurasi file database.php
+- validasi client-side: menggunakan javascript untuk mengkonfirmasi atau memberi tahu kepada client terhadap apa yang akan dilakukan.
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
