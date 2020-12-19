@@ -13,7 +13,9 @@
     @yield('css')
 </head>
 <body>
-    
+    {{-- Footer Template --}}
+    @include('Lapor.layout.search')
+
     {{-- navbar Templae --}}
     <section id="navbar">
         <div class="container">
