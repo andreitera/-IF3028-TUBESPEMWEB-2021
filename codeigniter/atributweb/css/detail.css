@@ -1,0 +1,80 @@
+html {
+	background-image: url("https://image.freepik.com/free-vector/elegant-business-background-with-lines-template_1361-2542.jpg");
+	background-size: 100%;
+}
+
+body {
+	width: 900px;
+	margin: auto;
+}
+.recomended {
+	margin-top: 50px;
+	width: 900px;
+	background-color: rgb(205, 228, 221);
+	border: 1px solid;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-right: 25px;
+	padding-left: 25px;
+	border-radius: 10px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font: inherit;
+}
+.recomended .recomendedkiri img {
+	float: left;
+	margin: 0px 5px 5px 0;
+	box-shadow: 5px 7px 2px #333;
+}
+.recomended h1 {
+	text-align: center;
+}
+.recomended .recomendedkiri {
+	float: left;
+	margin: 10px 5px 5px 10px;
+	width: 900px;
+	font: inherit;
+	vertical-align: baseline;
+}
+.recomended .recomendedkiri .isi {
+	float: left;
+	font: inherit;
+}
+
+.recomended .recomendedkiri .lampiran {
+	float: left;
+	width: 450px;
+}
+
+.recomended .recomendedkanan {
+	margin: 10px 5px 5px 10px;
+	width: 900px;
+}
+
+.recomended a {
+	text-decoration: none;
+	color: #000;
+}
+.recomended a:hover {
+	color: blue;
+}
+.recomended h3 {
+	color: blue;
+}
+.recomended .recomendedkanan .ubah {
+	float: right;
+}
+.recomended .recomendedkanan .hapus {
+	float: right;
+}
+.recomended .recomendedkanan .wit {
+	float: left;
+}
+
+.recomended .recomendedkanan .wit {
+	float: right;
+}
+
+footer {
+	text-align: center;
+	background-color: rgb(80, 127, 131);
+}
