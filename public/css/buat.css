@@ -1,0 +1,63 @@
+body{
+	margin: 0;
+	padding: 0;
+
+}
+.container {
+	margin: 3% 18% 10% 18% ;
+	
+}
+hr{
+	height: 1px;
+	background-color: black ;
+}
+
+.container h2{
+	text-align: center;
+	font-weight: lighter;
+	font-size: 36px;
+	font-family: sans-serif;
+	letter-spacing: 2px;
+}
+
+.container .main{
+	margin-top: 70px;
+}
+.container .main p{
+	
+}
+
+.container .main input:focus{
+	outline: none;
+}
+
+.container .main textarea{
+	width: 100%;
+	height: 400px;
+	border: 2px solid black ;
+	padding: 15px;
+	box-sizing: border-box;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+.container .main select{
+	padding: 10px;
+	padding-right: 5px;
+	margin-bottom: 30px;
+	display: block;
+}
+
+.container .main input {
+display: block;
+margin-bottom: 30px;
+
+}
+
+.container .main .tombol button{
+	
+	display: block;
+	padding: 15px;
+	margin-left: 88%;
+	margin-bottom: 50px;
+}
