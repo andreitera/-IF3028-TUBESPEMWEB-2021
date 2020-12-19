@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
 
         
-        <title>Tampilan Buat Laporan</title>
+        <title>Edit Laporan</title>
         <link rel="stylesheet" href="<?php echo base_url('style/style_tambah.css') ?>">
     </head>
     <body style="background-image: url('<?php echo base_url('img/bg1.jpg') ?>'); background-size: cover;">
@@ -12,7 +12,7 @@
             <div class="content">
                 <h1>Layanan Aspirasi dan Pengajuan Online Mahasiswa IF ITERA</h1>
                 <form method="POST">
-                    <p>Buat Laporan/Komentar</p>
+                    <p>Edit Laporan/Komentar</p>
                     <hr><br>
                     <div>
                         <input type="hidden" name="id" value="<?php echo $laporan->id ?>">

@@ -61,7 +61,7 @@
 			 <?php  echo "<p>$value->isi</p><br>"; ?>
 			 <p><img src="<?php  echo base_url('img/file.png') ?>" width="20px" height="20px"></p>
 
-			 <div style="margin-top: -40px; margin-bottom: 17px; margin-left: 25px;">
+			 <div style="margin-top: -40px; margin-bottom: 17px; margin-left: 25px; width: 290px;">
 
 			 Lampiran: <?= $value->lampiran ?>
 
@@ -77,7 +77,6 @@
 
 		<div style="margin-top: -34px; margin-left: 678px;">
 	
-
 					<img src="<?php  echo base_url('img/next-button.png') ?>" width="20px" height="20px">
 
 				</a>	

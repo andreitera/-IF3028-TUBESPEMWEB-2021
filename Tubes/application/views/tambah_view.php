@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
 
         
-        <title>Tampilan Buat Laporan</title>
+        <title>TambahLaporan</title>
         <link rel="stylesheet" href="<?php echo base_url('style/style_tambah.css') ?>">
     </head>
     <body style="background-image: url('<?php echo base_url('img/bg1.jpg') ?>'); background-size: cover; ">
