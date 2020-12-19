@@ -25,9 +25,9 @@
                     
                     {{-- Menu --}}
                     <ul class="d-flex menus-nav">
-                        <li><a href="">TENTANG LAPOR!</a></li>
-                        <li><a href="">LAPORAN</a></li>
-                        <li><a href="">CARI ADUAN</a></li>
+                        <li><a href="">Tentang Lapor!</a></li>
+                        <li class="active"><a href="">Laporan</a></li>
+                        <li><a href="">Cari Aduan</a></li>
                     </ul>
                 </div>
 

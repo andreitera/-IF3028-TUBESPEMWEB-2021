@@ -6,7 +6,7 @@
 
 a {
     text-decoration: none;
-    color: black;
+    color: rgb(46, 102, 221);
 }
 
 li {
@@ -24,6 +24,7 @@ li {
 
 .d-flex {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .space-bettwen {
@@ -34,6 +35,7 @@ li {
     height: auto;
     background: #fff;
     padding: 10px 0;
+    /* padding-bottom: 20px; */
     margin-bottom: 20px;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
@@ -44,11 +46,26 @@ li {
 
 .menus-nav {
     line-height: 4.7rem;
+    font-size: 16px;
+    font-weight: 20px;
 }
 
 .menus-nav > li {
     padding: 0 20px;
     padding-bottom: 5px;
+}
+
+.menus-nav > li > a {
+    color: #494949;
+    transition: all .2s;
+}
+
+.menus-nav > li > a:hover {
+    color: #777777;
+}
+
+.active {
+    border-bottom: 1.9px solid rgb(151, 36, 36);
 }
 
 .profile {
@@ -203,4 +220,100 @@ aside > p{
 
 #institution-name{
     width: 211px;
+}
+
+.col-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 27.333333%;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 10px;
+}
+
+.col-8 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 56.666667%;
+    flex: 0 0 63.666667%;
+    max-width: 66.666667%;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 10px;
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.bg-card-white {
+    background-color: rgb(255, 255, 255);
+    width: auto;
+    height: auto;
+}
+
+.border-right-none {
+    border-right: none !important;   
+} 
+
+input:focus {
+    border: none !important;
+}
+
+.mb-5 {
+    margin-bottom: 15px;
+}
+
+.card {
+    background-color:  rgb(255, 255, 255);
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+    padding: 0;
+    border-radius: 2px;
+    height: auto;
+    width: auto;
+}
+
+.card > img {
+    border-radius: 2px 2px 0 0;
+}
+
+.flex-wrap-none {
+    flex-wrap: inherit !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.float-right {
+    float: right !important;
+}
+
+.w-50 {
+    max-width: 100%;
+    width: 47vw !important;
+}
+
+.p-3 {
+    padding: 5px 15px;
+}
+
+.icons {
+    width: 12px;
+    height: 12px;
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
 }
