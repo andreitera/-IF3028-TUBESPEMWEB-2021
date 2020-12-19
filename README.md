@@ -101,6 +101,10 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 ### Penjelasan Teknis
 `Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
 - Instalasi Framework : Pada program ini, Framework yang digunakan ialah Framework CodeIgniter 3. Pada instalasi CodeIgniter hanya perlu memindahkan file CodeIgniter yang sudah didownload ke dalam folder C:/xampp/htdocs/ dan pastikan bahwa kita telah menginstal Xampp pada komputer kita, agar program dapat dijalankan.
+- Koneksi Database : Pada koneksi database ini, dapat dilakukan dengan menambahkan libraries database ke dalam autoload.php yang ada dalam folder application/config/ cari baris $autoload['libraries'] = array(''); dan ubah menjadi seperti ini $autoload['libraries'] = array('Database'); setelah itu setting database dengan cara buka database.php cari username dan nama database lalu isi username dan nama database tersebut menjadi seperti ini 'username' => 'root', 'database' => 'lapor', "
+'password" => '' dan 'hostname' => 'localhost'.
+- Melakukan validasi pada client-side : Pada validasi digunakan kode javascript. Validasi digunakan pada file buat_laporan.php. Dan validasi yang dilakukan yaitu memastikan pengguna telah menginputkan form yang telah ditentukan.
+- Melakukan AJAX (mulai dari pengguna melakukan klik pada tombol LAPOR! sampai laporan/komentar terkirim).
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
