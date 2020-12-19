@@ -379,7 +379,6 @@ svg:not(:root) {
 #search-bar{
     height: 100px;
     background: #222222;
-    position: fixed;
     width: 100%;
     color: #fff;
     z-index: 10000;
