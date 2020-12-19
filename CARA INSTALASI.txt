@@ -13,6 +13,8 @@ Cara Instalasi:
 
 -Ekstrak file.zip ke direktori C:/xampp/htdocs
 
--Sesuaikan nama folder hasil ekstrak dengan base url (terdapat pada direktori C:/xampp/htdocs/application/config/config.php) $config['base_url'] = 'http://localhost/ 014_108 ';
-Buka Browser dan jalankan "localhost/014_108"
-Selesai
+-Sesuaikan nama folder hasil ekstrak dengan base url (terdapat pada direktori C:/xampp/htdocs/application/config/config.php) `$config['base_url'] = 'http://localhost/` **-IF3028-TUBESPEMWEB-2021** `';`
+
+-Buka Browser dan jalankan sesuai nama folder hasil ekstrak, "localhost/-IF3028-TUBESPEMWEB-2021"
+
+-Selesai
