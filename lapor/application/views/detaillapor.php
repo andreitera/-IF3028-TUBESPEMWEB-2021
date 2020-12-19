@@ -23,7 +23,7 @@
             <label>Waktu: <?= $laporan["waktu"]; ?></label>
             <label style="margin-left: 20px;">Aspek: <?= $laporan["aspek"]; ?></label>
 
-            <a class="btn-detail" href="">Hapus Laporan/Komentar</button>        
+            <a class="btn-detail" href="<?= base_url()?>home/delete/<?= $laporan["id"]?>" onclick="return confirm('yakin ingin hapus?');">Hapus Laporan/Komentar</button>        
             <a class="btn-detail" style="margin-right:20px;" href="<?= base_url()?>home/edit/<?= $laporan["id"]?>">Edit Laporan/Komentar</a>    
         </div>
 
