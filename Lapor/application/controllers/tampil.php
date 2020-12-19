@@ -74,7 +74,8 @@ class Tampil extends CI_Controller
     {
         $searchkey = array('id' => $id);
         $data['tampil'] = $this->post_model->get_lapor($id);
-        $this->load->view('tampilan/header');
+        $data1['lapor'] = $this->post_model->get_lapor();
+        $this->load->view('tampilan/header', $data1);
         $this->load->view('halaman/ubah', $data);
         $this->load->view('tampilan/footer');
     }
@@ -97,7 +98,8 @@ class Tampil extends CI_Controller
     {
         $keyword = $this->input->get('keyword');
         $data['result'] = $this->post_model->search_data($keyword, $this->nama_tabel);
-        $this->load->view('tampilan/header');
+        $data1['lapor'] = $this->post_model->get_lapor();
+        $this->load->view('tampilan/header', $data1);
         $this->load->view('halaman/cari', $data);
         $this->load->view('tampilan/footer');
     }
