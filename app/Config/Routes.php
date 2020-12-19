@@ -34,8 +34,8 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Beranda::index');
 $routes->get('/detail', 'Beranda::detail');
 $routes->get('/buatLaporan', 'Beranda::buatLaporan');
-
-$routes->get('/detail/(:segment)', 'Beranda::detail/$1');
+$routes->delete('/detail/(:num)', 'Beranda::delete/$1');
+$routes->get('/detail/(:any)', 'Beranda::detail/$1');
 /**
  * --------------------------------------------------------------------
  * Additional Routing

@@ -17,15 +17,19 @@
             </header>
 
             <p>Detail Laporan/Komentar</p>
-            <br><br>
+
             <p class="isi-laporan"><?= $laporan['isi_laporan']; ?></p>
-            <p>Lampiran:</p>
+            <p class="lampiran">Lampiran:</p>
             <img src="/img/<?= $laporan['lampiran']; ?>" alt="Lampiran" height="300px" width="200px">
             <br><br>
             <div class="bottom-bar">
-                <p> Waktu: <time datetime="2019-11-20">20-11-2019 20:00</time> </p>
-                <p> Aspek: Infrastruktur </p>
-                <p> Laporan/Komentar</p>
+                <p>Waktu:</p>
+                <p>Aspek: Infrastruktur</p>
+                <form action="/detail/<?= $laporan['id']; ?>" method="POST">
+                    <?= csrf_field(); ?>
+                    <input type="hidden" name="_method" value="DELETE">
+                    <button type="submit">Hapus Laporan/Komentar</button>
+                </form>
             </div>
 
         </div>

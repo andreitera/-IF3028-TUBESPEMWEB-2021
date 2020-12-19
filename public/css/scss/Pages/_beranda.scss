@@ -25,6 +25,18 @@
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+
+    a {
+      position: relative;
+      padding-right: 1rem;
+
+      &:before {
+        content: "+";
+        position: absolute;
+        right: 0;
+        font-weight: 900;
+      }
+    }
   }
 
   .container-listLaporan {

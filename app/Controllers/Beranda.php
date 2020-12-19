@@ -50,8 +50,12 @@ class Beranda extends BaseController
 	public function buat()
 	{
 		$fileLampiran = $this->request->getFile('lampiran');
-		$fileLampiran->move('img');
-		$namaLampiran = $fileLampiran->getName();
+		if ($fileLampiran->getError() == 4) {
+			$namaLampiran = '';
+		} else {
+			$fileLampiran->move('img');
+			$namaLampiran = $fileLampiran->getName();
+		}
 
 		$this->laporanModel->save([
 			'isi_laporan' => $this->request->getVar('isiLaporan'),
@@ -64,6 +68,11 @@ class Beranda extends BaseController
 		return redirect()->to('/');
 	}
 
+	public function delete($id)
+	{
+		$this->laporanModel->delete($id);
+		return redirect()->to('/');
+	}
 	//--------------------------------------------------------------------
 
 }

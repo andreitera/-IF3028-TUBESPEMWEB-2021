@@ -66,6 +66,18 @@ a {
   gap: 0.5rem;
 }
 
+.container-beranda .buat-laporan a {
+  position: relative;
+  padding-right: 1rem;
+}
+
+.container-beranda .buat-laporan a:before {
+  content: "+";
+  position: absolute;
+  right: 0;
+  font-weight: 900;
+}
+
 .container-beranda .container-listLaporan {
   width: 100%;
   margin-top: 3rem;
@@ -116,10 +128,21 @@ p {
   text-align: justify;
   border-bottom: 1px solid black;
   padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 .isi-laporan {
   border-bottom: none;
+  margin-bottom: 2rem;
+  padding-bottom: 0;
+}
+
+.lampiran {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+img {
   margin-bottom: 2rem;
 }
 
@@ -127,21 +150,32 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   border-bottom: 1px solid black;
   padding-bottom: 0.5rem;
 }
 
 .bottom-bar p {
-  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: 0;
+  margin-right: auto;
 }
 
-.bottom-bar p:last-child {
+.bottom-bar button {
+  display: inline-block;
+  background-color: white;
+  border: none;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1rem;
   margin-left: auto;
   position: relative;
   padding-right: 1rem;
 }
 
-.bottom-bar p:last-child:before {
+.bottom-bar button:before {
   content: "+";
   position: absolute;
   right: 0;

@@ -17,9 +17,10 @@
             <option value="Pengajaran">Pengajaran</option>
         </select>
 
-        <input type="file" name="lampiran">
+        <input type="file" name="lampiran" id="file">
 
-        <button type="submit">Buat LAPOR!</button>
+        <button type="submit" id="submit">Buat LAPOR!</button>
     </form>
 </div>
+
 <?= $this->endSection(); ?>

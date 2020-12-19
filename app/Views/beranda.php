@@ -9,7 +9,6 @@
 
     <div class="buat-laporan">
         <a href="/buatLaporan">Buat Laporan/Komentar</a>
-        <img src="<?= base_url('img/bx-plus.svg'); ?>" alt="Icon Tambah">
     </div>
 
     <div class="container-listLaporan">
