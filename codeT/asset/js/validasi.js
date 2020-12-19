@@ -1,3 +1,4 @@
+//cek validasi laporan
 function validasiKeluhan(){
 	var x= document.forms["formTambah"]["lapor"].value;
 	var y= document.forms["formTambah"]["gambar"].value;
@@ -18,7 +19,7 @@ function validasiKeluhan(){
 		return false;
 	}
 }
- 
+//cek validasi ketika data diubah
 function validasiUbah(){
 	var a= document.forms["formUbah"]["lapor"].value;
 	var b= document.forms["formUbah"]["gambar"].value;
