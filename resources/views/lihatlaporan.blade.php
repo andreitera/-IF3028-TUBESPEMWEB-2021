@@ -42,12 +42,15 @@ body{
     .lampiran{
         display: block;
     }
+    h1{
+        font-family: Helvetica;
+    }
     </style>
 
     </head>
     <body>
         <div class="header">
-            <h1>SIMPLE LAPOR!!</h1>
+            <h1>SIMPLE LAPOR!</h1>
         </div>
         <div class="conten">
         <p class="textlaporan"> Buat Laporan/Komentar</p>
