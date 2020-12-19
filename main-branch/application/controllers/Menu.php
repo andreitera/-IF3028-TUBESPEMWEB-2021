@@ -13,6 +13,7 @@ class Menu extends CI_Controller
 
     public function index()
     {
+        $data['laporan'] = $this->menu_model->laporan();
         $this->load->view('menu/index', /*$data*/);
     }
 }
