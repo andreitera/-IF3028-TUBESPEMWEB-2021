@@ -5,13 +5,8 @@ class Home_model extends CI_model{
         return $this->db->get('tb_laporan',4)->result_array();
     }
 
-    // function ambildata($table){
-    //     return $this->db->get($table);
-    // }
 
     public function tambahLaporan(){
-  
-			$ekstensi_diperbolehkan	= array('doc','docx','xls','xlsx','ppt','pptx','pdf');
 			$file = $_FILES['myFile']['name']; 
 			$x = explode('.', $file);
 			$ekstensi = strtolower(end($x));

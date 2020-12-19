@@ -1,61 +1,73 @@
-<html>
-    <head >
-    <meta charset="utf-8">
-        <title>
-            <?php echo $title; ?>
-        </title>
 
-        <script type="text/javascript" src="<?php echo base_url().'assets/js/jquery-3.5.1.min.js' ?>"></script>
+<!doctype html> 
+ 
+ <html lang="en">
+    <head> 
+      <meta charset="utf-8">
+      <title><?php echo $judul; ?> </title>
+       
+     <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.1">
+     <script src="assets/js/validasi.js"></script>
+     
     </head>
+  <body>
+    <p class="title">SIMPLE LAPOR!</p>
 
-    <body>
-        <div class="container">
-            <h1>SIMPLE LAPOR!</h1>
+    <div class="laporarea">
+        <form class="formsearch" onSubmit="return pencarian(this)" action="<?php echo base_url('Search')?>" method="post">
+            <input class="search" type="text" name="keyword" placeholder="search" autocomplete="off" autofocus>	
+            <input class="button" type="submit" name="submit"  placeholder="cari" value="Cari">	           
+        </form>
 
-            <form class="pencarian" onSubmit="return pencarian(this)" action="<?php echo base_url('cari')?>" method="post">
+        <a class="linkcreate" href="<?php base_url(); ?>create">Buat Laporan / Komentar &nbsp<img src="assets/icon/add.png" height="13px"></a>
+        <p class="subtitle">Laporan/Komentar Terakhir</p>
+        <hr> <br> <br>
+            
+        <?php foreach ($home as $hm )  :?>
+          <?php $id = $hm['id_lapor']; ?>
+          <?php $now = date("Y-m-d H:i"); ?>
+                  
+          <div class="arsip"> 
+            <p><?php echo substr($hm['laporan'], 0, 450); ?></p>
+          </div><br>
+            
+          <?php
+            echo "<tr>
+                  <a class='more' href='detail?detail_id=$id'>Lihat Selengkapnya > &nbsp</a>		
+                  </tr>";
+          ?>
 
-             <input class="search" type="text" name="keyword" placeholder="search" autocomplete="off" autofocus>	
-       
-             <input class="button" type="submit" name="submit"  placeholder="cari" value="Cari">	 
-       
-            </form>
+          <div class="waktu">
+            <?php 
+              $date = new DateTime($hm['waktu']);
+              echo 'Waktu : ';
+              echo $date->format('d-m-Y H:i'); // 21-01-2017 05:13:03
+            ?>
+          </div> 
 
-        <a class="buat" href="<?php base_url(); ?>buat">Buat Laporan / Komentar &nbsp<img src="#" height="13px"></a>
+          <div class="lampir">
+            <?php
+              echo 'Lampiran:'; 
+              echo  $hm['lampiran']; 
+            ?>
+          </div>
+
+          <br> <hr> <br>
+        <?php endforeach; ?> 
         
-        <p class="subjudul">Laporan/Komentar Terakhir</p>
-        <hr>
-    <br>
-    <br>
-    <div id="target">
 
+        <img class="gambar" src="<?php echo base_url(); ?>assets/icon/titik.png">
+        <img class="gambar" src="<?php echo base_url(); ?>assets/icon/titik.png">
+        <br>
+      </div>    
     </div>
 
-
-
-        </div>
-
-
-        <script type="text/javascript">
-        ambilData();
-            function ambilData(){
-                 $.ajax({
-                     type: 'POST',
-                     url: '<?php echo base_url()."index.php/Home/ambildata" ?>', 
-                    dataType: 'json',
-                    success: function(data){
-                        var baris='';
-                        for(var i=0; i<data.length; i++){
-                            baris+=  '<div>' + data[i].isi_lapor + '</div><br>'+ 
-                            '<div class="lampir">'+'<?php echo "Lampiran: ";?>'+data[i].lampiran + '</div>'+
-                            '<div class="waktu">'+'<?php echo "Waktu: ";?>'+data[i].waktu+'</div>'+
-                            '<hr>';
-                        }
-                        $('#target').html(baris);
-
-                    }
-                 })
-            }
-        </script>
-        
-    </body>
+     
+  </body>
 </html>
+
+
+
+
+
+
