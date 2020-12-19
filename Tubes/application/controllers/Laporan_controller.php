@@ -26,7 +26,11 @@
 
             $this->load->view("tambah_view");
         }
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> d358eb1d19fc6145a568087b352e3f2818f46a85
         public function edit($id = null){
             if (!isset($id)) redirect('tampilan_view');
         
