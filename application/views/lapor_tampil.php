@@ -8,27 +8,32 @@
 	.data th, td{
 		padding: 5px;
 	}
+
+	.latu{
+		display: flex;
+		justify-content: space-between;
+	}
 </style>
 
+<h1 style="text-align: center;">SIMPLE LAPOR!</h1>
+<br>
 
-<table class="data" border="1">
-	<tr>
-		<th>No.</th>
-		<th>Laporan</th>
-		<th>Lampiran</th>
-		<th>Waktu</th>
-	</tr>
+<p style="text-align: center;">Buat Laporan/Komentar</p>
+
+<p>Laporan/Komentar Terakhir</p>
+<hr>
+
 	<?php
-	$no = 1; 
 		foreach ($utama as $u => $row) { ?>
 			<tr>
-				<td><?=$no++;?></td>
-				<td><?=$row->isi;?></td>
-				<td><?=$row->lampiran;?></td>
-				<td><?=$row->waktu;?></td>
+				<div class="isi">
+					<p>
+						<?=$row->isi;?>
+					</p>
+					<br>
+				</div>
+				<hr>
 			</tr>
 		<?php
 		}
-		?> 
-	
-</table>
+		?>
