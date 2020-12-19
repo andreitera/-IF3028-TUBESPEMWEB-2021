@@ -16,13 +16,6 @@ class Home extends BaseController
 		echo view('templates/footer');
 	}
 
-	public function create()
-	{
-		echo view('templates/header');
-		echo view('create');
-		echo view('templates/footer');
-	}
-
 	public function view($id)
 	{
 		$data['item'] = $this->homeModel->get($id);
@@ -33,16 +26,40 @@ class Home extends BaseController
 		
 	}
 
-	public function save()
+	public function create()
+	{
+		echo view('templates/header');
+		echo view('create');
+		echo view('templates/footer');
+	}
+
+	public function edit($id) {
+		$data['item'] = $this->homeModel->get($id);
+
+		echo view('templates/header');
+		echo view('update', $data);
+		echo view('templates/footer');
+	}
+
+	public function save($id = false)
 	{	
 		$fileLampiran = $this->request->getFile('lampiran');
 		$fileLampiran->move('assets/uploaded_file');
 		$namaLampiran = $fileLampiran->getName();
-		$this->homeModel->save([
-			'isi' => $this->request->getPost('konten'),
-			'aspek' => $this->request->getPost('aspek'),
-			'lampiran' => $namaLampiran
-		]);
+		if($id) {
+			$this->homeModel->save([
+				'id' => $id,
+				'isi' => $this->request->getPost('konten'),
+				'aspek' => $this->request->getPost('aspek'),
+				'lampiran' => $namaLampiran
+			]);
+		} else {
+			$this->homeModel->save([
+				'isi' => $this->request->getPost('konten'),
+				'aspek' => $this->request->getPost('aspek'),
+				'lampiran' => $namaLampiran
+			]);
+		}
 		return redirect()->to('/');
 	}
 	
