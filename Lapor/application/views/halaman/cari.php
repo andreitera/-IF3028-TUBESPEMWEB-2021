@@ -3,7 +3,6 @@
         <input type="search" name="keyword" id="search" placeholder="Kata kunci atau tracking ID...">
         <input type="submit" class="hidden">
     </form>
-    <h1 class="text-cari display-4">CARI ADUAN</h1>
     <div class="container">
         <div class="row">
             <div class="text-center text-md-left">

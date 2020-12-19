@@ -39,7 +39,7 @@ input[type="search"] {
 	-webkit-transition: width 650ms ease-in-out;
 	transition: width 650ms ease-in-out;
 	outline: none;
-	position: relative;
+	align-items: center;
 	left: 50%;
 	transform: translate(-50%, 50%);
 }
