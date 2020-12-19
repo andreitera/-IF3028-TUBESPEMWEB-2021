@@ -9,6 +9,9 @@
     <form method="POST" action="{{ route('laporbuat') }}" enctype="multipart/form-data" class="form">
         Buat Laporan/Komentar
         <div class="bar"></div>
+        <input type="text" name="from" class="inpt" placeholder="Nama Pengirim" style="margin-top: 20px !important">
+        <br>
+        <input type="text" name="title" class="inpt" placeholder="Judul Laporan/Komentar">
         <textarea id="laporan" name="laporan" placeholder="Laporan/Komentar"></textarea>
         <select name="aspek" id="aspek">
             <option value="" disabled selected>Pilih Aspek Pelaporan/Komentar</option>
