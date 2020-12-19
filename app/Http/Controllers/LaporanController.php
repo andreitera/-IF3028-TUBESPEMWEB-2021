@@ -10,7 +10,7 @@ class LaporanController extends Controller
 {
 
     public function home() {
-        $data = DB::table('laporan')->orderByDesc('id')->limit(3)->get();
+        $data = DB::table('laporan')->orderByDesc('id')->get();
         return view('home', ['data' => $data]);
     }
     /**
