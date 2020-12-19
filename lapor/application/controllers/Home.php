@@ -36,4 +36,8 @@ class Home extends CI_Controller {
 		$data['coba'] = $cari;
 		$this->load->view('cari',$data);
 	}
+	public function delete($id){
+		$this->Model_laporan->delete($id);
+		redirect('home');
+	}
 }
