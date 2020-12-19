@@ -100,6 +100,9 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 
 ### Penjelasan Teknis
 `Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+ 1. Instalasi framework dilakukan dengan  mengextract codeigniter yang telah di download kedalam folder tugas Lapor. Langkah selanjutnya yaitu mengubah tampilan awal dengan mengubah url defaultnya. Pada bagian untuk menghubungkan dengan basis data yaitu di folder application -> folder config -> database.php, kemudian isi pada bagian 'username' => 'root','database' => 'lapor','dbdriver' => 'mysqli'
+ 3. Pada AJAX, kami menerapkan nya pada halaman detail, yaitu ketika akan menghapus data komentar/laporan tersebut. Kami menggunakan fungsi onclick yang jika ditekan akan muncul sebuah pop-up yang isinya yes or no. Jika yes ditekan maka data komentar/laporan tersebut akan terhapus dan jika no ditekan maka data komentar/laporan tersebut tidak akan terhapus.
+   
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.

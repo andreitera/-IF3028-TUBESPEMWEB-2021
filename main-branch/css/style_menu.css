@@ -1,0 +1,43 @@
+.judul {
+    text-align: center;
+    
+}
+
+.judul a {
+    color: black;
+    text-decoration: none;
+}
+
+.kotak {
+    width: 1000px;
+    padding: 20px;
+}
+
+input[type="file"]{
+    display: none;
+}
+.up {
+    background-color: white;
+    color: black;
+    padding: 19px;
+    border: 1px solid black;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+
+.kolom{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.kanan  {
+    float: right;
+    margin-top: -55px;
+}
+
+.kanan a {
+    color: black;
+    text-decoration: none;
+}
