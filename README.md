@@ -1,3 +1,9 @@
+## Anggota
+1. Mohamad Yusuf Rizaldi
+2. Said Rizky Abizard
+3. Faidil Zikri
+
+
 ## Simple `LAPOR` :heavy_exclamation_mark:
 Anda mengetahui aplikasi `lapor` yang dibuat oleh pemerintah republik indonesia? jika tidak silahkan kunjungi 
 http://lapor.go.id, maka anda akan mendapatkan laman seperti gambar di bawah
@@ -99,7 +105,10 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+- Cara validasi isi laporan dengan minlength pada text area serta pada js (saat update).
+- Instalasi Framework menggunakan Codeigniter.
+- Pembuatan Database menggunakan MySql.
+- Koneksi Database menggunakan atribut Codeigniter.
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
@@ -114,4 +123,5 @@ anchor tag.
 ### About :honeybee:
 
 Dosen       : Dicky Prima Satya, M.T., Andre Febrianto, S.Kom., M.Eng., Amirul Iqbal, S.Kom., M.Eng.
+
 
