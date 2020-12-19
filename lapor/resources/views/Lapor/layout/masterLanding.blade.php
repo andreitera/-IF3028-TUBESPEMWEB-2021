@@ -29,7 +29,7 @@
                             {{-- Menu --}}
                             <ul class="d-flex menus-nav menus-nav-lad">
                                 <li><a href="">Tentang Lapor!</a></li>
-                                <li><a href="">Laporan</a></li>
+                                <li><a href="{{ route('list.laporan') }}">Laporan</a></li>
                                 <li><a href="">Cari Aduan</a></li>
                             </ul>
                         </div>
@@ -41,8 +41,8 @@
                                 <span class="color-white">Nestiawan Ferdiyanto</span>
                                 <span><img class="icon-down" class="color-white" src="{{ asset('asset/images/icons/caret-down.svg') }}" width="15px" height="15px" alt=""></span>
                             @else --}}
-                                <a href="">Masuk</a>
-                                <a href="">Daftar</a>    
+                                <a href="{{ route('login.user') }}">Masuk</a>
+                                <a href="{{ route('register.user') }}">Daftar</a>    
                             {{-- @endif --}}
 
                         </div>
