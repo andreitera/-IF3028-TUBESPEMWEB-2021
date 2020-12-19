@@ -18,6 +18,7 @@ class CreateSetCitiesTable extends Migration
             $table->foreignId('province_id');
             $table->string('name', 80);
             $table->timestamps();
+            $table->softDeletes();
             $table->foreign('province_id')->references('id')->on('set_provinces')->cascadeOnDelete();
         });
     }

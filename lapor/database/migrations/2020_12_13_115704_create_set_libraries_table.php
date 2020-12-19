@@ -18,6 +18,7 @@ class CreateSetLibrariesTable extends Migration
             $table->foreignId('category_id');
             $table->string('name', 120);
             $table->timestamps();
+            $table->softDeletes();
             $table->foreign('category_id')->references('id')->on('set_categories')->cascadeOnDelete();
         });
     }

@@ -17,6 +17,6 @@ class SetCategories extends Model
     // relation table
     public function libraries()
     {
-        return $this->belongsTo('App\Models\SetLibraries', 'category_id')->withDefault();
+        return $this->hasMany('App\Models\SetLibraries', 'category_id');
     }
 }

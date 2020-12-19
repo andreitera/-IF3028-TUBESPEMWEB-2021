@@ -19,6 +19,7 @@ class CreateKomentarTable extends Migration
             $table->integer('lapor_id')->unsigned();
             $table->longText('komentar');
             $table->timestamps();
+            $table->softDeletes();
             $table->foreign('user_id')->references('id')->on('users')->cascadeOnDelete();
             $table->foreign('lapor_id')->references('id')->on('lapor')->cascadeOnDelete();
         });

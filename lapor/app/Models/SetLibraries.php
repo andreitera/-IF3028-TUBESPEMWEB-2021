@@ -17,26 +17,26 @@ class SetLibraries extends Model
     // relation table
     public function categories()
     {
-        return $this->hasMany('App\Models\Categories', 'category_id');
+        return $this->belongsTo('App\Models\SetCategories', 'category_id')->withDefault();
     }
 
     public function users()
     {
-        return $this->belongsTo('App\Models\Users', 'role_id')->withDefault();
+        return $this->hasMany('App\Models\Users', 'role_id');
     }
 
-    public function laporanType()
+    public function lapor_laporan_type_id()
     {
-        return $this->belongsTo('App\Models\Lapor', 'laporan_type_id')->withDefault();
+        return $this->hasMany('App\Models\Lapor', 'laporan_type_id');
     }
 
-    public function category()
+    public function lapor_category_id()
     {
-        return $this->belongsTo('App\Models\Lapor', 'category_id')->withDefault();
+        return $this->hasMany('App\Models\Lapor', 'category_id');
     }
 
-    public function status()
+    public function lapor_status_id()
     {
-        return $this->belongsTo('App\Models\Lapor', 'status_id')->withDefault();
+        return $this->hasMany('App\Models\Lapor', 'status_id');
     }
 }

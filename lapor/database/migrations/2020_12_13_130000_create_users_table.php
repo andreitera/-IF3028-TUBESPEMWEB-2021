@@ -19,10 +19,11 @@ class CreateUsersTable extends Migration
             $table->foreignId('role_id');
             $table->string('email')->unique();
             $table->string('username')->unique();
-            $table->string('no_tlp')->nullable();
+            $table->string('no_tlp', 20)->nullable();
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
+            $table->softDeletes();
             $table->foreign('role_id')->references('id')->on('set_libraries')->cascadeOnDelete();
         });
     }

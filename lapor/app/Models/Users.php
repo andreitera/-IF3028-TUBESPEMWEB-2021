@@ -16,18 +16,18 @@ class Users extends Authenticatable
     protected $dates 	= ['deleted_at'];
 
     // relation table
-    public function provinces()
+    public function libraries()
     {
-        return $this->hasMany('App\Models\SetLibraries', 'role_id');
+        return $this->belongsTo('App\Models\SetLibraries', 'role_id')->withDefault();
     }
 
     public function lapor()
     {
-        return $this->belongsTo('App\Models\Lapor', 'user_id')->withDefault();
+        return $this->hasMany('App\Models\Lapor', 'user_id');
     }
 
     public function comment()
     {
-        return $this->belongsTo('App\Models\Comment', 'user_id')->withDefault();
+        return $this->hasMany('App\Models\Comment', 'user_id');
     }
 }

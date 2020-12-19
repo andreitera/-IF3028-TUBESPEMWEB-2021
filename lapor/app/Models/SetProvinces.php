@@ -17,11 +17,11 @@ class SetProvinces extends Model
     // relation table
     public function cities()
     {
-        return $this->belongsTo('App\Models\SetCities', 'province_id')->withDefault();
+        return $this->hasMany('App\Models\SetCities', 'provinces_id');
     }
 
     public function lapor()
     {
-        return $this->belongsTo('App\Models\Lapor', 'instansi_tujuan_id')->withDefault();
+        return $this->hasMany('App\Models\Lapor', 'instansi_tujuan_id');
     }
 }
