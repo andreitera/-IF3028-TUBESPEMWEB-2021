@@ -1,0 +1,177 @@
+body {
+	font-family: "Gill Sans", sans-serif;
+}
+h1 {
+	font-size: 36px;
+	font-weight: bolder;
+}
+.pencarian {
+	width: 700px;
+	height: 30px;
+}
+.button {
+	width: 50px;
+	height: 36px;
+}
+.back {
+	float: right;
+}
+.ketiklapor {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+}
+/* Modal Content/Box */
+.ketiklapor-content {
+	background-color: #fefefe;
+	margin: 2% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+	border: 1px solid #888;
+	width: 40%; /* Could be more or less, depending on screen size */
+}
+
+/* Add Zoom Animation */
+.animate {
+	-webkit-animation: animatezoom 0.5s;
+	animation: animatezoom 0.5s;
+}
+@-webkit-keyframes animatezoom {
+	from {
+		-webkit-transform: scale(0);
+	}
+	to {
+		-webkit-transform: scale(1);
+	}
+}
+@keyframes animatezoom {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+.container {
+	padding-top: 40px;
+	padding-left: 70px;
+	padding-right: 70px;
+}
+.lampiran {
+	float: left;
+}
+.waktu {
+	float: right;
+	margin-right: 10px;
+}
+.detail {
+	float: right;
+}
+.laporan {
+	width: 700px;
+	height: 250px;
+	margin: auto;
+	background-color: white;
+	border: 1px solid grey;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+}
+.kategori {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.tampilan {
+	max-width: 500px;
+	padding: 10px 20px;
+	background: #f4f7f8;
+	margin: 10px auto;
+	padding: 20px;
+	background: #f4f7f8;
+	border-radius: 8px;
+	font-family: "Gill Sans", sans-serif;
+}
+
+.tampilan fieldset {
+	border: none;
+}
+
+.tampilan legend {
+	font-size: 1.4em;
+	margin-bottom: 10px;
+}
+
+.tampilan label {
+	display: block;
+	margin-bottom: 8px;
+}
+
+.tampilan textarea {
+	height: 200px;
+}
+
+.tampilan input[type="text"],
+.tampilan input[type="file"],
+.tampilan textarea,
+.tampilan select {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background: rgba(255, 255, 255, 0.1);
+	border: none;
+	border-radius: 4px;
+	font-size: 15px;
+	margin: 0;
+	outline: 0;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	background-color: #e8eeef;
+	color: #8a97a0;
+	-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+	margin-bottom: 30px;
+}
+
+.tampilan input[type="text"]:focus,
+.tampilan input[type="file"]:focus,
+.tampilan textarea:focus,
+.tampilan select:focus {
+	background: #d2d9dd;
+}
+
+.tampilan select {
+	-webkit-appearance: menulist-button;
+	height: 35px;
+}
+
+.tampilan input[type="submit"],
+.tampilan input[type="button"] {
+	position: relative;
+	display: block;
+	padding: 19px 39px 18px 39px;
+	color: #fff;
+	margin: 0 auto;
+	background: #1abc9c;
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+	width: 100%;
+	border: 1px solid #16a085;
+	border-width: 1px 1px 3px;
+	margin-bottom: 10px;
+}
+
+.tampilan input[type="submit"]:hover,
+.tampilan input[type="button"]:hover {
+	background: #109177;
+}
+.edit {
+	float: right;
+	margin-right: 10px;
+}
+.hapus {
+	float: right;
+}
