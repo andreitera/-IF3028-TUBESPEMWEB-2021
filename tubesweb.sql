@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 19 Des 2020 pada 05.16
+-- Waktu pembuatan: 19 Des 2020 pada 05.46
 -- Versi server: 10.4.11-MariaDB
 -- Versi PHP: 7.4.3
 
@@ -44,6 +44,7 @@ CREATE TABLE `laporan` (
   `id_kategori` int(11) NOT NULL,
   `user_token` varchar(64) NOT NULL,
   `nama` varchar(64) NOT NULL,
+  `judul` varchar(48) NOT NULL,
   `isi` varchar(1024) NOT NULL,
   `foto` varchar(64) DEFAULT NULL,
   `is_anonim` tinyint(1) NOT NULL,
