@@ -1,0 +1,26 @@
+.judul {
+    text-align: center;
+    
+}
+
+.judul a {
+    color: black;
+    text-decoration: none;
+}
+
+.kolom{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.hapus{
+    float: right;
+    margin-top: -50px;
+    color: black;
+    text-decoration: none;
+}
+
+.hapus a{
+    color: black;
+    text-decoration: none;
+}

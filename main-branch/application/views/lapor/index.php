@@ -1,4 +1,4 @@
-<a href="<?= base_url('menu') ?>">Kembali</a>
+<a href="<?= base_url('menu') ?>" class="back">Kembali</a>
 
 <!DOCTYPE html>
 <html>

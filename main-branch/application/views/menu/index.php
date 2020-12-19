@@ -3,7 +3,7 @@
 
 <head>
     <title>Lapor</title>
-    <link href="<?= base_url('/css/style_menuu.css') ?>" rel="stylesheet" type="text/css">
+    <link href="<?= base_url('/css/style_menu.css') ?>" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -14,9 +14,7 @@
             <form action="<?= base_url('detail/cari') ?>">
                 <label for="cari"></label>
                 <input type="text" class="kotak" id="cari" name="cari" placeholder="cari">
-                <div class="u">
-                    <input class="up" type="submit" value="Cari">
-                </div>
+                <input class="up" type="submit" value="Cari">
             </form>
         </div>
         <br>
