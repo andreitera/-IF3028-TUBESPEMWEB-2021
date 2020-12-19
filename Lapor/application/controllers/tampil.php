@@ -20,32 +20,32 @@ class Tampil extends CI_Controller
     public function view($id)
     {
         $data['post_item'] = $this->post_model->get_lapor($id);
-        $this->load->view('index');
+        $this->load->view('tampilan/header');
         $this->load->view('halaman/tampil', $data);
-        $this->load->view('index');
+        $this->load->view('tampilan/footer');
     }
 
     public function tambah()
     {
-        $this->load->view('index');
+        $this->load->view('tampilan/header');
         $this->load->view('halaman/tambah');
-        $this->load->view('index');
+        $this->load->view('tampilan/footer');
     }
 
     public function input()
     {
         $isi = $this->input->post('isi-laporan');
         $aspek = $this->input->post('aspek');
-        $lampiran = $_FILES['lampiran']['name'];
+        $file_lapor = $_FILES['file_lapor']['name'];
 
-        if ($lampiran = '') {
+        if ($file_lapor = '') {
         } else {
             $config['upload_path']   = './lampiran/';
             $config['allowed_types'] = 'gif|jpg|png';
             $config['file_name']    = date('Y-m-d H-i-s', time());
             $this->load->library('upload', $config);
 
-            if ($this->upload->do_upload('lampiran')) {
+            if ($this->upload->do_upload('file_lapor')) {
                 $file = $this->upload->data('file_name');
             } else {
             }
@@ -53,7 +53,7 @@ class Tampil extends CI_Controller
             $data = array(
                 'isi'       => $isi,
                 'aspek'     => $aspek,
-                'lampiran'  => $lampiran
+                'file_lapor'  => $file_lapor
             );
 
             $this->post_model->input_laporan($this->nama_tabel, $data);
@@ -72,9 +72,9 @@ class Tampil extends CI_Controller
     {
         $searchkey = array('id' => $id);
         $data['tampil'] = $this->post_model->get_lapor($id);
-        $this->load->view('index');
+        $this->load->view('tampilan/header');
         $this->load->view('halaman/ubah', $data);
-        $this->load->view('index');
+        $this->load->view('tampilan/footer');
     }
 
     public function update($id)
@@ -94,8 +94,8 @@ class Tampil extends CI_Controller
     {
         $keyword = $this->input->get('keyword');
         $data['result'] = $this->post_model->search_data($keyword, $this->nama_tabel);
-        $this->load->view('index');
+        $this->load->view('tampilan/header');
         $this->load->view('halaman/cari', $data);
-        $this->load->view('index');
+        $this->load->view('tampilan/footer');
     }
 }

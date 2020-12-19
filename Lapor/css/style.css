@@ -301,8 +301,7 @@ textarea {
 header {
 	width: 100%;
 	height: 120vh;
-	background: linear-gradient(rgba(16, 29, 44, 0.95), rgba(16, 29, 44, 0.95)),
-		url("../images/bg.png") center no-repeat;
+	background: #9F1D1D;
 	background-size: cover;
 	position: relative;
 }
@@ -341,17 +340,17 @@ header > .container {
 	color: #c69963;
 }
 
-@media (min-width: 768px) {
-	.container {
-		width: 750px;
-	}
-}
+											/*@media (min-width: 768px) {
+												.container {
+													width: 750px;
+												}
+											}*/
 
-@media (min-width: 992px) {
-	.container {
-		width: 970px;
-	}
-}
+											/*@media (min-width: 992px) {
+												.container {
+													width: 970px;
+												}
+											}*/
 
 @media (min-width: 1200px) {
 	.container {
@@ -661,23 +660,23 @@ section {
 /* bar-menu */
 
 /* lain-lain */
-@media (min-width: 576px) {
-	.navbar-brand {
-		max-width: 150px;
-	}
+											/*@media (min-width: 576px) {
+												.navbar-brand {
+													max-width: 150px;
+												}
 
-	.lapor-menu {
-		top: 35px;
-		right: 25px;
-	}
+												.lapor-menu {
+													top: 35px;
+													right: 25px;
+												}
 
-	.laporan-info h1.big-text {
-		margin-top: -2%;
-		margin-bottom: -2%;
-		font-size: 50px;
-		font-weight: 300;
-	}
-}
+												.laporan-info h1.big-text {
+													margin-top: -2%;
+													margin-bottom: -2%;
+													font-size: 50px;
+													font-weight: 300;
+												}
+											}*/
 
 @media (min-width: 10px) {
 	.btn {
@@ -685,13 +684,13 @@ section {
 	}
 }
 
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
 	.btn {
 		width: 150px;
 		font-size: initial;
 	}
 }
-
+*/
 @media (min-width: 992px) {
 	header > .container {
 		padding: 0 15px;
@@ -704,7 +703,7 @@ section {
 	}
 
 	.navbar-brand {
-		margin-top: -4vh;
+		margin-top: 3vh;
 		position: initial;
 		transform: initial;
 	}
