@@ -6,6 +6,9 @@
     <title>Document</title>
 
 <style>
+body{
+    background: #F08080;
+}
 .header{
         text-align : center;
         font-size : 24px;
@@ -55,7 +58,7 @@
     @endif
     Pengirim :{{$lengkap->pengirim}}<p>
     Judul :{{$lengkap->judul}}<p>
-    Isi Laporan :{{$lengkap->isilaporan}}<p>
+    Laporan :{{$lengkap->isilaporan}}<p>
     <a class="lampiran" href="{{ $lengkap->file }}">lihat lampiran</a>
     
     <div class="kaki">
