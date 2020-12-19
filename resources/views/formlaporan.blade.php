@@ -22,6 +22,7 @@
     .header{
         text-align : center;
         font-size : 24px;
+        font-family: Helvetica;
     }
     
     
@@ -55,7 +56,7 @@
 <body>
 <div class="container">
     <div class="header">
-        <h1>SIMPLE LAPOR!!</h1>
+        <h1>SIMPLE LAPOR!</h1>
     </div>
 
     <div class="conten">
