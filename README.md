@@ -30,7 +30,7 @@ penilaian (contoh: hanya melakukan satu commit kemudian dikumpulkan).
    - Import lapor.sql didalam folder -IF3028-TUBESPEMWEB-2021
    - Ketik pada Git Bash "composer update --verbose --prefer-dist
    - Ketik pada Git Bash "git checkout master"
-   - Ketik pada Git Bash "php artisan key:generata"
+   - Ketik pada Git Bash "php artisan key:generate"
    - Ketik pada Git Bash "php artisan storage:link"
    - Ketik pada Git Bash "php artisan serve"
    - Buka browser dengan URL http://127.0.0.1:8000
