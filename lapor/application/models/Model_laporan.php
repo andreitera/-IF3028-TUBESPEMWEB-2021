@@ -50,6 +50,11 @@ class Model_laporan extends CI_Model {
 		return $this->db->get('laporan')->result_array();
 	}
 
+	public function delete($id){
+		$this->db->where('id', $id);
+		$this->db->delete('laporan');
+	}
+
 	public function edit($id){
 
 		//mengambil waktu saat ini
