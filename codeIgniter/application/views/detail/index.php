@@ -26,7 +26,7 @@
 			?>
 			<embed src="<?php echo base_url() ?>/asset/file/<?php echo $lapor["file"]; ?>" />
 			<?php } else { ?>
-			<img id="filedetail" style="width: 75%; height: 75%;" src="<?php echo base_url() ?>/asset/file/<?php echo $lapor["file"]; ?>">
+			<img id="filedetail" style="width: 50%; height: 50%;" src="<?php echo base_url() ?>/asset/file/<?php echo $lapor["file"]; ?>">
 			<?php } ?>
 
 			<div style="clear: both"></div>
