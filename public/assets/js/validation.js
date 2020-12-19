@@ -1,7 +1,6 @@
 const btnSave = document.getElementById('tambah-laporan');
 btnSave.addEventListener('click', function(e) {
-    e.preventDefault();
-    validasi()
+    validasi();
 });
 
 function validasi(){
