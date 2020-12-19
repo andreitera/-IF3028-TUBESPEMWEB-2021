@@ -25,4 +25,15 @@ header {
 
 .button-1 {
 	float: right;
+	border: 1px solid #cecece;
+	border-radius: 3px;
+	padding: 3px 10px;
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+	color: white;
+	background-color: #006faa;
+}
+
+.button-1:hover{
+	border: 1px solid #b1b1b1;
+	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }

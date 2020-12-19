@@ -19,7 +19,7 @@
 				<center>
 					<h1><a href="<?php echo base_url() ?>" style="color: white; text-decoration: none;">Layanan Aspirasi
 							dan Pengaduan Online Mahasiswa ITERA <br>
-							Sampaikan laporan Anda langsung kepada instansi Kampus ITERA</a></h1>
+							Sampaikan laporan Anda langsung kepada layanan lapor Kampus ITERA</a></h1>
 					<hr style="width: 80px;">
 				</center>
 			</div>
@@ -61,21 +61,5 @@
 		</section>
 	</fieldset>
 </body>
-
-<!-- <script type="text/javascript">
-	function validasi() {
-		var laporan = document.getElementById("laporan").value;
-		var aspek = document.getElementById("aspek").value;
-		var lampiran = document.getElementById("lampiran").value;
-		if (laporan == "" || aspek == "" || lampiran == "") {
-			alert('Anda harus mengisi data dengan lengkap !');
-
-		} else if (laporan.length <= 20) {
-			alert('Anda harus mengisi laporan lebih dari 20 huruf');
-		} else {
-			alert('Kamu berhasil membuat laporan');
-		}
-	}
-</script> -->
 
 </html>
