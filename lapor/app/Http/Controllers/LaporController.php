@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 class LaporController extends Controller
 {
     
+    public function index()
+    {
+        return view('lapor.page.landing');
+    }
+
     public function listView()
     {
         return view('Lapor.page.listlapor');
