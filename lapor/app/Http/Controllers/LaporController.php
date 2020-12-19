@@ -53,7 +53,6 @@ class LaporController extends Controller
     {
         $cari = $search->q;
         $listSearch = Lapor::where('title', 'regexp', '^'.  $cari . '$' )->get();
-        print_r($listSearch);
         return view('Lapor.page.search')->with([
             'queue' => $cari,
             'listSearch' => $listSearch
