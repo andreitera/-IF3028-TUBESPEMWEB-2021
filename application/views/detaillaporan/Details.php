@@ -1,33 +1,47 @@
-<div class="komentar">
-    <p> Detail Laporan/Komentar </p>
-    <hr width="100%" color="grey" />
-
-    <p><?php echo $lapor['laporan']; ?></p>
-    <div>
-        <span>lampiran</span>
-        <img src="<?php echo base_url() . 'file/' . $lapor['file']; ?>" alt="file">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/asset/css/detail.css">
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="<?php echo base_url('home'); ?>">Home</a></li>
+            <li><a href="<?php echo base_url('Home/Tampillapor'); ?>">Buat Laporan</a></li>
+        </ul>
     </div>
-
-    <br>
-    <div class="baca1">
-        <span class="tanggal">Waktu: <?php echo $lapor['tanggal']; ?></span>
-        <span class="tanggal">Aspek: <?php echo $lapor['Aspek']; ?></span>
+    <div class="container">
+        <div class="komentar">
+            <h1>SIMPLE LAPOR!</h1>
+ 
+            <p> Detail Laporan/Komentar </p>
+            <div class="card">
+                <hr width="100%" color="grey" />
+                <p class="isiLaporan"><?php echo $lapor['laporan']; ?></p>
+                <div>
+                    <p>Lampiran<p>
+                    <img src="<?php echo base_url() . 'asset/' . $lapor['File']; ?>" alt="file" class="lampiran">
+                </div>
+                <br>
+                <div class="baca1">
+                    <?php $id = $lapor['id']; ?>
+                    <p class="waktudetail" style="margin-right: 30px;">Waktu : <?php echo $lapor["tanggal"]; ?></p>
+                    <p class="aspek">Aspek : <?php echo $lapor["Aspek"]; ?></p>
+                    <a class="hapus" href="<?php echo base_url() . 'Home/hapus/' . $id; ?>">Hapus Laporan/Komentar X</a>
+                    <a href="<?php echo base_url() ?>Home/update_data/<?php echo $lapor["id"]?>" class="ubah">Ubah laporan / komentar | </a>
+                    <hr width="100%" color="grey" />
+                    <a href="<?= base_url(); ?>Home">< Back </a> </div> 
+                </div>
+                
+            </div>    
     </div>
-    <?php $id = $lapor['id']; ?>
-    <a class="baca" href="<?php echo base_url() . 'Home/hapus/' . $id; ?>">Hapus Laporan/Komentar<button class="button3">x</button></a></a>
-
-    <hr width="100%" color="grey" />
-            <a href="<?php echo base_url() ?>Home/update_data/<?php echo $lapor["id"]?>" ><h4 class="hapus">Ubah laporan / komentar |</h4></a>
-			<h4 class="waktudetail" style="margin-right: 30px;">Waktu : <?php echo $lapor["tanggal"]; ?></h4>
-			<h4 class="aspek">Aspek : <?php echo $lapor["aspek"]; ?></h4>
-			<div style="clear: both"></div><br>
-    <a href="<?= base_url(); ?>Home"><button class="button3">
-            <</button>Back </a> </div> 
-    <hr />
-	<footer>
-		&copyCopyright 2020 - itera.ac.id
-	</footer>
-</div>
-
+    <div class="footer">
+            &copyCopyright 2020 - itera.ac.id
+    </div>
 </body>
 </html>
