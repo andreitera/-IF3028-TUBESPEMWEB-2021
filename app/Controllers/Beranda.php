@@ -2,14 +2,32 @@
 
 namespace App\Controllers;
 
+use App\Models\LaporanModel;
+
 class Beranda extends BaseController
 {
+	protected $laporanModel;
+	public function __construct()
+	{
+		$this->laporanModel = new LaporanModel();
+	}
+
 	public function index()
 	{
-		return view('beranda');
+		$laporan = $this->laporanModel->findAll();
+
+		$data = [
+			'title' => 'Beranda',
+			'laporan' => $laporan
+		];
+
+		return view('beranda', $data);
 	}
-	public function detail($id)
+
+	public function detail($id = '')
 	{
+		// $laporan = $this->laporanModel->where(['id' => $id])->first();
+
 		$data = [
 			'title' => 'Detail Laporan',
 			'laporan' => $this->laporanModel->getLaporan($id)
@@ -20,6 +38,30 @@ class Beranda extends BaseController
 		}
 
 		return view('detailLaporan', $data);
+	}
+
+	public function buatLaporan()
+	{
+		$data = ['title' => 'Buat Laporan'];
+
+		return view('buat', $data);
+	}
+
+	public function buat()
+	{
+		$fileLampiran = $this->request->getFile('lampiran');
+		$fileLampiran->move('img');
+		$namaLampiran = $fileLampiran->getName();
+
+		$this->laporanModel->save([
+			'isi_laporan' => $this->request->getVar('isiLaporan'),
+			'aspek' => $this->request->getVar('aspek'),
+			'lampiran' => $namaLampiran
+		]);
+
+		session()->setFlashdata('pesan', 'Laporan berhasil ditambahkan!');
+
+		return redirect()->to('/');
 	}
 
 	//--------------------------------------------------------------------

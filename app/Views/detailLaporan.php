@@ -18,15 +18,16 @@
 
             <p>Detail Laporan/Komentar</p>
             <br><br>
-            <p class="isi-laporan">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat alias unde incidunt odit rerum assumenda modi obcaecati sunt eos quo blanditiis, voluptates vel, sed, laborum aliquam accusantium corrupti inventore quibusdam distinctio repellendus. Eveniet odit minus, repellendus autem iusto, non at sequi iste soluta, reiciendis ipsa dolores nisi amet nam debitis.</p>
-            Lampiran: <br><br>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrrJc_U8OI2_ZMzQj0KXxQ7Kaw_68IrBxOkw&usqp=CAU" height="250" width="250">
+            <p class="isi-laporan"><?= $laporan['isi_laporan']; ?></p>
+            <p>Lampiran:</p>
+            <img src="/img/<?= $laporan['lampiran']; ?>" alt="Lampiran" height="300px" width="200px">
             <br><br>
             <div class="bottom-bar">
                 <p> Waktu: <time datetime="2019-11-20">20-11-2019 20:00</time> </p>
                 <p> Aspek: Infrastruktur </p>
                 <p> Laporan/Komentar</p>
             </div>
+
         </div>
     </div>
 </body>

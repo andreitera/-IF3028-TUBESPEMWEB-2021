@@ -24,11 +24,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 0.5rem;
   }
 
   .container-listLaporan {
     width: 100%;
     margin-top: 3rem;
+
+    p {
+      padding-bottom: 0.5rem;
+    }
 
     p,
     .item-laporan {
@@ -38,6 +43,7 @@
     .item-laporan {
       p {
         margin: 2rem 0 1rem 0;
+        padding-bottom: 0;
         border-bottom: none;
       }
 
