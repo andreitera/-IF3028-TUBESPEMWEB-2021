@@ -10,7 +10,7 @@
 
 <body>
 	<div class="recomended">
-		<h1>SIMPLE LAPOR!</h1>
+		<h1>Layanan Aspirasi dan Pengaduan Massa Informatika ITERA</h1>
 		<h4>Detail Laporan / Komentar</h4>
 		<hr />
 		<div class="recomendedkiri">

@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>SIMPLE LAPOR!</title>
+	<title>Layanan Aspirasi dan Pengaduan Masa Informatika ITERA</title>
 
 	<link rel="stylesheet" href="<?php echo base_url() ?>/atributweb/css/style.css">
 </head>
@@ -11,7 +11,7 @@
 <body>
 
 	<div class="container">
-		<h1>SIMPLE LAPOR !</h1>
+		<h1>Layanan Aspirasi dan Pengaduan Massa Informatika ITERA</h1>
 		<form action="" method="post">
 			<input type="text" name="cari" id="cari" placeholder="ketik kata kunci pencarian">
 			<button type="submit" name="submit"> cari </button>
