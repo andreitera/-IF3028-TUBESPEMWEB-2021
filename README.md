@@ -99,7 +99,11 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+Untuk instalisasi framework laravel dengan cara :
+1. Download node di https://nodejs.org/en/download/ lalu install
+2. Download composer di https://getcomposer.org lalu install
+3. Jika sudah maka buka terminal dan install laravel secara global dapat dilihat pada website ini https://laravel.com/docs/7.x/installation
+4. Lalu setelah laravel terinstall maka pindahkan ke lokasi dimana ingin menginstall aplikasi melalui terminal
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
