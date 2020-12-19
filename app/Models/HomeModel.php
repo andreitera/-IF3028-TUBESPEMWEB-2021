@@ -10,7 +10,7 @@ class HomeModel extends Model
     
     public function get($id = NULL){
         if (!$id) {
-            return $this->findAll();
+            return $this->orderBy('created_at', 'DESC')->findAll();
         }
 
         return $this->find($id);
