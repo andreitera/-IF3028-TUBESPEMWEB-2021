@@ -1,8 +1,6 @@
 <?php
 class Upload_model extends CI_Model {
-
-    // this function will be called instantenneously
-    
+	
         public function __construct()
         {
             parent::__construct();
@@ -19,8 +17,6 @@ class Upload_model extends CI_Model {
                 );
     
             return $this->db->insert('upload', $data);
-    
-    
         }
     
     }
