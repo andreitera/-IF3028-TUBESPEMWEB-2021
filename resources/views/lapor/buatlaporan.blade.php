@@ -15,7 +15,7 @@
         <input type="text" name="title" class="inpt" placeholder="Judul Laporan/Komentar">
         <textarea id="laporan" name="content" placeholder="Laporan/Komentar"></textarea>
         <select name="aspect" id="aspek">
-            <option value="" disabled selected>Pilih Aspek Pelaporan/Komentar</option>
+            <option value="1" disabled selected>Pilih Aspek Pelaporan/Komentar</option>
             <option value="Dosen">Dosen</option>
             <option value="Mata Kuliah">Mata Kuliah</option>
             <option value="Prodi">Prodi</option>
