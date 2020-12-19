@@ -25,17 +25,19 @@
     
                                 $output = '';
                                 for( $i=0; $i<count($options); $i++ ) {
-                                    $output .= '<option ' 
-                                        . ( $laporan->aspek == $options[$i] ? 'selected="selected"' : '' ) . '>' 
-                                        . $options[$i] 
-                                        . '</option>';
+                                    if($laporan->aspek == $options[$i]){
+                                        echo "<option value=".$options[$i]." selected>".$options[$i]."</option>";
+                                    }
+                                    else{
+                                        echo "<option value=".$options[$i].">".$options[$i]."</option>";
+                                    }
                                 }
                             ?>
                         </select>
                     </div>
                     <div>
                         <br>
-                        <input type="file" name="lampiran" class="file" value="<?php echo $laporan->lampiran ?>">
+                        <input type="file" name="lampiran" class="file">
                     </div>
                     <br>
                     <button type="submit" class="btn_edit">Edit LAPOR!</button>
