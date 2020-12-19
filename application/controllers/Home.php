@@ -3,7 +3,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Home extends CI_Controller
 {
-    public function __construct()
+    function __construct()
     {
         parent::__construct();
         $this->load->database();
@@ -11,15 +11,27 @@ class Home extends CI_Controller
         $this->load->library(array('form_validation', 'session'));
         $this->load->model('Lapor_model');
     }
-
     public function index()
     {
-        $this->load->view('home');
+        $data['lapor'] = $this->Lapor_model->tampil_data();
+        $this->load->view('home', $data);
+    }
+
+    public function view($id)
+    {
+        $data['lapor'] = $this->Lapor_model->tampil_data($id);
+        $this->load->view('detaillaporan/Details', $data);
     }
 
     function Tampillapor()
     {
-        $this->load->view('Tampillapor');
+        $this->load->view('Buatlapor/Tampillapor');
+    }
+    public function hapus($id)
+    {
+        $where = array('id' => $id);
+        $this->Lapor_model->hapus_data($where, 'lapor');
+        redirect('Home');
     }
 
     function tambahLaporan()
@@ -62,13 +74,12 @@ class Home extends CI_Controller
 
     function ubah($id)
     {
-        //validasi form
+        
         $this->form_validation->set_rules('isi', 'Isi', 'required|min_length[250]');
         if ($this->form_validation->run() == FALSE) {
             $data['aspek'] = ['', '', '', '', ''];
             $data['lapor'] = $this->Lapor_model->detail($id);
             $this->load->view('tampilan_ubah', $data);
-            //redirect("index.php/Home/detail2/$id");
 
         } else {
             $this->Lapor_model->ubah($id);
