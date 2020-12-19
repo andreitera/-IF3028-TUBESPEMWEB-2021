@@ -26,7 +26,7 @@ class LaporController extends Controller
     */
     public function index()
     {
-        $data = DB::table('laporan')->orderByDesc('id')->simplePaginate(10);
+        $data = DB::table('laporan')->orderByDesc('id')->simplePaginate(5);
         return view('lapor/listlaporan', ['lapor' => $data]);
     }
 
@@ -99,14 +99,6 @@ class LaporController extends Controller
         return view('lapor/lihatlaporan', ['lapor' => $data]);
     }
 
-    /*
-        View Edit Laporan
-    */
-    public function edit($unique_id)
-    {
-        $data = DB::table('laporan')->where('unique_id', '=', $unique_id)->first();
-        return view('lapor/editlaporan', ['lapor' => $data]);
-    }
 
     /*
         Post Edit Laporan 
@@ -161,25 +153,6 @@ class LaporController extends Controller
     }
 
     /*
-        Post Delete Laporan 
-    */
-    public function destroy($unique_id)
-    {
-        if (DB::table('laporan')->where('unique_id', 'like', $unique_id)->exists()) {
-            try {
-                DB::transaction(function () use ($unique_id) {
-                    DB::table('laporan')->where('unique_id', 'like', $unique_id)->delete();
-                }, 5);
-            } catch (Exception $th) {
-                return redirect()->route('lapor')->with('msg', 'Laporan gagal dihapus');
-            }
-            return redirect()->route('lapor')->with('msg', 'Laporan berhasil dihapus');
-        } else {
-            return redirect()->route('lapor')->with('msg', 'Laporan tidak ditemukan');
-        }
-    }
-
-    /*
         Post Sending to Email Laporan 
     */
     public function sendEmail(Request $request)
@@ -196,7 +169,7 @@ class LaporController extends Controller
     }
 
     /*
-        Post Get Unique Id Laporan 
+        Post Get Unique Id Laporan for edit and delete laporan
     */
     public function getUniqueId(Request $req)
     {
@@ -220,7 +193,18 @@ class LaporController extends Controller
                     break;
             }
         } else {
-            return redirect()->route('lapor')->with('msg', 'Salah memasukkan Unique Id!');
+            return redirect()->route('laporShow', $id)->with('msg', 'Salah memasukkan Unique Id!');
         }
+    }
+
+    /**
+     * Search Laporam
+     */
+    public function search(Request $request)
+    {
+        $judul = $request->input('judul');
+        $judul = '%' . $judul . '%';
+        $data = DB::table('laporan')->where('judul', 'like', $judul)->orderByDesc('id')->simplePaginate(5);
+        return view('lapor/listlaporan', ['lapor' => $data]);
     }
 }
