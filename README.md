@@ -99,7 +99,23 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-1. Menginstal Framework-CodeIgniter3
+`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+1. Instalasi Framework dan koneksi Basisdata
+   - Download .zip codeIgniter 3 melalui link https://codeigniter.com/download dan kemudian ekstrak ke xampp/htdoc
+   - lakukan konfigurasi di folder config
+   - lakukan konfigurasi database untuk mengkoneksikan database di folder config/database yaitu pada bagian 'hostname' => 'localhost', 'username' => '', 'password' => '', 'database' => '' menjadi  'hostname' => 'localhost', 'username' => 'root', 'password' => '', 'database' => 'lapor'
+2.  Validasi pada client-side
+   - file js mengambil elemen form dan setiap input dari html berdasarkan id
+   - setiap kali form disubmit, even listener akan melakukan beberapa aksi, yaitu:
+      a. memastikan setiap field tidak kosong dan memunculkan alert('Tidakk boleh ada kolom yang kosong') saat ada fiel yang kosong
+      b. menghitung jumlah kata yang di inputkan pada kolom 'isi' dimana saat input <20 words maka akan menampilkan alert('jumlah kata dalam laporan minimal 20')
+      c. mengecek apakah sudah ada inputan file, jika belum menginput file maka akan memunculkan alert('Harap pilih file lampiran')
+3. AJAX
+   - Pengguna menekan tombol LAPOR!
+   - setelah sumbit form, akan diarahkan ke fungsi input() didalam controller/laporan.php
+   - pada fungsi input(), beberapa variabel menyimpan data yang dikirimkan dengan method post. kemudian akan mengatur konfigurasi upload_path, file_types, dan file_name, kemudian file upload akan dipindahkan dan diubah dengan konfigurasi tersebut. Setelah itu, data yang disimpan dalam variabel tadi akan dikirimkan ke dalam method input_laporan() dalam model post_model.php
+   - pada fungsi input_laporan() dalam model post_model.php, data yang dikirimkan dari controller akan diinsert kedalam database menggunakan codeigniter query builder
+
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
