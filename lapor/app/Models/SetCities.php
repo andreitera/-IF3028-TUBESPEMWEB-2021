@@ -17,7 +17,7 @@ class SetCities extends Model
     // relation table
     public function provinces()
     {
-        return $this->hasOne('App\Models\SetProvinces', 'provinces_id');
+        return $this->hasMany('App\Models\SetProvinces', 'provinces_id');
     }
 
     public function lapor()
