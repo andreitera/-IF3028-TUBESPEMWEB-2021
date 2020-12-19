@@ -22,6 +22,7 @@
             if ($validation->run()) {
                 $laporan->save();
                 $this->session->set_flashdata('success', 'Berhasil ditambah');
+                redirect('');
             }
 
             $this->load->view("tambah_view");
@@ -43,6 +44,9 @@
             if (!$data["laporan"]) show_404();
             
             $this->load->view("edit_view", $data);
+
+            $data["laporan"] = $this->laporan_model->getAll();
+            $this->load->view("tampilan_view", $data);
         }
 
         public function detail($id = null){
