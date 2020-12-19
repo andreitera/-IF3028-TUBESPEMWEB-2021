@@ -19,7 +19,7 @@ Route::get('lapor/create',                          'LaporController@create')->n
 Route::post('lapor/create',                         'LaporController@store')->name('laporbuat');
 Route::get('lapor/show/{id}',                       'LaporController@show')->name('laporShow');
 Route::get('success',                               'LaporController@sendEmail')->name('sendemail');
-Route::get('lapor/{unique_id}/edit',                'LaporController@edit')->name('laporedit');
-Route::post('lapor/{unique_id}/edit',               'LaporController@update')->name('laporupdate');
+Route::post('lapor/{unique_id}/edit',               'LaporController@edit')->name('laporedit');
+Route::post('lapor/{unique_id}/edit/token',         'LaporController@update')->name('laporupdate');
 Route::post('lapor/{unique_id}/delete',             'LaporController@destroy')->name('laporhapus');
 Route::post('lapor/getuniqid',                      'LaporController@getUniqueId')->name('laporcek');
