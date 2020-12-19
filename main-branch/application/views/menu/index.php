@@ -15,11 +15,11 @@
             <form action="<?= base_url('detail/cari') ?>">
                 <label for="cari"></label>
                 <input type="text" class="kotak" id="cari" name="cari" placeholder="Cari">
-                <input class="up" type="submit" value="Cari">
+                <button class="up"><i class="fa fa-search"></i> Cari</button>
             </form>
         </div>
         <br>
-        <a href="<?= base_url('lapor') ?>">Buat Laporan/Komentar</a>
+        <a href="<?= base_url('lapor') ?>"><i class="fa fa-plus-square"></i> Buat Laporan/Komentar</a>
 
     </div>
     <br>
@@ -36,7 +36,7 @@
                 <?php } ?>
                 <p>Lampiran : <?= $lapor['file']; ?></p>
                 <div class="kanan">
-                    <p>Waktu : <?= $lapor['waktu']; ?> <a href="<?= base_url('Detail/index/') ?><?= $lapor['id'] ?>">Lihat selengkapnya </a></p>
+                    <p>Waktu : <?= $lapor['waktu']; ?> <a href="<?= base_url('Detail/index/') ?><?= $lapor['id'] ?>">Lihat selengkapnya <i class="fa fa-chevron-right"></i></a></p>
                 </div>
                 <hr>
 
