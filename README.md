@@ -99,7 +99,29 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+
+Melakukan instalasi Framework Code Igniteter 3 dan database:
+
+1. Mendownload file code igniter 3 melalui https://codeigniter.com/download
+2. Melakukan ekstraksi file ke dalam file htdocs di xampp
+3. Framework Code Igniter siap untuk di konfigurasi
+4. Untuk mengkoneksikan database, terlebih dahulu membuat database pada my sql
+5. Setelah membuat database, koneksi database dapat dikonfigurasi pada path file config/database.php
+6. Ubah variabel database dengan mengisikan database
+7. Instalasi selesai framework dan database siap digunakan
+
+Validasi Client-Side:
+
+1. Validasi client-side digunakan untuk melaukuan validasi data yang user inputkan
+2. Jika pengguna meinputkan data yang tidak sesuai, maka ada pemberitahuan mengenai kesalahan
+3. Konfigurasi pada client-side terdapat pada application/models/Lapor_Model
+4. Didalam folder tersebut didefinisikan bahwa minimal inputan komentar/keterangan 100 karakter,
+5. File yang dapat diinputkan berupa gambar/pdf
+
+Melakukan AJAX:
+
+1. Dalam mengkonfigurasi AJAX, aplikasi akan melakukan proses upload tanpa harus mereload
+2. Konfigurasi AJAX dapat dilihat pada path file asset/ajax
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
