@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Carbon\Carbon;
 
 class KomentarSeeder extends Seeder
 {
@@ -18,6 +19,7 @@ class KomentarSeeder extends Seeder
             'user_id' => "1",
             'lapor_id' => "1",
             'komentar' => "Betul Sekali",
+            'created_at'=> Carbon::now()->format("Y-m-d")
         ]);
     }
 }
