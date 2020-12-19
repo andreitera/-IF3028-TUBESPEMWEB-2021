@@ -2,10 +2,8 @@
     <div class="container">
         <h3 class="pt-2">Ubah Laporan/Komentar</h3>
         <form onsubmit="return validasi()" action="/laporan/save" method="POST" class="main-form" id="form" enctype="multipart/form-data">
-            <textarea name="konten" id="konten" class="mb-1" 
-                        placeholder="Laporan/Komentar">
-                <?= trim($item['isi']) ?>
-            </textarea>
+            <input type="hidden" id="id" name='id'  value=<?= $item['id'] ?>>
+            <textarea name="konten" id="konten" class="mb-1"><?= trim($item['isi']) ?></textarea>
             <select name="aspek" id="aspek" class="mb-1">
                 <option disabled selected value="0">Pilih Aspek Pelaporan/Komentar</option>
                 <?php 

@@ -41,12 +41,13 @@ class Home extends BaseController
 		echo view('templates/footer');
 	}
 
-	public function save($id = false)
+	public function save()
 	{	
 		$fileLampiran = $this->request->getFile('lampiran');
 		$fileLampiran->move('assets/uploaded_file');
 		$namaLampiran = $fileLampiran->getName();
-		if($id) {
+		$id = $this->request->getPost('id');
+		if($id != NULL) {
 			$this->homeModel->save([
 				'id' => $id,
 				'isi' => $this->request->getPost('konten'),
