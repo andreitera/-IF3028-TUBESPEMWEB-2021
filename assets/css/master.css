@@ -116,7 +116,7 @@ h1 {
 .tampilan input[type="file"],
 .tampilan textarea,
 .tampilan select {
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-family: "Courier New", Courier, monospace;
 	background: rgba(255, 255, 255, 0.1);
 	border: none;
 	border-radius: 4px;
@@ -131,7 +131,7 @@ h1 {
 	background-color: #e8eeef;
 	color: #8a97a0;
 	-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
-	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+	box-shadow: 10px 5px 5px red;
 	margin-bottom: 30px;
 }
 
@@ -154,19 +154,19 @@ h1 {
 	padding: 19px 39px 18px 39px;
 	color: #fff;
 	margin: 0 auto;
-	background: #1abc9c;
+	background: #dd5938;
 	font-size: 18px;
 	text-align: center;
 	font-style: normal;
 	width: 100%;
-	border: 1px solid #16a085;
+	border: 1px solid #ce6925;
 	border-width: 1px 1px 3px;
 	margin-bottom: 10px;
 }
 
 .tampilan input[type="submit"]:hover,
 .tampilan input[type="button"]:hover {
-	background: #109177;
+	background: red;
 }
 .edit {
 	float: right;
