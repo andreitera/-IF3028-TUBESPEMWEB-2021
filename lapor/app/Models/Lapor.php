@@ -11,7 +11,7 @@ class Lapor extends Model
     use HasFactory;
     use SoftDeletes;
 
-    protected $table    ="set_categories";
+    protected $table    ="lapor";
     protected $dates 	= ['deleted_at'];
 
     // relation table

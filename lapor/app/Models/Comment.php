@@ -11,7 +11,7 @@ class Comment extends Model
     use HasFactory;
     use SoftDeletes;
 
-    protected $table    ="set_categories";
+    protected $table    ="komentar";
     protected $dates 	= ['deleted_at'];
 
     // relation table

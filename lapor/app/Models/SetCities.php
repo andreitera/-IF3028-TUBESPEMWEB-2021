@@ -11,6 +11,9 @@ class SetCities extends Model
     use HasFactory;
     use SoftDeletes;
 
+    protected $table    ="set_cities";
+    protected $dates 	= ['deleted_at'];
+
     // relation table
     public function provinces()
     {
