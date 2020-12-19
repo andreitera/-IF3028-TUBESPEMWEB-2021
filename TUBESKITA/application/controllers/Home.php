@@ -17,7 +17,7 @@ class Home extends CI_Controller
 	public function tambah(){
 		
 		//validasi form
-		$this->form_validation->set_rules('isi', 'Isi','required');
+		$this->form_validation->set_rules('isi', 'Isi','required[20]');
 		if($this->form_validation->run() == FALSE){
 			$this->load->view('tambah/index');
 		}else{
@@ -66,7 +66,7 @@ class Home extends CI_Controller
 	public function ubah($id){
 		
 		//validasi form
-		$this->form_validation->set_rules('isi', 'Isi', 'required');
+		$this->form_validation->set_rules('isi', 'Isi', 'required[20]');
 		if($this->form_validation->run() == FALSE){
 			$data['aspek'] = ['Dosen','Staff','Mahasiswa','Infrastruktur','Pengajaran','Logistik' ];
 			$data['lapor'] = $this->Lapor_model->detail($id);

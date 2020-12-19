@@ -35,10 +35,6 @@
 		<div style="clear: both;"></div>
 	<?php echo form_close(); ?>
 	<hr>
-	<footer>
-		&copyCopyright 2020 - itera.ac.id
-	</footer>
-
 </div>
 </body>
 </html>
