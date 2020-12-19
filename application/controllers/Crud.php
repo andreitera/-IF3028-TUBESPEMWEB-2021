@@ -20,11 +20,26 @@ class Crud extends CI_Controller
   public function do_buat()
   {
     $namauser = $this->session->userdata('username');
-    $this->form_validation->set_rules('isi', 'Isi', 'required|min_length[250]');
+    $isi = $this->input->post('isi');
+    $aspek = $this->input->post('aspek');
+    $file = $_FILES['dokumen'];
+    if ($file = '') {
+    } else {
+        $config['upload_path'] = './assets/file';
+        $config['allowed_types'] = 'xlsx|xls|pdf|doc|docx|ppt|pptx';
+
+        $this->load->library('upload', $config);
+        if (!$this->upload->do_upload('dokumen')) {
+            echo "gagal";
+        } else {
+            $file = $this->upload->data('file_name');
+        }
+    }
+    $this->form_validation->set_rules('isi', 'Isi', 'required|min_length[10]');
     if ($this->form_validation->run() == FALSE) {
         $this->load->view('templates/template_buat');
     } else {
-        $this->md->tambah($namauser);
+        $this->md->tambah($namauser,$isi,$aspek,$file);
         echo "
     <script>
       alert('berhasil menambah data');
@@ -34,5 +49,4 @@ class Crud extends CI_Controller
     }
   }
 }
-
  ?>

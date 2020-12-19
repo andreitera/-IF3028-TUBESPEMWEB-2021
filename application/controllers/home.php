@@ -17,5 +17,11 @@
       $isi['content'] = 'home/content';
       $this->load->view('templates/template_home', $isi);
     }
+    public function edit($id_laporan)
+    {
+      $isi['lapor'] = $this->md->detail($id_laporan);
+      $isi['aspek'] = $this->db->get('aspek')->result_array();
+      $this->load->view('templates/template_edit',$isi);
+    }
   }
  ?>

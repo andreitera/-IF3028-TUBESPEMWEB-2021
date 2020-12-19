@@ -4,6 +4,9 @@
 	<title>Simple Lapor</title>
 	<link rel="stylesheet" type="text/css" href="./assets/css/gaya.css">
 	<link rel="stylesheet" href="<?= base_url('/assets/css/style.css');?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/assets/css/css/style.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/assets/css/css/reset.css">
+
 </head>
 <body>
 

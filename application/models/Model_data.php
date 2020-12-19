@@ -16,8 +16,10 @@ class Model_data extends CI_model
       $data = "SELECT * FROM `laporan` JOIN user WHERE laporan.pelapor = user.id";
       return $this->db->query($data)->result();
     }
-    public function tambah($namauser)
+
+    public function tambah($namauser,$isi,$aspek,$file)
     {
+      var_dump($namauser,$isi,$aspek,$file);
         if ($namauser=='admin') {
           $username=1;
         } elseif ($namauser=='user') {
@@ -25,29 +27,13 @@ class Model_data extends CI_model
         }
         date_default_timezone_set('Asia/Jakarta');
         $tanggal = date("Y-m-d H:i:s");
-        $file = $_FILES['File'];
-        if ($file = '') {
-        } else {
-            $config['upload_path'] = './assets/file';
-            $config['allowed_types'] = 'xlsx|xls|pdf|doc|docx|ppt|pptx';
-
-            $this->load->library('upload', $config);
-            if (!$this->upload->do_upload('File')) {
-                echo "gagal";
-            } else {
-                $file = $this->upload->data('file_name');
-            }
-        }
-
-        $data = [
-            "id_pelapor"=>$username,
-            "isi_laporan" => $this->input->post('isi'),
-            "aspek" => $this->input->post('aspek'),
-            "created_at" => $tanggal,
-            "file" => $file
-        ];
-
-        $this->db->insert('laporan', $data);
+        $this->db->query("INSERT INTO laporan (id_laporan, pelapor, isi_laporan, file, created_at, updated_at, aspek)
+        VALUES (NULL,'$username','$isi', '$file', '$tanggal', '$tanggal', '$aspek')");
+        redirect(user);
+    }
+    public function detail($id_laporan)
+    {
+      return $this->db->get_where('laporan', array('id_laporan'=>$id_laporan))->row_array();
     }
 }
 ?>

@@ -17,9 +17,8 @@
         <option value="Infrastruktur">Infrastruktur</option>
         <option value="Pengajaran">Pengajaran</option>
     </select><br />
-    <?= $this->session->userdata('username'); ?>
     <label>File Diwajibkan Dalam Bentuk Gambar / PDF</label><br \>
-    <input id="file" type="file" name="File"><br />
+    <input id="file" type="file" name="dokumen"><br />
     <input id="submit" value="Buat LAPOR !" type="submit" name="submit">
     <div style="clear: both;"></div>
     <?php echo form_close(); ?>
