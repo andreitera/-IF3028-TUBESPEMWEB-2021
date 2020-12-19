@@ -1,0 +1,9 @@
+download/clone repository ini
+install composer
+buka git bash di folder repository
+jalankan perintah "composer update --ignore-platform-reqs
+buka file php.ini di config xampp dan uncommnet ;extension=intl dengan cara hilangkan ';'
+buat database dengan nama tugasweb lalu import laporan.sql
+setting file .env sesuai dengan pengaturan local anda
+jalankan perintah php spark serve 
+buka web dengan cara mengetikan localhost:8080 di browser
