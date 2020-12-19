@@ -35,7 +35,7 @@
                             width="14" height="14" alt="Waktu: "/>  <?php echo $laporan[$i]['created_at'];?>
                     </div>
                     <div class="detail-laporan text-right">
-                        <a href="#" class="btn-selengkapnya">Lihat Selengkapnya &#10145;</a>
+                        <a href="home/detail" class="btn-selengkapnya">Lihat Selengkapnya &#10145;</a>
                     </div>
                 </div>
             </article>
