@@ -21,6 +21,7 @@ class Home extends CI_Controller{
         
         if($this->form_validation->run() == FALSE)
         {
+            
             $this->load->view('buatlaporan/index');
         }
         else
@@ -41,4 +42,34 @@ class Home extends CI_Controller{
         $data['lapor']=$this->Lapor_db->detail($id);
         $this->load->view('detaillaporan/index', $data);
     }
+
+    public function detail_ubah($id)
+    {
+		$data['aspek'] = ['Dosen','Mahasiswa','Staff'];
+		$data['lapor'] = $this->Lapor_model->detail($id);
+		$this->load->view('ubah/index',$data);
+    }
+    
+    public function ubah($id)
+    {
+        $this->form_validation->set_rules('isi','Isi','required|min_length[250]');
+
+        if($this->form_validation->run()==FALSE)
+        {
+            $data['aspek']=['Dosen','Mahasiswa','Staff'];
+            $data['lapor']=$this->Lapor_db->detail($id);
+            $this->load->view('ubah/index', $data);
+        }
+        else
+        {
+            $this->Lapor_db->ubah($id);
+            echo "<script>alert('Berhasil mengubah data!');document.location.href='../';</script>";
+        }
+    }
+
+    public function delete($id){
+		$this->Lapor_db->delete($id);
+		redirect('index.php/home');
+	}
+
 }
