@@ -1,0 +1,49 @@
+*{
+    font-family:Helvetica, sans-serif;
+    font-size: 16pt;
+}
+body{
+    padding-inline-start: 15%;
+    padding-inline-end: 15%;
+}
+.pala p{
+    padding: 0%;
+    margin-bottom: 0%;
+}
+.pala{
+    padding: 0%;
+}
+
+.isi{
+    padding: 0%;
+}
+.isi p{
+    padding: 0%;
+}
+.lampiran{
+    padding: 0%;
+}
+.lampiran p{
+    padding: 0%;
+}
+h1{
+    text-align: center;
+    font-size: 32pt;
+}
+
+#crud{
+    text-align: right;
+}
+
+#tabel1{
+    width: 100%;
+    padding: 0px;
+    margin:0px;
+}
+
+#lampiran img{
+    min-width:  250px;
+    min-height: 250px;
+    max-width: 250px;
+    max-height: 250px;
+}
