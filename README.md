@@ -99,7 +99,17 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+Cara Instalasi Project
+- install XAMPP
+- install composer
+- clone repository project ini
+- pindah ke folder lapor pada project ini
+- buka terminal, lalu ketik `composer install`
+- masih diterminal yang sama, lalu ketik `cp .env.example .env`
+- masih diterminal yang sama, lalu ketik `php artisan key:generate`
+- untuk database, terdapat 2 pilihan import database, pertama menggunakan lapor.sql pada folder lapor ini pada phpmyadmin, atau yang kedua dengan menggunakan perintah `php artisan migrate:refresh --seed`
+- masih diterminal yang sama, lalu ketik `php artisan serve` untuk merunning project ini
+- maka project akan dijalankan pada `http://127.0.0.1:8000`
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
