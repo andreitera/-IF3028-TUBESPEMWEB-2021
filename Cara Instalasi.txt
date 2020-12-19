@@ -1,6 +1,6 @@
 Cara install codeigniter :
-    1. Download file codeIgniter tugas ini.
-    2. Ubah nama folder menjadi sesuai folder dibuat ( karena basepath menggunakan url dari folder)
-    3. Pindahkan folder ke server local. misalnya xampp/htdocs
+    1. Download file zip repository tugas ini.
+    2. ekstak file zip 
+    3. Pindahkan folder tubes fix ke server local. misalnya xampp/htdocs
     4. Running melalui web browser dengan localhost/folderyangdibuat
     5. Selesai
