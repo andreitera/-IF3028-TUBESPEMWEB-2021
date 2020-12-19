@@ -5,21 +5,11 @@ responsive. Desain tampilan tidak perlu dibuat indah. Icon dan jenis font tidak 
 garis pemisah, dan perbedaan ukuran font harus terlihat sesuai contoh. Perhatikan juga tata letak elemen-elemen.
 
 ![](tampilan/utama.jpeg)
-- Search bar diletakkan di bagian paling atas dibawah judul.
-- Tombol "cari" berada di sebelah kanan search bar.
-- **Buat LAPOR!** digunakan untuk mengirimkan laporan/komentar baru.
-- Tampilan search bar ini harus tetap ada walaupun anda tidak mengimplementasikan fitur search.
-- Tampilan pertanyaan tidak harus urut berdasarkan "Laporan/Komentar terakhir", 
-namun tulisan "Laporan/komentar Terakhir" ini harus ada.
 
 ![](tampilan/buat.jpeg)
-- Tampilan di atas digunakan untuk mengajukan atau mengubah laporan/komentar.
-- Perhatikan label dari field pada form berada di dalam field (tidak di luar)
-- Apek yang dilaporkan ditampilkan dalam bentuk `select`
 
 ![](tampilan/detail.jpeg)
-- Bagian ini menampilkan laporan/komentar. Bagian `datetime` harus ada. Tanda `kuote` tidak harus ada
-- Perhatikan label dari field pada form berada di dalam field (tidak di luar)
+
 
 ### List laporan/komentar
 Halaman utama berisi daftar judul pertanyaan, siapa yang bertanya, dan isi pertanyaan. Isi pertanyaan yang terlalu 
