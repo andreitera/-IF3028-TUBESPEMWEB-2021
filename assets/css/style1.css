@@ -1,0 +1,120 @@
+body {
+	font-style: normal;
+	background-color: #cacaca;
+	color: #333;
+	background-image: url(img/email-pattern.png);
+}
+
+.container {
+	width: 800px;
+	margin: auto;
+	background-color: #fff;
+}
+
+.header {
+	padding: 10px;
+}
+
+.header .judul {
+	font-family: cursive;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.header ul li {
+	display: inline-block;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+
+.header a {
+	text-decoration: none;
+	color: salmon;
+	padding: 10px;
+}
+
+.header a:hover {
+	background-color: lightskyblue;
+	color: white;
+}
+
+.gambar {
+	height: 280px;
+	background-image: url(img/image.jpg);
+	background-size: cover;
+	background-position: 0 -80px;
+	border-bottom : 5px solid salmon;
+	border-top: 5px solid lightskyblue;
+
+}
+
+.content {
+	padding: 20px;
+}
+
+.content h2 {
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.content .penulis {
+	font-size: 11px;
+	margin-top: -28px;
+}
+
+.content .penulis a {
+	color: salmon;
+	text-decoration: none;
+}
+
+.content p {
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+
+
+ 
+.sidebar {
+	height: 1000px;
+	width: 200px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: white;
+	overflow-x: hidden;
+	padding-top: 16px;
+	}
+ 
+.sidebar a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+	display: block;
+	}
+ 
+.sidebar a:hover {
+	color: #f1f1f1;
+	}
+ 
+.main {
+	margin-left: 200px;
+	padding: 0px 10px;
+	}
+ 
+@media screen and (max-height: 450px) {
+	.sidebar {padding-top: 15px;}
+	.sidebar a {font-size: 18px;}
+	}
+
+.footer{
+	background-color: #333;
+	padding: 5px;
+}
+
+.footer .copy {
+	color: #cacaca;
+	text-align: center;
+	font-size: 12px;
+
+}

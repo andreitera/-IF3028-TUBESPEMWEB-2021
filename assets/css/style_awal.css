@@ -1,0 +1,87 @@
+body {
+
+	background-color: #cacaca;
+	color: #333;
+}
+
+.container {
+	width: 1000px;
+	margin: auto;
+	background-color: #fff;
+	padding: 15px;
+}
+
+.judul {
+	padding: 30px;
+	text-align: center;
+
+}
+
+.judul label{
+	font-size: 60px;
+	font-family: corbel, serif;
+
+}
+
+.search {
+/*	padding: 80px;*/
+	margin-top: 50px;
+	margin-left: 10%;
+  	width: 100%;
+ 	position: relative;
+  	display: flex;
+
+}
+
+.searchTerm {
+  	width: 70%;
+  	border: 3px solid black;
+  	border-right: none;
+  	padding: 5px;
+  	height: 48px;
+  	outline: none;
+
+}
+
+.searchButton {
+  	width: 10%;
+  	height: 64px;
+  	border: 3px solid black;
+  	background: white;
+  	text-align: center;
+  	cursor: pointer;
+  	font-size: 20px;
+}
+
+.buatLapor{
+	padding: 10px;
+	text-align: center;
+}
+
+.content {
+	margin-left: 90px;
+	padding: 10px;
+	margin-right: 77px;
+	padding: 10px;
+}
+
+table {
+	width: 100%;
+}
+
+.lampiran {
+	float: left;
+}
+
+.Waktu{
+	margin-left: 44%;
+}
+
+.Selengkapnya {
+	float: inline-end;
+}
+
+
+hr {
+	width: 100%;
+}
