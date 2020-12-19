@@ -30,9 +30,9 @@
                 <p class="flex-grow-1">Waktu: <?= $item['created_at']; ?></p>
                 <p class="flex-grow-1">Aspek : <?= $item['aspek']; ?></p>
                 <p class="text-right flex-grow-2">
-                    <a href="/laporan/edit/<?= $item['id']; ?>">Edit Laporan/Komentar</a>
-                    <a href="/laporan/delete/<?= $item['id']; ?>" id="hapus"
-                        onclick="return confirm('Apakah anda yakin ingin menghapus laporan ini?')">Hapus Laporan/Komentar</a>
+                    <a href="/laporan/edit/<?= $item['id']; ?>">Ubah Laporan</a> | 
+                    <a href="/laporan/delete/<?= $item['id']; ?>" id="hapus" class="red-text"
+                        onclick="return confirm('Apakah anda yakin ingin menghapus laporan ini?')">Hapus</a>
                 </p>
             </div>
         </article>
