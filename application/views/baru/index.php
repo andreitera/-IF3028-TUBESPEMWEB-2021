@@ -1,10 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title><?php echo $judul; ?></title>
+	<title></title>
 </head>
 <body>
+	<?php foreach ($news as $news_item) { ?>	
+	
+	<!-- <h1><a href="<?php echo site_url('baru/'.$news_item['laporan']); ?>"><?php echo $news_item['laporan']; ?></a></h1> -->
+
+	<p><?php echo substr($news_item['laporan'], 0, 2); ?></p>
+	<p><a href="<?php echo site_url('baru/'.$news_item['laporan']); ?>">Read More</a></p>
+
+<?php } ?>	
 </body>
 </html>

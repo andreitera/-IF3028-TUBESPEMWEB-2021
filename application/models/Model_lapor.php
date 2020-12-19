@@ -36,7 +36,7 @@ class Model_lapor extends CI_model{
     public function getHapusLaporan(){
 
         $id = $_GET["hapus_id"];
-        $this->db->delete('simple_lapor', array('id' => $id));
+        $this->db->delete('lapor', array('id' => $id));
         echo "<script>alert('data terhapus');</script>";
         echo "<script>location='home';</script>"; 
        

@@ -1,4 +1,20 @@
+<script>
+function tambahdata(){
+    var laporan=$("[name='laporan']").val();
+    var aspek=$("[name='aspek']").val();
+    var file=$("[name='myFile']").val();
 
+    $.ajax({
+        type:'POST',
+        data:'laporan='+laporan+'&aspek='+aspek+'&myFile='+file,
+        url:'<?php echo base_url().'index.php/buat/tambahdata' ?>',
+        dataType :'json',
+        success: function(hasil){
+            console.log(hasil);
+        }
+    });
+}
+</script>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -26,13 +42,14 @@
                     <option value="Infrastruktur">Infrastruktur</option>
                     <option value="Pengajaran">Pengajaran</option>
                 </select><br>
-
+            
             <br>
-
+         
                 <input class="file" id="myFile" type="file" name="myFile"><br>
 
             <br>
                 <input class="submit submit1" name="uploadFile" type="submit" value="Buat LAPOR!"><br>
+                <!-- <button class="submit submit1" type="button" onclick="tambahdata()">Buat AJAX</button> -->
             <br>
             <hr >
         </form>

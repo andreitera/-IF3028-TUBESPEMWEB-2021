@@ -8,16 +8,15 @@
      <script src="assets/js/validasi.js"></script>
      
     </head>
- <body background="<?php base_url(); ?>assets/images/awn.jpg"> 
+ <body> 
 <p class="judul">LAPORIN</p>
  <div class="lapor">
 
 
     <form class="pencarian" onSubmit="return pencarian(this)" action="<?php echo base_url('cari')?>" method="post">
 
-        <input class="search" type="text" name="keyword" placeholder="search" autocomplete="off" autofocus>	
-       
-        <input class="button" type="submit" name="submit"  placeholder="cari" value="Cari">	 
+        <input class="search" type="text" name="keyword" placeholder="Search" autocomplete="off" autofocus>	
+        <input class="button cari" type="submit" name="submit" value="Cari">		 
        
     </form>
 
@@ -26,10 +25,42 @@
     <hr>
     <br>
     <br>
-      
+    <?php foreach ($home as $key )  :?>
+            <?php $id = $key['id']; ?>
+            <?php $now = date("Y-m-d H:i"); ?>
+            
+          <div class="arsip"> 
+          <p><?php echo substr($key['laporan'], 0, 450); ?></p>
+          </div><br>
+              <?php
+                echo "<tr>
+                
+                <a class='more' href='detail?detail_id=$id'>Lihat Selengkapnya  &nbsp<img src='assets/icon/more.png' height=13px></a>		
+              
+                
+                </tr>";
+              
+              ?>
+
+              <div class="waktu">
+                <?php 
+                $date = new DateTime($key['waktu']);
+                echo 'Waktu : ';
+                echo $date->format('d-m-Y H:i'); // 12-12-2020 05:13:03
+                ?>
+              </div> 
+
+              <div class="lampir">
+                <?php
+                echo 'Lampiran:'; 
+                echo  $key['lampiran']; 
+                ?>
+              </div>
+
         <br>
         <hr>
         <br>
+        <?php endforeach; ?>
         <img class="gambar" src="<?php echo base_url(); ?>assets/icon/menu.png">
         <img class="gambar" src="<?php echo base_url(); ?>assets/icon/menu.png">
         <br>
