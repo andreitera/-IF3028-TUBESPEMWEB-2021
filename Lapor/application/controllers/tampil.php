@@ -82,13 +82,26 @@ class Tampil extends CI_Controller
 
     public function update($id)
     {
-        $isi = $this->input->post('isi_lapor');
+        $isi = $this->input->post('isi-laporan');
         $aspek = $this->input->post('aspek');
-        $data = array(
-            'isi'   => $isi,
-            'aspek' => $aspek,
-            'file_lapor'   => $file_lapor
-        );
+        $file_lapor = $_FILES['file_lapor']['name'];
+
+        
+            $config['upload_path']   = './lampiran/';
+            $config['allowed_types'] = 'gif|jpg|png';
+            $config['file_name']    = date('Y-m-d H-i-s', time());
+            $this->load->library('upload', $config);
+
+            if ($this->upload->do_upload('file_lapor')) {
+                $file_lapor = $this->upload->data('file_name');
+            } else {
+            }
+
+            $data = array(
+                'isi'       => $isi,
+                'aspek'     => $aspek,
+                'file_lapor'  => $file_lapor
+            );
         $searchkey = array('id' => $id);
         $this->post_model->update_data($searchkey, $data, $this->nama_tabel);
         redirect('tampil/view/' . $id);

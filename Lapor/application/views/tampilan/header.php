@@ -32,7 +32,7 @@
                         <a class="nav-link" href="<?php echo base_url() .'tambah#buat-lapor'; ?>">Buat Laporan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url() . 'home#detail' ?>">Laporan</a>
+                        <a class="nav-link" href="<?php echo base_url() . 'home#search' ?>">Laporan</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="<?php echo base_url() . 'home#footer' ?>">Our Team</a>

@@ -21,7 +21,7 @@
                     <a class="btn mt-4 mb-5" href="#">Selengkapya</a>
                 </div>
                 <div class="col-12 col-md-6">
-                    <img class="img-fluid" src="<?php echo base_url() . 'images/about-img2-01.png' ?>" alt="">
+                    <img class="img-fluid" src="<?php echo base_url() . 'images/about-img.png' ?>" alt="">
                 </div>
             </div>
         </div>
