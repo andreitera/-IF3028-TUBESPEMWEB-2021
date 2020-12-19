@@ -85,6 +85,32 @@ li {
     display: flex;
     padding: 10px;
 }
+
+.profile > a:nth-child(1) {
+    border: none;
+}
+
+.profile > a:nth-child(2):hover{
+    background-color: #f7f7f7;
+    color: rgb(151, 36, 36);
+    top: -0.81px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.profile > a {
+    line-height: 2.5rem;
+    padding: 0px 30px;
+    position: relative;
+    margin: 0 10px;
+    border: 1.7px solid #f7f7f7;
+    color: #f7f7f7;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.7px;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
 .profile > span {
     margin: 15px;
 }
@@ -349,3 +375,4 @@ svg:not(:root) {
 .w-100 {
     width: 100% !important;
 }
+

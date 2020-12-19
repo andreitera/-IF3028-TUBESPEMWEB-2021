@@ -34,10 +34,17 @@
                             </ul>
                         </div>
 
-                        <div class="profile">
-                            <img src=" {{ asset('asset/images/user-icon.png') }} " width="50px" height="50px" alt="profile">
-                            <span class="color-white">Nestiawan Ferdiyanto</span>
-                            <span><img class="icon-down" class="color-white" src="{{ asset('asset/images/icons/caret-down.svg') }}" width="15px" height="15px" alt=""></span>
+                        <div class="profile" style="padding: 20px !important;">
+
+                            {{-- @if (!Auth::check())
+                                <img src=" {{ asset('asset/images/user-icon.png') }} " width="50px" height="50px" alt="profile">
+                                <span class="color-white">Nestiawan Ferdiyanto</span>
+                                <span><img class="icon-down" class="color-white" src="{{ asset('asset/images/icons/caret-down.svg') }}" width="15px" height="15px" alt=""></span>
+                            @else --}}
+                                <a href="">Masuk</a>
+                                <a href="">Daftar</a>    
+                            {{-- @endif --}}
+
                         </div>
                     </div>
                 </div>
