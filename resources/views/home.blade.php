@@ -9,7 +9,25 @@
 <style>
     .margin {
     margin: auto 100px auto 100px;
+    <link href='http://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
 }
+
+.font{
+    font-family: 'Poppins';
+    }
+
+.font1{
+    font-family: 'Poppins';
+    margin-top: -15px;
+    font-size: 24px
+    }
+
+.font2{
+    font-family: 'Poppins';
+    margin-bottom: 0px;
+    font-size: 28px
+    }
+
 .kotak {
     width: 100%;
 }
@@ -18,6 +36,7 @@
     width: 30px;
     height: 30px;
     margin: auto 0 auto 0;
+    padding-right:10px;
 }
 
 .desc{
@@ -25,8 +44,10 @@
 }
 
 .input {
+    padding-left: 15px;
+    font-size:18px;
     width: 800px;
-    height: 30px;
+    height: 40px;
     border-top-left-radius: 45px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -35,14 +56,18 @@
 }
 
 .src {
-    width: fit-content;
-    height: 37px;
+    font-size: 18px;
+    width: 100px;
+    height: 46px;
+    padding-right: 40px;
+    padding-left: 10px;
     background: transparent;
     border-top-left-radius: 0px;
     border-top-right-radius: 45px;
     border-bottom-right-radius: 45px;
     border-bottom-left-radius: 0px;
     display: inline-flex;
+    vertical-align: bottom;
 }
 
 .buatlap {
@@ -74,12 +99,13 @@
 <body>
     <br />
     <br />
-    <div class="margin">
-        <center><h1>SIMPLE LAPOR!</h1></center>
-        <br />
-        <br />
-        <br />
-
+    <div class="margin" >
+        <center><p class='font2'><b>Simple LAPOR!</b></p></center>
+        <center><h1 class='font'>Layanan Aspirasi dan Pengaduan Online Informatika ITERA</h1></center>
+        <center><p class='font1'>Sampaikan laporan Anda langsung dibawah ini</p></center>
+        <br/>
+        </br>
+        </br>
         <div class="kotak">
             <center>
                 <input type="text" class="input" /><button class="src"><img class="kaca" src="kaca.png" alt="" /><span class="desc">Cari</span></button>
