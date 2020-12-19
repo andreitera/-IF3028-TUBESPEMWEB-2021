@@ -37,7 +37,7 @@
 		
 			<a href="<?php echo site_url('Laporan_controller/tambah') ?>">Buat Laporan/Komentar 
 
-			<div style="margin-top: -18px; margin-left: 200px;">
+			<div style="margin-top: -18px; margin-left: 195px;">
 	
 				<a href="<?php echo site_url('Laporan_controller/tambah') ?>">
 
@@ -56,17 +56,27 @@
 		
 		<hr>
 
-		<?php foreach ($laporan as $value):
+		<?php foreach ($laporan as $value): ?>
 			 
-			 echo "<p>$value->isi</p><br>";
-			 echo "<p>Lampiran: $value->lampiran</p>";  
-			 echo "<p style='width: auto; height: auto; float: right; margin-top:-35.9px; margin-right: 150px;'>Waktu: $value->waktu</p>";
-		
-		?>
-		
-		<a href="<?php echo site_url('Laporan_controller/detail/'.$value->id) ?>" style="float: right; margin-top:-35.9px;">Lihat Selengkapnya</a>
+			 <?php  echo "<p>$value->isi</p><br>"; ?>
+			 <p><img src="<?php  echo base_url('icon/file.png') ?>" width="20px" height="20px"></p>
 
-		<div style="margin-top: -35px; margin-left: 700px;">
+			 <div style="margin-top: -40px; margin-bottom: 17px; margin-left: 25px;">
+
+			 Lampiran: <?= $value->lampiran ?>
+
+			 </div>
+			 
+			 <?php echo "<p style='width: auto; height: auto; margin-top:-35.9px; margin-left: 325px;'>Waktu: $value->waktu</p>"; ?>
+		
+		
+		
+		<p style="margin-top: -35.6px; margin-left: 538px;">
+			<a href="<?php echo site_url('Laporan_controller/detail/'.$value->id) ?>">Lihat Selengkapnya</a>
+
+		</p>
+
+		<div style="margin-top: -34px; margin-left: 678px;">
 	
 				<a href="<?php echo site_url('Laporan_controller/detail') ?>">
 
