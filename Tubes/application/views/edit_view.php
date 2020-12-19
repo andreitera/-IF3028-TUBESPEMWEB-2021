@@ -15,6 +15,9 @@
                     <p>Buat Laporan/Komentar</p>
                     <hr><br>
                     <div>
+                        <input type="hidden" name="id" value="<?php echo $laporan->id ?>">
+                    </div>
+                    <div>
                         <textarea name="isi" placeholder="Laporan/Komentar" class="textarea"><?php echo $laporan->isi ?></textarea>
                     </div><br>
                     <div>
