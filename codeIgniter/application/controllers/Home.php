@@ -18,7 +18,7 @@ class Home extends CI_Controller
 	public function tambah(){
 		
 		//validasi form
-		$this->form_validation->set_rules('isi', 'Laporan', 'required');
+		$this->form_validation->set_rules('isi', 'Laporan', 'required|min_length[100]');
 		
 		if($this->form_validation->run() == FALSE){
 			$this->load->view('tambah/index');			
