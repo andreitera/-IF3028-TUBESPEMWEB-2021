@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 50px 200px 0 200px;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+form {
+    height: auto;
+}
+
+form textarea {
+    width: 96%;
+    border: solid 1.5px;
+    height: 300px;
+    padding: 10px 2%;
+}
+
+form select {
+    width: 200px;
+    border: solid 1px;
+}
+
+form input {
+    border: solid 1px;
+}
+
+.buat_btn {
+    border: solid 1px;
+    float: right;
+    text-align: center;
+    height: 50px;
+    width: 200px;
+}
+br {
+    margin-top: 20px;
+}
+

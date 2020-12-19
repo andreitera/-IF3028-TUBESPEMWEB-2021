@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 50px 200px;
+}
+
+h1 {
+    color: rgb(39, 39, 39);
+    text-align: center;
+}
+
+.judul{
+    margin:50px auto;
+    font-size: 35px;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+}
+
+.ubah{
+    text-decoration: none;
+    display: flex;
+    float: right;
+    margin-right: 15px;
+    color: black;
+
+}
+
+.arsip{
+    text-align: justify;
+}
+
+.waktu{
+    text-decoration: none;
+    display: flex;
+    float: left;
+    margin-right: 20px;
+    color: black;
+}
+
+.aspek{
+    text-decoration: none;
+    display: flex;
+    float: left;
+    color: black;
+    margin-left: 15px;
+}
+
+.waktu2{
+    text-decoration: none;
+    display: flex;
+    float: left;
+    margin-right: 20px;
+    color: black;
+}
+
+.hapus{
+    text-decoration: none;
+    display: flex;
+    float: right;
+    color: black;
+}

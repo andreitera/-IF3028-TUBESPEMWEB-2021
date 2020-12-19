@@ -17,22 +17,21 @@ Project dikerjakan secara **berkelompok** dengan maksimal jumlah anggota adalah 
 contoh: fix css, membuat post done, jangan seperti final, benerin dikit, oke deh, update deh dll. 
 Disarankan untuk tidak melakukan commit dengan perubahan yang besar karena akan mempengaruhi 
 penilaian (contoh: hanya melakukan satu commit kemudian dikumpulkan).
-3. Minimal commit sebanyak personil anggota tim dengan masing-masing personil tim melakukan commit sesuai dengan kesepakatan tim, penilaian individu akan dilihat.
-4. Ubah **Penjelasan Teknis** pada bagian bawah readme.md ini dengan menjelaskan bagaimana cara anda:
+3. Ubah **Penjelasan Teknis** pada bagian bawah readme.md ini dengan menjelaskan bagaimana cara anda:
    - Instalasi Framework, Koneksi basis data 
    - Melakukan validasi pada client-side
    - Melakukan AJAX (mulai dari pengguna melakukan klik pada tombol LAPOR! sampai laporan/komentar terkirim).
-5. Pull request dari repository anda ke repository ini dengan 
+4. Pull request dari repository anda ke repository ini dengan 
 format **NIM** - **Nama Lengkap**. **Waktu terkahir proses pull request adalah 4 hari setelah 
 ujian akhir semester (UAS)**
-6. Data yang dikumpulkan adalah:
+5. Data yang dikumpulkan adalah:
    - Source code aplikasi
    - Basis data, dan
    - Cara instalasi aplikasi anda
-7. Penilaian:
+6. Penilaian:
    - Kerjasama tim
    - Kesesuaian dengan spesifikasi
-   - Pemahaman dalam penggunaan framework, penilaian efisiensi query
+   - Pemahaman dalam penggunaan framework
    - Antarmuka aplikasi
    - Bug free :beetle:
    
@@ -71,8 +70,6 @@ panjang harus dipotong. Silakan definisikan sendiri seberapa panjang agar tetap 
 
 Pada masing-masing elemen list, terdapat menu untuk mengubah dan menghapus pertanyaan.
 
-View Laporan ditampilkan secara terurut dimulai dari laporan terakhir yang diberikan highlight
-
 ### Kirim laporan/komentar `LAPOR!`
 Pengguna dapat mengajukan laporan/komentar. Form yang digunakan memiliki komentar (textarea), 
 data lapiran berupa gambar 
@@ -99,7 +96,46 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+KELAS  : PABW RD 2020
+ANGGOTA: TIO FAZRI FAHMI SAPUTRA (14116123)
+         M ICHSAN AL-FATIH (14116126)
+         LIGA SEPTIAN (14117039)
+======================PENJELASAN TEKNIS=========================
+
+1. Instalasi framework
+   Penginstalan framework codeigniter dilakukan dengan cara :
+   -Download codeigniter versi 3 pada link https://codeigniter.com/userguide3/installation/downloads.html
+   -Ekstrak folder
+   -Copy seluruh folder hasil ekstraksi ke dalam projek
+   -Buka folder application di projek
+   -Buka sub-folder config lalu lakukan konfigurasi pada database.php file autoload.php config.php dan routes.php
+   -Tambahkan file .htaccess yang isinya ada pada website dokumentasi codeigniter
+
+2. Database
+   Pembuatan data base dilakukan dengan memberi perintah pada mysql:
+   CREATE TABLE lapor (
+    id int(10) not null AUTO_INCREMENT PRIMARY KEY,
+    isi longtext not null,
+    aspek varchar(25) not null,
+    waktu datetime not null,
+    lampiran varchar(50)
+    )
+
+    Instalasi database pada projek dilakukan dengan cara :
+    -Masuk ke folder application -> config
+    -Buka file database.php lalu lakukan konfigurasi sesuai dengan pengaturan database
+
+3. Validasi di Client Side
+   -Buat folder js lalu buat file dengan ekstensi javascript di dalam folder assets codeigniter
+   -Tambahkan source code pada file javascript sesuai dengan kriteria tugas yang dibutuhkan (ex: fitur pencarian)
+   -Sambungkan file javascript dengan file views menambahkan <script src="assets/js/validasi.js"></script>
+
+4. Fitur-fitur yang berhasil diselesaikan
+   -Create data
+   -Read data
+   -Search data
+   -Delete data
+   -View telah sesuai
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
@@ -113,5 +149,6 @@ anchor tag.
 
 ### About :honeybee:
 
-Dosen       : Dicky Prima Satya, M.T., Andre Febrianto, S.Kom., M.Eng., Amirul Iqbal, S.Kom., M.Eng.
+Dosen       : Dosen : Dicky Prima Satya, M.T., Andre Febrianto, S.Kom., M.Eng., Amirul Iqbal, S.Kom., M.Eng.
+
 
