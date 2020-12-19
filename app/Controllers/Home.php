@@ -35,6 +35,13 @@ class Home extends BaseController
 		]);
 		return redirect()->to('/');
 	}
+	
+	public function detail()
+	{
+		echo view('templates/header');
+		echo view('detail');
+		echo view('templates/footer');
+	}
 	//--------------------------------------------------------------------
 
 }
