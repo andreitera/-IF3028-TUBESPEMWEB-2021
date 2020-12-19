@@ -54,7 +54,7 @@
 		
 		?>
 		
-		<a href="<?php echo site_url('Laporan_controller/detail') ?>" style="float: right; margin-top:-35.9px;">Lihat Selengkapnya</a>
+		<a href="<?php echo site_url('Laporan_controller/detail/'.$value->id) ?>" style="float: right; margin-top:-35.9px;">Lihat Selengkapnya</a>
 		
 		<hr>
 		

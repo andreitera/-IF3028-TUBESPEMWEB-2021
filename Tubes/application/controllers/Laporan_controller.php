@@ -54,8 +54,11 @@
             $this->load->view("edit_view", $data);
         }*/
 
-        public function detail(){
-            $this->load->view("detail_view");
+        public function detail($id = null){
+            if (!isset($id)) redirect('tampilan_view');
+            $laporan = $this->laporan_model;
+            $data["laporan"] = $laporan->getById($id);
+            $this->load->view("detail_view", $data);
         }
 
         public function delete($id=null){

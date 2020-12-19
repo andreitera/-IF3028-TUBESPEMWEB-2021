@@ -29,24 +29,9 @@
 		<hr>
 
 		<br>
-
 		
 			<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-
-			<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<?php echo $laporan->isi; ?>
 			</p>
 			
 			<p>Lampiran: </p>
@@ -58,16 +43,14 @@
 
 		
 
-			<p>Waktu: Aspek: Infrastruktur </p>
+			<p>Waktu: <?php echo $laporan->waktu; ?> Aspek: <?php echo $laporan->aspek; ?> </p>
 
 			<a href="<?php  echo site_url('Laporan_controller/edit') ?>" style="width: auto; height: auto; float: right; margin-top: -34px; margin-right: 186px;">Edit |</a>
 
-			<div class="detail"><a href = "#" onclick="return confirm('Ingin menghapus data ?');">Hapus Laporan/Komentar</a></div>
+			<div class="detail"><a href = "#" onclick="deleteConfirm('<?php echo site_url('Laporan_controller/delete/'.$laporan->id) ?>')">Hapus Laporan/Komentar</a></div>
 		<hr>
 		
 
-
-		</div>
 
 		<br><br>
 
