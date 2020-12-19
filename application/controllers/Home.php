@@ -84,10 +84,10 @@ class Home extends CI_Controller
         }
     }
 
-    function ubah($id)
+    public function ubah($id)
     {
 
-        $this->form_validation->set_rules('isi', 'Isi', 'required|min_length[250]');
+        $this->form_validation->set_rules('laporan', 'laporan', 'required|min_length[250]');
         if ($this->form_validation->run() == FALSE) {
             $data['aspek'] = ['', '', '', '', ''];
             $data['lapor'] = $this->Lapor_model->detail($id);
