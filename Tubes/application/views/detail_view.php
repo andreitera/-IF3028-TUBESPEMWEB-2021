@@ -34,12 +34,8 @@
 				<?php echo $laporan->isi; ?>
 			</p>
 			
-			<p>Lampiran: </p>
+			<p>Lampiran: <?php echo $laporan->lampiran; ?></p>
 
-
-			<div class="file">
-				
-			</div>
 
 			<div>
 
