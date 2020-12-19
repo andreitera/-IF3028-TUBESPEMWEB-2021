@@ -99,8 +99,54 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
-
+<ol>
+   <li>Instalasi Framework Laravel 8 di Windows</li>
+   <ul>
+      <li>Install composer di [getcomposer.org](https://getcomposer.org)</li>
+      <li>Jika composer sudah terinstall, buka terminal dan install aplikasi Laravel Installer secara global (agar memudahkan instalasi untuk berikutnya) dengan menjalankan perintah :
+         <pre>
+            <code>composer global require laravel/installer</code>
+         </pre>
+      </li>
+      <li>Jika Laravel Installer sudah terinstall, pindahkan lokasi proses terminal anda saat ini ke lokasi dimana anda akan menginstall aplikasi laravel</li>
+      <li>Pada terminal anda, jalankan perintah :
+         <pre>
+            <code>laravel new [nama_aplikasi_anda]</code>
+         </pre>
+      </li>
+      <li>Jika proses telah selesai, aplikasi anda akan tersedia di dalam folder [nama_aplikasi_anda]</li>
+   </ul>
+   <li>Pengaturan Database</li>
+   <ul>
+      <li>Pertama, buat database anda di localhost</li>
+      <li>Buka file `.env` di dalam folder aplikasi anda</li>
+      <li>Ubah line `DB_~` sesuai dengan konfigurasi database yang sudah anda buat. Contoh :
+         <pre>
+            <code>
+               DB_CONNECTION=mysql
+               DB_HOST=127.0.0.1
+               DB_PORT=3306
+               DB_DATABASE=tubespemweb
+               DB_USERNAME=root
+               DB_PASSWORD=
+            </code>
+         </pre>
+      </li>
+      <li>Buka terminal anda, dan arahkan lokasi proses terminal ke lokasi aplikasi laravel anda</li>
+      <li>Untuk permulaan, lakukan perintah pada terminal anda :
+         <pre>
+            <code>
+               php artisan migrate
+            </code>
+         </pre>
+      </li>
+      <li>Database kami telah kami `export` kedalam bentuk SQL di direktori `database\`</li>
+   </ul>
+   <li>
+      Validate Client-side dapat dilihat pada fungsi script di 'Resources/views/laporan/create.blade.php'
+   </li>
+</ol>
+         
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
 - CSS: margin, padding, header tag, font-size, text-align, float, clear, border, color, div, span, placeholder, 
