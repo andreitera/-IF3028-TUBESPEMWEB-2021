@@ -21,7 +21,7 @@ Route::get('/login',                    'AuthController@login')->name('login.use
 Route::get('/',                 'LaporController@index')->name('landing');
 Route::get('/lapors',           'LaporController@listView')->name('list.laporan');
 Route::get('/profil',           'ProfileController@showProfile')->name('showProfile');
-Route::get('/view-lapor',       'LaporController@viewLapor')->name('viewComment');
+Route::get('/view-lapor',       'LaporController@viewLapor')->name('viewLapor');
 Route::get('/search',           'LaporController@viewSearch')->name('viewSearch');
 
 //----------- Route Comment -----------
