@@ -1,0 +1,140 @@
+body{
+    font-family: 'Lato', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    background-image: url(../img/template3.png);
+}
+
+h1{
+    margin: 0px;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0px;
+    padding: 10px;
+    background-color: #daa520;
+}
+
+.logo{
+    position: fixed;
+    top: 3px;
+    left: 4px;
+    margin: 0px;
+    padding: 3px;
+    background-color: #ffffff;
+    border-radius: 6px;
+}
+
+.header h1{
+    text-align: center;
+}
+
+.container-laporan{
+    margin: 4.2rem 9rem 10px 9rem;
+    padding: 0.1rem 1rem;
+    background-color: #ffffff;
+    box-shadow: 13px 12px 23px #d5cfcf;
+}
+
+.line{
+    margin-top: -8px;
+    height: 2px;
+    background-color: #d7261e;
+}
+
+.data{
+    margin: 16px auto;
+}
+
+/* Begin css home.php */
+.search{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.search input{
+    width: 40%;
+    height: 30px;
+}
+
+.search button{
+    width: 5%;
+    height: 36px;
+}
+
+.buat-lapor{
+    margin: 5px 20px;
+    text-align: center;
+}
+
+.buat-lapor a{
+    color: black;
+    text-decoration: none;
+}
+
+.buat-lapor a:hover{
+    background-color: whitesmoke;
+}
+
+.buat-lapor img{
+    border: 1px solid black;
+    border-radius: 55%;
+    width: 10px;
+
+}
+/* end css home.php */
+
+/* start css formlapor.php */
+.data textarea{
+    width: 98%;
+    height: 20rem;
+    padding: 10px;
+    font-family: 'Lato', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.data .aspek{
+    padding: 6px;
+}
+
+.data .file{
+    padding: 6px;
+    border: 1px solid grey;
+    border-radius: 2px;
+}
+
+.data button{
+    margin-bottom: 6px;
+    float: right;
+    padding: 6px;
+}
+
+.button-detail{
+    float: right;
+    text-decoration: none;
+    margin-top: -16px;
+    color: black;
+}
+
+.button-detail:hover{
+    color: red;
+}
+/* end css formlapor.php */
+
+/* start css detaillapor.php */
+.btn-detail{
+    float: right;
+    text-decoration: none;
+    color: black;
+}
+
+.btn-detail:hover{
+    color: red;
+}
+
+/* end css detaillapor.php */
