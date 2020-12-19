@@ -52,7 +52,9 @@ class LaporController extends Controller
     public function viewSearch(Request $search)
     {
         $cari = $search->q;
-        $listSearch = Lapor::where('title', 'regexp', '^'.  $cari . '$' )->get();
+        $listSearch = Lapor::where('title', 'regexp', $cari)->get();
+        // print_r($listSearch);
+        // print_r($listSearch[0]->libraries_status_id);
         return view('Lapor.page.search')->with([
             'queue' => $cari,
             'listSearch' => $listSearch
