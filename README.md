@@ -99,7 +99,14 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+- Instalasi framework Framework yang digunakan adalah CodeIgniter 3. Konfigurasi dilakukan pada direktori application/config. File yang dikonfigurasikan antara lain: -config.php, digunakan untuk mengatur base_url dari project CI; -database.php, digunakan untuk mengatur koneksi database seperti user, password dan databse; -routes.php, digunakan untuk memetakan URL ke sumber daya tertentu
+
+- Koneksi database Koneksi database dilakukan dengan mengatur file database.php. Dengan hostname="localhost", username="root", password="password",database="tubesPemweb"
+
+- Validasi client-side Validasi limit kata textarea dan required form dilakukan dengan kode javascript yakni dengan fungsi checkWordCount() dan fungsi checkField. Kode ini dapat dilihat dibagian atas kode program views/beranda.php
+
+- AJAX Ajax digunakan pada fitur cari yang berada di views/beranda.php. Fungsi ini menggunakan native javascript XMLHTTPRequest
+
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
