@@ -26,16 +26,7 @@
             </div>
         </div>
     </section>
-    <section class="laporan" id="laporan">
-        <div class="container">
-            <div class="row text-center text-white">
-                <div class="laporan-info">
-                    <h1>JUMLAH LAPORAN SEKARANG</h1>
-                    <h1 class="big-text"><?php echo count($lapor) ?></h1>
-                </div>
-            </div>
-        </div>
-    </section>
+    
     <section class="about" id="laporan-akhir">
         <form class="searchbar" action="<?php echo base_url('tampil/search') ?>" method="GET">
             <input type="search" name="keyword" id="search" placeholder="Kata kunci atau tracking ID...">

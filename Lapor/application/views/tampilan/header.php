@@ -39,6 +39,12 @@
                     </li>
                 </ul>
             </nav>
+
+            <div class="img-itera">
+                    <h1>JUMLAH LAPORAN SEKARANG</h1>
+                    <h1 class="big-text"><?php echo count($lapor) ?></h1>
+                </div>
+
             <div class="hero-text">
                 <h1 class="display-4">lapor I</h1>
                 <p class="lead mb-4">Website untuk kamu semua yang ingin menyampaikan aspirasi, komentar,<BR> dan lain sebagainya ke INSTITUT TEKNOLOGI SUMATERA</p>
