@@ -28,8 +28,8 @@
                 <input class="file" name="file" type="file">
             </div>
             <div class="data">
-                <!-- <button class="submit" type="submit">Buat LAPOR!</button> -->
-                <input class="button" type="submit" name="submit" value="submit">
+                <button class="submit" type="submit">Buat LAPOR!</button>
+                <!-- <input class="button" type="submit" name="submit" value="submit"> -->
             </div>
         <?php echo form_close(); ?>
         <div class="line" style="clear: both;"></div>

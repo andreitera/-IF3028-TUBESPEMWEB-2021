@@ -102,8 +102,10 @@ h1{
     padding: 6px;
 }
 
-.data .file, .btn-file{
+.data .file{
     padding: 6px;
+    border: 1px solid grey;
+    border-radius: 2px;
 }
 
 .data button{
