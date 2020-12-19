@@ -72,13 +72,11 @@
 		
 		
 		<p style="margin-top: -35.6px; margin-left: 538px;">
-			<a href="<?php echo site_url('Laporan_controller/detail/'.$value->id) ?>">Lihat Selengkapnya</a>
-
+			<a href="<?php echo site_url('Laporan_controller/detail/'.$value->id) ?>">Lihat Selengkapnya
 		</p>
 
 		<div style="margin-top: -34px; margin-left: 678px;">
 	
-				<a href="<?php echo site_url('Laporan_controller/detail') ?>">
 
 					<img src="<?php  echo base_url('img/next-button.png') ?>" width="20px" height="20px">
 
