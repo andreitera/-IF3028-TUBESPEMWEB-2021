@@ -100,6 +100,18 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 
 ### Penjelasan Teknis
 `Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+A. Installasi framework (CodeIgniter)
+Kami menggunakan codeigniter, untuk instalasi silahkan klik link di bawah ini : https://codeigniter.com/userguide3/installation/downloads.html
+controller akan melakukan fungsi utama sistem, model akan mengatur koneksi antara controller dan database yang akan ditampilkan dibagian view. untuk css dan asset lainnya kami simpan di folder asset
+
+koneksi pada database kami gunakan CI untuk mengedit file databse.php . pada application -> config ->database.php didalamnya  kita isi nama database sesuai database milik kita. database juga akan langsung terkoneksi saat sistem dijalankan dengan melakukan instalasi pada file autoload.php dan menambahkan database dibagian libraries.
+
+B. Validasi Client
+ketika menambahkan laporan, sistem akan melakukan validasi pada isi dan file yang akan diinput. Isi laporan harus terisi minimal 20 kata atau 100 karakter.
+file sistem dapat menerima lampiran berupa gambar dan file dengan ekstensi doc, docx, xlx, xlsx, ppt, pptx, dan pdf. selain itu laporan tetap terkirim walaupun file tidak akan muncul di hasil laporan.
+
+C. AJAX
+Pada menu pencarian kami gunakan AJAX dimana data yang di input di filed cari akan diolah di halaman yang sama. Pada saat memasukkan kata pencarian bagian konten akan berubah untuk menampilkan data hasil pencarian, dimana pencarian dilakukan dengan menggunakan fungsi LIKE pada bagian isi dan tanggal laporan
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
