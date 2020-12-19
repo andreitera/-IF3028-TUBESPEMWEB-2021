@@ -26,7 +26,7 @@
                     {{-- Menu --}}
                     <ul class="d-flex menus-nav">
                         <li><a href="">Tentang Lapor!</a></li>
-                        <li class="active"><a href="{{ route('list.laporan') }}">Laporan</a></li>
+                        <li class="active"><a href="">Laporan</a></li>
                         <li><a href="">Cari Aduan</a></li>
                     </ul>
                 </div>
