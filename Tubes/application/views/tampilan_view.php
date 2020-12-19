@@ -35,8 +35,18 @@
 
 		<center>
 		
-			<a href="<?php  echo site_url('Laporan_controller/tambah') ?>">Buat Laporan/Komentar</a>
-		
+			<a href="<?php echo site_url('Laporan_controller/tambah') ?>">Buat Laporan/Komentar 
+
+			<div style="margin-top: -18px; margin-left: 200px;">
+	
+				<a href="<?php echo site_url('Laporan_controller/tambah') ?>">
+
+					<img src="<?php  echo base_url('icon/plus.png') ?>" width="20px" height="20px">
+
+				</a>	
+			
+			</div>
+
 		</center>
 		
 
@@ -55,6 +65,16 @@
 		?>
 		
 		<a href="<?php echo site_url('Laporan_controller/detail/'.$value->id) ?>" style="float: right; margin-top:-35.9px;">Lihat Selengkapnya</a>
+
+		<div style="margin-top: -35px; margin-left: 700px;">
+	
+				<a href="<?php echo site_url('Laporan_controller/detail') ?>">
+
+					<img src="<?php  echo base_url('icon/next-button.png') ?>" width="20px" height="20px">
+
+				</a>	
+			
+		</div>
 		
 		<hr>
 		
