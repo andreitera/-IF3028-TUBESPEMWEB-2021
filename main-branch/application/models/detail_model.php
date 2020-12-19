@@ -18,6 +18,13 @@ class detail_model extends CI_Model
         $this->db->where($hapus);
         $this->db->delete($table);
     }
+
+    public function cari_kata()
+    {
+        $cari = $this->input->GET('cari', TRUE);
+        $data = $this->db->query("SELECT * from laporan where isi like '%$cari%'");
+        return $data->result_array();
+    }
 }
 
     /*a href="<?= base_url('detail/hapus_data/') . $laporan['id'] ?>"*/

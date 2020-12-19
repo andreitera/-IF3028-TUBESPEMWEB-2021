@@ -23,4 +23,10 @@ class Detail extends CI_Controller
         $this->detail_model->delete_data($hapus, 'laporan');
         redirect('menu');
     }
+
+    public function cari()
+    {
+        $data['cari'] = $this->detail_model->cari_kata();
+        $this->load->view('hasil/index', $data);
+    }
 }

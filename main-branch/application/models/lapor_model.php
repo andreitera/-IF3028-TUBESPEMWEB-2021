@@ -37,7 +37,6 @@ class lapor_model extends CI_Model
                 $lampiran = $this->upload->data('file_name');
             }
 
-            
             $data = array(
                 'isi' => $isi,
                 'aspek' => $aspek,
