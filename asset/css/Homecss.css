@@ -1,13 +1,21 @@
-
 body {
+    font-family: 'Quicksand',sans-serif;
+        background: url(simplelapor.jpg) no-repeat fixed;
+        background-size: 100% 100%;
+    
     margin: 0;
     padding: 0;
 }
 
 .landing-page {
-    height: 87vh;
+    height: 100vh;
+    text-align: center;
 }
 
+hr{
+    height: 2px;
+    color: #2E8B57;
+}
 h1,
 h6 {
     text-align: center;
@@ -38,7 +46,7 @@ h6 {
     font-weight: normal;
 }
 
-.search-container>button {
+.search-container>a>button {
     width: 23%;
     cursor: pointer;
     padding: 15px;
@@ -90,12 +98,9 @@ a {
     text-align: center;
 }
 .comment{
-    
     margin: 10px auto;
     text-align: justify;
-    width: 96%;
-    height: 300px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 50%;
 }
 
 .next{
@@ -107,6 +112,7 @@ a {
     border-radius: 5px;
     padding: 20px;
     margin-top: 20px;
+    background-color: rgb(192, 248, 209);
 }
 
 .footer{

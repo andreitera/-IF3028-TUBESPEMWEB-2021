@@ -1,0 +1,86 @@
+body{
+    font-family: 'Quicksand',sans-serif;
+    background: url(simplelapor.jpg) no-repeat fixed;
+    background-size: 100% 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.lampiran{
+    width: 100px;
+}
+
+.container{
+    height: 100vh;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.container h1{
+    text-align: center;
+    font-weight: bold;
+}
+
+.hapus{
+    float: right;
+}
+
+.footer{
+    padding: 20px;
+    color: white;
+    background-color: #2E8B57;
+    text-align: center;
+    font-weight: bold;
+}
+
+.nav {
+    text-align: right;
+    background-color: #2E8B57;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+.nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+.nav a:hover {
+    font-weight: bold;
+}
+
+.nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color:rgb(192, 248, 209);
+}
+
+.isiLaporan{
+    text-align: justify ;
+}
+.ubah{
+    margin-right: 10px;
+    float: right;
+}

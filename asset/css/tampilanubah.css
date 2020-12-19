@@ -23,27 +23,10 @@ hr {
         top: 0;
     }
 
-.nav a {
-    font-size: 18px;
-    font-weight: 400;
-    text-decoration: none;
-    color: rgb(231, 253, 243);
-}
-
-.nav a:hover {
-    font-weight: bold;
-}
-
-.nav li {
-    display: inline;
-    list-style-type: none;
-    margin-right: 20px;
-}
-
 .container {
-    height: 87vh;
-    margin-left: 25%;
-    margin-right: 25%;
+    height: 100vh;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 textarea {
@@ -55,10 +38,11 @@ textarea {
     float: right;
 }
 
-.footer{
-    padding: 20px;
+footer{
+    padding: 5px;
     color: white;
     background-color: #2E8B57;
     text-align: center;
     font-weight: bold;
+   
 }
