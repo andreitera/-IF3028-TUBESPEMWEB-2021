@@ -99,7 +99,16 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+A. Instalasi Framework CodeIgniter
+Di Tugas Besar Pemrograman Web ini, kami menggunakan CodeIgniter untuk instalasi. Dengan menggunakan controler, model, dan view. Controler akan melakukan fungsi utama sistem, model akan mengatur koneksi antara controller dan database yang akan ditampilkan di bagian view. Sedangkan untuk CSS dan assets lainnya kami menyimpannya di folder assets.
+
+Untuk konoeksi ke database, pada CodeIgniter kami hanya meng-edit file database.php pada application->config->database.php didalamnya ada isi nama database sesuai database milik kami. Database akan langsung terkoneksi saat sistem dijalankan dengan melakukan instalasi pada file autoload.php dengan menambahkan database di bagian libraries.
+
+B. AJAX
+Kami juga menggunakan ajax untuk menu pencarian. Nantinya data yang diinputkan akan di filed cari dan diolah di halaman yang sama. Saat kita memasukkan kata pencarian pada bagian konten, akan berubah dengan menampilkan data hasil pencarian, dimana pencarian dilakukan dengan menggunakan fungsi LIKE pada bagian isi dan tanggal laporan
+
+C. Validasi Client 
+Saat menambahkan laporan, sistem akan melakukan validasi pada isi dan file yang akan diinput. Isi laporan tidak boleh kosong dan minimal 20 kata/100 karakter. Untuk file sistem hanya menerima file dengan ekstensi pdf atau gambar, selain itu laporan tetap terkirim tetapi file tidak akan muncul di hasil laporan
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
