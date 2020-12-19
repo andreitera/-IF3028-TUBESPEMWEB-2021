@@ -86,6 +86,23 @@ class LaporController extends Controller
         ]);
     }
 
+    public function komenPost(request $input)
+    {
+        $this->validate($input, [
+            'add_comment'                 => 'required',
+        ]);
+
+        $koment = new Comment;
+        $koment->user_id    = Auth::user()->id;
+        $koment->lapor_id   = $input->lapor_id;
+        $koment->komentar   = $input->add_comment;
+
+        if($koment->save()){
+            return redirect()->back()->with('success', "Berhasil Menambahkan Komentar");
+        } return redirect()->back()->with('danger', "Gagal Menambahkan Komentar - Silakan Coba Kembali");
+
+    }
+
     public function viewSearch(Request $search)
     {
         $cari = $search->q;

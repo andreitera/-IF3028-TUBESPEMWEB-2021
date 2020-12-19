@@ -13,7 +13,8 @@
             <div class="daftar-header">Daftar</div>
         </div>
         <div class="middle"> 
-            <form >
+            <form action="{{ route('register.user.post') }}" method="post">
+                @csrf
                 <div class="login-form">
                     <input type="text" name="namalengkap" class="text-box" placeholder="Nama Lengkap">
                     <input type="text" name="email" class="text-box" placeholder="Email">
