@@ -1,0 +1,85 @@
+.container {
+	border: 1px solid #333;
+	padding: 10px;
+	margin-left: 200px;
+	margin-right: 200px;
+	font-family: sans-serif;
+}
+
+.container .heading-icon {
+	display: flex;
+	justify-content: center;
+}
+
+.container .heading-icon img {
+	padding: 15px;
+	width: 50px;
+	height: 50px;
+}
+
+.container .nav-bar {
+	display: flex;
+
+}
+
+.container .nav-bar a {
+	padding: 4px;
+	color: black;
+	font-weight: bold;
+	text-decoration-line: none;
+	margin-right: 10px;
+	border: 1px solid #333;
+	
+}
+
+.container .nav-bar a:hover {
+	background: rgb(55, 130, 170);
+	color: black;
+}
+hr {
+	border: 1px solid #333;
+}
+
+.content {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+
+
+.content h1 {
+	text-align: center;
+
+}
+.content .main input {
+	border: 0.5px solid #333;
+	padding: 4px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	margin-bottom: 10px;
+	width: 200px;
+}
+
+.content .main textarea {
+	width: 100%;
+	height: 250px;
+	padding: 6px;
+	border: 0.5px solid #333;
+}
+
+.content .aspect select {
+	padding: 6px;
+	border: 0.5px solid #333;
+}
+
+.content .btn_submit {
+	float: right;
+}
+.content .btn_submit:hover {
+	background:  rgb(55, 130, 170);
+}
+
+.content .btn_submit button {
+	background: transparent;
+	padding: 6px;
+	border: 1px solid #333;
+}

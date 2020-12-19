@@ -1,0 +1,35 @@
+.container {
+
+	padding: 10px;
+	margin: 10px 10px;
+	border: 1px solid #333;
+	font-family: sans-serif;
+
+}
+
+
+.container1{
+	margin: 35px 215px;
+	border: 1px solid white;
+}
+.container h1{
+	text-align:center;
+}
+
+.container a {
+	text-decoration: none;
+}
+
+.container .laporan .details {
+	display: flex;
+	justify-content: space-between;
+}
+
+.container hr {
+	border: 1px solid #333;
+}
+
+
+.container a:hover {
+	color: rgb(70, 37, 218);
+}

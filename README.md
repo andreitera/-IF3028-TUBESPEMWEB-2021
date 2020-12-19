@@ -100,7 +100,18 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 
 ### Penjelasan Teknis
 `Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+1. instalasi framework dan koneksi database
+   framework yang kami gunakan untuk backend aplikasi website ini adalah codeigniter versi 3 (CI 3) cara penginstalan nya yaitu dengan mengunjungi website codeigniter.com    kemudian pilih codeigniter versi 3 dan klik tombol download lalu arahkan file tersimpan pada folder htdocs xampp, instalasi atau download selesai dan kami mulai bisa mengedit kerangka codeigniter tersebut untuk membangun aplikasi simple lapor ini.
+   
+koneksi ke database menggunakan web server xampp dan kami membuat database beserta tabelnya melalui cli mysql (mariaDB) dan ini penting untuk menjalankan web server (apache dan mysql) sebelum menjalankan aplikasi agar dapat terhubung dengan database.
 
+2. melakukan validasi pada client-side
+   validasi disini yaitu memvalidasikan isi form apakah sudah sesuai ketentuan atau belum seperti field harus diisi dan panjang komentar tidak kurang dari 20 kata dan juga kami membuat textarea yang minimal karakternya sebanyak 50 validasi digunakan menggunakan javascript client side.
+  
+3. cara instalasi aplikasi 
+   untuk bisa menjalankan aplikasi ini, terlebih dahulu menghidupkan web server dengan mengaktifkan apache dan mysql nya, kemudian pastikan configurasi alamat localhost sudah sama dengan nama tempat folder dalam htdocs , dapat di lihat pada application->config->config.php kemudian lihat bagian $config['base_url'].
+   pada aplikasi ini kami menambahkan fitur login untuk bisa mengakses website (membuat laporan, mengedit laporan dan juga menghapus laporan, laporan yang bisa di edit hanya lah laporan yang ditulis oleh akun yang sedang login.
+,
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
 - CSS: margin, padding, header tag, font-size, text-align, float, clear, border, color, div, span, placeholder, 
@@ -109,9 +120,8 @@ anchor tag.
 - PHP Framework : [Codeigniter](https://codeigniter.com/en/docs), [Laravel](https://laravel.com/docs/6.x) dll.
 - SQL query: SELECT, INSERT, UPDATE, DELETE, WHERE, operator LIKE.
 
-:telephone: Jika ada pertanyaan silakan tanyakan lewat `Asisten`.
+:telephone: Jika ada pertanyaan silakan tanyakan lewat `Asisten`. 
 
 ### About :honeybee:
 
 Dosen       : Dicky Prima Satya, M.T., Andre Febrianto, S.Kom., M.Eng., Amirul Iqbal, S.Kom., M.Eng.
-
