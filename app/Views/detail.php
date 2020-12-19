@@ -24,12 +24,14 @@
 		$picext = ['jpeg', 'jpg', 'png', 'svg'];
 		$status = false;
 		foreach ($picext as $ex) {
-			if ($extfile == $picext) {
+			if ($extfile == $ex) {
 				$status = true;
 			}
 		}
 		if ($status == true) {
-			echo '<img id="imglampiran" src="<?= base_url() . "/" . $datalapor->lampiran ?>">';
+			$src = base_url() . ' / ' . $datalapor->lampiran; ?>
+			<img id="imglampiran" src="<?= base_url() . '/' . $datalapor->lampiran ?>">
+		<?php
 		} else {
 			$var = preg_split("#/#", $lampiran);
 			echo $var[count($var) - 1];
