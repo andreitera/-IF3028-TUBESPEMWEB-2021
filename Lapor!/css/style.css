@@ -58,7 +58,7 @@ border: 2px black;
 }
 
 /* Style the search field */
-form.example input[type=text] {
+form.searchbar input[type=search] {
 padding: 10px;
 font-size: 17px;
 border: 1px solid grey;
@@ -68,7 +68,7 @@ background: #f1f1f1;
 }
 
 /* Style the submit button */
-form.example button {
+form.searchbar input[type=submit] {
 float: left;
 width: 20%;
 padding: 10px;
@@ -78,13 +78,14 @@ font-size: 17px;
 border: 1px solid grey;
 border-left: none; /* Prevent double borders */
 cursor: pointer;
+margin-top:-1px;
 }
 
-form.example button:hover {
+form.searchbar input[type=submit]:hover {
 background: #999999;
 }
 /* Clear floats */
-form.example::after {
+form.seacrhbar::after {
 content: "";
 clear: both;                
 display: table;
