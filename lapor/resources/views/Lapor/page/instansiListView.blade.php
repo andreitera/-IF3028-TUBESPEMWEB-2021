@@ -2,7 +2,6 @@
 
 @section('css')
     <link rel="stylesheet" href=" {{ asset('asset/css/InstansiListViewstyle.css') }} ">
-    <link rel="stylesheet" href=" {{ asset('asset/css/Maintstyle.css') }} ">
 @endsection
 
 @section('content')
@@ -11,21 +10,17 @@
             <div class="profilepictureborder">
                 <img src="{{ asset('asset/images/logo-balam.png') }}" alt="" srcset="" class="profilepicture">
             </div>
-            <h2>Pemerintah Provinsi Bandar Lampung</h2>
-        </div>
-        <div class="row flex-end">
-            <div class="mb-16 mr-16">
-                <div>
-                    <b>
-                        <div class="text-center">0</div>
-                        <div>Laporan</div>
-                    </b>
-                </div>
+            <div class="profile-instansi">
+                <h2>Pemerintah Provinsi Bandar Lampung</h2>
+                <div>Jl. Dr.Susilo No.2 Bandar Lampung, Kota Bandar Lampung 0721 456-7890 diskominfo@bandarlampungkota.go.id</div>
             </div>
-            <div class="mb-16 border-button">
-                <a href="#" class="changecover">UBAH</a>
+            <div class="instansi-follower">
+                <h3>565</h3>
+                <div>pengikut</div>
             </div>
+            <div class="follow-button">IKUTI</div>     
         </div>
+        
     </div>
     <div class="container content-list-lapor">
         <div class="d-flex">
@@ -81,6 +76,13 @@
 
                 <br><br>
 
+                <div class="row">
+                    <p><a href="#">Semua</a></p>
+                    <p><a href="#">Belum</a></p>
+                    <p><a href="#">Proses</a></p>
+                    <p><a href="#">Selesai</a></p>
+                </div>
+                <hr>
                 {{-- start List Lapor --}}
                 <div class="listLapor">
                     <div class="account-info">
@@ -139,34 +141,6 @@
                     </div>
                 </div>
             </div> {{-- And Col-8 --}}
-
-            <div class="col-4">
-                <div class="card">
-                        <img src="{{ asset('asset/images/user-cover.png') }}" class="background-profile" width="100%" height="135px" alt="">
-                    <div class="information">
-                        <div class="avatar d-flex flex-wrap-none">
-                            <img src="{{ asset('asset/images/user-placeholder-m.png') }}" class="foto-profile" alt="">
-                            <span><span style="color: white">Nestiawan Ferdiyanto</span> <br><br> @nestiawanfans</span>
-                            {{-- <a href="#" style="float: right;">Ubah</a> --}}
-                        </div>
-                        <br>
-                        <div class="d-flex space-bettwen text-center">
-                            <div class="list-status-profile">
-                                <p>Terverivikasi</p>
-                                <p>0</p>
-                            </div>
-                            <div class="list-status-profile">
-                                <p>Diproses</p>
-                                <p>0</p>
-                            </div>
-                            <div class="list-status-profile">
-                                <p>Selesai</p>
-                                <p>0</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>{{-- And Col-4 --}}
         </div>{{-- And d-flex --}}
     </div>    
     <script>
