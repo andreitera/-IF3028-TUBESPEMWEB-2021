@@ -26,19 +26,33 @@
     <input type="hidden" name="name" value="$lapor->unique_id">
     <div class="detail">{{$lapor->content}}</div>
     <div style="margin-top: 20px">Lampiran:</div>
-    {{-- <div class="lampiran"></div> --}}
     <div class="lampiran" style="background-image: url('http://www.dumetschool.com/images/fck/Capturebilly25518nov2.JPG')">
     </div>
     
-    <div class="form-container">
+    <div class="form-container detil">
         <span style="margin-right: 25px !important">Waktu: 20-11-2019 20:00</span>
         <span class="form-container-aspek">Aspek: {{$lapor->aspect}}</span>
-        <div class="kode"></div>
-        <span>Edit <img src="{{ asset('image/edit.svg') }}" alt="icon edit" class="icon-bawah"></span>
-        <span> | </span>
-        <span style="margin-right: 0px !important"> Hapus <img src="{{ asset('image/close.svg') }}" alt="icon hapus" class="icon-bawah"></span>
+        <form action="{{ route('laporcek') }}" method="POST"></form>
+            <span style="color:#b4b4b4" id="txt">Masukkan UniqID untuk edit/hapus</span>
+            <input type='text' name='uniqueid' id='uniqueid' class='input-uniq'>
+            <div id="btn-eh">
+                <button onclick="uniq()" class="btn-detail">OK</a>
+            </div>
+        </form>
     </div>
-    {{-- <iframe src="http://www.dumetschool.com/images/fck/Capturebilly25518nov2.JPG&embedded=true" frameborder="0"></iframe> --}}
     <div class="bar"></div>
 </div>
+@endsection
+
+@section('jsbawah')
+    <script>
+        function uniq() {
+            document.getElementById("txt").remove();
+            document.getElementById("uniqueid").setAttribute("hidden","True");
+            document.getElementById("btn-eh").outerHTML = 
+            "<button type='submit' name='action' value='edit' class='btn-detail' style='margin-right: 10px'>Edit<img src='{{ asset('image/edit.svg') }}' alt='icon edit' class='icon-bawah'></button>"
+            + "<span> | </span>"
+            + "<button type='submit' name='action' value='hapus' class='btn-detail'>Hapus<img src='{{ asset('image/close.svg') }}' alt='icon hapus' class='icon-bawah'></button>";
+        }
+    </script>
 @endsection
