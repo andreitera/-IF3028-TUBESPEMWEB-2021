@@ -7,4 +7,9 @@ class Auth extends CI_Controller
     {
         $this->load->view('user/home');
     }
+
+    public function buatLapor()
+    {
+        $this->load->view('user/buatLaporan');
+    }
 }

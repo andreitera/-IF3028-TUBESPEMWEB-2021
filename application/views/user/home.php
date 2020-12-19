@@ -13,10 +13,12 @@
         <div class="searchBar">
             <input type="text"><button>Cari</button>
         </div>
-        <div class="buatLaporan">
-            Buat Laporan/Komentar
-            <button>tambah</button>
-        </div>
+        <form action="<?= base_url("auth/buatLapor") ?>" method="POST">
+            <div class="buatLaporan">
+                Buat Laporan/Komentar
+                <button>tambah</button>
+            </div>
+        </form>
         <p>Laporan/Komentar Terakhir</p>
         <hr>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
