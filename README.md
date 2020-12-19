@@ -1,54 +1,10 @@
-## Simple `LAPOR` :heavy_exclamation_mark:
-Anda mengetahui aplikasi `lapor` yang dibuat oleh pemerintah republik indonesia? jika tidak silahkan kunjungi 
-http://lapor.go.id, maka anda akan mendapatkan laman seperti gambar di bawah
-
-![](tampilan/lapor.png)
-
-Kali ini kita akan membuat aplikasi web seperti `lapor` untuk mengumpulkan laporan/komentar terkait layanan
-di program studi teknik informatika ITERA.
-**Luangkan waktu untuk membaca spesifikasi ini sampai selesai.** :kissing_heart:
-
-### Anggota Tim :cyclone:
-Project dikerjakan secara **berkelompok** dengan maksimal jumlah anggota adalah 2-3 orang mahasiswa.
-
-### Petunjuk Pengerjaan :umbrella:
-1. Fork pada repository ini dengan akun github anda.
-2. Silakan commit pada repository anda (hasil fork). Lakukan berberapa commit dengan pesan yang bermakna,
-contoh: fix css, membuat post done, jangan seperti final, benerin dikit, oke deh, update deh dll. 
-Disarankan untuk tidak melakukan commit dengan perubahan yang besar karena akan mempengaruhi 
-penilaian (contoh: hanya melakukan satu commit kemudian dikumpulkan).
-3. Minimal commit sebanyak personil anggota tim dengan masing-masing personil tim melakukan commit sesuai dengan kesepakatan tim, penilaian individu akan dilihat.
-4. Ubah **Penjelasan Teknis** pada bagian bawah readme.md ini dengan menjelaskan bagaimana cara anda:
-   - Instalasi Framework, Koneksi basis data 
-   - Melakukan validasi pada client-side
-   - Melakukan AJAX (mulai dari pengguna melakukan klik pada tombol LAPOR! sampai laporan/komentar terkirim).
-5. Pull request dari repository anda ke repository ini dengan 
-format **NIM** - **Nama Lengkap**. **Waktu terkahir proses pull request adalah 4 hari setelah 
-ujian akhir semester (UAS)**
-6. Data yang dikumpulkan adalah:
-   - Source code aplikasi
-   - Basis data, dan
-   - Cara instalasi aplikasi anda
-7. Penilaian:
-   - Kerjasama tim
-   - Kesesuaian dengan spesifikasi
-   - Pemahaman dalam penggunaan framework, penilaian efisiensi query
-   - Antarmuka aplikasi
-   - Bug free :beetle:
-   
-### Tools :hammer:
-1. Untuk backend, wajib menggunakan PHP framework apapun (Contoh: Codeigniter, Laravel, Slim, Yii dll).
-2. Gunakan MySQL atau basis data relasional lain untuk menyimpan data.
-3. Untuk frontend, gunakan Javascript, HTML dan CSS. **Tidak boleh menggunakan library atau framework CSS atau JS seperti 
-JQuery atau Bootstrap.** CSS sebisa mungkin ada di file yang berbeda (tidak inline styling/embeding styling).
-
 ### Spesifikasi Simple LAPOR!
 #### Tampilan :soccer:
 Anda diminta untuk membuat tampilan sedemikian hingga mirip dengan tampilan berikut. Website yang diminta tidak harus 
 responsive. Desain tampilan tidak perlu dibuat indah. Icon dan jenis font tidak harus sama dengan contoh. Warna font, 
 garis pemisah, dan perbedaan ukuran font harus terlihat sesuai contoh. Perhatikan juga tata letak elemen-elemen.
 
-![](tampilan/utama.png)
+![](tampilan/utama.jpeg)
 - Search bar diletakkan di bagian paling atas dibawah judul.
 - Tombol "cari" berada di sebelah kanan search bar.
 - **Buat LAPOR!** digunakan untuk mengirimkan laporan/komentar baru.
@@ -56,12 +12,12 @@ garis pemisah, dan perbedaan ukuran font harus terlihat sesuai contoh. Perhatika
 - Tampilan pertanyaan tidak harus urut berdasarkan "Laporan/Komentar terakhir", 
 namun tulisan "Laporan/komentar Terakhir" ini harus ada.
 
-![](tampilan/buat.png)
+![](tampilan/buat.jpeg)
 - Tampilan di atas digunakan untuk mengajukan atau mengubah laporan/komentar.
 - Perhatikan label dari field pada form berada di dalam field (tidak di luar)
 - Apek yang dilaporkan ditampilkan dalam bentuk `select`
 
-![](tampilan/detail.png)
+![](tampilan/detail.jpeg)
 - Bagian ini menampilkan laporan/komentar. Bagian `datetime` harus ada. Tanda `kuote` tidak harus ada
 - Perhatikan label dari field pada form berada di dalam field (tidak di luar)
 
@@ -99,8 +55,28 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+'Instalasi Framework Code Igniteter 3 dan database'
+~ Mendownload file code igniter 3 melalui https://codeigniter.com/download
+~ Melakukan ekstraksi file ke dalam file htdocs di xampp
+~ framework Code Igniter siap untuk di konfigurasi
+~ Untuk mengkoneksikan database, terlebih dahulu membuat database pada my sql
+~ Setelah database dibuat, proses koneksi database dapat dikonfigurasi pada path file config/database.php 
+~ ubah pada variabel database dengan mengisikan database yang dimaksud
+~ framework dan database siap digunakan
 
+'Validasi Client-Side'
+~ Validasi client-side digunakan untuk memvalidasi mengenai data yang user inputkan
+~ Apabila terdapat ketidaksesuaian data yang diinputkan oleh pengguna maka akan ada pemberitahuan mengenai kesalahan
+~ Konfigurasi terhadap client-side terdapat pada application/models/Lapor_Model
+~ Didalam folder tersebut didefinisikan bahwa minimal inputan komentar/keterangan 100 karakter,
+~ file yang dapat diinputkan berupa (doc, docx, xls, xlsx, ppt, pptx, pdf)
+~ Komentar/keterang wajib diisi apabila ingin melanjutkan proses
+
+'Melakukan AJAX'
+~ dalam konfigurasi ajax, terutama pada fitur LAPOR, aplikasi akan melakukan proses tambah tampah harus mereload
+~ konfigurasi ajax dapat dilihat pada path file asset/ajax
+
+''
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
 - CSS: margin, padding, header tag, font-size, text-align, float, clear, border, color, div, span, placeholder, 
