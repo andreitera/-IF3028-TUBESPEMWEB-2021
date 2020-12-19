@@ -46,7 +46,7 @@ class Tampil extends CI_Controller
             $this->load->library('upload', $config);
 
             if ($this->upload->do_upload('file_lapor')) {
-                $file = $this->upload->data('file_name');
+                $file_lapor = $this->upload->data('file_name');
             } else {
             }
 
@@ -83,7 +83,8 @@ class Tampil extends CI_Controller
         $aspek = $this->input->post('aspek');
         $data = array(
             'isi'   => $isi,
-            'aspek' => $aspek
+            'aspek' => $aspek,
+            'file_lapor'   => $file_lapor
         );
         $searchkey = array('id' => $id);
         $this->post_model->update_data($searchkey, $data, $this->nama_tabel);

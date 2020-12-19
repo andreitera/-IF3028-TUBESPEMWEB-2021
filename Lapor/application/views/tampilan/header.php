@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>LAPOR!</title>
+    <title>lapor I</title>
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/style.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/logo.ico" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
@@ -40,8 +40,8 @@
                 </ul>
             </nav>
             <div class="hero-text">
-                <h1 class="display-4">Lapor ITERA</h1>
-                <p class="lead mb-4">Sampaikan laporan Anda langsung kepada instansi di Institut Teknologi Sumatera</p>
+                <h1 class="display-4">lapor I</h1>
+                <p class="lead mb-4">Website untuk kamu semua yang ingin menyampaikan aspirasi, komentar,<BR> dan lain sebagainya ke INSTITUT TEKNOLOGI SUMATERA</p>
                 <a class="btn px-5 mr-2" href="<?php echo base_url() .'tambah#buat-lapor'; ?>">Buat Laporan</a>
                 <a class="btn px-5 ml-2" id="cari-lapor" href="<?php echo base_url() . 'home#laporan-akhir'; ?>">Cari Aduan</a>
             </div>

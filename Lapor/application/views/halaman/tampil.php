@@ -6,7 +6,7 @@
             <p><?php echo $post_item['isi']; ?></p>
             <div class="lampiran">
                 <span>Lampiran:</span>
-                <img src="<?php echo base_url() . 'lampiran/' . $post_item['file_lapor']; ?>" alt="Lampiran">
+                <img src="<?php echo base_url().'/lampiran/' . $post_item['file_lapor']; ?>" alt="Lampiran">
             </div>
 
             <span>Aspek : <?php echo $post_item['aspek']; ?></span><br>
