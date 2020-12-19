@@ -21,10 +21,8 @@ class Control extends CI_Controller
     public function search()
     {
         $keyword     = $this->input->post('keyword');
-        $listlaporan = $this->control_model->search_laporan($keyword);
-        $data        = array(
-            "listlaporan" => $listlaporan
-        );
+        $data['laporan'] = $this->control_model->search_laporan($keyword);
+
         $this->load->view("pages/homepage", $data);
     }
 
