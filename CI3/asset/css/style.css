@@ -1,0 +1,144 @@
+body{
+	margin: 0 auto;
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: url('bg.jpg');
+}
+.container{
+	margin:auto;
+	margin-top: 50px;
+	width: 1000px;
+	background-color: whitesmoke;
+	padding: 10px;
+	box-shadow: 5px 10px 18px #888888;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-right: 25px;
+	padding-left: 25px;
+	border-radius: 10px; 
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container h1{
+	text-align:center;
+	top:30px;
+	left:50%;
+	margin-bottom: 25px;
+	font-size: 48px;
+	font-weight: bold;
+}
+
+.btn-lapor{
+	background-color: hsl(200, 1%, 47%);
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+	border-radius: 10px;
+}
+
+.btn-lapor:hover{
+	background-color: rgb(196, 196, 196);
+	color: black;
+}
+
+.btn-cari{
+	border: solid 1px;
+	padding: 16px;
+	text-align: center;
+}
+
+.kaki{
+	font-family: Arial, Helvetica, sans-serif;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: whitesmoke;
+	color: black;
+	font-size: 16px;
+	text-align: center;
+	padding: 20px;
+}
+
+.container input{
+	margin-right: -6px;
+	width: 500px;
+	height: 25px;
+	
+}
+
+.container form button{
+
+	width: 50px;
+	height: 30px;
+	border-radius: 10px;
+}
+
+.container h3{
+	 text-align: center; 
+	 margin-top: 5px; 
+	 margin-bottom: 50px;
+}
+
+.container .lampiran, .container .waktudetail, .container .aspek{
+	float: left;
+}
+
+.container .waktu , .container .detail, .container .hapus{
+	float: right;
+}
+
+.container a{
+	text-decoration: none;
+}
+
+.container embed{
+	margin-top:30px; 
+	margin-bottom:30px; 
+	width: 800px;
+	height: 1000px;
+}
+
+#cari{
+	padding: 10px 5px;
+	text-align: center;
+}
+
+#filedetail{ 
+	margin:20px;
+	height: 500px;
+}
+
+select{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 300px;
+}
+
+#file{
+	width: 300px;
+	margin-left: 0px;
+	margin-bottom: 30px; 
+}
+
+#submit{
+	float: right;
+	width: 150px;
+	margin-bottom: 30px;
+	background-color: hsl(200, 1%, 47%);
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+}
+
+#submit:hover, .container form button:hover{
+	background-color: rgb(196, 196, 196);
+	color: black;
+}
