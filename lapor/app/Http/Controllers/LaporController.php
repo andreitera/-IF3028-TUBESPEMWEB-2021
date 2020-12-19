@@ -98,4 +98,9 @@ class LaporController extends Controller
         ]);
     }
 
+    public function instansiListView()
+    {
+        return view('Lapor.page.instansiListView');
+    }
+
 }

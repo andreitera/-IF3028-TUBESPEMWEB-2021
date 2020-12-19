@@ -1,3 +1,255 @@
+.backgrond-blue {
+    background-color: rgb(26, 73, 228);
+    height: 260px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    top: -40px;
+    z-index: -999;
+}
+
+.lapor {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 .5rem 1rem rgba(38, 38, 38, 0.15)!important;
+    padding: 20px;
+    border-radius: 2px;
+}
+
+.content-list-lapor {
+    position: relative;
+}
+
+.title-lapor {
+    background-color: rgb(206, 47, 47);
+    color: white;
+    padding: 16px;
+    border-radius: 3px;
+}
+
+.profile{
+    position: relative;
+    top: -7rem;
+}
+
+.profile-instansi{
+    width: 50%;
+    margin-bottom: -80px;
+}
+
+.instansi-follower{
+   display: inline-block;
+   text-align: center;
+   margin: 0px 30px;
+   margin-bottom: -80px;
+}
+
+.follow-button{
+    color: white;
+    border: 1px solid white;
+    padding: 10px 30px;
+    display: inline-block;
+    margin: 0px 30px;
+    margin-bottom: -80px;
+}
+
+.instansi-pict{
+    height: 50px;
+    width: 50px;
+    border: 1px solid grey;
+}
+
+.title-lapor > p {
+    font-weight: 800;
+    letter-spacing: 0.6px;
+    font-size: 21px;
+}
+
+.form-lapor {
+    margin: 30px 0;
+    max-width: 100%;
+}
+
+.form-lapor > p {
+    padding: 20px 0;
+}
+
+.form-type-lapor {
+    width: 33%;
+    border: 1px solid rgb(206, 47, 47);
+    background-color:rgb(253, 253, 253);
+    padding: 10px;
+    text-align: center;
+    color: rgb(206, 47, 47);
+    font-size: 16px;
+    border-radius: .5px;
+}
+
+.form-type-lapor:focus, .form-type-lapor:active {
+    background: rgb(206, 47, 47);
+    border: none !important;
+    color: rgb(253, 253, 253);
+}
+
+.form-text-box {
+    border: 0.7px solid rgb(182, 182, 182);
+    width: 94.8%;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+}
+
+.input-submit > input {
+    margin: 0 10px;
+}
+
+.file {
+    position: relative;
+    top: 10px;
+}
+
+.btn-lapor {
+    padding: 10px 25px;
+    font-size: 18px;
+    background-color: rgb(206, 47, 47);
+    border: 1px solid rgb(206, 47, 47);
+    border-radius: 5px;
+    color: rgb(253, 253, 253);
+}
+
+.radio-subs {
+    top: 15px !important;
+}
+
+.radio-sub, .radio-subs {
+    position: relative;
+    top: 10px;
+    font-size: 19px;
+}
+
+.information {
+    padding: 0 20px;
+    position: relative;
+    top: -3rem;
+}
+
+.avatar {
+    border-radius: 100%;    
+    width: 75px;
+    height: 75px;
+}
+
+.foto-profile {
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    border: 2px solid rgb(253, 253, 253);
+    background-color: rgb(253, 253, 253);
+}
+
+.avatar > span {
+    font-size: 15px;
+    width: 500px;
+    width: 100%;
+    padding: 0 10px;
+    position: relative;
+    top: -0.5rem;
+}
+
+.list-status-profile {
+    font-size: 13px;
+}
+
+.nama-account > p > a {
+    color: rgb(46, 102, 221);
+}
+
+.status-lapor {
+    font-size: 12px;
+    margin: 5px 0px;
+}
+
+.status-lapor > p {
+    padding: 0 15px;
+}
+
+.status-lapor > p:nth-child(1) {
+    color: rgb(89, 89, 89);
+    padding-left: 0;
+}
+
+.status-lapor > p:nth-child(2){
+    color: rgb(53, 169, 53);
+}
+
+.tanggal-buat {
+    font-size: 14px;
+    color: rgb(89, 89, 89);
+}
+
+.lapor-data > p:nth-child(1) {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.lapor-data > h2 {
+    color: rgb(46, 102, 221);
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.lapor-data > p:nth-child(3) {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.date-tag {
+    font-size: 13px;
+}
+
+.date-tag > span {
+    margin: 12px 12px;
+} 
+
+.date-tag > span:nth-child(1) {
+    margin-left: 0;
+}
+
+.lampiran > img {
+    margin: 10px 5px;
+    border-radius: 2px;
+}
+
+.lampiran > img:nth-child(1){
+    margin-left: 0;
+}
+
+.action-lapor {
+    font-size: 12px;
+    color: rgb(89, 89, 89);
+}
+
+.action-lapor > p:nth-child(1) {
+    position: relative;
+    top: 10px;
+}
+
+.action-lapor > p:nth-child(2){
+    font-size: 16px;
+    margin-left: 10px;
+    position: relative;
+    top: 7px;
+}
+
+.action-lapor > p > a {
+    color: rgb(31, 31, 31);
+}
+
+.listLapor {
+    margin-bottom: 10px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -139,7 +391,7 @@ li {
 /* profile */
 .cover{
     height: 350px;
-    background-color: rgb(255, 59, 59);
+    background-color: rgb(0, 81, 255);
     color: white;
 }
 
@@ -152,8 +404,9 @@ li {
     height: 152px;
     width: 152px;
     background-color: white;
-    border-radius: 50%;
-    margin-right: 20px;
+    margin-left: 15px;
+    border-radius: 0%;
+    padding: 5px;
 }
 
 .profilepicture{
@@ -398,4 +651,8 @@ svg:not(:root) {
 .search-icon{
     height: 50px;
     width: 50px;
+}
+
+.text-danger {
+    color: red;
 }

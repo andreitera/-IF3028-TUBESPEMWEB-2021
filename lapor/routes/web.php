@@ -19,13 +19,11 @@ Route::get('/login',                    'AuthController@login')->name('login.use
 Route::post('/login-post',              'AuthController@loginPost')->name('login.user.post');
 
 
-Route::get('/',                         'LaporController@index')->name('landing');
-Route::post('/post-laporan',            'LaporController@postLapor')->name('post.lapor');
-
-Route::get('/lapors',              'LaporController@listView')->name('listView');
-Route::get('/profil',                   'ProfileController@showProfile')->name('showProfile');
-Route::get('/view-lapor/{id}',          'LaporController@viewLapor')->name('viewLapor');
-Route::get('/search/{query}',           'LaporController@viewSearch')->name('viewSearch');
-
+Route::get('/',                 'LaporController@index')->name('landing');
+Route::get('/lapors/{id}',           'LaporController@listView')->name('listView');
+Route::get('/profil',           'ProfileController@showProfile')->name('showProfile');
+Route::get('/view-lapor/{id}',       'LaporController@viewLapor')->name('viewLapor');
+Route::get('/search',           'LaporController@viewSearch')->name('viewSearch');
+Route::get('/instansi',         'LaporController@instansiListView')->name('intansiListView');
 //----------- Route Comment -----------
 // Route::get('/lapor',            'LaporController@viewLapor')->name('viewLapor');
