@@ -1,0 +1,29 @@
+	*{
+		font-family: constantia;
+	}
+
+	body {
+			font-family: constantia;
+			margin: 80px;
+			}
+
+		body h1{
+			text-align: center;
+		}
+		a{
+			text-decoration: none;
+			color: black;
+		}
+		label{
+			text-align: left;
+		}
+		hr{
+			border: 1px solid;
+			color: black;
+		}
+		span{
+			position: fixed;
+			left: 70%;
+		}
+		
+		
