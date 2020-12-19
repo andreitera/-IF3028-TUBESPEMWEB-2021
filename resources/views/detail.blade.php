@@ -22,11 +22,13 @@
         float: right;
         /* text-shadow: 0 0 grey; */
         color: rgb(37 35 183);
+        cursor: pointer;
     }
     .hapus {
         float: right;
         margin-right: 6px;
         color: rgb(199 18 18);
+        cursor: pointer;
     }
 
     .clearfix {
@@ -36,30 +38,19 @@
 <span class='fontx'>Detail Laporan/Komentar</span>
 <hr><br>
 
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-Rerum, culpa minus! Odio quidem delectus aliquam, consectetur
-deserunt possimus ipsum corrupti in reprehenderit deleniti illum,
-nostrum voluptates mollitia at modi ducimus. Lorem ipsum dolor
-sit amet consectetur adipisicing elit. Voluptate inventore est,
-nisi magnam ab sed commodi, vitae laboriosam voluptates soluta voluptatum
-debitis praesentium recusandae repellat impedit quae consectetur assumenda.
-Quidem.</p>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-Rerum, culpa minus! Odio quidem delectus aliquam, consectetur
-deserunt possimus ipsum corrupti in reprehenderit deleniti illum,
-nostrum voluptates mollitia at modi ducimus. Lorem ipsum dolor
-sit amet consectetur adipisicing elit. Voluptate inventore est,
-nisi magnam ab sed commodi, vitae laboriosam voluptates soluta voluptatum
-debitis praesentium recusandae repellat impedit quae consectetur assumenda.
-Quidem.</p> <br>
-
-<p>Lampiran: </p><br>
-
-<img src="kotak.png" alt="">
+<p>{{$data->contents}}</p>
+<br>
+<p>Lampiran: </p>
+<img src="{{asset($data->file)}}" alt="">
+<br>
+<br>
 <div clas="detail">
-    <span class="time">Waktu: 20-11-2019 20:00</span>
-    <span class="aspek">Aspek: Infrastruktur</span>
-    <span class="edit">Edit</span>
-    <span class="hapus">Hapus | </span>
+    <span class="time">Waktu: {{$data->created_at}}</span>
+    <span class="aspek">Aspek: {{$data->aspect}}</span>
+    <span class="edit" onclick="edit({{$data->id}})">Edit</span>
+    <span class="hapus" onclick="hapus({{$data->id}})" id="apus_gaes">Hapus | </span>
 </div>
 <hr>
+<script>
+
+</script>

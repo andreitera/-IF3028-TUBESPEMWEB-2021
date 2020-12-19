@@ -14,11 +14,8 @@ class Laporan extends Model
      * @var array
      */
     protected $fillable = [
-        'from',
-        'title',
         'contents',
         'aspect',
-        'file',
-        'token'
+        'file'
     ];
 }

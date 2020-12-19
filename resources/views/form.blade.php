@@ -35,6 +35,7 @@
         color: white;
         padding: 5px 10px;
         border: none;
+        cursor: pointer;
     }
 </style>
 <span id="form_title">Buat Laporan/Komentar</span>

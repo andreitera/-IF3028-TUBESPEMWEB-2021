@@ -8,6 +8,7 @@ use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
 
 class LaporanController extends Controller
@@ -33,8 +34,6 @@ class LaporanController extends Controller
     function rule()
     {
         return [
-            "from" => ['required', 'max:20', 'regex:/[a-zA-Z ]+/'],
-            "title" => ['required', 'max:50', 'regex:/[a-zA-Z ]+/'],
             "contents" => ['required', 'max:1000', 'regex:/[a-zA-Z ]+/'],
             "file" => ['nullable', 'max:5120', 'image'],
             "aspect" => ['required', Rule::in(['Dosen', 'Staff', 'Mahasiswa', 'Infrastruktur', 'Pengajaran'])]
@@ -47,8 +46,8 @@ class LaporanController extends Controller
      */
     public function index()
     {
-        $data = Laporan::all();
-        return response()->json($data);
+        $data = Laporan::orderByDesc('created_at')->get();
+        return view('home', ["data" => $data]);
     }
 
     /**
@@ -69,7 +68,6 @@ class LaporanController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate($this->rule());
         $req = $request->all();
         if ($request->hasFile('file') and $request->file('file')
             ->isValid())
@@ -77,9 +75,8 @@ class LaporanController extends Controller
             $path = $request->file('file')->store('image');
             $req['file'] = $path;
         }
-        $req['token'] = $this->gen_token();
         Laporan::create($req);
-        return response()->json(["token" => $req['token']]);
+        return response()->json(["token" => "sukses"]);
     }
 
     /**
@@ -90,8 +87,8 @@ class LaporanController extends Controller
      */
     public function show(Request $request)
     {
-        $laporan = $request->laporan;
-        if(Laporan::where('id', $laporan)->exist()){
+        $laporan = $request->id;
+        if(Laporan::where('id', $laporan)->exists()){
             $data = Laporan::find($laporan);
             return response()->json($data->makeHidden('token'));
         }
@@ -108,20 +105,9 @@ class LaporanController extends Controller
      */
     public function edit(Request $request)
     {
-        $token = $request->token;
-        if($this->check($token)){
-            $data = Laporan::where('token', $token)->first();
-            $now = Carbon::now('Asia/Jakarta');
-            if($now->diffInHours($data->created_at) < 24){
-                return response()->json($data);
-            }
-            else{
-                return response()->json(["status" => "expired"]);
-            }
-        }
-        else{
-            return response()->json([], 404);
-        }
+        $id = $request->id;
+        $data = Laporan::find($id);
+        return view("editForm", ["data" => $data]);
     }
 
     /**
@@ -133,29 +119,15 @@ class LaporanController extends Controller
      */
     public function update(Request $request)
     {
-        $token = $request->token;
-        if ($this->check($token)) {
-            $request->validate($this->rule());
-            $laporan = Laporan::where('token', $token)->first();
-            $now = Carbon::now('Asia/Jakarta');
-            if($now->diffInHours($laporan->created_at) < 24){
-                $req = $request->all();
-                if ($request->hasFile('file') and $request->file('file')
-                    ->isValid())
-                {
-                    $path = $request->file('file')->store('image');
-                    $req['file'] = $path;
-                }
-                $laporan->update($req);
-                return response()->json(["status" => "sukses"]);
-            }
-            else{
-                return response()->json(["status" => "expired"]);
-            }
+        $req = $request->all();
+        if ($request->hasFile('file') and $request->file('file')
+            ->isValid())
+        {
+            $path = $request->file('file')->store('image');
+            $req['file'] = $path;
         }
-        else{
-            return response()->json([], 404);
-        }
+        $laporan = Laporan::find($request->id);
+        $laporan->update($req);
     }
 
     /**
@@ -166,12 +138,19 @@ class LaporanController extends Controller
      */
     public function destroy(Request $request)
     {
-        $token = $request->token;
-        if($this->check($token)){
-            Laporan::where('token', $token)->delete();
-        }
-        else{
-            return response()->json([], 404);
-        }
+        $id = $request->id;
+        Laporan::find($id)->delete();
+    }
+
+    public function cari(Request $request)
+    {
+        $keyword = $request->keyword;
+        $tes = Laporan::where('contents', 'like', '%'.$keyword.'%')->get();
+        return view("cari", ["data" => $tes]);
+    }
+    public function detail(Request $request, $id)
+    {
+        $data = Laporan::find($id);
+        return view("detail", ["data" => $data]);
     }
 }
