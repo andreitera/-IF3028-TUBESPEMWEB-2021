@@ -11,7 +11,6 @@
     margin: auto 100px auto 100px;
 }
 .kotak {
-    background-color: burlywood;
     width: 100%;
 }
 
@@ -20,21 +19,30 @@
     height: 30px;
     margin: auto 0 auto 0;
 }
+
 .desc{
     margin: auto 0 auto 0;
 }
+
 .input {
     width: 800px;
-    height: 50px;
+    height: 30px;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 45px;
     vertical-align: bottom;
 }
 
 .src {
     width: fit-content;
-    height: 55px;
+    height: 37px;
     background: transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 45px;
+    border-bottom-right-radius: 45px;
+    border-bottom-left-radius: 0px;
     display: inline-flex;
-
 }
 
 .buatlap {
