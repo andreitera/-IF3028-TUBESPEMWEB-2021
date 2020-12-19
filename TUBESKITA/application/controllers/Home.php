@@ -17,7 +17,7 @@ class Home extends CI_Controller
 	public function tambah(){
 		
 		//validasi form
-		$this->form_validation->set_rules('isi', 'Isi','required');
+		$this->form_validation->set_rules('isi', 'Isi','required|min_length[200]');
 		if($this->form_validation->run() == FALSE){
 			$this->load->view('tambah/index');
 		}else{
@@ -31,7 +31,7 @@ class Home extends CI_Controller
 			}else{
 				echo "
 				<script>
-					alert('gagal menambah data,file yang anda upload tidak sesuai / melebihi 2Mb');
+					alert('Data gagal ditambah, file yang diupload tidak sesuai / melebihi 2Mb');
 					document.location.href='';
 				</script>
 				";
@@ -66,7 +66,7 @@ class Home extends CI_Controller
 	public function ubah($id){
 		
 		//validasi form
-		$this->form_validation->set_rules('isi', 'Isi', 'required');
+		$this->form_validation->set_rules('isi', 'Isi', 'required|min_length[200]');
 		if($this->form_validation->run() == FALSE){
 			$data['aspek'] = ['Dosen','Staff','Mahasiswa','Infrastruktur','Pengajaran','Logistik' ];
 			$data['lapor'] = $this->Lapor_model->detail($id);
@@ -84,7 +84,7 @@ class Home extends CI_Controller
 			}else{
 				echo "
 				<script>
-					alert('gagal update data,file yang anda upload tidak sesuai / melebihi 2Mb');
+					alert('Data gagal ditambah, file yang diupload tidak sesuai / melebihi 2Mb');
 					document.location.href='../';
 				</script>
 				";

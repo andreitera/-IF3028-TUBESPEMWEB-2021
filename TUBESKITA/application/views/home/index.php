@@ -11,10 +11,10 @@
 <div class="container">
 	<h1>SIMPLE LAPOR!</h1>
 	<form action="" method="post">
-		<input type="text" name="cari">
-		<button type="submit" name="submit">CARI</button>
+		<input type="text" name="cari" id="cari" placeholder="Cari kata">
+		<button type="submit" name="submit" id="caarii">CARI</button>
 	</form>
-	<a href="" ><h3>Buat Laporan / Keluhan +</h3></a>
+	<a href="<?php echo base_url() ?>index.php/Home/tambah" ><h3>Buat Laporan / Keluhan +</h3></a>
 	<h4>Laporan / Keluhan terakhir</h4>
 	<hr />
 	<div id="keluhan">

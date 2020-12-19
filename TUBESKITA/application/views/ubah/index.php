@@ -18,7 +18,7 @@
    endif;
 	?>
    <?php echo form_open_multipart('index.php/Home/ubah/'.$lapor["id"]); ?>
-	    <textarea rows="16" cols="136" style="width: 800px;" name="isi" ><?php echo $lapor["isi"]; ?></textarea><br \>
+	    <textarea rows="16" cols="136" style="width: 800px;" name="isi" placeholder="Isi Laporan"><?php echo $lapor["isi"]; ?></textarea><br \>
 		<select name="aspek">
 			<?php foreach ($aspek as $i) { ?>
 				<?php if($i == $lapor["aspek"]){ ?>
@@ -35,10 +35,6 @@
 		<div style="clear: both;"></div>
 	<?php echo form_close(); ?>
 	<hr>
-	<footer>
-		&copyCopyright 2020 - itera.ac.id
-	</footer>
-
 </div>
 </body>
 </html>
