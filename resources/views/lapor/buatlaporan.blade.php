@@ -5,13 +5,8 @@
 @endsection
 
 @section('isi')
-<div class="judul">
-    <div class="judul-kata1">Layanan Aspirasi dan Pengaduan Online Teknik Informatika ITERA</div>
-    <div class="judul-kata2">Sampaikan Laporan Anda Langsung Kepada Pihak Terkait</div>
-    <div class="judul-bar"></div>
-</div>
 <div class="form-buat">
-        <form method="POST" action="{{ route('laporbuat') }}" enctype="multipart/form-data" class="form">
+    <form method="POST" action="{{ route('laporbuat') }}" enctype="multipart/form-data" class="form">
         Buat Laporan/Komentar
         <div class="bar"></div>
         <textarea id="laporan" name="laporan" placeholder="Laporan/Komentar"></textarea>

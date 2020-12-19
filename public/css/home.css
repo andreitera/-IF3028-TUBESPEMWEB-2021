@@ -10,7 +10,7 @@ nav, .text-detail, .f-center {
           justify-content: center;
 }
 
-.bar, .form textarea, .form select, .form .btn, .lampiran, .text-detail {
+.bar, .form select, .form .btn, .lampiran, .text-detail {
   margin-top: 10px;
 }
 
@@ -123,6 +123,7 @@ nav a {
 }
 
 .form textarea {
+  margin-top: 20px;
   font-weight: bold;
   padding: 10px;
   width: 100%;
@@ -152,6 +153,7 @@ nav a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin-bottom: 20px;
 }
 
 .judul {

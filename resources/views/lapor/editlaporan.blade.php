@@ -5,18 +5,13 @@
 @endsection
 
 @section('isi')
-<div class="judul">
-    <div class="judul-kata1">Layanan Aspirasi dan Pengaduan Online Teknik Informatika ITERA</div>
-    <div class="judul-kata2">Sampaikan Laporan Anda Langsung Kepada Pihak Terkait</div>
-    <div class="judul-bar"></div>
-</div>
 <div class="form-buat">
-        <form method="POST" action="{{ route('laporupdate', $lapor->unique_id) }}" enctype="multipart/form-data" class="form">
+    <form method="POST" action="{{ route('laporupdate', $lapor->unique_id) }}" enctype="multipart/form-data" class="form">
         Edit Laporan/Komentar
         <div class="bar"></div>
         <input type="hidden" name="name" value="{{ $lapor->unique_id }}">
-        <textarea id="laporan" name="laporan">{{$lapor->content}}</textarea>
-        <textarea id="laporan" name="laporan">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio voluptatem voluptatum placeat ex consequuntur vero iusto. Magnam, ratione! Nostrum eius sunt esse repudiandae dignissimos cupiditate dicta vel, consequatur tempora, omnis quia? Aut, distinctio architecto iure enim assumenda et exercitationem eligendi est, laborum aspernatur quasi laudantium dolorum autem! Illo nesciunt rem vero quod similique eligendi, porro veniam id explicabo optio. Quis, ad magni? Laborum est maxime sunt voluptatem impedit deserunt necessitatibus ut numquam animi veniam architecto, quia dolorum ipsam minima fuga velit? Autem, dignissimos illo natus incidunt molestias magni deserunt laborum sed voluptatem tempore doloremque nobis quo enim blanditiis quam odit?</textarea>
+        <textarea id="laporan" name="laporan">{{ $lapor->content}}</textarea>
+        {{-- <textarea id="laporan" name="laporan">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio voluptatem voluptatum placeat ex consequuntur vero iusto. Magnam, ratione! Nostrum eius sunt esse repudiandae dignissimos cupiditate dicta vel, consequatur tempora, omnis quia? Aut, distinctio architecto iure enim assumenda et exercitationem eligendi est, laborum aspernatur quasi laudantium dolorum autem! Illo nesciunt rem vero quod similique eligendi, porro veniam id explicabo optio. Quis, ad magni? Laborum est maxime sunt voluptatem impedit deserunt necessitatibus ut numquam animi veniam architecto, quia dolorum ipsam minima fuga velit? Autem, dignissimos illo natus incidunt molestias magni deserunt laborum sed voluptatem tempore doloremque nobis quo enim blanditiis quam odit?</textarea> --}}
         <select name="aspek" id="aspek">
             <option value="Dosen">Dosen</option>
             <option value="Mata Kuliah">Mata Kuliah</option>
@@ -33,4 +28,8 @@
         <div class="bar"></div>
     </form>
 </div>
+@endsection
+
+@section('jsbawah')
+    
 @endsection
