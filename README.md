@@ -120,7 +120,7 @@ anchor tag.
 - PHP Framework : [Codeigniter](https://codeigniter.com/en/docs), [Laravel](https://laravel.com/docs/6.x) dll.
 - SQL query: SELECT, INSERT, UPDATE, DELETE, WHERE, operator LIKE.
 
-:telephone: Jika ada pertanyaan silakan tanyakan lewat `Asisten`.
+:telephone: Jika ada pertanyaan silakan tanyakan lewat `Asisten`. 
 
 ### About :honeybee:
 
