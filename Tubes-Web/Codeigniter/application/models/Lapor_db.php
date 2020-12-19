@@ -57,6 +57,28 @@ class Lapor_db extends CI_model{
     public function delete($id){
 		$this->db->where('id', $id);
 		$this->db->delete('lapor');
+    }
+    
+    public function ubah($id){
+		
+		//validasi form
+		$this->form_validation->set_rules('isi', 'Isi', 'required|min_length[250]');
+		if($this->form_validation->run() == FALSE){
+			$data['aspek'] = ['Dosen','Mahasiswa','Staff'];
+			$data['lapor'] = $this->Lapor_db->detail($id);
+			$this->load->view('ubah/index', $data);
+			//redirect("index.php/Home/detail2/$id");
+			
+		}else{
+			$this->Lapor_db->ubah($id);
+			echo "
+				<script>
+					alert('berhasil update data');
+					document.location.href='../';
+				</script>
+				";
+		}
+		
 	}
     
 }

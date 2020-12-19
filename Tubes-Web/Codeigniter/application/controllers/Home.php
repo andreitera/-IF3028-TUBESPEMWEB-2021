@@ -46,7 +46,7 @@ class Home extends CI_Controller{
     public function detail_ubah($id)
     {
 		$data['aspek'] = ['Dosen','Mahasiswa','Staff'];
-		$data['lapor'] = $this->Lapor_model->detail($id);
+		$data['lapor'] = $this->Lapor_db->detail($id);
 		$this->load->view('ubah/index',$data);
     }
     

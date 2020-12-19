@@ -19,7 +19,7 @@
             endif;
         ?>
 
-        <?php echo form_open_multipart('index.php/Home/ubah/'.$lapor["id"]); ?>
+        <?php echo form_open_multipart('Home/ubah/'.$lapor["id"]); ?>
         <textarea rows="16" cols="136" style="widt: 800px" name="isi" ><?php echo $lapor["isi"]; ?>></textarea>
         <br>
 

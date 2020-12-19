@@ -18,7 +18,7 @@
         if(validation_errors()): echo validation_errors();
         endif; ?>
 
-        <?php echo form_open_multipart('index.php/home/tambah_data'); ?>
+        <?php echo form_open_multipart('home/tambah_data'); ?>
 
         <textarea name="isi" cols="136" rows="10" style="width: 700px;"></textarea>
         <br>
