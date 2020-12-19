@@ -11,7 +11,7 @@
 		<header>SIMPLE LAPOR!</header>
 
 		<div class="konten">
-			<form action="http://localhost/-IF3028-TUBESPEMWEB-2021-main/-IF3028-TUBESPEMWEB-2021-master/CodeIgniter-3.1.11/" method="POST" onSubmit="Validasi()">
+			<form action="http://localhost/-IF3028-TUBESPEMWEB-2021/" method="POST" onSubmit="Validasi()">
 				<p>Buat Laporan/Komentar</p>
 				<hr><br>
 				<textarea input type="text" name="Laporan" id="Laporan">Laporan/Komentar</textarea><br>
