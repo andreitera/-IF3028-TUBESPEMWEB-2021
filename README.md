@@ -107,12 +107,11 @@ dalam tugas besar ini kami menggunakan framework CodeIgniter versi 3, -langkah p
 
 #### Koneksi Database
 Koneksi Basis data -buka codeIgniter, lalu klik application->config->database.php -lalu buka database.php, setelah itu ketikkan sesuai nama database yang kita buat. -contohnya: $db['default'] = array( 'dsn' => '', 'hostname' => 'localhost', 'username' => 'root', 'password' => '', 'database' => 'tubespwb', 'dbdriver' => 'mysqli', 'dbprefix' => '', 'pconnect' => FALSE, 'db_debug' => (ENVIRONMENT !== 'production'), 'cache_on' => FALSE, 'cachedir' => '', 'char_set' => 'utf8', 'dbcollat' => 'utf8_general_ci', 'swap_pre' => '', 'encrypt' => FALSE, 'compress' => FALSE, 'stricton' => FALSE, 'failover' => array(), 'save_queries' => TRUE );
-
 #### Validasi client-side
 pada saat menambahkan laporan sistem akan melakukan validasi pada isi dan file yang akan diinput,isi laporan tidak boleh kosong dan minimal 20 kata/100 karakter,untuk file sistem hanya menerima file dengan ekstensi pdf atau gambar,selain itu laporan tetap terkirim tetapo file tidak akan muncul di hasil laporan
-
 #### AJAX
 penggunaan ajax pada menu pencarian,dimana data yang kita input di field cari akan diolah di halaman yang sama,saat kita memasukkan kata pencarian bagian konten akan berubah menampilkan data hasil pencarian,dimana pencarian dilakukan dengan menggunakan fungsi LIKE pada bagian isi dan tanggal laporan
+
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
