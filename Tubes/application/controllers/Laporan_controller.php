@@ -56,7 +56,7 @@
             if (!isset($id)) show_404();
             
             if ($this->laporan_model->delete($id)) {
-                redirect(site_url('tampilan_view'));
+                $this->load->view("tampilan_view");
             }
         }
 
