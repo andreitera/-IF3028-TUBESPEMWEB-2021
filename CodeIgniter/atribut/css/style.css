@@ -1,15 +1,19 @@
+html {
+	background-image: url(https://image.freepik.com/free-vector/abstract-shape-speed-movement-background_1409-1105.jpg);
+	background-size: 100%;
+}
 .container{
 	margin:auto;
 	margin-top: 0px;
-	width: 1280px;
-	background-color: rgb(10, 136, 37);
+	width: 1111px;
+	background-color: rgba(245, 245, 245, 0.637);
 	border:1px solid;
 	padding-top: 25px;
 	padding-bottom: 25px;
 	padding-right: 25px;
 	padding-left: 25px;
 	border-radius: 10px; 
-	font-family: roboto;
+	font-family: inherit;
 }
 
 .container h1{
@@ -61,12 +65,12 @@
 
 .container a:hover{
 	text-decoration: none; 
-	color: rgb(162, 173, 3);
+	color: rgb(165, 57, 57);
 	background-color: black;
 }
 
 footer {
-	font-family: sans-serif;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	text-align: center;
 	font-weight: bold;
 	margin-top: 50px;
@@ -104,7 +108,7 @@ select{
 }
 
 #submit:hover, .container form button:hover{
-	background-color: rgb(26, 128, 77);
+	background-color: rgb(153, 62, 26);
 	color: rgb(0, 0, 0);
 	font-weight: bolder;
 }
