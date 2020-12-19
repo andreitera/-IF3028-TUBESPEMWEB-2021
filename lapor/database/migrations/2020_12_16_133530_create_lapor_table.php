@@ -22,6 +22,7 @@ class CreateLaporTable extends Migration
             $table->tinyInteger('anonim')->default(1);
             $table->tinyInteger('rahasia')->default(0);
             $table->timestamps();
+            $table->softDeletes();
             $table->integer('user_id')->unsigned();
             $table->foreignId('category_id');
             $table->foreignId('laporan_type_id');

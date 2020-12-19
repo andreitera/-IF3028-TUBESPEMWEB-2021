@@ -17,11 +17,6 @@ class SetCities extends Model
     // relation table
     public function provinces()
     {
-        return $this->hasMany('App\Models\SetProvinces', 'provinces_id');
-    }
-
-    public function lapor()
-    {
-        return $this->belongsTo('App\Models\Lapor', 'location_id')->withDefault();
+        return $this->belongsTo('App\Models\SetProvinces', 'province_id')->withDefault();
     }
 }
