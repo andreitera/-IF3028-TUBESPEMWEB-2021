@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lihat selengkapnya</title>
+
     <style>
 .padding{
     padding: 10px;
@@ -18,6 +19,11 @@
     text-align: left;
 }
     
+    <style type="text/css">
+        .hapus_l{
+            display: flex;
+            justify-content: space-between;
+        }
     </style>
 </head>
 <body>
@@ -36,6 +42,8 @@
     <button  id="<?= $data->id_lapor ?>" onclick="apaaja()">Hapus Laporan/Komentar <strong>x</strong></button>
     </div>
     </div>
+
+
     <hr>
 
     <script>

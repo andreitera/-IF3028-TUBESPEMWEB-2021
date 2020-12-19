@@ -10,6 +10,9 @@ di program studi teknik informatika ITERA.
 
 ### Anggota Tim :cyclone:
 Project dikerjakan secara **berkelompok** dengan maksimal jumlah anggota adalah 2-3 orang mahasiswa.
+1. Andika Haris Pratama NIM 14117015
+2. Nardiyansah Tri Jatmiko NIM 14117037
+3. Safran Ilmi  NIM 14117031
 
 ### Petunjuk Pengerjaan :umbrella:
 1. Fork pada repository ini dengan akun github anda.
@@ -100,9 +103,30 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 
 ### Penjelasan Teknis
 `Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
-- Instalasi Framework menggunakan Codeigniter
+- Instalasi Framework menggunakan Codeigniter 3.1.11.
+  1. Download framework codeigniter
+  2. Upload ke repository
+
 - Pembuatan Database menggunakan MySql
+  1. Menggunakan DBMS XAMPP
+  2. Nama database db_lapor
+  3. Terdapat dua tabel, yaitu tabel aspek dan tabel lapor
+  4. Field pada tabel aspek, yaitu id_aspek dan aspek
+  5. Field pada tabel lapor, yaitu id_lapor, isi, id_aspek, lampiran, waktu
+  6. Tabel aspek berelasi dengan tabel lapor
+
 - Koneksi Database menggunakan atribut Codeigniter
+  1. konfigurasi untuk koneksi ke database melalui file database.php pada folder config
+```php
+$db['default'] = array(
+  'dsn' => '',
+  'hostname' => 'localhost',
+  'username' => 'root',
+  'password' => '',
+  'database' => 'db_lapor',
+  'dbdriver' => 'mysqli',
+```
+
 - Validasi client side: (Pada fungsi membuat laporan baru) Dengan menggunakan javascript mengecek setiap inputan sudah terisi atau belum. Jika belum maka akan menghentikan behaviour default dari form menggunakan fungsi preventDefault().
 ```javascript
 	function isEmpty(e) {
