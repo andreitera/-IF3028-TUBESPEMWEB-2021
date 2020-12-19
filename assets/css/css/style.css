@@ -1,0 +1,155 @@
+:root{
+	--warna-dasar : #00B4CC;
+}
+.container {
+	margin: auto;
+	margin-top: 50px;
+	width: 1000px;
+	background-color: whitesmoke;
+	border: 1px solid;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-right: 25px;
+	padding-left: 25px;
+	border-radius: 10px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container h1{
+	text-align:center;
+	top:30px;
+	left:50%;
+	margin-bottom: 25px;
+	font-size: 48px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-weight: bold;
+}
+
+h1.judul {
+	text-align: center;
+	top: 30px;
+	left: 50%;
+	margin-bottom: 25px;
+	font-size: 48px;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-weight: bold;
+}
+img.judul {
+	width: 187px;
+	margin-top: 0%;
+}
+.container h3{
+	 text-align: center; 
+	 margin-top: 5px; 
+	 margin-bottom: 50px;
+	 font-weight: bold;
+}
+
+.container .lampiran, .container .waktudetail, .container .aspek{
+	float: left;
+}
+
+.container .waktu , .container .detail, .container .hapus{
+	float: right;
+}
+
+.container a{
+	text-decoration: none; 
+	color: black;
+}
+
+.container a:hover{
+	text-decoration: none; 
+	color: #b30000;
+	background-color: black;
+}
+
+
+/* Pencarian */
+.input-cari{
+	background: #f1f1f1;
+	border: 3px solid var(--warna-dasar);
+	border-bottom-right-radius: 0%;
+	border-radius: 5px 0 0 5px;
+	border-right: none;
+	border-top-right-radius: 0%;
+	color: #0072b5;
+	float: left;
+	height: 20px;
+	margin-left:25%;
+	outline: none;
+	padding: 10px;
+	width: 500px;
+}
+
+.container  button{
+	width: 50px;
+	border: 3px solid var(--warna-dasar);
+	border-bottom-left-radius: 0%;
+	border-radius: 0 5px 5px 0;
+	border-top-left-radius: 0%;
+	float: left;
+	padding: 10px;
+	cursor: pointer;
+	background: var(--warna-dasar);
+	color: white;
+}
+
+
+.pencarian{
+	display: flex;
+}
+/* end-Pencarian */
+
+/* Kartu */
+.kartu{
+	border: 3px solid #008799;
+	border-radius: 10px;
+	padding: 20px;
+}
+/* end-Kartu */
+footer {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	text-align: center;
+	font-weight: bold;
+	width:1000px;
+	margin-top: 50px;
+	}
+
+.container embed{
+	margin-top:30px; 
+	margin-bottom:30px; 
+	width: 800px;
+	height: 1000px;
+}
+
+#filedetail{ 
+	margin:20px;
+	height: 500px;
+}
+
+select{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 300px;
+	border:2px solid;
+}
+
+#file{
+	width: 300px;
+	margin-left: 0px;
+	margin-bottom: 30px; 
+}
+
+#submit{
+	float: right;
+	width: 100px;
+	margin-bottom: 30px;
+}
+
+#submit:hover, .container form button:hover{
+	background-color: white;
+	color: var(--warna-dasar);
+	font-weight:bold;
+}
