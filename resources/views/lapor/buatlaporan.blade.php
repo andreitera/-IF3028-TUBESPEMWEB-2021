@@ -7,13 +7,14 @@
 @section('isi')
 <div class="form-buat">
     <form method="POST" action="{{ route('laporbuat') }}" enctype="multipart/form-data" class="form">
+        @csrf
         Buat Laporan/Komentar
         <div class="bar"></div>
         <input type="text" name="from" class="inpt" placeholder="Nama Pengirim" style="margin-top: 20px !important">
         <br>
         <input type="text" name="title" class="inpt" placeholder="Judul Laporan/Komentar">
-        <textarea id="laporan" name="laporan" placeholder="Laporan/Komentar"></textarea>
-        <select name="aspek" id="aspek">
+        <textarea id="laporan" name="content" placeholder="Laporan/Komentar"></textarea>
+        <select name="aspect" id="aspek">
             <option value="" disabled selected>Pilih Aspek Pelaporan/Komentar</option>
             <option value="Dosen">Dosen</option>
             <option value="Mata Kuliah">Mata Kuliah</option>
@@ -22,9 +23,9 @@
         <br>
         <input type="button" value="Choose File" onclick="document.getElementById('pic').click()" class="btn">
         <input type="text" id="filename" value="No File Choosen">
-        <input type="file" id="pic" name="pic" style="display:none" onchange="document.getElementById('filename').value=this.value">
+        <input type="file" id="pic" name="filelapor" style="display:none" onchange="document.getElementById('filename').value=this.value">
         <div class="container">
-            <button id="submit" class="btn">Buat LAPOR!</button>
+            <button type="submit" id="submit" class="btn">Buat LAPOR!</button>
         </div>
         <div class="bar"></div>
     </form>

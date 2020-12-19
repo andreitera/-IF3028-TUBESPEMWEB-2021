@@ -26,16 +26,16 @@
     <input type="hidden" name="name" value="$lapor->unique_id">
     <div class="detail">{{$lapor->content}}</div>
     <div style="margin-top: 20px">Lampiran:</div>
-    @if($lapor->file != "Tidak ada lampiran") 
-        <a href="{{ $lapor->file }}" style="text-decoration: none;" >Unduh Lampiran</a>
-    @else 
-        <span style="color:#D0021B">Tidak ada lampiran</span>
+    @if($lapor->file != "Tidak ada lampiran")
+    <a href="{{ $lapor->file }}" style="text-decoration: none;">Unduh Lampiran</a>
+    @else
+    <span style="color:#D0021B">Tidak ada lampiran</span>
     @endif
     {{-- <div class="lampiran" style="background-image: url('http://www.dumetschool.com/images/fck/Capturebilly25518nov2.JPG')">
     </div> --}}
 
     <div class="form-container detil">
-        <span style="margin-right: 25px !important">Waktu: 20-11-2019 20:00</span>
+        <span style="margin-right: 25px !important">Waktu: {{$lapor->created_at}}</span>
         <span class="form-container-aspek">Aspek: {{$lapor->aspect}}</span>
         <form action="{{ route('laporcek') }}" method="POST">
             @csrf
@@ -44,7 +44,7 @@
             <input type="hidden" name="id" value="{{$lapor->id}}" id="">
             <span id="btn-eh">
                 <button onclick="uniq()" class="btn-detail">OK</a>
-                </span>
+            </span>
         </form>
     </div>
     <div class="bar"></div>
