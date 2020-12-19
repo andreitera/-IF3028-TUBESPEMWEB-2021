@@ -57,24 +57,25 @@ class LaporController extends Controller
         // return $lapor;
         
         if($lapor->save()){
-            return "berhasil";
-            return redirect()->route('landing')->with('success', 'Berhasil insert data');
-        } else return "gagal";
+            // return "berhasil";
+            return redirect()->back()->with('success', 'Berhasil insert data');
+        } else return redirect()->back()->with('success', 'Berhasil insert data');
 
     }
 
     public function listView()
     {
+        $listLokasi = SetCities::orderBy('name', 'asc')->get();
+        $listInstansi = SetProvinces::orderBy('name', 'asc')->get();
+        $listKategori = SetLibraries::where('category_id', '13')->orderBy('name', 'asc')->get();
         $listLapor = Lapor::orderBy('created_at', 'desc')->get();
         return view('Lapor.page.listLapor')->with([
-            'listLapor' => $listLapor
+            'listLapor' => $listLapor,
+            'listLokasi' => $listLokasi,
+            'listInstansi' => $listInstansi,
+            'listKategori' => $listKategori
         ]);
     }
-
-    // public function viewLapor()
-    // {
-    //     return view('Lapor.page.viewLapor');
-    // }
 
     public function viewLapor($id)
     {

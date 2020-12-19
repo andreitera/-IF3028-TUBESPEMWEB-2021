@@ -26,7 +26,7 @@ Route::post('/post-laporan',            'LaporController@postLapor')->name('post
 Route::get('/lapors',                   'LaporController@listView')->name('listView');
 Route::get('/profil',                   'ProfileController@showProfile')->name('showProfile');
 Route::get('/view-lapor/{id}',          'LaporController@viewLapor')->name('viewLapor');
-Route::post('/komen-post',          'LaporController@komenPost')->name('koment.post');
+Route::post('/komen-post',              'LaporController@komenPost')->name('koment.post');
 
 Route::get('/search/{query}',           'LaporController@viewSearch')->name('viewSearch');
 

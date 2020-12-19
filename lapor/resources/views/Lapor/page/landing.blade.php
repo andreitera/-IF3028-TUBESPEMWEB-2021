@@ -8,6 +8,8 @@
 @section('content')
     <section id="formLaporan">
         <div class="bg-card-white lapor">
+            @include('component.alert')
+            <br>
             <div class="title-lapor">
                 <p>Sampaikan Laporan Anda</p>
             </div>
