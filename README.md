@@ -19,21 +19,9 @@ Disarankan untuk tidak melakukan commit dengan perubahan yang besar karena akan 
 penilaian (contoh: hanya melakukan satu commit kemudian dikumpulkan).
 3. Minimal commit sebanyak personil anggota tim dengan masing-masing personil tim melakukan commit sesuai dengan kesepakatan tim, penilaian individu akan dilihat.
 4. Ubah **Penjelasan Teknis** pada bagian bawah readme.md ini dengan menjelaskan bagaimana cara anda:
-   - Muhammad Ikhbal 118140123
-   - Fikri Halim 118140055
-   - Imam Mukhti Sihombing 14115009
-   - Cara Intalasi
-   - Download Composer
-   - Git Clone https://github.com/ikhbaaalll/-IF3028-TUBESPEMWEB-2021.git
-   - Buka Git Bash pada folder -IF3028-TUBESPEMWEB-2021
-   - Buat database dengan nama "lapor"
-   - Import lapor.sql didalam folder -IF3028-TUBESPEMWEB-2021
-   - Ketik pada Git Bash "composer update --verbose --prefer-dist
-   - Ketik pada Git Bash "git checkout master"
-   - Ketik pada Git Bash "php artisan key:generate"
-   - Ketik pada Git Bash "php artisan storage:link"
-   - Ketik pada Git Bash "php artisan serve"
-   - Buka browser dengan URL http://127.0.0.1:8000
+-  Instalasi Framework, Koneksi basis data
+-  Melakukan validasi pada client-side
+-  Melakukan AJAX (mulai dari pengguna melakukan klik pada tombol LAPOR! sampai laporan/komentar terkirim).
 5. Pull request dari repository anda ke repository ini dengan 
 format **NIM** - **Nama Lengkap**. **Waktu terkahir proses pull request adalah 4 hari setelah 
 ujian akhir semester (UAS)**
@@ -112,6 +100,21 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 
 ### Penjelasan Teknis
 `Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+   - Muhammad Ikhbal 118140123
+   - Fikri Halim 118140055
+   - Imam Mukhti Sihombing 14115009
+   - Cara Intalasi
+   - Download Composer
+   - Git Clone https://github.com/ikhbaaalll/-IF3028-TUBESPEMWEB-2021.git
+   - Buka Git Bash pada folder -IF3028-TUBESPEMWEB-2021
+   - Buat database dengan nama "lapor"
+   - Import lapor.sql didalam folder -IF3028-TUBESPEMWEB-2021
+   - Ketik pada Git Bash "composer update --verbose --prefer-dist
+   - Ketik pada Git Bash "git checkout master"
+   - Ketik pada Git Bash "php artisan key:generata"
+   - Ketik pada Git Bash "php artisan storage:link"
+   - Ketik pada Git Bash "php artisan serve"
+   - Buka browser dengan URL http://127.0.0.1:8000
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
