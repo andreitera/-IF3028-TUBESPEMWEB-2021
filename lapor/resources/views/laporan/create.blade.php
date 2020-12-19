@@ -6,7 +6,7 @@
     </div>
     <div class="judulKecil">Buat Laporan/Komentar</div>
     <div id="wrapper">
-        <form action="{{ route('laporan.store') }}" method="post" enctype="multipart/form-data">
+        <form id="create" name="create" action="{{ route('laporan.store') }}" method="post" enctype="multipart/form-data" onsubmit="return validating()">
             @csrf
             <textarea name="isi" id="isi_konten" cols="30" rows="10"></textarea>
             <br>
@@ -26,6 +26,20 @@
             <button id="laporBtn" type="submit">Buat LAPOR!</button>
             </div>
         </form>
+        @if(session('msg'))
+            <div>
+                {{session('msg')}}
+            </div>
+        @endif
     </div>
-
+    <script>
+        function validating() {
+          var x = document.forms["create"]["isi"].value;
+          var len = $('#create').val().split(" ").length;
+          if (x == "" || len < "20") {
+            alert("Name must be filled out");
+            return false;
+          }
+        } 
+    </script>
 @endsection
