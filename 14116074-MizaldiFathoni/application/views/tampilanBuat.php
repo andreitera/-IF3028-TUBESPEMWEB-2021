@@ -16,7 +16,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<label>Buat Laporan</label>
 	<hr><br>
 
-	<form method="POST" action="tambah_aksi" name="myForm">
+	<form method="POST" action="tambah_aksi" name="myForm" onsubmit="return validateForm(this)">
 		<input type="text" class="nama" name="nama" placeholder=" Nama"><br><br>
 		<input type="text" class="judul" name="judul" placeholder=" Judul Laporan"> <br><br>
 		<textarea class="area" id="card" name="laporan" placeholder=" Laporan/Komentar"></textarea> <span></span>
@@ -30,7 +30,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<option>Pengajaran</option>
 		</select>
 		<br><br>
-		Pilih file: <input type="file" name="file" placeholder="File"  name="kirim" accept=".img, .png, .jpeg, .jpg, .doc, .docx, .xls, .xlsx, .ppt, .pptx, .pdf">
+		Pilih File : <input type="file" name="file" placeholder="File"  name="kirim" accept=".img, .png, .jpeg, .jpg, .doc, .docx, .xls, .xlsx, .ppt, .pptx, .pdf">
 	
 		<input type="text" name="waktu" value="<?php echo date('d-m-Y H:i:s')?>" hidden>
 		<br><br>
