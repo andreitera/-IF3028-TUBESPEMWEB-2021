@@ -20,7 +20,7 @@
         <form class="ketiklapor-content animate" action="<?php echo base_url('form/input_form') ?>" method="post" enctype="multipart/form-data">
             <div class="tampilan">
               <fieldset>
-                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Tutup">&times;</span>
+                  <a class="back" href= <?php echo base_url();?>>Kembali</a><br><br>
                   <input type="text" name="judul" placeholder="judul">
                   <textarea name="komen" placeholder="Laporan"></textarea>
                   <input type="file" name="lampiran" >
