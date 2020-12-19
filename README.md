@@ -101,25 +101,25 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 ### Penjelasan Teknis
 `Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
 1. Cara instalasi framework
-  1.1. Kami menggunakan framework Codeigniter 4
-  1.2. Unduh project ini 
+  - Kami menggunakan framework Codeigniter 4
+  - Unduh project ini 
   
-  instalasi menggunakan ubuntu
-  1.3. Karena salah satu anak kelomppok kami enggunakakn ubuntu (Suva), letakkan di /var/www/html atau htdocs
-  1.4. Unggah file databse yang ada di folder filedatabase ke MySQL
-  1.5. Untuk mengaskses aplikasi ini, dapat melalui localhost/IFTUBESWEB/public
+  `instalasi menggunakan ubuntu`
+  - Karena salah satu anak kelomppok kami enggunakakn ubuntu (Suva), letakkan di /var/www/html atau htdocs
+  - Unggah file databse yang ada di folder filedatabase ke MySQL
+  - Untuk mengaskses aplikasi ini, dapat melalui localhost/IFTUBESWEB/public
   
-  instalasi menggunakan windows
-  1.6 lakukan konfigurasi framework di .env
-  1.7 lalu lakukan konfigurasi database dan impor database  yang ada di folder filedatabase
-  1.8 lalu jalankan server, bisa menggunakan server bawaan ci4 dan bisa menggunakan server lokal anda
-  1.9 jika menggunakan server bawaan ci4 bisa langsing menjalankan `php spark serve`
+  `instalasi menggunakan windows`
+  - lakukan konfigurasi framework di .env
+  - lalu lakukan konfigurasi database dan impor database  yang ada di folder filedatabase
+  - lalu jalankan server, bisa menggunakan server bawaan ci4 dan bisa menggunakan server lokal anda
+  - jika menggunakan server bawaan ci4 bisa langsing menjalankan `php spark serve`
 
 2. javascript
-2.1. Untuk java script kita mneggunakan disetiap halaman secara langsung
+  - Untuk java script kita mneggunakan disetiap halaman secara langsung
 
 3. CSS
-3.1 untuk css diletakan di folder public/css/
+  - untuk css diletakan di folder public/css/
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
