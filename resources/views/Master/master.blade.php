@@ -7,6 +7,7 @@
     <title>Hasil Pencarian Laporan</title>
 
     <link rel="stylesheet" href="{{ asset('css/styleUtama.css') }}">
+    @yield('css')
 </head>
 <body>
     
@@ -18,14 +19,14 @@
                         <img src=" {{ asset('images/logos.png') }} " width="150px" height="60px" alt="Logo">
                     </div>
                     <ul class="flex-display menus">
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Tentang Lapor</a></li>
+                        <li><a href="#">Laporan</a></li>
+                        <li><a href="#">Cari Aduan</a></li>
                     </ul>
                 </div>
                 <div class="user">
                     <img src="{{ asset('images/user-placeholder-m.png') }}" alt="user-profile" width="60px" height="60px">
-                    <span>Nazla</span>
+                    <span><b>User</b></span>
                 </div>
             </div>
         </div>
@@ -34,7 +35,8 @@
     @yield('content')
 
     <footer>
-        Footer
+        <img src=" {{ asset('images/logos.png') }} " width="150px" height="60px" alt="Logo">
+        <p><b>Web ini dibuat oleh 061 082 084</b></p>
     </footer>
 
 </body>
