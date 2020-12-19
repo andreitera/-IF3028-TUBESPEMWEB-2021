@@ -1,0 +1,55 @@
+body {
+
+	background-color: #cacaca;
+	color: #333;
+}
+
+.container {
+	width: 1000px;
+	margin: auto;
+	background-color: #fff;
+	padding: 15px;
+}
+
+.judul {
+	padding: 30px;
+	text-align: center;
+}
+
+.judul label{
+	font-size: 60px;
+	font-family: corbel, serif;
+}
+
+.content {
+	margin-left: 90px;
+	padding: 10px;
+	margin-right: 77px;
+	padding: 10px;
+}
+
+table {
+	width: 100%;
+}
+
+.Waktu {
+	float: left;
+}
+
+.Aspek{
+	margin-left: 2%;
+}
+
+.hapus {
+	float: right;
+}
+
+.kembali {
+	float: right;
+	
+}
+
+hr {
+	width: 100%;
+}
+

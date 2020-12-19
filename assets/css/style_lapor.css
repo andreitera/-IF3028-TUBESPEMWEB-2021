@@ -1,0 +1,50 @@
+body {
+
+	background-color: #cacaca;
+	color: #333;
+}
+
+.container {
+	width: 1000px;
+	margin: auto;
+	background-color: #fff;
+	padding: 15px;
+}
+
+.judul {
+	padding: 30px;
+	text-align: center;
+}
+
+.judul label{
+	font-size: 60px;
+	font-family: corbel, serif;
+}
+
+.Lapor {
+	padding: 10px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.buatLapor {
+	padding-left: 10%;
+}
+
+hr {
+	width: 100%;
+}
+
+textarea{
+width: 778px; 
+height: 306px;
+}
+
+select {
+	padding: 5px;
+}
+
+button {
+	padding: 10px;
+	float: right;
+}
