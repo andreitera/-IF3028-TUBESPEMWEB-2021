@@ -71,9 +71,14 @@ class Control_model extends CI_Model
     // proses SEARCH ==========================================================
     public function search_laporan($keyword)
     {
+        $this->db->select('*');
+        $this->db->from('laporan');
         $this->db->like("laporan", $keyword);
-        $this->db->order_by("waktu", "desc");
-        $query = $this->db->get("laporan");
-        return $query->result();
+        $this->db->or_like("aspek", $keyword);
+        $this->db->or_like("lampiran", $keyword);
+        $this->db->or_like("ukuran_file", $keyword);
+        $this->db->or_like("tipe_file", $keyword);
+        $this->db->or_like("waktu", $keyword);
+        return $this->db->get()->result();
     }
 }
