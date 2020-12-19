@@ -12,7 +12,7 @@ di program studi teknik informatika ITERA.
 Project dikerjakan secara **berkelompok** dengan maksimal jumlah anggota adalah 2-3 orang mahasiswa.
 1. Leo Viranda Millennium  /14117167
 2. Fathan Rizki Hidayah    /14117157
-3. Rozi Alqomar            /14117168
+3. Rozi Alqomar            /14117166
 
 ### Petunjuk Pengerjaan :umbrella:
 1. Fork pada repository ini dengan akun github anda.
@@ -102,6 +102,16 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 
 ### Penjelasan Teknis
 `Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+A. instalasi framwork (CodeIgniter)
+kami menggunakan codeigniter 3.1.11,untuk instalasi kami menggunakan controller, model, dan view dalam fokus pengerjaan tugas besar ini, dimana model akan melakukan fungsi utama sistem, controller akan mengatur koneksi antara model dan database yang mana akan ditampilkan di bagian view. untuk css dan aset lainnya kami menyimpannya di folder assets.
+
+untuk koneksi ke database, pada CI kami hanya mengedit file database.php pada application->config->database.php didalamnya kita isi nama database sesuai database milik kita.database juga akan langsung terkoneksi saat sistem dijalankan dengan melakukan instalasi pada file autoload.php dengan menambahkan database di bagian libraries.
+
+B. Validasi client 
+pada saat menambahkan laporan sistem akan melakukan validasi pada isi dan file yang akan diinput,isi laporan tidak boleh kosong dan minimal 250 karakter,untuk file sistem hanya menerima file dengan ekstensi pdf atau gambar, selain itu laporan tetap terkirim tetapi file tidak akan muncul di hasil laporan
+
+C. AJAX
+kami menggunakan ajax pada menu pencarian, dimana data yang kita input di form cari akan diolah di halaman yang sama,saat kita memasukkan kata pencarian bagian konten akan berubah menampilkan data hasil pencarian, dimana pencarian dilakukan dengan menggunakan fungsi LIKE pada bagian isi dan tanggal laporan
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
