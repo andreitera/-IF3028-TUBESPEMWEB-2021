@@ -104,6 +104,18 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
  2. Download composer di https://getcomposer.org lalu install
  3. Jika sudah maka buka terminal dan install laravel secara global dapat dilihat pada website ini https://laravel.com/docs/7.x/installation
  4. Lalu setelah laravel terinstall maka pindahkan ke lokasi dimana ingin menginstall aplikasi melalui terminal
+ Pengaturan Database :
+ 1. Membuat file database  di localhost
+ 2. Buka file '.env' pada folder anda
+ 3. Ubah line daatabase seperti dibawah ini, 
+     DB_CONNECTION=mysql
+     DB_HOST=localhost
+     DB_PORT=8889
+     DB_DATABASE=lapors
+     DB_USERNAME=root
+     DB_PASSWORD="root" (tanpa ")
+ 4. Buka terminal anda, kemudian arahkan lokasi misalnya pada visual studio code dengan memasukkan perintah : php artisan serve
+ 5. Export database kedalam bentuk sql pada direktori database. Untuk Validate Client-side dapat dilihat pada fungsi script di 'Resources/views/laporan/create.blade.php'
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
