@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+	
 <head>
 	<title>Buat Laporan</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -11,7 +11,7 @@
 		<header>SIMPLE LAPOR!</header>
 
 		<div class="konten">
-			<form action="http://localhost/-IF3028-TUBESPEMWEB-2021-master/-IF3028-TUBESPEMWEB-2021-master/CodeIgniter-3.1.11/" method="POST" onSubmit="Validasi()">
+			<form action="http://localhost/-IF3028-TUBESPEMWEB-2021-main/-IF3028-TUBESPEMWEB-2021-master/CodeIgniter-3.1.11/" method="POST" onSubmit="Validasi()">
 				<p>Buat Laporan/Komentar</p>
 				<hr><br>
 				<textarea input type="text" name="Laporan" id="Laporan">Laporan/Komentar</textarea><br>
@@ -40,7 +40,7 @@
 		var waktu = date_timestamp_get();
 
 		if (laporan == "" || aspek == "") {
-			alert('Mohon isi data dengan lengkap!');
+			alert('Mohon lengkapi isi pada data!');
 			return false;
 		} else {
 			var yakin = confirm("Apakah Anda yakin?");
@@ -57,7 +57,6 @@
 						"waktu" => waktu
 					)
 				);
-
 
 				return true;
 			} else {
