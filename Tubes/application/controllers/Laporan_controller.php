@@ -26,8 +26,6 @@
 
             $this->load->view("tambah_view");
         }
-<<<<<<< HEAD
-=======
 
         public function edit($id = null){
             if (!isset($id)) redirect('tampilan_view');
@@ -46,14 +44,11 @@
             
             $this->load->view("", $data);
         }
->>>>>>> 79b1301cab376c90503646d710313c819be9fda2
 
         public function detail(){
             $this->load->view("detail_view");
         }
-<<<<<<< HEAD
 
-=======
         public function delete($id=null){
             if (!isset($id)) show_404();
             
@@ -61,6 +56,6 @@
                 redirect(site_url('tampilan_view'));
             }
         }
->>>>>>> 79b1301cab376c90503646d710313c819be9fda2
+
     }
 ?>

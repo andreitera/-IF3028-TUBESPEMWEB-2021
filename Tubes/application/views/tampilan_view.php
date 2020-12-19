@@ -37,12 +37,15 @@
 
 		<?php 
 		foreach ($laporan as $value):
-			 echo "<p>$value->isi</p>";
+			 echo "<p>$value->isi</p><br>";
 			 echo "<p>Lampiran: $value->lampiran</p>";  
-			 echo "<p style='width: auto; height: auto; border:1px solid black; float: right; margin-top:-37.9px;'>Waktu: $value->waktu</p>";
-			 echo "<hr>"; 
+			 echo "<p style='width: auto; height: auto; float: right; margin-top:-35.9px; margin-right: 150px;'>Waktu: $value->waktu</p>";
+		?>
+			<a href="<?php echo site_url('Laporan_controller/detail') ?>" style="float: right; margin-top:-35.9px;">Lihat Selengkapnya</a>
+			<hr>
+		<?php  
 		 endforeach; ?>
-		<hr>
+		
 			<p>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
