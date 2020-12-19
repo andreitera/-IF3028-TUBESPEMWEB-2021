@@ -36,6 +36,7 @@ $routes->get('/detail', 'Beranda::detail');
 $routes->get('/buatLaporan', 'Beranda::buatLaporan');
 $routes->delete('/detail/(:num)', 'Beranda::delete/$1');
 $routes->get('/detail/(:any)', 'Beranda::detail/$1');
+$routes->get('/edit/(:any)', 'Beranda::edit/$1');
 /**
  * --------------------------------------------------------------------
  * Additional Routing

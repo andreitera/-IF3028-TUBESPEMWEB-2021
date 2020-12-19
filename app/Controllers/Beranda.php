@@ -73,6 +73,38 @@ class Beranda extends BaseController
 		$this->laporanModel->delete($id);
 		return redirect()->to('/');
 	}
+
+	public function edit($id)
+	{
+		$data = [
+			'title' => 'Ubah Laporan',
+			'laporan' => $this->laporanModel->getLaporan($id)
+		];
+
+		return view('edit', $data);
+	}
+
+	public function update($id)
+	{
+		$fileLampiran = $this->request->getFile('lampiran');
+		if ($fileLampiran->getError() == 4) {
+			$namaLampiran = '';
+		} else {
+			$fileLampiran->move('img');
+			$namaLampiran = $fileLampiran->getName();
+		}
+
+		$this->laporanModel->save([
+			'id' => $id,
+			'isi_laporan' => $this->request->getVar('isiLaporan'),
+			'aspek' => $this->request->getVar('aspek'),
+			'lampiran' => $namaLampiran
+		]);
+
+		session()->setFlashdata('pesan', 'Laporan berhasil diubah!');
+
+		return redirect()->to('/');
+	}
 	//--------------------------------------------------------------------
 
 }

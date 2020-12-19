@@ -11,6 +11,7 @@
 <div class="bottom-bar">
     <p>Waktu: <?= $laporan['created_at']; ?></p>
     <p>Aspek: <?= $laporan['aspek']; ?></p>
+    <a href="/beranda/edit/<?= $laporan['id']; ?>">Ubah Laporan</a>
     <form action="/detail/<?= $laporan['id']; ?>" method="POST">
         <?= csrf_field(); ?>
         <input type="hidden" name="_method" value="DELETE">

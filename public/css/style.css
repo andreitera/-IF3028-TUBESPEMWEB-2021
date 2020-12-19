@@ -184,6 +184,10 @@ img {
   margin-right: auto;
 }
 
+.bottom-bar a {
+  padding-right: 1em;
+}
+
 .bottom-bar button {
   display: inline-block;
   background-color: white;
