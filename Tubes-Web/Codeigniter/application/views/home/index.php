@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/asset/style.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/asset/reset.css">
+	
+    <title>Lapor!</title>
 </head>
 
 <body>
-    <div class="container">
-        <h1>SIMPLE LAPOR !</h1>
-            <input type="text" name="cari" id="cari" placeholder="search"> </input>
-            <a href="<?php echo base_url() ?>index.php/Home/tambah">
+<div class="container">
+    <h1>SIMPLE LAPOR !</h1>
+    <input type="text" name="cari" id="cari" placeholder="search"></input>
+    
+    <a href="<?php echo base_url() ?>index.php/Home/tambah">
         <h3>Buat Laporan / Komentar</h3>
-        </a>
-        <h4>Laporan / Komentar Terakhir</h4>
-        <hr />
-    </div>
+    </a>
+    <h4>Laporan / Komentar Terakhir</h4>            
+    <hr/>
 
     <div id="konten">
         <ul>
@@ -38,8 +41,11 @@
                 <hr />
             <?php } ?> 
         </ul>
-    </div>
-            <input id="alamat value="<?php echo base_url() ?>index.php/Home/cari/" hidden>
-            <script src="<?php echo base_url() ?>/asset/ajax/ajax.js"</script>
+    </div>    
+</div>
+    
+<input id="alamat" value="<?php echo base_url() ?>index.php/Home/cari/" hidden>
+<script src="<?php echo base_url() ?>/asset/ajax.js"></script>             
+
 </body>
 </html>
