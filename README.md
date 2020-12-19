@@ -123,6 +123,26 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
    pertama, download codeigniter di website https://www.codeigniter.com/download
    kedua, memindahkan file codeigniter kedalam folder htdocs,dan mengganti namanya menjadi Lapor
    ketiga, melakukan konfigurasi pada CI
+   
+2. Koneksi database
+   - Mengimport file SQL yang dilampirkan pada repository ini dengan nama database laporkita.
+   - Buka file database.php yang berada pada folder config.
+   - Mengatur nama database, username, password dan konfigurasi lain yang diperlukan.
+   - Jika konfigurasi yang dilakukan sudah benar, maka database telah terkoneksi.
+   
+3. Validasi pada client side
+   - File javascript mengambil elemen form dan setiap field input dari HTML berdasarkan id.
+   - Elemen form ditambahkan event listener submit
+   - Setiap kali form disubmit, event listener akan melakukan aksi berikut:
+      a. Memastikan isi dari field laporan dan aspek tidak kosong. Jika isi field tersebut kosong, akan muncul alert "Tidak boleh ada kolom yang kosong".
+      b. Menghitung jumlah kata dari isi laporan. Jika jumlah kata kurang dari 20, akan muncul alert "Jumlah kata dalam laporan minimal 20".
+      c. Mengecek apakah ada file yang diinput. Jika tidak ada file yang diinput, akan muncul alert "Harap pilih file lampiran".
+      
+4. Menginput Laporan
+   - Pengguna menekan tombol LAPOR agar dapat melakukan pelaporan.
+   - Setelah form di submit, akan diarahkan ke fungsi input() di dalam controller tampil.php
+   - Pada fungsi input(), beberapa variabel menyimpan data yang telah dikirimkan dengan method post. 
+   - Pada fungsi input_laporan() data yang dikirimkan dari controller akan diinsert ke dalam database menggunakan CodeIgniter query builder.
 
 ### Knowledge
 
