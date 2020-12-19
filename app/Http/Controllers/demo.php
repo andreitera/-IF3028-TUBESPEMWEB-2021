@@ -45,10 +45,18 @@ class demo extends Controller
    }
 
    public function hapus($id){ //fungsihapuslaporan
-       $data = DB::table('laporan')
+       DB::table('laporan')
            ->where('id', $id)
            ->delete() ;
 
-       return view('data' , ['data' => $data]) ;
+       return redirect('/');
    }
+
+   public function update(){
+
+
+      echo "hai" ;
+
+   }
+
 }

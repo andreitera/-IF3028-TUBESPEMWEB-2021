@@ -15,3 +15,5 @@ Route::get('/','demo@home') ;
 Route::get('/input' , 'demo@input') ;
 Route::post('/prosesdata' , 'demo@proses') ;
 Route::get('/detail/{id}' , 'demo@detail') ;
+Route::get('/update' , 'demo@update');
+Route::get('/delete/{id}' , 'demo@hapus');
