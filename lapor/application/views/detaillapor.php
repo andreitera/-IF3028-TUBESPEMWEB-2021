@@ -19,20 +19,12 @@
 			<?php } ?>
         </div>
 
-        <div class="data" style="float: left;">
-            <label for="">Waktu: </label>
-            <?= $laporan["waktu"]; ?>
-        </div>
-        
-        <div class="data" style="float: left;"> 
-            <label for="">Aspek: </label>
-            <?= $laporan["aspek"]; ?>
-        </div>
+        <div class="data">
+            <label>Waktu: <?= $laporan["waktu"]; ?></label>
+            <label style="margin-left: 20px;">Aspek: <?= $laporan["aspek"]; ?></label>
 
-        
-        <div class="data" style="float: right;"> 
-            <a href="<?= base_url()?>home/edit/<?= $laporan["id"]?>"><button class="submit" type="submit">Edit Laporan/Komentar</button></a>    
-            <button class="submit" type="submit">Hapus Laporan/Komentar</button>        
+            <a class="btn-detail" href="">Hapus Laporan/Komentar</button>        
+            <a class="btn-detail" style="margin-right:20px;" href="<?= base_url()?>home/edit/<?= $laporan["id"]?>">Edit Laporan/Komentar</a>    
         </div>
 
         <div class="line" style="clear: both;"></div>

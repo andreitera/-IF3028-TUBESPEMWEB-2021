@@ -53,6 +53,7 @@ h1{
 
 /* Begin css home.php */
 .search{
+    margin-top: 10px;
     text-align: center;
 }
 
@@ -111,4 +112,27 @@ h1{
     padding: 6px;
 }
 
+.button-detail{
+    float: right;
+    text-decoration: none;
+    margin-top: -16px;
+    color: black;
+}
+
+.button-detail:hover{
+    color: red;
+}
 /* end css formlapor.php */
+
+/* start css detaillapor.php */
+.btn-detail{
+    float: right;
+    text-decoration: none;
+    color: black;
+}
+
+.btn-detail:hover{
+    color: red;
+}
+
+/* end css detaillapor.php */
