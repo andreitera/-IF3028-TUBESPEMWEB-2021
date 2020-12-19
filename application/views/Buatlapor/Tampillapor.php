@@ -13,9 +13,7 @@
         <ul>
 
             <li><a href=" <?php echo base_url(''); ?>">Home</a></li>
-            <li><a href="<?php echo base_url() ?>/Home/Tampillapor/">Buat Laporan</li>
-            <li><a href="<?php echo base_url(''); ?>">Masuk</a></li>
-            <li><a href="<?php echo base_url(''); ?>">Daftar</a></li>
+            <li><a href="<?php echo base_url() ?>/Home/Tampillapor/">Buat Laporan</a></li>
         </ul>
     </div>
     <div class="container">

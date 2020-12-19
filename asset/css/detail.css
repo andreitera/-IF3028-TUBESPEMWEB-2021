@@ -6,8 +6,10 @@ body{
     padding: 0;
 }
 
-
-
+hr{
+    height: 1px;
+    width: 100%;
+}
 .lampiran{
     width: 100px;
 }

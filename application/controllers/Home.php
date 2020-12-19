@@ -34,15 +34,17 @@ class Home extends CI_Controller
         redirect('Home');
     }
 
-    public function search_detail($id){
-		$data['lapor'] = $this->Lapor_model->search_model($id);
-		$this->load->view('detaillaporan/Details',$data);
+    public function search_detail($id)
+    {
+        $data['lapor'] = $this->Lapor_model->search_model($id);
+        $this->load->view('detaillaporan/Details', $data);
     }
-    
-    public function update_data($id){
-		$data['lapor'] = $this->Lapor_model->search_model($id);
-		$this->load->view('tampilan_ubah',$data);
-	}
+
+    public function update_data($id)
+    {
+        $data['lapor'] = $this->Lapor_model->search_model($id);
+        $this->load->view('tampilan_ubah', $data);
+    }
 
     function tambahLaporan()
     {
@@ -84,13 +86,12 @@ class Home extends CI_Controller
 
     function ubah($id)
     {
-        
+
         $this->form_validation->set_rules('isi', 'Isi', 'required|min_length[250]');
         if ($this->form_validation->run() == FALSE) {
             $data['aspek'] = ['', '', '', '', ''];
             $data['lapor'] = $this->Lapor_model->detail($id);
             $this->load->view('tampilan_ubah', $data);
-
         } else {
             $this->Lapor_model->ubah($id);
             echo "
