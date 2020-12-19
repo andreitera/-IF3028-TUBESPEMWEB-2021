@@ -20,10 +20,22 @@ class Detail extends CI_Controller {
 	 */
 	public function index($id)
 	{
-        $query = $this->db->query("SELECT * FROM lapor WHERE id_lapor = $id ");
-        $data['data'] = $query->result()[0];
-        
-        $this->load->view('detail', $data);
+
+		$this->db->select('*');
+		$this->db->where('id_lapor', $id);
+		$this->db->from('lapor');
+		$this->db->join('aspek', 'aspek.id_aspek = lapor.id_aspek');
+		$query = $this->db->get();
+		$data['data'] = $query->result()[0];
+		
+		$this->load->view('detail', $data);
+		
+    }
+    function hapus($id) {
+        $data = array('id' => $id);
+	    $this->Auth_model->hapusdata($data);
+	    redirect('auth/');
 	}
+	
  
 }
