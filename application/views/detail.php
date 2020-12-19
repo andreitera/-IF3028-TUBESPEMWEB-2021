@@ -5,7 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lihat selengkapnya</title>
     <style>
-
+.padding{
+    padding: 10px;
+}
+.kanan{
+    padding-left: 50%;
+	font-family: sans-serif;
+	text-align: right;
+}
+.kiri{
+    padding-left:10%;
+    text-align: left;
+}
     
     </style>
 </head>
@@ -16,12 +27,24 @@
     <?= $data->isi; ?>
     <h4>Lampiran: <?= $data->lampiran; ?> </h4>
     <embed src="<?= base_url('/uploads/') ?><?= $data->lampiran; ?>">
-<table ></table>
-    <tr>
-        <td>Waktu: <?= $data->waktu; ?> </td>
-        <td>Aspek: <?= $data->aspek; ?> </td>
-        <td>Hapus Laporan/Komentar</td>
-    </tr>
+
+    <div class="padding">
+    <span> Waktu: <?= $data->waktu; ?></span>
+    <span class="kiri">Aspek: <?= $data->aspek; ?></span>
+    <!-- onclick="window.location='<?php echo base_url();?>detail/hapus'" -->
+    <div class="kanan">
+    <button  id="<?= $data->id_lapor ?>" onclick="apaaja()">Hapus Laporan/Komentar <strong>x</strong></button>
+    </div>
+    </div>
     <hr>
+
+    <script>
+        function apaaja() {
+            var res = confirm("Press a button!");
+            if(res) {
+                window.location.href = '<?php echo base_url("detail/hapus/".$data->id_lapor);?>';
+            }
+        }
+    </script>
 </body>
 </html>
