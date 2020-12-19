@@ -41,4 +41,11 @@ class lapor_Model extends Model
     {
         return $this->findAll();
     }
+    public function cari($data)
+    {
+        return $this->like('laporan', $data, 'both', NULL, TRUE)
+            ->findAll();
+        // $this->builder = $this->db->table($this->table);
+        // return $this->builder->select('*')->from('table')->where("column LIKE '%$data%'")->get()->getResultArray();
+    }
 }
