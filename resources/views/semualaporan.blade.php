@@ -5,9 +5,11 @@
 @endsection
 
 @section('content')
-<header style="text-align: center;margin: 50px;">
+<div class="jumbotron">
+    <header style="text-align: center;margin: 50px;">
     <h1 clas="card">Tampilkan Laporan</h1>
-</header>
+    </header>
+</div>
 
     <ul>
         @foreach ($data as $data)
