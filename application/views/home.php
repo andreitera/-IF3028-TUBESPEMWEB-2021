@@ -22,7 +22,9 @@
             <br><br>
             <div id="search-container" class="search-container">
                 <input id="searchElement" type="search">
+                <a href="<?php echo base_url() ?>Home/search_detail" >
                 <button id="searchButtonElement" type="submit">Cari</button>
+                </a>
             </div>
             <div class="awal">
                 <a href="<?php echo base_url() ?>Home/Tampillapor">
@@ -55,7 +57,7 @@
 
     </body>
     <div class="footer">
-        &copyCopyright 2019 - itera.ac.id
+        &copyCopyright 2020 - itera.ac.id
     </div>
 
 </html>

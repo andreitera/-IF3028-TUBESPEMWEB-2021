@@ -34,6 +34,16 @@ class Home extends CI_Controller
         redirect('Home');
     }
 
+    public function search_detail($id){
+		$data['lapor'] = $this->Lapor_model->search_model($id);
+		$this->load->view('detaillaporan/Details',$data);
+    }
+    
+    public function update_data($id){
+		$data['lapor'] = $this->Lapor_model->search_model($id);
+		$this->load->view('tampilan_ubah',$data);
+	}
+
     function tambahLaporan()
     {
         $this->form_validation->set_rules('laporan', 'Laporan', 'required', array('required' => 'Isi Laporan anda disini'));
