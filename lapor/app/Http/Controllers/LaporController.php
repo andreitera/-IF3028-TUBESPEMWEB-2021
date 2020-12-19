@@ -18,7 +18,7 @@ class LaporController extends Controller
 
     public function listView($user_id)
     {
-        $listLapor = Lapor::where('user_id', '$user_id')->orderBy('created_at', desc)->get();
+        $listLapor = Lapor::where('user_id', '$user_id')->orderBy('created_at', 'desc')->get();
         return view('Lapor.page.listLapor')->with([
             'listLapor' => $listLapor
         ]);
@@ -41,7 +41,7 @@ class LaporController extends Controller
 
     public function viewSearch($search)
     {
-        $listSearch = Lapor::where('title', 'regexp', '%', $search, '%' )->get();
+        $listSearch = Lapor::where('title', 'regexp', '%'.  $search . '%' )->get();
         return view('Lapor.page.search')->with([
             'listSearch' => $listSearch
         ]);
