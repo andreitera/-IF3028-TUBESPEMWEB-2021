@@ -1,11 +1,10 @@
 *{
-    font-family:Helvetica, sans-serif;
+    font-family:calibri;
     font-size: 16pt;
 }
 textarea {
-  resize: vertical;
-  min-height: 200px;
-  min-width: 700px;
+  min-height: 250px;
+  min-width: 1100px;
 
 }
 
@@ -15,12 +14,12 @@ h1{
 }
 
 input[type=submit] {
-    margin-inline-start: 80%;
+    margin-inline-start: 70%;
 }
 
 
 .badan{
-    padding-inline-start: 15%;
+    padding-inline-start: 20%;
     padding-inline-end: 15%;
 }
 
@@ -29,7 +28,7 @@ input[type=submit] {
     padding: 0%;
 }
 
-.kepala{
-    padding-inline-start: 15%;
+.kepala2{
+    padding-inline-start: 20%;
     padding-inline-end: 15%;
 }

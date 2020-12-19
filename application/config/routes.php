@@ -51,12 +51,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 
 $route['default_controller'] = 'beranda';
+$route['cari'] = 'beranda/cari';
+$route['tambah'] = 'beranda/tambah';
 $route['update/(:any)'] = 'beranda/update/$1';
 $route['hapus/(:any)']  = 'beranda/hapus/$1';
-$route['cari'] = 'beranda/search';
-$route['tambah'] = 'beranda/tambah';
-$route['buat'] = 'beranda/buat';
 $route['detail/(:any)'] = 'beranda/detail/$1';
+
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 ?>
