@@ -8,6 +8,10 @@ class Beranda extends BaseController
 	{
 		return view('beranda');
 	}
+	public function detail()
+	{
+		return view('detailLaporan');
+	}
 
 	//--------------------------------------------------------------------
 

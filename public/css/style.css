@@ -102,7 +102,47 @@ a {
 
 .container-beranda .container-listLaporan .item-laporan .detail-laporan a {
   padding-right: 0;
-  -ms-grid-column-align: end;
-      justify-self: end;
+}
+
+p {
+  text-align: justify;
+  border-bottom: 1px solid black;
+  padding-bottom: 0.5rem;
+}
+
+.isi-laporan {
+  border-bottom: none;
+  margin-bottom: 2rem;
+}
+
+.bottom-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid black;
+  padding-bottom: 0.5rem;
+}
+
+.bottom-bar p {
+  border-bottom: none;
+}
+
+.bottom-bar p:last-child {
+  margin-left: auto;
+  position: relative;
+  padding-right: 1rem;
+}
+
+.bottom-bar p:last-child:before {
+  content: "+";
+  position: absolute;
+  right: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  font-weight: 900;
+}
+
+.bottom-bar p:first-child {
+  margin-right: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
