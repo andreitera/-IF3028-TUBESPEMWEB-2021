@@ -1,0 +1,96 @@
+.container {
+    margin: 0px 20px;
+    text-align: center;
+    align-content: center;
+}
+
+.textbox {
+    width: 80%;
+    height: 30px;
+}
+
+.button {
+    width: 15%;
+    height: 40px;
+}
+
+#create {
+    margin: 30px;
+}
+
+#buatBtn {
+    color: black;
+    text-decoration: none;
+    margin: 30px;
+}
+
+.judulKecil {
+    text-align: left;
+    align-self: left;
+    border-bottom: 3px solid black;
+}
+
+.card-bottom {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+  flex-wrap: nowrap;
+  border-bottom: 3px solid black;
+}
+
+.gambar {
+    max-width: 200px;
+}
+
+.cb-left {
+    flex-basis: 70%;
+}
+
+.detailBtn {
+    margin-left: 20px;
+}
+
+#isi_konten {
+    margin-top: 20px;
+    width: 100%;
+}
+
+#dropdown {
+    -webkit-appearance: menulist-button;
+    width: 200px;
+    height: 50;
+    align-self:flex-start;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-container-right {
+    display: flex;
+    align-content: flex-end;
+    align-items: flex-end;
+}
+
+#formUpload {
+    align-self: flex-start;
+    width: 500px;
+    height: 50px;
+    font-size: 20px;
+}
+
+#laporBtn {
+    font-size: 20px;
+}
+
+#wrapper {
+    padding-bottom: 20px;
+    border-bottom: 3px solid black;
+}
+
+.sebaris {
+    margin: 0px 10%;
+}
