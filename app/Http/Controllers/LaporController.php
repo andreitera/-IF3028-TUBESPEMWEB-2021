@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Validation\Rule;
 use Exception;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Mail;
@@ -17,7 +18,7 @@ class LaporController extends Controller
     */
     public function home()
     {
-        $data = DB::table('laporan')->orderByDesc('id')->limit(3)->get();
+        $data = DB::table('laporan')->orderByDesc('created_at')->limit(3)->get();
         return view('lapor/index', ['lapor' => $data]);
     }
 
@@ -47,7 +48,7 @@ class LaporController extends Controller
             'name' => ['nullable', 'max:255'],
             'title' => ['required'],
             'content' => ['required'],
-            'aspect' => ['required'],
+            'aspect' => ['nullable', Rule::requiredIf($request->input('aspect') == '1')],
             'filelapor' => ['nullable', 'mimetypes:image/jpeg,image/png,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.presentationml.presentation', 'max:10240']
         ]);
         $name = $request->input('name');
@@ -84,7 +85,7 @@ class LaporController extends Controller
                 'file' => $linkfile,
             ]);
         } catch (Exception $th) {
-            return redirect()->route('lapor')->with('msg', 'Laporan gagal dibuat');
+            return redirect()->route('home')->with('msg', 'Laporan gagal dibuat');
         }
         return view('lapor/success', ['uniqid' => $uniqid]);
     }
@@ -113,7 +114,7 @@ class LaporController extends Controller
             'name' => ['nullable', 'max:255'],
             'title' => ['required'],
             'content' => ['required'],
-            'aspect' => ['required'],
+            'aspect' => ['nullable', Rule::requiredIf($request->input('aspect') == '1')],
             'filelapor' => ['nullable', 'mimetypes:image/jpeg,image/png,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.presentationml.presentation', 'max:10240']
         ]);
         $name = $request->input('name');
@@ -122,6 +123,7 @@ class LaporController extends Controller
         $word = str_word_count($content);
         $aspect = $request->input('aspect');
         $uniqfile = uniqid();
+        $oldfile = $request->input('oldfile');
         if ($name == '') {
             $name = 'Anonim';
         }
@@ -137,7 +139,11 @@ class LaporController extends Controller
                 $filelapor = $request->root() . $filelapor;
             }
         } else {
-            $linkfile = "Tidak ada lampiran";
+            if ($oldfile != "Tidak ada lampiran") {
+                $linkfile = $oldfile;
+            } else {
+                $linkfile = "Tidak ada lampiran";
+            }
         }
         $time = Carbon::now();
         $time = $time->setTimezone('Asia/Jakarta');
@@ -151,9 +157,9 @@ class LaporController extends Controller
                 'created_at' => $time,
             ]);
         } catch (Exception $th) {
-            return redirect()->route('lapor')->with('msg', 'Laporan gagal diedit');
+            return redirect()->route('home')->with('msg', 'Laporan gagal diedit');
         }
-        return redirect()->route('lapor');
+        return redirect()->route('home');
     }
 
     /*
@@ -170,7 +176,7 @@ class LaporController extends Controller
         ];
         if ($email != NULL) {
             Mail::to($email)->send(new MailLapor($details));
-            return redirect()->route('lapor')->with('msg', 'Silahkan cek email');
+            return redirect()->route('home')->with('msg', 'Silahkan cek email');
         } else {
             return redirect()->route('home');
         }
@@ -212,7 +218,7 @@ class LaporController extends Controller
     {
         $judul = $request->input('judul');
         $judul = '%' . $judul . '%';
-        $data = DB::table('laporan')->where('judul', 'like', $judul)->orderByDesc('id')->simplePaginate(5);
+        $data = DB::table('laporan')->where('content', 'like', $judul)->orderByDesc('created_at')->get();
         return view('lapor/listlaporan', ['lapor' => $data]);
     }
 }
