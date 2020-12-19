@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 function tambahdata(){
     var laporan=$("[name='laporan']").val();
     var aspek=$("[name='aspek']").val();
@@ -14,8 +14,8 @@ function tambahdata(){
         }
     });
 }
-</script>
-
+</script> -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -36,7 +36,7 @@ function tambahdata(){
         <h1>SIMPLE LAPOR!</h1>
         <p>Buat Laporan/Komentar</p>
     <hr>
-        <form action="<?php echo base_url(). 'crud/tambah_aksi';?>" onSubmit="return validasi(this)" method="POST">
+        <form action="<?php echo base_url(). 'crud/tambah_aksi';?>" ecntype="multipart/form-data" method="post">
             <textarea name="isi" id="" placeholder="Laporan/Komentar"></textarea>
             <br>
             <select name="aspek" id="">
@@ -47,9 +47,9 @@ function tambahdata(){
                 <option value="Infra">Infrastruktur</option>
             </select>
         <br>
-            <input id="myFile" type="file" name="myFile">
+            <input type="file" name="myfile">
         <br>
-        <input class="submit submit1" name="uploadFile" type="submit" value="Buat LAPOR!"><br>
+        <button type="submit" class="buat_btn">BuatLapor!</button>
     </form>
     <br>
     <br>

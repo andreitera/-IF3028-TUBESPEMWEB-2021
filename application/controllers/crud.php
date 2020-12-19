@@ -22,7 +22,7 @@ class Crud extends CI_Controller{
     public function tambah_aksi(){
         $isi = $this->input->post('isi');
         $aspek = $this->input->post('aspek');
-        $myfile = $this->input->post('myfile');
+        $data_file = $this->input->post('myfile');
 
         date_default_timezone_set("asia/jakarta");
         $now = date("y-m-d h:i:s");
@@ -31,7 +31,7 @@ class Crud extends CI_Controller{
             'isi' => $isi,
             'aspek' => $aspek,
             'waktu' => $now,
-            'lampiran' => $myfile
+            'lampiran' => $data_file
         );
 
         $this->m_data->input_data($data,'lapor');
@@ -72,7 +72,8 @@ class Crud extends CI_Controller{
         );
 
         $where = array ('id' => $id);
-        $this->m_data->update_data($where,$data,'lapor');
+
+        $this->m_data->update($where,$data,'lapor');
         redirect('');
     }
 }

@@ -12,7 +12,7 @@
         <p>Buat Laporan/Komentar</p>
     <hr>
     <?php foreach($lapor as $u) { ?>
-        <form action="<?php echo base_url(). 'crud/update';?>" method="post" ecntype="multipart/form-data">
+        <form action="<?php echo base_url(). 'crud/update';?>" ecntype="multipart/form-data" method="post" >
             <textarea name="isi" id="" ><?php echo $u->isi ?></textarea>
             <br>
             <select name="aspek" id="">
@@ -25,7 +25,7 @@
         <br>
             <input type="file" name="myfile">
         <br>
-            <button type="submit" class="buat_btn">Buat LAPOR!</button>
+            <input type="submit" value="simpan">
     </form>
     <br>
     <br>

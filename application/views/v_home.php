@@ -13,7 +13,7 @@
             <input type="text" class="search_bar">
             <button class="search_btn">CARI</button>
         </form>
-        <a class="komentar" href="<?php base_url();?>buat">Buat Laporan/Komentar</a>
+        <a class="komentar" href="<?php base_url();?>crud/tambah">Buat Laporan/Komentar</a>
     <br>
         <p>Laporan/Komentar Terakhir</p>
     <hr>
