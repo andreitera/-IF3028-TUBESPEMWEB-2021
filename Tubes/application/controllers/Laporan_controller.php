@@ -48,5 +48,12 @@
         public function detail(){
             $this->load->view("detail_view");
         }
+        public function delete($id=null){
+            if (!isset($id)) show_404();
+            
+            if ($this->laporan_model->delete($id)) {
+                redirect(site_url('tampilan_view'));
+            }
+        }
     }
 ?>
