@@ -13,7 +13,7 @@
 
     <div class="container-listLaporan">
         <?php if (session()->getFlashdata('pesan')) : ?>
-            <p><?= session()->getFlashdata('pesan'); ?></p>
+            <p class="flashdata"><?= session()->getFlashdata('pesan'); ?></p>
         <?php endif; ?>
         <p>Laporan/Komentar Terakhir</p>
 

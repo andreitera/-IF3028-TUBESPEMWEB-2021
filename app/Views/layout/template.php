@@ -12,7 +12,7 @@
 <body>
     <div class="main-wrapper">
         <header>
-            <h1>SIMPLE LAPOR</h1>
+            <h1>SIMPLE LAPOR!</h1>
         </header>
 
         <?= $this->renderSection('content'); ?>

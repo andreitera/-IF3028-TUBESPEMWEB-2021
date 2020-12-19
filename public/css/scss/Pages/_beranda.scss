@@ -43,6 +43,14 @@
     width: 100%;
     margin-top: 3rem;
 
+    .flashdata {
+      padding: 1.5em;
+      vertical-align: middle;
+      border-bottom: none;
+      color: black;
+      background-color: #afeeee;
+    }
+
     p {
       padding-bottom: 0.5rem;
     }
@@ -69,6 +77,10 @@
           width: 65%;
         }
 
+        p:nth-child(2) {
+          padding-right: 0;
+        }
+
         p,
         a {
           padding: 1em;
@@ -77,6 +89,14 @@
 
         a {
           padding-right: 0;
+          position: relative;
+          padding-right: 1rem;
+
+          &:before {
+            content: ">";
+            position: absolute;
+            right: 0;
+          }
         }
       }
     }

@@ -83,6 +83,14 @@ a {
   margin-top: 3rem;
 }
 
+.container-beranda .container-listLaporan .flashdata {
+  padding: 1.5em;
+  vertical-align: middle;
+  border-bottom: none;
+  color: black;
+  background-color: #afeeee;
+}
+
 .container-beranda .container-listLaporan p {
   padding-bottom: 0.5rem;
 }
@@ -114,6 +122,10 @@ a {
   width: 65%;
 }
 
+.container-beranda .container-listLaporan .item-laporan .detail-laporan p:nth-child(2) {
+  padding-right: 0;
+}
+
 .container-beranda .container-listLaporan .item-laporan .detail-laporan p,
 .container-beranda .container-listLaporan .item-laporan .detail-laporan a {
   padding: 1em;
@@ -122,6 +134,14 @@ a {
 
 .container-beranda .container-listLaporan .item-laporan .detail-laporan a {
   padding-right: 0;
+  position: relative;
+  padding-right: 1rem;
+}
+
+.container-beranda .container-listLaporan .item-laporan .detail-laporan a:before {
+  content: ">";
+  position: absolute;
+  right: 0;
 }
 
 p {
