@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>SIMPLE LAPOR!</title>
+	<title>KOTAK ADUAN</title>
 	<!-- file css ada di asset/css -->
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/asset/css/style.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/asset/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/atribut/css/style.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/atribut/css/reset.css">
 </head>
 <body>
 
 <div class="container">
-	<h1>SIMPLE LAPOR!</h1>
+	<h1>KOTAK ADUAN</h1>
 
 	<h4>Detail Laporan / Komentar</h4>
 	<hr />
@@ -20,13 +20,13 @@
 			<h4 class="lampiran">Lampiran : </h4><br \>
 
 			<?php 
-				$ekstensifile = explode('.',$lapor["file"]); //fungsi untuk mecah string dengan pemecah . ,aldi.jpg = ['aldi','jpg']
+				$ekstensifile = explode('.',$lapor["file"]);
 				$ekstensifile = strtolower(end($ekstensifile));
 				if($ekstensifile == "pdf"){
 			?>
 			<embed src="<?php echo base_url() ?>/asset/file/<?php echo $lapor["file"]; ?>" />
 			<?php } else { ?>
-			<img id="filedetail" style="width: 500px;" src="<?php echo base_url() ?>/asset/file/<?php echo $lapor["file"]; ?>">
+			<img id="filedetail" style= "" src="<?php echo base_url() ?>/atribut/file/<?php echo $lapor["file"]; ?>">
 			<?php } ?>
 
 			<div style="clear: both"></div>
@@ -41,7 +41,8 @@
 	</ul>
 
 	<footer>
-		&copyCopyright 2019 - itera.ac.id
+		&copyCopyright 2019 - itera.ac.id<br>
+				118140035 118140094 118140165
 	</footer>
 </div>
 
