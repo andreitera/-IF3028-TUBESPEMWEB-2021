@@ -22,7 +22,7 @@ Route::get('/',                 'LaporController@index')->name('landing');
 Route::get('/lapors/{id}',           'LaporController@listView')->name('listView');
 Route::get('/profil',           'ProfileController@showProfile')->name('showProfile');
 Route::get('/view-lapor/{id}',       'LaporController@viewLapor')->name('viewLapor');
-Route::get('/search/{query}',           'LaporController@viewSearch')->name('viewSearch');
+Route::get('/search',           'LaporController@viewSearch')->name('viewSearch');
 
 //----------- Route Comment -----------
 // Route::get('/lapor',            'LaporController@viewLapor')->name('viewLapor');

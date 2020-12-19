@@ -7,13 +7,23 @@ use Illuminate\Http\Request;
 use App\Models\Lapor;
 
 use App\Models\Comment;
+use App\Models\SetCities;
+use App\Models\SetLibraries;
+use App\Models\SetProvinces;
 
 class LaporController extends Controller
 {
     
     public function index()
     {
-        return view('lapor.page.landing');
+        $listLokasi = SetCities::orderBy('name', 'asc')->get();
+        $listInstansi = SetProvinces::orderBy('name', 'asc')->get();
+        $listKategori = SetLibraries::where('category_id', '13')->orderBy('name', 'asc')->get();
+        return view('lapor.page.landing')->with([
+            'listLokasi' => $listLokasi,
+            'listInstansi' => $listInstansi,
+            'listKategori' => $listKategori
+        ]);
     }
 
     public function listView($user_id)
@@ -39,10 +49,14 @@ class LaporController extends Controller
         ]);
     }
 
-    public function viewSearch($search)
+    public function viewSearch(Request $search)
     {
-        $listSearch = Lapor::where('title', 'regexp', '%'.  $search . '%' )->get();
+        $cari = $search->q;
+        $listSearch = Lapor::where('title', 'regexp', $cari)->get();
+        // print_r($listSearch);
+        // print_r($listSearch[0]->libraries_status_id);
         return view('Lapor.page.search')->with([
+            'queue' => $cari,
             'listSearch' => $listSearch
         ]);
     }

@@ -11,26 +11,33 @@
 
     <link rel="stylesheet" href="{{ asset('asset/css/Mainstyle.css') }}">
     @yield('css')
+    
+    <script src="{{ asset('asset/js/search.js') }}"></script>
 </head>
 <body>
-    
+
     <div class="banner" style="background-image: url('{{ asset('asset/images/user-cover.png') }}')">
         <div class="red-background-transparent">
+            
+            {{-- Search Template --}}
+            @include('Lapor.layout.search')
 
-            {{-- navbar Templae --}}
+            {{-- navbar Template --}}
             <section id="" class="navbar-landing">
                 <div class="container">
                     <div class="d-flex space-bettwen">
                         <div class="left d-flex">
-                            <div class="logo">
-                                <img src=" {{ asset('asset/images/logo-white.png') }} " width="190px" height="60px" alt="Logos">
-                            </div>
+                            <a href="{{ route('landing') }}">
+                                <div class="logo">
+                                    <img src=" {{ asset('asset/images/logo-white.png') }} " width="190px" height="60px" alt="Logos">
+                                </div>
+                            </a>
                             
                             {{-- Menu --}}
                             <ul class="d-flex menus-nav menus-nav-lad">
                                 <li><a href="">Tentang Lapor!</a></li>
-                                <li><a href="{{ route('list.laporan') }}">Laporan</a></li>
-                                <li><a href="">Cari Aduan</a></li>
+                                <li><a href="">Laporan</a></li>
+                                <li><a href="#" onclick="showSearch()">Cari Aduan</a></li>
                             </ul>
                         </div>
 

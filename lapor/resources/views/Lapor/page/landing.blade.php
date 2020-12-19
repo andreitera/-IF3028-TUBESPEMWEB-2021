@@ -30,12 +30,23 @@
 
                 <select name="" id="" class="form-text-box" style="width: 99%">
                     <option value="" disabled selected>Lokasi Kejadian</option>
-                    <option value="">Hello</option>
+                    @foreach ($listLokasi as $city)
+                        <option value="{{$city->name}}">{{$city->name}}</option>
+                    @endforeach
+                </select>
+
+                <select name="" id="" class="form-text-box" style="width: 99%">
+                    <option value="" disabled selected>Instansi Tujuan</option>
+                    @foreach ($listInstansi as $instansi)
+                        <option value="{{$instansi->name}}">{{$instansi->name}}</option>
+                    @endforeach
                 </select>
 
                 <select name="" id="" class="form-text-box" style="width: 99%">
                     <option value="" disabled selected>Pilih Kategori Laporan Anda</option>
-                    <option value="">Hello</option>
+                    @foreach ($listKategori as $kategori)
+                        <option value="{{$kategori->name}}">{{$kategori->name}}</option>
+                    @endforeach
                 </select>
 
                 <hr style="width: 99%">
