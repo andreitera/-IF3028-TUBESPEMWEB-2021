@@ -3,7 +3,7 @@
         <h3 class="pt-2">Detail Laporan/Komentar</h3>
         <article id="detail">
             <p class="pt-2"><?= $item['isi']; ?></p>
-            <p class="pt-2">Lampiran: <?= $item['lampiran']; ?></p>
+            <p class="pt-2">Lampiran: <a href="/assets/uploaded_file/<?= $item['lampiran']; ?>"> <?= $item['lampiran']; ?> </a></p>
             <?php
                 $lampiran = $item['lampiran'];
                 $dot = strrpos($lampiran, '.');
