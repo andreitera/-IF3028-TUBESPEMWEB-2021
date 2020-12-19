@@ -1,14 +1,16 @@
 <ul>
     <?php foreach ($lapor as $value){ ?>
         <li>
+
             <h4 style="margin-bottom: 20px;"><?php echo susbtr ($value["isi"], 0, 100); ?>.....</h4>
-            <a href="<?php echo base_url() ?>index.php//Home/detail/<?php echo $value["id"] ?>">
+            <h4 class="lampiran">Lampiran: <?php echo $value["file"]; ?></h4>
+            <a href="<?php echo base_url() ?>index.php/home/detaillaporan/<?php echo $value["id"] ?>">
             <h4 class="detail">Selengkapnya>>></h4></a>
             <h4 class="waktu" style="margin-right: 10px;">Waktu :<?php echo $value["tanggal"]; ?></h4>
 
             <div style="clear: both"></div>        
         </li>
         <br>
-        <hr \>
+        <hr>
     <?php } ?>
 </ul>

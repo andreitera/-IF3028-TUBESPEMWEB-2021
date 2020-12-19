@@ -21,7 +21,7 @@ class Home extends CI_Controller{
         
         if($this->form_validation->run() == FALSE)
         {
-            $this->load->view('tambahdata/index');
+            $this->load->view('buatlaporan/index');
         }
         else
         {

@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/test-tubes-web/-IF3028-TUBESPEMWEB-2021/Tubes-Web/Codeigniter/';
+$config['base_url'] = 'http://localhost/tubes/-IF3028-TUBESPEMWEB-2021/Tubes-Web/Codeigniter/';
 
 /*
 |--------------------------------------------------------------------------

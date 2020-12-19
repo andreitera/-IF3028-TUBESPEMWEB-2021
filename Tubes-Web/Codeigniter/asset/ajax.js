@@ -9,7 +9,7 @@ cari.addEventListener('keyup', function(){
 
     ajaxCari.onreadystatechange = function(){
         if(ajaxCari.readyState == 4 && ajaxCari.status == 200){
-            konten.innerHTML = ajaxCari.responseTexxt;
+            konten.innerHTML = ajaxCari.responseText;
         }
     }
 
