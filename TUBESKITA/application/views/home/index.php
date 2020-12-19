@@ -12,7 +12,6 @@
 	<h1>SIMPLE LAPOR!</h1>
 	<form action="" method="post">
 		<input type="text" name="cari" id="cari" placeholder="Cari kata">
-		<button type="submit" name="submit" id="caarii">CARI</button>
 	</form>
 	<a href="<?php echo base_url() ?>index.php/Home/tambah" ><h3>Buat Laporan / Keluhan +</h3></a>
 	<h4>Laporan / Keluhan terakhir</h4>
