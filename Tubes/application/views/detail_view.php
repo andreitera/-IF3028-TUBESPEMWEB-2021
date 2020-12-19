@@ -45,7 +45,7 @@
 
 			<p>Waktu: <?php echo $laporan->waktu; ?> Aspek: <?php echo $laporan->aspek; ?> </p>
 
-			<a href="<?php  echo site_url('Laporan_controller/edit') ?>" style="width: auto; height: auto; float: right; margin-top: -34px; margin-right: 186px;">Edit |</a>
+			<a href="<?php  echo site_url('Laporan_controller/edit/'.$laporan->id) ?>" style="width: auto; height: auto; float: right; margin-top: -34px; margin-right: 186px;">Edit |</a>
 
 			<div class="detail"><a href = "#" onclick="deleteConfirm('<?php echo site_url('Laporan_controller/delete/'.$laporan->id) ?>')">Hapus Laporan/Komentar</a></div>
 		<hr>
