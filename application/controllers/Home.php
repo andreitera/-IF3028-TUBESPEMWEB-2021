@@ -90,8 +90,8 @@ class Home extends CI_Controller
         $this->form_validation->set_rules('laporan', 'laporan', 'required|min_length[250]');
         if ($this->form_validation->run() == FALSE) {
             $data['aspek'] = ['', '', '', '', ''];
-            $data['lapor'] = $this->Lapor_model->detail($id);
-            $this->load->view('tampilan_ubah', $data);
+            $data['lapor'] = $this->Lapor_model->search_model($id);
+            $this->load->view('detaillaporan/Details', $data);
         } else {
             $this->Lapor_model->ubah($id);
             echo "

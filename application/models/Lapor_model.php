@@ -25,7 +25,8 @@ class Lapor_model extends CI_Model
         return $this->db->insert($table, $data);
     }
 
-    public function search_model($id){
-		return $this->db->get_where('lapor', array('id'=>$id))->row_array();
-	}
+    public function search_model($id)
+    {
+        return $this->db->get_where('lapor', array('id' => $id))->row_array();
+    }
 }
