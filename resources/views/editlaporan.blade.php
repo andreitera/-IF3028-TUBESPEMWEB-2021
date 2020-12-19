@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buat Laporan/Komentar</title>
-    <link rel="stylesheet" href=" {{ asset('css/styleSearch.css') }} ">
-</head>
+@extends('Master.master')
+
+@section('content')
 <body>
     <h1>SIMPLE LAPOR!</h1>
     <p>Buat Laporan/Komentar</p>
@@ -14,11 +9,11 @@
         @csrf
         <div>
             Pengirim:
-            <input type="text" name="pengirim" value="{{$data->pengirim}}">
+            <input type="text" name="pengirim" value="{{$data->pengirim}}"><br>
         </div>
         <div>
             Judul:
-            <input type="text" name="judul" value="{{$data->judul}}">
+            <input type="text" name="judul" value="{{$data->judul}}"><br>
         </div>
         <div class="main">
             <textarea rows="10" cols="100" name="laporan" value="{{$data->laporan}}"placeholder="Laporan/Komentar" required></textarea>
@@ -37,4 +32,4 @@
         <br>
     
 </body>
-</html>
+@endsection
