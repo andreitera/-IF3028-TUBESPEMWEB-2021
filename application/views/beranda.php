@@ -16,7 +16,7 @@
 					<button type="submit"><img src="img/search.png">Cari</button>
 				</form>
 			</div>
-			<p>Buat Laporan/Komentar <a href="http://localhost/-IF3028-TUBESPEMWEB-2021/-IF3028-TUBESPEMWEB-2021/CodeIgniter-3.1.11/index.php/Welcome/BuatLaporan"><img src="img/insert.png"></a></p>
+			<p>Buat Laporan/Komentar <a href="http://localhost/-IF3028-TUBESPEMWEB-2021/index.php/Welcome/BuatLaporan"><img src="img/insert.png"></a></p>
 		</header>
 
 		<div class="konten">
