@@ -1,0 +1,60 @@
+* {
+
+    font-family: sans-serif;
+
+}
+
+
+body {
+    
+
+
+ }
+
+
+h1{
+    height: auto;
+    width: auto;
+    text-align: center;
+    font-size: 22px;
+}
+.content {
+    
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 700px;
+    height: auto;
+
+}
+.detail {
+
+    float: right;
+    margin-top: -35px;
+
+}
+input{
+
+    width: 92.5%; height: 30px;
+
+}
+.textarea{
+    width: 100%; 
+    height: 100px;
+}
+button{
+
+    height: 36px;
+
+}
+.select{
+    width: max-content;
+    height: 25px;
+}
+.btn_tambah{
+    float: right;
+    margin-top: -50px;
+}
+.file{
+    width: fit-content;
+}
+
