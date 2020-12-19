@@ -17,22 +17,21 @@ Project dikerjakan secara **berkelompok** dengan maksimal jumlah anggota adalah 
 contoh: fix css, membuat post done, jangan seperti final, benerin dikit, oke deh, update deh dll. 
 Disarankan untuk tidak melakukan commit dengan perubahan yang besar karena akan mempengaruhi 
 penilaian (contoh: hanya melakukan satu commit kemudian dikumpulkan).
-3. Minimal commit sebanyak personil anggota tim dengan masing-masing personil tim melakukan commit sesuai dengan kesepakatan tim, penilaian individu akan dilihat.
-4. Ubah **Penjelasan Teknis** pada bagian bawah readme.md ini dengan menjelaskan bagaimana cara anda:
+3. Ubah **Penjelasan Teknis** pada bagian bawah readme.md ini dengan menjelaskan bagaimana cara anda:
    - Instalasi Framework, Koneksi basis data 
    - Melakukan validasi pada client-side
    - Melakukan AJAX (mulai dari pengguna melakukan klik pada tombol LAPOR! sampai laporan/komentar terkirim).
-5. Pull request dari repository anda ke repository ini dengan 
+4. Pull request dari repository anda ke repository ini dengan 
 format **NIM** - **Nama Lengkap**. **Waktu terkahir proses pull request adalah 4 hari setelah 
 ujian akhir semester (UAS)**
-6. Data yang dikumpulkan adalah:
+5. Data yang dikumpulkan adalah:
    - Source code aplikasi
    - Basis data, dan
    - Cara instalasi aplikasi anda
-7. Penilaian:
+6. Penilaian:
    - Kerjasama tim
    - Kesesuaian dengan spesifikasi
-   - Pemahaman dalam penggunaan framework, penilaian efisiensi query
+   - Pemahaman dalam penggunaan framework
    - Antarmuka aplikasi
    - Bug free :beetle:
    
@@ -71,8 +70,6 @@ panjang harus dipotong. Silakan definisikan sendiri seberapa panjang agar tetap 
 
 Pada masing-masing elemen list, terdapat menu untuk mengubah dan menghapus pertanyaan.
 
-View Laporan ditampilkan secara terurut dimulai dari laporan terakhir yang diberikan highlight
-
 ### Kirim laporan/komentar `LAPOR!`
 Pengguna dapat mengajukan laporan/komentar. Form yang digunakan memiliki komentar (textarea), 
 data lapiran berupa gambar 
@@ -99,7 +96,18 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+Instalasi framework yang saya lakukan dengan menggunakan extract folder codeigniter yang telah di download, setelah itu ubah tampilan awal dengan tidak menampilkan welcome codeigniter dengan mengubah url defaultnya
+Untuk koneksi basis data dengan cara pada folder aplication -> folder config -> database.php , isi bagian 'username' => 'root' , 'database' => 'lapor', 'dbdriver' => 'mysqli'
+
+Kami memakai JavaScript untuk memvalidasi form pada halaman buatlapor.php. pertama-tama script yang dibuat yaitu,
+   function validateForm(){
+      var x=document.forms["users"]["nama"].value;
+      if (x==null || x==""){
+         alert("Nama Wajib Diisi");
+            return false;
+      }
+   }
+Script tersebut akan mengeluarkan alert jika kolom nama tidak diisi pada form
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
@@ -113,5 +121,6 @@ anchor tag.
 
 ### About :honeybee:
 
-Dosen       : Dicky Prima Satya, M.T., Andre Febrianto, S.Kom., M.Eng., Amirul Iqbal, S.Kom., M.Eng.
+Dosen       : Rajif Agung Yunmar, S.Kom., M.Cs.	,Ahmad Luky Ramdani, S.Komp., M.Kom. ,
+Arief Ichwani, S.Kom., M.Cs., Andre Febrianto, S.Kom., M.Eng, Ilham Firman Ashari, S.Kom., M.T
 
