@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>LAPOR IF!</title>
+	<title>KOTAK ADUAN</title>
 	<!-- file css ada di asset/css -->
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/atribut/css/style.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/atribut/css/reset.css">
@@ -9,7 +9,7 @@
 <body>
 
 <div class="container">
-	<h1>LAPOR IF!</h1>
+	<h1>KOTAK ADUAN</h1>
     <h4>Buat Laporan/Komentar</h4>
    <hr />
    <?php 

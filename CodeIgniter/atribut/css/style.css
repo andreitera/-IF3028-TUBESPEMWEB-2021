@@ -1,7 +1,7 @@
 .container{
 	margin:auto;
-	margin-top: 50px;
-	width: 1000px;
+	margin-top: 0px;
+	width: 1280px;
 	background-color: rgb(10, 136, 37);
 	border:1px solid;
 	padding-top: 25px;
@@ -9,7 +9,7 @@
 	padding-right: 25px;
 	padding-left: 25px;
 	border-radius: 10px; 
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: roboto;
 }
 
 .container h1{
@@ -18,7 +18,7 @@
 	left:50%;
 	margin-bottom: 25px;
 	font-size: 48px;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-family: inherit;
 	font-weight: bold;
 }
 
@@ -26,10 +26,10 @@
 
 .container input{
 	border-radius: 10px;
-	margin-right: -6px;
+	border-style: hidden;
 	width: 500px;
 	height: 25px;
-	margin-left:25%;
+	margin-left:30%;
 	
 }
 
@@ -61,16 +61,14 @@
 
 .container a:hover{
 	text-decoration: none; 
-	color: red;
+	color: rgb(162, 173, 3);
 	background-color: black;
 }
 
-
 footer {
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: sans-serif;
 	text-align: center;
 	font-weight: bold;
-	width:1000px;
 	margin-top: 50px;
 	}
 
@@ -106,7 +104,7 @@ select{
 }
 
 #submit:hover, .container form button:hover{
-	background-color: salmon;
-	color: black;
-	font-weight:bold;
+	background-color: rgb(26, 128, 77);
+	color: rgb(0, 0, 0);
+	font-weight: bolder;
 }
