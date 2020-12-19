@@ -2,14 +2,10 @@
 
 class Laporan extends CI_Model {
 
-    public function get($id) {
-        if($id === NULL) {
-            $query = $this->db->select('*')->from('laporan')->get();
-        } else {
-            $query = $this->db->select('*')->from('laporan')->where('id', $id)->get();
-        }
+    public function get() {
+        $query = $this->db->select('*')->from('laporan')->order_by('id', 'desc')->get();
 
-        return $query->result();
+        return $query->result_array();
     }
 
     public function add($laporan) {

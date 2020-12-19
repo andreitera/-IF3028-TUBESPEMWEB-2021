@@ -1,17 +1,20 @@
 <?php
 
-class Laporan extends CI_Model {
+class Kategori extends CI_Model {
 
-    public function get($id) {
-        if($id === NULL) {
-            $query = $this->db->select('*')->from('kategori')->get();
-        } else {
-            //load specific laporan by id
-            $query = $this->db->select('*')->from('kategori')->where('id', $id)->get();
-        }
+    public function get() {
+        $query = $this->db->select('*')->from('kategori')->get();
 
-        return $query->result();
+        return $query->result_array();
     }
+
+    public function get_by_id($id) {
+        $query = $this->db->select('*')->from('kategori')->where('id', $id)->limit(1)->get();
+
+        return ($query->result() != NULL)? $query->result()[0]->kategori : '';
+    }
+
+    
 
 }
 

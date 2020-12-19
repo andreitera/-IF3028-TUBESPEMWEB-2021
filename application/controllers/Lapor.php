@@ -3,6 +3,48 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Lapor extends CI_Controller {
 
+    public function load() {
+        $this->load->model('Laporan');
+        $this->load->model('Kategori');
+
+        $result = $this->Laporan->get();
+
+        $html = '';
+        foreach($result as $row) {
+            if($row['is_public']) {
+                $html .= '
+                    <div class="box">
+                        <h3>' . $row['judul'] . '</h3>
+                        <small>' . $this->Kategori->get_by_id($row['id_kategori']) . '</small>
+                        <h4>dari ' . (($row['is_anonim'])? 'Anonim' : $row['nama']) . '</h4>
+                        <p>' . $row['isi'] . '</p>
+                ';
+
+                if($row['foto'] != '') {
+                    $html .= '
+                    <img src="' . base_url() . 'resources/foto/' . $row['foto'] . '" width="300" height="200">
+                    ';
+                }
+
+                if($row['user_token'] == $this->session->userdata('user_token')) {
+                    $html .= '
+                        <form method="POST" id="form_delete' . $row['id'] . '">
+                            <input type="hidden" name="delete_id" value="' . $row['id'] . '">
+                        </form>
+                        <button onclick="del(\'' . $row['id'] . '\')">Hapus</button>
+                        <button onclick="upd(\'' . $row['id'] . '\')">Edit</button>
+                    ';
+                }
+                
+                $html .= '
+                    </div>
+                ';
+            }
+        }
+
+        echo $html;
+    }
+
 	public function add() {
         $this->load->model('Laporan');
 
@@ -12,9 +54,18 @@ class Lapor extends CI_Controller {
             'nama' => $this->input->post('add_nama'),
             'judul' => $this->input->post('add_judul'),
             'isi' => $this->input->post('add_isi'),
-            'is_anonim' => $this->input->post('add_is_anonim'),
-            'is_public' => $this->input->post('add_is_public')
+            'foto' => '',
+            'is_anonim' => ($this->input->post('add_is_anonim') == NULL)? false : true,
+            'is_public' => ($this->input->post('add_is_public') == NULL)? true : false
         );
+
+        var_dump($laporan);
+
+        if($this->Laporan->add($laporan)) {
+            return 'Berhasil lapor!';
+        } else {
+            return 'Maaf, laporan gagal dibuat.';
+        } 
 
         if(empty($_FILES['add_foto']['name'])) {
             if($this->Laporan->add($laporan)) {
@@ -24,7 +75,7 @@ class Lapor extends CI_Controller {
             }            
         } else {
             $uniq_id = uniqid();
-            $laporan[] = $uniq_id . '.jpg';
+            $laporan['foto'] = $uniq_id . '.jpg';
 
             $config['upload_path'] = './resources/foto/';
             $config['allowed_types'] = 'jpg|png';
@@ -48,9 +99,6 @@ class Lapor extends CI_Controller {
         $this->load->model('Laporan');
 
         $laporan = array(
-            'id_kategori' => $this->input->post('update_kategori'),
-            'nama' => $this->input->post('update_nama'),
-            'judul' => $this->input->post('update_judul'),
             'isi' => $this->input->post('update_isi')
         );
 
@@ -70,7 +118,7 @@ class Lapor extends CI_Controller {
         $id = $this->input->post('delete_id');
         $user_token = $this->session->userdata('user_token');
 
-        if($this->Laporan->update($id, $user_token)) {
+        if($this->Laporan->delete($id, $user_token)) {
             return 'Berhasil menghapus laporan!';
         } else {
             return 'Maaf, gagal menghapus laporan.';
