@@ -1,28 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('master.master')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+@section('css')
+<link rel="stylesheet" href="{{ asset('css/home.css') }}">
+@endsection
 
-<body>
-    <p>{{$lapor->from}}</p>
-    <p>{{$lapor->title}}</p>
-    <p>{{$lapor->content}}</p>
-    <p>{{$lapor->aspect}}</p>
-    <a href="{{$lapor->file}}">File</a>
-    <form method="POST" action="{{route('laporcek')}}">
-        @csrf
-        <label for="">
-            Uniqid:
-            <input type="text" name="uniqid">
-        </label>
-        <input type="hidden" name="id" value="{{$lapor->id}}">
-        <button type="submit" name="action" value="edit">Edit</button>
-        <button type="submit" name="action" value="delete">Hapus</button>
-    </form>
-</body>
-
-</html>
+@section('isi')
+<div class="judul">
+    <div class="judul-kata1">Layanan Aspirasi dan Pengaduan Online Teknik Informatika ITERA</div>
+    <div class="judul-kata2">Sampaikan Laporan Anda Langsung Kepada Pihak Terkait</div>
+    <div class="judul-bar"></div>
+</div>
+<div class="form-buat">
+    <div class="cont-detail">
+        <div style="flex: 1">
+            <table>
+                <tr>
+                    <td>Pengirim</td>
+                    <td>: {{$lapor->title}}</td>
+                </tr>
+                <tr>
+                    <td>Judul</td>
+                    <td>: {{$lapor->title}}</td>
+                </tr>
+            </table>
+        </div>
+        <img src="{{ asset('image/tutup.svg') }}" alt="icon close" width="30px" height="30px">
+    </div>
+    
+    <div class="bar"></div>
+    <input type="hidden" name="name" value="$lapor->unique_id">
+    <div class="detail">{{$lapor->content}}</div>
+    <div style="margin-top: 20px">Lampiran:</div>
+    {{-- <div class="lampiran"></div> --}}
+    <div class="lampiran" style="background-image: url('http://www.dumetschool.com/images/fck/Capturebilly25518nov2.JPG')">
+    </div>
+    
+    <div class="form-container">
+        <span style="margin-right: 25px !important">Waktu: 20-11-2019 20:00</span>
+        <span class="form-container-aspek">Aspek: {{$lapor->aspect}}</span>
+        <div class="kode"></div>
+        <span>Edit <img src="{{ asset('image/edit.svg') }}" alt="icon edit" class="icon-bawah"></span>
+        <span> | </span>
+        <span style="margin-right: 0px !important"> Hapus <img src="{{ asset('image/close.svg') }}" alt="icon hapus" class="icon-bawah"></span>
+    </div>
+    {{-- <iframe src="http://www.dumetschool.com/images/fck/Capturebilly25518nov2.JPG&embedded=true" frameborder="0"></iframe> --}}
+    <div class="bar"></div>
+</div>
+@endsection
