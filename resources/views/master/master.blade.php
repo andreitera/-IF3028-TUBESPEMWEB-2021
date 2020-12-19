@@ -13,16 +13,7 @@
 <body>
     <nav>
         <img src="{{ asset('image/logo-white.png') }}" alt="logo lapor" class="logo">
-        {{-- <div>TENTANG LAPOR!</div> --}}
-        <div>LAPORAN</div>
-        <div style="display:flex;flex:1;align-items:center;">
-            <img src="{{ asset('image/search.svg') }}" alt="logo lapor" class="search">
-            CARI ADUAN
-        </div>
-        {{-- <div>MASUK</div>
-        <div>
-            <a href="#">DAFTAR</a>
-        </div> --}}
+        <a style="flex:1; border:none;" href="{{ route('laporbuatView') }}"> LAPORAN</a>
     </nav>
     <div class="home">
         <img src="{{ asset('image/home-cover.jpg') }}" alt="home-cover" class="home-cover">
