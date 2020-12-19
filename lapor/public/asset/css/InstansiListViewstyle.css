@@ -1,0 +1,658 @@
+.backgrond-blue {
+    background-color: rgb(26, 73, 228);
+    height: 260px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    top: -40px;
+    z-index: -999;
+}
+
+.lapor {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 .5rem 1rem rgba(38, 38, 38, 0.15)!important;
+    padding: 20px;
+    border-radius: 2px;
+}
+
+.content-list-lapor {
+    position: relative;
+}
+
+.title-lapor {
+    background-color: rgb(206, 47, 47);
+    color: white;
+    padding: 16px;
+    border-radius: 3px;
+}
+
+.profile{
+    position: relative;
+    top: -7rem;
+}
+
+.profile-instansi{
+    width: 50%;
+    margin-bottom: -80px;
+}
+
+.instansi-follower{
+   display: inline-block;
+   text-align: center;
+   margin: 0px 30px;
+   margin-bottom: -80px;
+}
+
+.follow-button{
+    color: white;
+    border: 1px solid white;
+    padding: 10px 30px;
+    display: inline-block;
+    margin: 0px 30px;
+    margin-bottom: -80px;
+}
+
+.instansi-pict{
+    height: 50px;
+    width: 50px;
+    border: 1px solid grey;
+}
+
+.title-lapor > p {
+    font-weight: 800;
+    letter-spacing: 0.6px;
+    font-size: 21px;
+}
+
+.form-lapor {
+    margin: 30px 0;
+    max-width: 100%;
+}
+
+.form-lapor > p {
+    padding: 20px 0;
+}
+
+.form-type-lapor {
+    width: 33%;
+    border: 1px solid rgb(206, 47, 47);
+    background-color:rgb(253, 253, 253);
+    padding: 10px;
+    text-align: center;
+    color: rgb(206, 47, 47);
+    font-size: 16px;
+    border-radius: .5px;
+}
+
+.form-type-lapor:focus, .form-type-lapor:active {
+    background: rgb(206, 47, 47);
+    border: none !important;
+    color: rgb(253, 253, 253);
+}
+
+.form-text-box {
+    border: 0.7px solid rgb(182, 182, 182);
+    width: 94.8%;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+}
+
+.input-submit > input {
+    margin: 0 10px;
+}
+
+.file {
+    position: relative;
+    top: 10px;
+}
+
+.btn-lapor {
+    padding: 10px 25px;
+    font-size: 18px;
+    background-color: rgb(206, 47, 47);
+    border: 1px solid rgb(206, 47, 47);
+    border-radius: 5px;
+    color: rgb(253, 253, 253);
+}
+
+.radio-subs {
+    top: 15px !important;
+}
+
+.radio-sub, .radio-subs {
+    position: relative;
+    top: 10px;
+    font-size: 19px;
+}
+
+.information {
+    padding: 0 20px;
+    position: relative;
+    top: -3rem;
+}
+
+.avatar {
+    border-radius: 100%;    
+    width: 75px;
+    height: 75px;
+}
+
+.foto-profile {
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    border: 2px solid rgb(253, 253, 253);
+    background-color: rgb(253, 253, 253);
+}
+
+.avatar > span {
+    font-size: 15px;
+    width: 500px;
+    width: 100%;
+    padding: 0 10px;
+    position: relative;
+    top: -0.5rem;
+}
+
+.list-status-profile {
+    font-size: 13px;
+}
+
+.nama-account > p > a {
+    color: rgb(46, 102, 221);
+}
+
+.status-lapor {
+    font-size: 12px;
+    margin: 5px 0px;
+}
+
+.status-lapor > p {
+    padding: 0 15px;
+}
+
+.status-lapor > p:nth-child(1) {
+    color: rgb(89, 89, 89);
+    padding-left: 0;
+}
+
+.status-lapor > p:nth-child(2){
+    color: rgb(53, 169, 53);
+}
+
+.tanggal-buat {
+    font-size: 14px;
+    color: rgb(89, 89, 89);
+}
+
+.lapor-data > p:nth-child(1) {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.lapor-data > h2 {
+    color: rgb(46, 102, 221);
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.lapor-data > p:nth-child(3) {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.date-tag {
+    font-size: 13px;
+}
+
+.date-tag > span {
+    margin: 12px 12px;
+} 
+
+.date-tag > span:nth-child(1) {
+    margin-left: 0;
+}
+
+.lampiran > img {
+    margin: 10px 5px;
+    border-radius: 2px;
+}
+
+.lampiran > img:nth-child(1){
+    margin-left: 0;
+}
+
+.action-lapor {
+    font-size: 12px;
+    color: rgb(89, 89, 89);
+}
+
+.action-lapor > p:nth-child(1) {
+    position: relative;
+    top: 10px;
+}
+
+.action-lapor > p:nth-child(2){
+    font-size: 16px;
+    margin-left: 10px;
+    position: relative;
+    top: 7px;
+}
+
+.action-lapor > p > a {
+    color: rgb(31, 31, 31);
+}
+
+.listLapor {
+    margin-bottom: 10px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(46, 102, 221);
+}
+
+li {
+    list-style: none;
+}
+
+.container{
+    width: 87%;
+    margin: 0 auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.space-bettwen {
+    justify-content: space-between;
+}
+
+#navbar {
+    height: auto;
+    background: #fff;
+    padding: 10px 0;
+    /* padding-bottom: 20px; */
+    margin-bottom: 20px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.navbar-landing {
+    background-color: none;
+    padding-top: 12px !important;
+}
+
+.logo {
+    margin: 0 20px;
+}
+
+.menus-nav {
+    line-height: 4.7rem;
+    font-size: 16px;
+    font-weight: 20px;
+}
+
+.menus-nav > li {
+    padding: 0 20px;
+    padding-bottom: 5px;
+}
+
+.menus-nav > li > a {
+    color: #494949;
+    transition: all .2s;
+}
+
+.menus-nav-lad > li > a {
+    color: #fafafa !important;
+}
+
+.color-white {
+    color: white !important;
+}
+
+.menus-nav > li > a:hover {
+    color: #777777;
+}
+
+.active {
+    border-bottom: 1.9px solid rgb(151, 36, 36);
+}
+
+.profile {
+    display: flex;
+    padding: 10px;
+}
+
+.profile > a:nth-child(1) {
+    border: none;
+}
+
+.profile > a:nth-child(2):hover{
+    background-color: #f7f7f7;
+    color: rgb(151, 36, 36);
+    top: -0.81px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.profile > a {
+    line-height: 2.5rem;
+    padding: 0px 30px;
+    position: relative;
+    margin: 0 10px;
+    border: 1.7px solid #f7f7f7;
+    color: #f7f7f7;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.7px;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
+.profile > span {
+    margin: 15px;
+}
+
+.icon-down {
+    margin: 4.1px 0;
+    margin-left: -15px;
+}
+
+/* Footer */
+
+#footer {
+    background-color: #F7F8F9;
+    padding: 30px 0;
+    margin-top: 15px;
+}
+
+.fout > img {
+    margin: 20px 0;
+}
+
+.fout > p {
+    color: #777777;
+}
+
+/* profile */
+.cover{
+    height: 350px;
+    background-color: rgb(0, 81, 255);
+    color: white;
+}
+
+.covercontent{
+    margin-left: 100px;
+    align-items: center;
+}
+
+.profilepictureborder{
+    height: 152px;
+    width: 152px;
+    background-color: white;
+    margin-left: 15px;
+    border-radius: 0%;
+    padding: 5px;
+}
+
+.profilepicture{
+    height: 150px;
+    width: auto;
+}
+
+.flex-end{
+    align-self: flex-end;
+}
+.flex-center{
+    align-self: center;
+}
+
+.mb-16{
+    margin-bottom: 16px;
+}
+
+.mr-16{
+    margin-right: 16px;
+}
+
+.changecover{
+    font-weight: bold;
+    color: white;
+}
+
+.border-button{
+    border-style: solid;
+    border-width: 2px;
+    padding: 8px 16px 8px 16px;
+    border-radius: 8px;
+}
+
+.border-button:hover{
+    background-color: white;
+}
+
+.changecover:hover{
+    color: #d0021b;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.content-parent{
+    display: flex;
+}
+
+.content{
+    width: 70%;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+aside{
+    margin-top: 20px;
+    margin-right: 100px;
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 20px 30px 30px 20px;
+}
+
+.row > p > a{
+    color: black;
+    margin: 8px 16px 8px 16px;
+    font-size: 20px;
+}
+
+hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 40px 1em 0;
+    padding: 0;
+}
+
+aside > p{
+    font-size: 22px;
+}
+
+.institution-logo{
+    margin-top: 20px;
+    border-radius: 4px;
+    height: 50px;
+}
+
+.document-logo{
+    height: 16px;
+}
+
+.align-content-center{
+    align-content: center;
+}
+
+.ml-16{
+    margin-left: 16px;
+}
+
+#institution-name{
+    width: 211px;
+}
+
+.col-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 27.333333%;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 10px;
+}
+
+.col-8 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 56.666667%;
+    flex: 0 0 63.666667%;
+    max-width: 66.666667%;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 10px;
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.bg-card-white {
+    background-color: rgb(255, 255, 255);
+    width: auto;
+    height: auto;
+}
+
+.border-right-none {
+    border-right: none !important;   
+} 
+
+input:focus {
+    border: none !important;
+}
+
+.mb-5 {
+    margin-bottom: 15px;
+}
+
+.card {
+    background-color:  rgb(255, 255, 255);
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+    padding: 0;
+    border-radius: 2px;
+    height: auto;
+    width: auto;
+}
+
+.card > img {
+    border-radius: 2px 2px 0 0;
+}
+
+.flex-wrap-none {
+    flex-wrap: inherit !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.float-right {
+    float: right !important;
+}
+
+.w-50 {
+    max-width: 100%;
+    width: 47vw !important;
+}
+
+.p-3 {
+    padding: 5px 15px;
+}
+
+.icons {
+    width: 12px;
+    height: 12px;
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+}
+
+.page-home #hero svg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+.pb-4 {
+    padding-bottom: 10px;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+#search-bar{
+    height: 100px;
+    background: #222222;
+    width: 100%;
+    color: #fff;
+    z-index: 10000;
+}
+
+#search-bar input {
+    width: 100%;
+    background: none;
+    padding: 15px 15px 15px 60px;
+    margin: 0;
+    border: 0;
+    height: 100px;
+    font-size: 22px;
+    color: white;
+}
+
+.search-icon{
+    height: 50px;
+    width: 50px;
+}
+
+.text-danger {
+    color: red;
+}
