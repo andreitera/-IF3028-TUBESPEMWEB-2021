@@ -1,25 +1,18 @@
-@extends('master.master')
-
-@section('css')
-<link rel="stylesheet" href="{{ asset('css/home.css') }}">
-@endsection
-
-@section('isi')
-<div class="form-buat">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+    <title>UniqID</title>
+</head>
+<body>
     <div class="info">
         <img src='{{ asset('image/bell.svg') }}' alt='icon hapus' class='bell'>
-        <p>Silahkan masukkan alamat email untuk menyimpan UniqID</p>
-        <p>UniqID digunakan untuk edit/hapus Laporan/Komentar</p>
+        <p>UniqID anda</p>
+        <p style="font-size: 40px !important">{{$uniqid}}</p>
+        <p>UniqID tersebut harap disimpan dan digunakan sebagai mana mestinya</p>
     </div>
-    <div class="uniq">
-        <span>UniqID anda</span>
-        <form method="GET" action="{{ route('sendemail') }}">
-            @csrf
-            <input type="hidden" name="uniqid" value="{{$uniqid}}">
-            <p>{{$uniqid}}</p>
-            <input type="text" name="email" class="info-send">
-            <button type="submit">Kirim</button>
-        </form>
-    </div>
-</div>
-@endsection
+</body>
+</html>
