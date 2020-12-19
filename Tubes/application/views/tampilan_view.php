@@ -33,12 +33,14 @@
 		
 
 		<br>
+		<hr>
 
 		<?php 
 		foreach ($laporan as $value):
 			 echo "<p>$value->isi</p>";
-			 echo "<p>Lampiran: $value->lampiran</p";  
-			 echo "<p>$value->waktu</p>"; 
+			 echo "<p>Lampiran: $value->lampiran</p>";  
+			 echo "<p style='width: auto; height: auto; border:1px solid black; float: right; margin-top:-37.9px;'>Waktu: $value->waktu</p>";
+			 echo "<hr>"; 
 		 endforeach; ?>
 		<hr>
 			<p>

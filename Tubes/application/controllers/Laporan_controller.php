@@ -26,17 +26,10 @@
 
             $this->load->view("tambah_view");
         }
-<<<<<<< HEAD
-
-=======
->>>>>>> 006e70fbfb5e9122497636217986cbfc54e5900e
 
         public function detail(){
             $this->load->view("detail_view");
         }
-<<<<<<< HEAD
 
-=======
->>>>>>> 006e70fbfb5e9122497636217986cbfc54e5900e
     }
 ?>
