@@ -1,0 +1,20 @@
+Cara Instalasi:
+-Pastikan anda sudah menginstal XAMPP,
+
+-Jalankan software XAMPP , dan aktifkan Apache dan MySQL
+
+-Download file lapor.sql
+
+-Buat database dengan nama "lapor"
+
+-Import file lapor.sql yang telah didwonload tadi.
+
+-Download file.zip project ini
+
+-Ekstrak file.zip ke direktori C:/xampp/htdocs
+
+-Sesuaikan nama folder hasil ekstrak dengan base url (terdapat pada direktori C:/xampp/htdocs/application/config/config.php) `$config['base_url'] = 'http://localhost/` **-IF3028-TUBESPEMWEB-2021** `';`
+
+-Buka Browser dan jalankan sesuai nama folder hasil ekstrak, "localhost/-IF3028-TUBESPEMWEB-2021"
+
+-Selesai
