@@ -5,7 +5,7 @@
 
 
 
-	<link rel="stylesheet" type="text/css" href="style/style_detail.css">
+	<link rel="stylesheet" type="text/css" href="../style/style_detail.css">
 
 </head>
 <body>

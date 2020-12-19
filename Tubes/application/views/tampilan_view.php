@@ -36,10 +36,9 @@
 
 		<?php 
 		foreach ($laporan as $value):
-			 echo $value->isi; 
-			 echo $value->aspek; 
-			 echo $value->lampiran; 
-			 echo $value->waktu; 
+			 echo "<p>$value->isi</p>";
+			 echo "<p>Lampiran: $value->lampiran</p";  
+			 echo "<p>$value->waktu</p>"; 
 		 endforeach; ?>
 		<hr>
 			<p>
