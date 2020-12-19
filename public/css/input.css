@@ -1,30 +1,24 @@
 body{
     margin: 0;
     padding: 0;
-
-}
-.container {
-    margin: 3% 18% 10% 18% ;
-
-}
-hr{
     height: 1px;
     background-color: black ;
+}
+.container {
+    margin: 5% 15% 10% 15% ;
+
 }
 
 .container h2{
     text-align: center;
     font-weight: lighter;
-    font-size: 36px;
-    font-family: sans-serif;
+    font-size: 30px;
+    font-family: arial;
     letter-spacing: 2px;
 }
 
 .container .main{
     margin-top: 70px;
-}
-.container .main p{
-
 }
 
 .container .main input:focus{
@@ -58,6 +52,6 @@ hr{
 
     display: block;
     padding: 15px;
-    margin-left: 88%;
+    margin-left: 80%;
     margin-bottom: 50px;
 }
