@@ -1,0 +1,52 @@
+.container {
+	border: 1px solid rgb(55, 130, 170);
+	padding: 10px;
+	margin-left: 200px;
+	margin-right: 200px;
+	font-family: sans-serif;
+}
+
+
+
+hr {
+	border: 1px solid rgb(55, 130, 170);
+}
+
+.content {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+
+.content h1 {
+	text-align: center;
+}
+
+.content .main input {
+	border: 0.5px solid rgb(55, 130, 170);
+	padding: 4px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	margin-bottom: 10px;
+	width: 200px;
+}
+.content .main textarea {
+	width: 100%;
+	height: 250px;
+	padding: 6px;
+	border: 0.5px solid rgb(55, 130, 170);
+}
+
+.content .aspect select {
+	padding: 6px;
+	border: 0.5px solid rgb(55, 130, 170);
+}
+
+.content .btn_submit {
+	float: right;
+}
+
+.content .btn_submit button {
+	
+	padding: 6px;
+	border: 1px solid black;
+}

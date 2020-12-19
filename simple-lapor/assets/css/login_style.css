@@ -1,0 +1,52 @@
+
+div{
+	border: 1px solid #333;
+	padding: 20px;
+	margin: 30px 100px;
+	height: 500px;
+	font-family: sans-serif;
+}
+
+nav a{
+	padding: 4px;
+	color: black;
+	font-weight: bold;
+	text-decoration-line: none;
+	margin-right: 10px;
+	border: 1px solid #333;
+}
+
+nav a:hover{
+	background: rgb(55, 130, 170);
+}
+
+h2, form{
+	text-align: center;
+}
+.container input{
+	 width: 60%;
+    padding: 5px;
+    height: 40px;
+    border: 2px solid #333;
+    font-size: 24px;
+   
+}
+
+.container button{
+	width: 110px;
+    height: 50px;
+    border: 2px solid #333;
+    background: white;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    font-size: 24px;
+ }
+
+ form a:hover {
+ 	color: rgb(55, 130, 170);
+}
+
+.container button:hover {
+	background: rgb(55, 130, 170);
+}
