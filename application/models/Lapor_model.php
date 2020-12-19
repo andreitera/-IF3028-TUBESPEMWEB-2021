@@ -12,7 +12,7 @@ class Lapor_model extends CI_Model
             $query = $this->db->get('lapor');
             return $query->result_array();
         }
-        $query = $this->db->get_where('lapor', array('id_laporan' => $id));
+        $query = $this->db->get_where('lapor', array('id' => $id));
         return $query->row_array();
     }
     public function hapus_data($where, $table)

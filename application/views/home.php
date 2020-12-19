@@ -13,47 +13,49 @@
         <ul>
             <li><a href="<?php echo base_url('home'); ?>">Home</a></li>
             <li><a href="<?php echo base_url('Home/Tampillapor'); ?>">Buat Laporan</a></li>
-            <li><a href="<?php echo base_url(''); ?>">Masuk</a></li>
-            <li><a href="<?php echo base_url(''); ?>">Daftar</a></li>
         </ul>
     </div>
 
     <body>
+        <div class="landing-page">
+            <h1>SIMPLE LAPOR!</h1>
+            <br><br>
+            <div id="search-container" class="search-container">
+                <input id="searchElement" type="search">
+                <button id="searchButtonElement" type="submit">Cari</button>
+            </div>
+            <div class="awal">
+                <a href="<?php echo base_url() ?>Home/Tampillapor">
+                    <h4>Buat Laporan/Komentar<button class="button"> + </button>
+                    </h4>
+                </a>
+            </div>
+            <br>
+            <div class="comment">
+                <p> Laporan/Komentar Terakhir </p>
+                <hr width="auto" />
+                <div class="card">
+                    <?php foreach ($lapor as $lap) : ?>
+                        <?php if (strlen($lap["laporan"]) <= 300) { ?>
+                            <p class="isi"><?php echo $lap["laporan"]; ?></p>
+                        <?php } else { ?>
+                            <p class="isi"><?php echo substr($lap["laporan"], 0, 300); ?>..........</p>
+                        <?php } ?>
 
-        <h1>SIMPLE LAPOR!</h1>
-        <br><br>
-        <div id="search-container" class="search-container">
-            <input id="searchElement" type="search">
-            <button id="searchButtonElement" type="submit">Cari</button>
-        </div>
-        <div class="awal">
-            <a href="<?php echo base_url() ?>'Home/Tampillapor'">
-                <h4>Buat Laporan/Komentar<button class="button"> + </button>
-                </h4>
-            </a>
-        </div>
-        <br>
-        <div class="comment">
-            <p> Laporan/Komentar Terakhir </p>
-            <hr width="100%" color="grey" />
-            <?php foreach ($lapor as $lap) : ?>
-                <?php if (strlen($lap["laporan"]) <= 450) { ?>
-                    <p class="isi"><?php echo $lap["laporan"]; ?></p>
-                <?php } else { ?>
-                    <p class="isi"><?php echo substr($lap["laporan"], 0, 450); ?>...</p>
-                <?php } ?>
-
-                <div class="next">
-                    <p class="tanggal"><?php echo $lap["tanggal"]; ?>
-                        <a href="<?php echo base_url() . 'Home/view/' . $lap['id']; ?>">Lihat selengkapnya<button class="button"> ></button></a>
-                    </p>
+                        <div class="next">
+                            <p class="tanggal"><?php echo $lap["tanggal"]; ?>
+                                <a href="<?php echo base_url() . 'Home/view/' . $lap['id']; ?>">Lihat selengkapnya<button class="button"> ></button></a>
+                            </p>
+                        </div>
+                        <hr width="auto" />
+                    <?php endforeach; ?>
                 </div>
-                <hr width="100%" color="grey" />
-            <?php endforeach; ?>
+            </div>
         </div>
-
-
 
     </body>
+    <div class="footer">
+        &copyCopyright 2019 - itera.ac.id
+    </div>
 
 </html>
