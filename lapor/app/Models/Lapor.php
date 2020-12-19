@@ -13,6 +13,7 @@ class Lapor extends Model
 
     protected $table    ="lapor";
     protected $dates 	= ['deleted_at'];
+    protected $fillable = ['user_id'];
 
     // relation table
     public function users()
