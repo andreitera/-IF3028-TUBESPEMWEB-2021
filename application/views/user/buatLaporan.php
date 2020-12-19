@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buat Laporan/Komentar</title>
-</head>
-
-<body>
-    <div class="box">
+<div class="judul">Buat Laporan/Komentar</div>
+<hr>
+<textarea class="laporan" type="text" placeholder="Laporan/Komentar"></textarea>
