@@ -25,7 +25,7 @@ class Tampil extends CI_Controller
         $this->load->view('index');
     }
 
-    public function add()
+    public function tambah()
     {
         $this->load->view('index');
         $this->load->view('halaman/tambah');

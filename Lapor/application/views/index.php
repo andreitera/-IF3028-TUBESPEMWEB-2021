@@ -41,7 +41,7 @@
             <div class="hero-text w-100 text-white px-2 px-sm-0">
                 <h1 class="display-4">Layanan Aspirasi dan Pengaduan Mahasiswa</h1>
                 <p class="lead mb-4">Sampaikan laporan Anda langsung kepada instansi di Institut Teknologi Sumatera</p>
-                <a class="btn px-5 mr-2" href="<?php echo base_url() . 'tambah#buat-lapor'; ?>">Buat Laporan</a>
+                <a class="btn px-5 mr-2" href="<?php echo base_url() .'tambah#buat-lapor'; ?>">Buat Laporan</a>
                 <a class="btn px-5 ml-2" id="cari-lapor" href="<?php echo base_url() . 'home#laporan-akhir'; ?>">Cari Aduan</a>
             </div>
         </div>
