@@ -30,6 +30,7 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+$routes->add('/home/save', 'Home::save');
 $routes->add('/laporan/save', 'Home::save');
 $routes->add('/laporan/edit/(:num)', 'Home::edit/$1');
 $routes->add('/laporan/delete/(:num)', 'Home::delete/$1');

@@ -23,8 +23,8 @@ function validasi(){
         let splitname = filename.split(".");
         let extension = ['doc', 'docx', 'xls', 'xlsx', 'ppt', 'pptx', 'pdf', 'jpg', 'jpeg', 'png'];
         let same = 0
-        for(i = 0 ; i < extension.length ;i++){
-            if(splitname[extension.length-1] == extension[i]){
+        for(i = 0 ; i < extension.length ; i++){
+            if(splitname[splitname.length-1] == extension[i]){
                 same = 1;
             }
         }
