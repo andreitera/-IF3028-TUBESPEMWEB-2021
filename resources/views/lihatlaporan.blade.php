@@ -53,9 +53,9 @@
     @if(session('pesan'))
     {{ session('pesan')}}
     @endif
-    <p>{{$lengkap->pengirim}}</p>
-    <p>{{$lengkap->judul}}</p>
-    <p>{{$lengkap->isilaporan}}</p>
+    Pengirim :{{$lengkap->pengirim}}<p>
+    Judul :{{$lengkap->judul}}<p>
+    Isi Laporan :{{$lengkap->isilaporan}}<p>
     <a class="lampiran" href="{{ $lengkap->file }}">lihat lampiran</a>
     
     <div class="kaki">
