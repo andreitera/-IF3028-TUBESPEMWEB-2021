@@ -1,19 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('Master.master')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Utama</title>
-    <link rel="stylesheet" href=" {{ asset('css/style.css') }} ">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href=" {{ asset('css/styleUtama.css') }} ">
-</head>
-
+@section('content')
 <body>
     <h1>SIMPLE LAPOR!</h1>
+
     <form action="{{ route('cari') }}" method="POST">
         @csrf
         <label for="">
@@ -21,7 +11,7 @@
         </label>
         <button type="submit">Cari</button>
     </form>
-    <a href="{{ url('/formlapor') }}">Buat laporan/komentar</a>
+    <a href="{{ url('/formlapor') }}">Buat laporan/komentar</a><br>
     <a href="{{ url('/listlaporan') }}">Lihat Semua Laporan/Komentar</a>
 
     <ul>
@@ -32,6 +22,4 @@
         </li>
         @endforeach
     </ul>
-</body>
-
-</html>
+    @endsection
