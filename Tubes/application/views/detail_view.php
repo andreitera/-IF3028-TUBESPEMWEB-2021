@@ -57,7 +57,7 @@
 
 			<div class="detail">
 
-				<a href="<?php echo site_url('Laporan_controller/delete/'.$laporan->id) ?>" style="color: rgb(212, 54, 36);">
+				<a href="<?php echo site_url('Laporan_controller/delete/'.$laporan->id) ?>" onclick="return confirm('Anda yakin ingin menghapus laporan ini?');" style="color: rgb(212, 54, 36);">
 				Hapus Laporan/Komentar
 			</a>
 			</div>
