@@ -5,6 +5,6 @@ class Auth extends CI_Controller
 {
     public function index()
     {
-        echo "test apakah terhubung";
+        $this->load->view('user/home');
     }
 }
