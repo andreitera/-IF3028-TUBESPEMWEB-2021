@@ -38,15 +38,13 @@
             if ($validation->run()) {
                 $laporan->update();
                 $this->session->set_flashdata('success', 'Berhasil diubah');
+                redirect('');
             }
 
             $data["laporan"] = $laporan->getById($id);
             if (!$data["laporan"]) show_404();
             
             $this->load->view("edit_view", $data);
-
-            $data["laporan"] = $this->laporan_model->getAll();
-            $this->load->view("tampilan_view", $data);
         }
 
         public function detail($id = null){
