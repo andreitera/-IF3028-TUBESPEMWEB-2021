@@ -1,0 +1,6 @@
+Cara install codeigniter :
+    1. Download file codeIgniter tugas ini.
+    2. Ubah nama folder menjadi -IF3028-TUBESPEMWEB-2021 (Wajib karena basepath menggunakan url /-IF3028-TUBESPEMWEB-2021)
+    3. Pindahkan folder ke server local. misalnya xampp/htdocs
+    4. Running melalui web browser dengan localhost/-IF3028-TUBESPEMWEB-2021/codeIgniter
+    5. Selesai
