@@ -54,5 +54,9 @@ class Lapor_db extends CI_model{
 		return $this->db->get_where('lapor', array('id'=>$id))->row_array();
 	}	
     
+    public function delete($id){
+		$this->db->where('id', $id);
+		$this->db->delete('lapor');
+	}
     
 }

@@ -32,7 +32,7 @@
                     <?php } ?>
                         <h4 class="lampiran">Lampiran : <?php echo $value["file"]; ?></h4>
                         <a href="<?php echo base_url() ?>index.php/Home/detail/<?php echo $value["id"] ?>">
-                        <h4 class="detail">Selengkapnya>>></h4>
+                        <h4 class="detail">Lihat Selengkapnya ></h4>
                         </a>
                         <h4 class="waktu" style="margin-right: 10px;">Waktu : <?php echo $value["tanggal"]; ?></h4>
                     <div style="clear: both"></div>

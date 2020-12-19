@@ -69,7 +69,7 @@ class Home extends CI_Controller{
 
     public function delete($id){
 		$this->Lapor_db->delete($id);
-		redirect('index.php/home');
+		redirect('home');
 	}
 
 }
