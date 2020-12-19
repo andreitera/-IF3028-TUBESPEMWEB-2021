@@ -52,6 +52,12 @@ class Home extends BaseController
 		echo view('detail');
 		echo view('templates/footer');
 	}
+	
+	public function delete($id)
+	{
+		$this->homeModel->delete($id);
+		return redirect()->to('/');
+	}
 	//--------------------------------------------------------------------
 
 }
