@@ -45,12 +45,13 @@ class Laporan_model extends CI_Model{
     }
 
     public function update(){
-        $post = $this->input_>post();
+        $post = $this->input->post();
         $this->id = $post["id"];
         $this->isi = $post["isi"];
         $this->aspek = $post["aspek"];
         $this->lampiran = $post["lampiran"];
-        $this->waktu = $post["waktu"];
+        date_default_timezone_set('Asia/Jakarta');
+        $this->waktu = date("Y-m-d H:m:s");
         return $this->db->update($this->_table, $this, array('id' => $post["id"]));
     }
 
