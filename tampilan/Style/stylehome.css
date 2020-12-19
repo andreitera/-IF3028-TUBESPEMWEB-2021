@@ -1,0 +1,31 @@
+.header{
+    padding-top: 7%;
+    text-align: center;
+}
+
+body{
+    margin-inline-start: 15%;
+    margin-inline-end: 15%;
+}
+
+.searchBar{
+    width: 100%;
+}
+
+
+.searchBar .searchInput{
+    width: 94.87%;
+    height: 50px;
+}
+
+.searchBar .cari{
+    height: 55.5px;
+}
+
+.buatLaporan{
+    display:block;
+    text-align: center;
+}
+.footerPost{
+    display: inline-block;
+}
