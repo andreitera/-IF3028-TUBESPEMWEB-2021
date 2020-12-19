@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Carbon\Carbon;
 
 class ProvincesSeeder extends Seeder
 {
@@ -21,6 +22,7 @@ class ProvincesSeeder extends Seeder
                 array(
                     'id' => $data[0],
                     'name' => $data[1],
+                    'created_at'=> Carbon::now()->format("Y-m-d")
                 )
             );
         }

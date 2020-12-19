@@ -17,16 +17,19 @@
 
                 <p>Pilih Tipe Laporan</p>
                 <div class="d-flex mb-5">
-                     {{-- class="form-type-lapor" --}} <input type="radio" name="type_laporan" name="laporan_type_id" value="1"> Pengaduan                            
-                     {{-- class="form-type-lapor" --}} <input type="radio" name="type_laporan" name="laporan_type_id" value="2"> Aspirian                            
-                     {{-- class="form-type-lapor" --}} <input type="radio" name="type_laporan" name="laporan_type_id" value="3 Informasi"> Permintaan Informasi 
+                     {{-- class="form-type-lapor" --}} <input type="radio" name="type_laporan" name="laporan_type_id" value="1102"> Pengaduan                            
+                     {{-- class="form-type-lapor" --}} <input type="radio" name="type_laporan" name="laporan_type_id" value="1102"> Aspirian                            
+                     {{-- class="form-type-lapor" --}} <input type="radio" name="type_laporan" name="laporan_type_id" value="1102"> Permintaan Informasi 
                 </div>
 
                 <input type="text" placeholder="ketik Judul laporan Anda*" name="title" class="form-text-box">
+                @include('component.inputAlert', ['name' => 'title'])
 
                 <textarea name="laporan" id="" placeholder="Ketik Isi Laporan Anda" class="form-text-box" rows="5"></textarea>
+                @include('component.inputAlert', ['name' => 'laporan'])
 
                 {{-- onfocus="(this.type='date')" --}}<input type="date" placeholder="Tanggal Kejadian*" name="tgl_kejadian" class="form-text-box">
+                @include('component.inputAlert', ['name' => 'tgl_kejadian'])
 
                 <select name="location" id="" class="form-text-box" style="width: 99%">
                     <option value="" disabled selected>Lokasi Kejadian</option>
@@ -34,6 +37,7 @@
                         <option value="{{$city->id}}">{{$city->name}}</option>
                     @endforeach
                 </select>
+                @include('component.inputAlert', ['name' => 'location'])
 
                 <select name="instansi_tujuan" id="" class="form-text-box" style="width: 99%">
                     <option value="" disabled selected>Instansi Tujuan</option>
@@ -41,6 +45,7 @@
                         <option value="{{$instansi->id}}">{{$instansi->name}}</option>
                     @endforeach
                 </select>
+                @include('component.inputAlert', ['name' => 'instansi_tujuan'])
 
                 <select name="category" id="" class="form-text-box" style="width: 99%">
                     <option value="" disabled selected>Pilih Kategori Laporan Anda</option>
@@ -48,6 +53,7 @@
                         <option value="{{$kategori->id}}">{{$kategori->name}}</option>
                     @endforeach
                 </select>
+                @include('component.inputAlert', ['name' => 'category'])
 
                 <hr style="width: 99%">
 

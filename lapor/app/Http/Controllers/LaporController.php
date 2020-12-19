@@ -32,16 +32,14 @@ class LaporController extends Controller
 
     public function postLapor(request $input)
     {
-        // $this->validate($input, [
-        //     'name'                  => 'required',
-        //     'email'                 => 'required|string|email|max:55',
-        //     'title'                 => 'required',
-        //     'laporan'               => 'required',
-        //     'tgl_kejadian'          => 'required',
-        //     'location'          => 'required',
-        //     'instansi_tujuan'          => 'required',
-        //     'category'          => 'required',
-        // ]);
+        $this->validate($input, [
+            'title'                 => 'required',
+            'laporan'               => 'required|min:20',
+            'tgl_kejadian'          => 'required',
+            'location'          => 'required',
+            'instansi_tujuan'          => 'required',
+            'category'          => 'required',
+        ]);
 
         $lapor                          = new Lapor;
         $lapor->laporan_type_id         = $input->type_laporan;
@@ -54,7 +52,7 @@ class LaporController extends Controller
         $lapor->rahasia                 = $input->rahasia; 
         $lapor->location_id             = $input->location;
         $lapor->user_id                 = 1;
-        $lapor->status_id               = 1;
+        $lapor->status_id               = 1201;
 
         // return $lapor;
         
@@ -65,9 +63,9 @@ class LaporController extends Controller
 
     }
 
-    public function listView($user_id)
+    public function listView()
     {
-        $listLapor = Lapor::where('user_id', '$user_id')->orderBy('created_at', 'desc')->get();
+        $listLapor = Lapor::orderBy('created_at', 'desc')->get();
         return view('Lapor.page.listLapor')->with([
             'listLapor' => $listLapor
         ]);
@@ -80,8 +78,8 @@ class LaporController extends Controller
 
     public function viewLapor($id)
     {
-        $listLapor = Lapor::where('id', '$id')->get();
-        $listComment = Comment::where('lapor_id', '$id')->get();
+        $listLapor = Lapor::where('id', $id)->first();
+        $listComment = Comment::where('lapor_id', $id)->get();
         return view('Lapor.page.viewLapor')->with([
             'listLapor' => $listLapor,
             'listComment' => $listComment

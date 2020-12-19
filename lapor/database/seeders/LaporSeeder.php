@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Carbon\Carbon;
 
 class LaporSeeder extends Seeder
 {
@@ -26,6 +27,7 @@ class LaporSeeder extends Seeder
             'location_id' => "1102",
             'instansi_tujuan_id' => "65",
             'status_id' => "1201",
+            'created_at'=> Carbon::now()->format("Y-m-d")
         ]);
 
         DB::table('lapor')->insert([
@@ -40,6 +42,7 @@ class LaporSeeder extends Seeder
             'location_id' => "1102",
             'instansi_tujuan_id' => "65",
             'status_id' => "1201",
+            'created_at'=> Carbon::now()->format("Y-m-d")
         ]);
     }
 }

@@ -12,8 +12,8 @@
             <div class="informations-lapor">
                 <div class="padding-bottom status d-flex space-bettwen w-100">
                     <div class="left d-flex">
-                        <div class="padding-right phone-number">Nestiawan Ferdiyanto</div> 
-                        <div class="padding-right d-flex"><img class="icons top-tb" src="{{ asset('asset/images/icons/call.png') }}" class="icon"><p class="info-stat">SMS</p></div> 
+                        <div class="padding-right phone-number"> {{ $listLapor->users->name }} </div> 
+                        <div class="padding-right d-flex"><img class="icons top-tb" src="{{ asset('asset/images/icons/call.png') }}" class="icon"><p class="info-stat"> {{ $listLapor->users->no_telp }} </p></div> 
                         <div class="padding-right state"><p class="info-stat">Ditutup oleh admin</p></div>
                     </div>
                     <div class="date">Rabu 2020/12/01, 23:59</div>

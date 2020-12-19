@@ -399,3 +399,7 @@ svg:not(:root) {
     height: 50px;
     width: 50px;
 }
+
+.text-danger {
+    color: red;
+}

@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 // Auth
 Route::get('/register',                 'AuthController@register')->name('register.user');
 Route::get('/login',                    'AuthController@login')->name('login.user');
+Route::post('/login-post',              'AuthController@loginPost')->name('login.user.post');
 
 
 Route::get('/',                 'LaporController@index')->name('landing');
