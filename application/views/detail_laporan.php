@@ -36,7 +36,7 @@
 				</div>
 				<div class="selengkapnya">
 					Hapus Laporan/Komentar
-					<a href="<a href='http://localhost/-IF3028-TUBESPEMWEB-2021-master/-IF3028-TUBESPEMWEB-2021-master/CodeIgniter-3.1.11/index.php/Welcome/HapusLaporan/ <?php $key['id'] ?> "><img src="img/close.png"></a>
+					<a href="<a href='http://localhost/-IF3028-TUBESPEMWEB-2021index.php/Welcome/HapusLaporan/ <?php $key['id'] ?> "><img src="img/close.png"></a>
 				</div>
 				<hr>
 			<?php } ?>
