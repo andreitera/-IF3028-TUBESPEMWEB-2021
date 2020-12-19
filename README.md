@@ -17,22 +17,21 @@ Project dikerjakan secara **berkelompok** dengan maksimal jumlah anggota adalah 
 contoh: fix css, membuat post done, jangan seperti final, benerin dikit, oke deh, update deh dll. 
 Disarankan untuk tidak melakukan commit dengan perubahan yang besar karena akan mempengaruhi 
 penilaian (contoh: hanya melakukan satu commit kemudian dikumpulkan).
-3. Minimal commit sebanyak personil anggota tim dengan masing-masing personil tim melakukan commit sesuai dengan kesepakatan tim, penilaian individu akan dilihat.
-4. Ubah **Penjelasan Teknis** pada bagian bawah readme.md ini dengan menjelaskan bagaimana cara anda:
+3. Ubah **Penjelasan Teknis** pada bagian bawah readme.md ini dengan menjelaskan bagaimana cara anda:
    - Instalasi Framework, Koneksi basis data 
    - Melakukan validasi pada client-side
    - Melakukan AJAX (mulai dari pengguna melakukan klik pada tombol LAPOR! sampai laporan/komentar terkirim).
-5. Pull request dari repository anda ke repository ini dengan 
+4. Pull request dari repository anda ke repository ini dengan 
 format **NIM** - **Nama Lengkap**. **Waktu terkahir proses pull request adalah 4 hari setelah 
 ujian akhir semester (UAS)**
-6. Data yang dikumpulkan adalah:
+5. Data yang dikumpulkan adalah:
    - Source code aplikasi
    - Basis data, dan
    - Cara instalasi aplikasi anda
-7. Penilaian:
+6. Penilaian:
    - Kerjasama tim
    - Kesesuaian dengan spesifikasi
-   - Pemahaman dalam penggunaan framework, penilaian efisiensi query
+   - Pemahaman dalam penggunaan framework
    - Antarmuka aplikasi
    - Bug free :beetle:
    
@@ -71,8 +70,6 @@ panjang harus dipotong. Silakan definisikan sendiri seberapa panjang agar tetap 
 
 Pada masing-masing elemen list, terdapat menu untuk mengubah dan menghapus pertanyaan.
 
-View Laporan ditampilkan secara terurut dimulai dari laporan terakhir yang diberikan highlight
-
 ### Kirim laporan/komentar `LAPOR!`
 Pengguna dapat mengajukan laporan/komentar. Form yang digunakan memiliki komentar (textarea), 
 data lapiran berupa gambar 
@@ -100,6 +97,17 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 
 ### Penjelasan Teknis
 `Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+A.instalasi framwork (CodeIgniter)
+kami menggunakan codeigniter,untuk instalasi kami menggunakan controler,model,dan view dalam fokus pengerjaan tugas besar ini,dimana controler akan melakukan fungsi utama sistem,model akan mengatur koneksi antara controller dan database yang mana akan ditampilkan di bagian view. untuk css dan aset lainnya kami menyimpannya di folder asset.
+
+untuk konoeksi ke database ,pada CI kita hanya meng-edit file database.php pada application->config->database.php didalamnya kita isi nama database sesuai database milik kita.database juga akan langsung terkoneksi saat sistem dijalankan dengan melakukan instalasi pada file autoload.php dengan menambahkan database di bagian libraries.
+
+B.validasi client 
+pada saat menambahkan laporan sistem akan melakukan validasi pada isi dan file yang akan diinput,isi laporan tidak boleh kosong dan minimal 20 kata/100 karakter,untuk file sistem hanya menerima file dengan ekstensi pdf atau gambar,selain itu laporan tetap terkirim tetapo file tidak akan muncul di hasil laporan
+
+C.AJAX
+kami menggunakan ajax pada menu pencarian,dimana data yang kita input di filed cari akan diolah di halaman yang sama,saat kita memasukkan
+kata pencarian bagian konten akan berubah menampilkan data hasil pencarian,dimana pencarian dilakukan dengan menggunakan fungsi LIKE pada bagian isi dan tanggal laporan
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
@@ -113,5 +121,6 @@ anchor tag.
 
 ### About :honeybee:
 
-Dosen       : Dicky Prima Satya, M.T., Andre Febrianto, S.Kom., M.Eng., Amirul Iqbal, S.Kom., M.Eng.
+Dosen       : Rajif Agung Yunmar, S.Kom., M.Cs.	,Ahmad Luky Ramdani, S.Komp., M.Kom. ,
+Arief Ichwani, S.Kom., M.Cs., Andre Febrianto, S.Kom., M.Eng, Ilham Firman Ashari, S.Kom., M.T
 
