@@ -132,6 +132,15 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
             </code>
          </pre>
       </li>
+      <li>Buka terminal anda, dan arahkan lokasi proses terminal ke lokasi aplikasi laravel anda</li>
+      <li>Untuk permulaan, lakukan perintah pada terminal anda :
+         <pre>
+            <code>
+               php artisan migrate
+            </code>
+         </pre>
+      </li>
+      <li>Database kami telah kami `export` kedalam bentuk SQL di direktori `database\`</li>
    </ul>
 </ol>
          
