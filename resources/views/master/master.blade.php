@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     @yield('jsatas')
     <title>@yield('judul')</title>
 </head>
+
 <body>
     <nav>
         <img src="{{ asset('image/logo-white.png') }}" alt="logo lapor" class="logo">
@@ -34,4 +36,18 @@
     @yield('isi')
     @yield('jsbawah')
 </body>
+<script>
+    var nav = document.querySelector('nav'); // Identify target
+
+    window.addEventListener('scroll', function(event) { // To listen for event
+        event.preventDefault();
+
+        if (window.scrollY <= 150) { // Just an example
+            nav.style.backgroundColor = 'transparent';
+        } else {
+            nav.style.backgroundColor = '#000'; // or default color
+        }
+    });
+</script>
+
 </html>
