@@ -10,6 +10,9 @@ di program studi teknik informatika ITERA.
 
 ### Anggota Tim :cyclone:
 Project dikerjakan secara **berkelompok** dengan maksimal jumlah anggota adalah 2-3 orang mahasiswa.
+1. Leo Viranda Millennium  /14117167
+2. Fathan Rizki Hidayah    /14117157
+3. Rozi Alqomar            /14117168
 
 ### Petunjuk Pengerjaan :umbrella:
 1. Fork pada repository ini dengan akun github anda.
@@ -37,10 +40,9 @@ ujian akhir semester (UAS)**
    - Bug free :beetle:
    
 ### Tools :hammer:
-1. Untuk backend, wajib menggunakan PHP framework apapun (Contoh: Codeigniter, Laravel, Slim, Yii dll).
-2. Gunakan MySQL atau basis data relasional lain untuk menyimpan data.
-3. Untuk frontend, gunakan Javascript, HTML dan CSS. **Tidak boleh menggunakan library atau framework CSS atau JS seperti 
-JQuery atau Bootstrap.** CSS sebisa mungkin ada di file yang berbeda (tidak inline styling/embeding styling).
+1. Backend     = PHP Framework Code Igniter 3.1.11
+2. Database    = Mysql
+3. Frontend    = HTML, CSS, Javascript
 
 ### Spesifikasi Simple LAPOR!
 #### Tampilan :soccer:
