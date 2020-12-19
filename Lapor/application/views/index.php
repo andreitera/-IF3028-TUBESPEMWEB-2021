@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <script src="<?php echo base_url(); ?>js/script.js"></script>
-    <script defer src="<?php echo base_url() ?>js/validation.js"></script>
+    <script defer src="<?php echo base_url() ?>js/validasi.js"></script>
 </head>
 
 <body>
@@ -41,17 +41,17 @@
             <div class="hero-text w-100 text-white px-2 px-sm-0">
                 <h1 class="display-4">Layanan Aspirasi dan Pengaduan Mahasiswa</h1>
                 <p class="lead mb-4">Sampaikan laporan Anda langsung kepada instansi di Institut Teknologi Sumatera</p>
-                <a class="btn px-5 mr-2" href="<?php echo base_url() . 'add#buat-lapor'; ?>">Buat Laporan</a>
+                <a class="btn px-5 mr-2" href="<?php echo base_url() .'tambah#buat-lapor'; ?>">Buat Laporan</a>
                 <a class="btn px-5 ml-2" id="cari-lapor" href="<?php echo base_url() . 'home#laporan-akhir'; ?>">Cari Aduan</a>
             </div>
         </div>
     </header>
 
-    <section id="footer">
-        <footer>
-            <p>Copyright &copy 2020 | </p>
-        </footer>
-    </section>
+
+    <footer>
+        <p>Copyright &copy 2020 | Rasyidah Herawati (118140063) | Alexander Diva G (118140067) | Tamara Damayanti (118140069) </p>
+    </footer>
+
 </body>
 
 </html>
