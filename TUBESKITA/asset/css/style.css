@@ -92,15 +92,8 @@ select{
 }
 
 #submit:hover, .container form button:hover{
-	background-color: salmon;
+	background-color: rgb(226, 48, 29);
 	color: black;
 	font-weight:bold;
 }
 
-footer {
-    text-align: center;
-    font-weight: bold;
-    width: 1500px;
-    margin-top: 50px;
-    background-color: aqua;
-}
