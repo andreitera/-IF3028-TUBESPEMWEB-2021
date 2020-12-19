@@ -34,5 +34,5 @@ Route::post('/laporan/{id}/delete',                 'ReportController@destroy')-
 
 
 // Route Baru
-Route::post('/search',                               'UtamaController@cari')->name('search');
+Route::get('/search',                               'UtamaController@cari')->name('search');
 
