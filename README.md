@@ -99,6 +99,7 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
+`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
 1. instalasi framework dan koneksi database
    framework yang kami gunakan untuk backend aplikasi website ini adalah codeigniter versi 3 (CI 3) cara penginstalan nya yaitu dengan mengunjungi website codeigniter.com    kemudian pilih codeigniter versi 3 dan klik tombol download lalu arahkan file tersimpan pada folder htdocs xampp, instalasi atau download selesai dan kami mulai bisa mengedit kerangka codeigniter tersebut untuk membangun aplikasi simple lapor ini.
    
@@ -109,8 +110,8 @@ koneksi ke database menggunakan web server xampp dan kami membuat database beser
   
 3. cara instalasi aplikasi 
    untuk bisa menjalankan aplikasi ini, terlebih dahulu menghidupkan web server dengan mengaktifkan apache dan mysql nya, kemudian pastikan configurasi alamat localhost sudah sama dengan nama tempat folder dalam htdocs , dapat di lihat pada application->config->config.php kemudian lihat bagian $config['base_url'].
-   pada aplikasi ini kami menambahkan fitur login untuk bisa mengakses website (membuat laporan, mengedit laporan dan juga menghapus laporan, laporan yang bisa di edit hanya lah laporan yang ditulis oleh akun yang sedang login.`
-
+   pada aplikasi ini kami menambahkan fitur login untuk bisa mengakses website (membuat laporan, mengedit laporan dan juga menghapus laporan, laporan yang bisa di edit hanya lah laporan yang ditulis oleh akun yang sedang login.
+,
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
 - CSS: margin, padding, header tag, font-size, text-align, float, clear, border, color, div, span, placeholder, 
@@ -124,4 +125,3 @@ anchor tag.
 ### About :honeybee:
 
 Dosen       : Dicky Prima Satya, M.T., Andre Febrianto, S.Kom., M.Eng., Amirul Iqbal, S.Kom., M.Eng.
-
