@@ -41,5 +41,18 @@ class Lapor_db extends CI_model{
         $this->db->insert('lapor', $data);
 
     }
+
+    public function search($search){
+		$this->db->like('isi', $search);
+		$this->db->or_like('tanggal', $search);
+		$this->db->or_like('aspek', $search);
+
+		return $this->db->get('lapor')->result_array();
+    }
+    
+    public function detail($id){
+		return $this->db->get_where('lapor', array('id'=>$id))->row_array();
+	}	
+    
     
 }

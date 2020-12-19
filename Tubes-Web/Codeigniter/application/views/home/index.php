@@ -44,7 +44,7 @@
     </div>    
 </div>
     
-<input id="alamat" value="<?php echo base_url() ?>index.php/home/search/" hidden>
+<input id="alamat" value="<?php echo base_url() ?>index.php/home/search" hidden>
 <script src="<?php echo base_url() ?>/asset/ajax.js"></script>             
 
 </body>

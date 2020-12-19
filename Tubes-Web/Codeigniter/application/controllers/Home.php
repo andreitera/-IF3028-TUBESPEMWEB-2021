@@ -26,7 +26,19 @@ class Home extends CI_Controller{
         else
         {
             $this->Lapor_db->tambahdata();
-            echo " <script> alert('Berhasil Menambah Data!'); document.location.href='../'; </script> ";
+            echo "<script>alert('Berhasil Menambah Data!'); document.location.href='../';</script>";
         }
+    }
+
+    public function search($search){
+		$data['lapor'] = $this->Lapor_db->search($search);
+		$data['search'] = $search;
+		$this->load->view('home/search',$data);
+	}
+
+    public function detail($id)
+    {
+        $data['lapor']=$this->Lapor_db->detail($id);
+        $this->load->view('detaillaporan/index', $data);
     }
 }
