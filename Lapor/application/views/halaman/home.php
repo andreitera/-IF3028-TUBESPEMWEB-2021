@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-12 col-md-6 text-center text-md-left">
                     <div class="section-heading">
-                        <h3>Tentang</h3>
+                        <h3>Kenapa harus lapor?</h3>
                         <h1 class="display-4"> Simple Lapor!</h1>
                     </div>
                     <p>Pengelolaan pengaduan pelayanan publik di setiap organisasi penyelenggara di ITERA belum
