@@ -10,10 +10,18 @@
 <h1 style="text-align: center;">SIMPLE LAPOR!</h1>
 <br>
 
-<form style="text-align: center;" action="Utama.php" method="get">
+<!-- <form style="text-align: center;" action="Utama.php" method="get">
 	<input type="text" name="cari">
 	<input type="submit" value="Cari">
-</form>
+</form> -->
+
+<div class="navbar-form">
+	<?php echo form_open('utama/search'); ?>
+	<input type="text" name="keyword" class="form-control" placeholder="Search">
+	<button type="submit" class="btn btn-success">Cari</button>
+
+	<?php echo form_close(); ?>
+</div>
 
 <p style="text-align: center;"><a href="Buat">Buat Laporan/Komentar &#10010;</a></p>
 
