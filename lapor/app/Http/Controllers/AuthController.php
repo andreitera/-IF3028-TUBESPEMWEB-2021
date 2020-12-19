@@ -56,7 +56,6 @@ class AuthController extends Controller
 
         if($userByEmail || $userByUsername) {
             if (Auth::attempt(['email' => $input->username, 'password' => $input->password], true) || Auth::attempt(['username' => $input->username, 'password' => $input->password], true)) {
-                return Auth::check();
                 return redirect()->route('landing');
             }
             return redirect()->back()->with('danger', 'Maaf, Password yang Anda masukkan salah.');
