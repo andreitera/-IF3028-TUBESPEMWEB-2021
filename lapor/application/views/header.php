@@ -11,8 +11,6 @@
       </div>
           <nav>
 			<ul>
-
-            <li class="active"><a href="<?php echo site_url('lapor/login')?>" > Login </a></li> 
             <li class="active"><a href="<?php echo site_url('lapor/tentang')?>" > Tentang Lapor! </a></li>
             <li class="active"><a href="<?php echo site_url('lapor/index')?>" > Lapor </a></li>
 

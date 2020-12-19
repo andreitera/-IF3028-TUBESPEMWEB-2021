@@ -28,7 +28,7 @@
        <?php 
           $date = new DateTime($hm->waktu);
           	echo 'Waktu : ';
-            echo $date->format('d-m-Y H:i'); // 21-01-2017 05:13:03
+            echo $date->format('d-m-Y H:i'); // 21-01-2019 05:13:03
           	?>
         </div> 
   <div class="lampir">

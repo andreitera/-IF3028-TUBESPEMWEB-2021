@@ -16,16 +16,10 @@
 
 
                      </div>
-                    <div class="box">
-                    <p>Download Aplikasi Mobile LAPOR!</p>
-                        <a href="https://play.google.com/store/apps/developer?id=affandiStudio">
-                        <img src="<?php echo base_url() ?>assets/img/google.png" width="150"></a>
-        
-                        </div>
 
                 </div>
             </section>
-            <p id="copyright" > Copyright  @2020</p>
+            <center><p id="copyright" >Copyright  @2020</p></center>
 
         </footer> 
   
