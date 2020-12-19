@@ -22,6 +22,10 @@
             <a href="#">DAFTAR</a>
         </div>
     </nav>
+    <div class="home">
+        <img src="{{ asset('image/home-cover.jpg') }}" alt="home-cover" class="home-cover">
+        <img src="{{ asset('image/bawahheader.svg') }}" alt="home-white" class="home-white">
+    </div>
     @yield('isi')
     @yield('jsbawah')
 </body>
