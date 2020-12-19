@@ -1,3 +1,7 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 .judul {
     text-align: center;
     
@@ -31,4 +35,41 @@
 .kiri a{
     color: black;
     text-decoration: none;
+}
+
+#container {
+    padding-top: 5rem;
+}
+
+.center {
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.form-control {
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.button {
+    padding: 1rem;
+    background-color: crimson;
+    color: white;
+    border-radius: 5px;
+}
+
+#body {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.box {
+    padding: 1rem 0;
+    margin-bottom: 2rem;
 }
