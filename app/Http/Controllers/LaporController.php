@@ -96,7 +96,11 @@ class LaporController extends Controller
     public function show($id)
     {
         $data = DB::table('laporan')->where('id', $id)->first();
-        return view('lapor/lihatlaporan', ['lapor' => $data]);
+        if ($data != NULL) {
+            return view('lapor/lihatlaporan', ['lapor' => $data]);
+        } else {
+            return redirect()->route('home')->with('msg', 'Laporan yang anda cari tidak ditemukan');
+        }
     }
 
 
@@ -164,8 +168,12 @@ class LaporController extends Controller
             'uniqid' => 'Uniqid digunakan untuk mensunting atau mengapus laporan anda',
             'id' => $uniqid
         ];
-        Mail::to($email)->send(new MailLapor($details));
-        return redirect()->route('lapor');
+        if ($email != NULL) {
+            Mail::to($email)->send(new MailLapor($details));
+            return redirect()->route('lapor')->with('msg', 'Silahkan cek email');
+        } else {
+            return redirect()->route('home');
+        }
     }
 
     /*
@@ -198,7 +206,7 @@ class LaporController extends Controller
     }
 
     /**
-     * Search Laporam
+     * Search Laporan
      */
     public function search(Request $request)
     {
