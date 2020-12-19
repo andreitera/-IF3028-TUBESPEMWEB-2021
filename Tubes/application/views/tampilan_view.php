@@ -41,7 +41,7 @@
 	
 				<a href="<?php echo site_url('Laporan_controller/tambah') ?>">
 
-					<img src="<?php  echo base_url('icon/plus.png') ?>" width="20px" height="20px">
+					<img src="<?php  echo base_url('img/plus.png') ?>" width="20px" height="20px">
 
 				</a>	
 			
@@ -59,7 +59,7 @@
 		<?php foreach ($laporan as $value): ?>
 			 
 			 <?php  echo "<p>$value->isi</p><br>"; ?>
-			 <p><img src="<?php  echo base_url('icon/file.png') ?>" width="20px" height="20px"></p>
+			 <p><img src="<?php  echo base_url('img/file.png') ?>" width="20px" height="20px"></p>
 
 			 <div style="margin-top: -40px; margin-bottom: 17px; margin-left: 25px;">
 
@@ -80,7 +80,7 @@
 	
 				<a href="<?php echo site_url('Laporan_controller/detail') ?>">
 
-					<img src="<?php  echo base_url('icon/next-button.png') ?>" width="20px" height="20px">
+					<img src="<?php  echo base_url('img/next-button.png') ?>" width="20px" height="20px">
 
 				</a>	
 			
