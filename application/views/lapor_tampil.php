@@ -34,21 +34,24 @@
 				<div class="isi">
 					<p>
 						<br>
-						<?=$row->isi;?>
+						<?php 
+							$kalimat = $row->isi;
+							$tampil_sebagian = substr($kalimat, 0, 700);
+							echo $tampil_sebagian . "...";
+						 ?>
 					</p>
-					<br>
 				</div>
 
 				<div class="latu">
 					<p>
 						Lampiran :
-						<?=$row->lampiran;?>
+						<?php echo $row->lampiran; ?>
 					</p>
 
 					<div class="latu" style="width: 280px;">
 						<p>
 							Waktu :
-							<?=$row->waktu;?>
+							<?php echo $row->waktu; ?>
 						</p>
 
 						<p><a href="#">Lihat Selengkapnya</a></p>
