@@ -12,7 +12,7 @@
             <div class="content">
                 <h1>Layanan Aspirasi dan Pengajuan Online Mahasiswa IF ITERA</h1>
                 <br>
-                <form method="POST" onSubmit="return alert('Data berhasil ditambah');">
+                <form method="POST" onSubmit="return alert('Data berhasil diubah');">
                     <p>Edit Laporan/Komentar</p>
                     <hr><br>
                     <div>

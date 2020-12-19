@@ -27,6 +27,7 @@ class Laporan_model extends CI_Model{
     }
 
     public function getAll(){
+        $this->db->order_by('waktu', 'DESC');
         return $this->db->get($this->_table)->result();
     }
 
