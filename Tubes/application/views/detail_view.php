@@ -61,7 +61,6 @@
 			<p>Waktu: Aspek: Infrastruktur </p>
 
 			<div class="detail">Hapus Laporan/Komentar</div>
-
 		<hr>
 		
 

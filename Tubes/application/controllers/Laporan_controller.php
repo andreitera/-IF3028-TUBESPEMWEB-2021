@@ -42,7 +42,7 @@
             $data["laporan"] = $laporan->getById($id);
             if (!$data["laporan"]) show_404();
             
-            $this->load->view("", $data);
+            $this->load->view("edit_view", $data);
         }
 
         public function detail(){
