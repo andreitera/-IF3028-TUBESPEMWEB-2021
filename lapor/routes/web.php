@@ -29,6 +29,7 @@ Route::get('/view-lapor/{id}',          'LaporController@viewLapor')->name('view
 Route::post('/komen-post',              'LaporController@komenPost')->name('koment.post');
 
 Route::get('/search',           'LaporController@viewSearch')->name('viewSearch');
+Route::get('/logout',           'AuthController@logout')->name('logout');
 
 //----------- Route Comment -----------
 // Route::get('/lapor',            'LaporController@viewLapor')->name('viewLapor');

@@ -32,15 +32,16 @@
                     {{-- Menu --}}
                     <ul class="d-flex menus-nav">
                         <li><a href="">Tentang Lapor!</a></li>
-                        <li class="active"><a href="">Laporan</a></li>
+                        <li class="active"><a href="{{ route('listView') }}">Laporan</a></li>
                         <li><a href="#" onclick="showSearch()">Cari Aduan</a></li>
                     </ul>
                 </div>
 
                 <div class="profile">
                     <img src=" {{ asset('asset/images/user-icon.png') }} " width="50px" height="50px" alt="profile">
-                    <span>Nestiawan Ferdiyanto</span>
+                    <span> {{ Auth::user()->name  }}</span>
                     <span><img class="icon-down" src="{{ asset('asset/images/icons/caret-down.svg') }}" width="15px" height="15px" alt=""></span>
+                    <a href="{{ route('logout') }}">Logout</a>
                 </div>
             </div>
         </div>
