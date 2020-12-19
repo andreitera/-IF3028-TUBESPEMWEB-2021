@@ -22,8 +22,9 @@ $session = session();
             <p style="width:60%;font-weight: bold;">Buat laporan</p>
             <hr style="background-color: black;">
             <br><br>
+
             <center>
-            <textarea name="lapor" id="laporbaru" rows="20" cols="120">Laporan/komentar</textarea>
+              <textarea name="lapor" id="laporbaru" rows="20" cols="120" onkeyup="validlapor()" placeholder="Ketik laporan/komentar kamu di sini"></textarea>
             </center>
             <br><br>
             <p>Aspek:</p>
@@ -38,6 +39,7 @@ $session = session();
               <p>Lampiran:</p>
               <input type="file" name="file_laporan">
               <button type="submit" id="btn">SUBMIT</button>
+              <span id="peringatan" style="color:red; font-size:11px";></span>
             </div>
             <hr style="background-color: black;">
           </form>
@@ -45,5 +47,35 @@ $session = session();
       </tr>
     </table>
   </center>
+
+  <script type="text/javascript">
+  var teks = document.getElementById('laporbaru').value;
+  var mbol = document.getElementById('btn');
+
+  if(teks.length == 0){
+    mbol.disabled = true;
+  }
+
+  function validlapor(){
+    var tekslapor = document.getElementById('laporbaru').value;
+    var spasi=0;
+    for(var i = 0 ; i < tekslapor.length ; i++){
+      if(tekslapor[i] == " " && tekslapor[i+1] != " "){
+        spasi++;
+      }
+    }
+    var tombol = document.getElementById('btn');
+    var syarat = document.getElementById('peringatan');
+
+    if(spasi < 20){
+      tombol.disabled = true;
+      syarat.innerHTML = "jumlah kata harus lebih dari 20!";
+    }else{
+      tombol.disabled = false;
+      syarat.innerHTML = "";
+    }
+  }
+
+  </script>
 </body>
 </html>
