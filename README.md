@@ -102,7 +102,7 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 A. Instalasi Framework
 1. Instal composer menggunakan command composer create-project codeigniter4/appstarter --no-dev di terminal
 2. Instal CI menggunakan composer dengan command create-project codeigniter4/appstarter  namaproject --no-dev di terminal menggunakan git bash pada folder htdocs di C:\xamppp\htdocs
-3. Setelah itu, lakukan konfigurasi CI dengan membuat tampilan sesuai dengan spesifikasi tugas besar.
+3. Setelah itu, lakukan konfigurasi CI dengan membuat tampilan sesuai dengan spesifikasi tugas besar pada Views.
 
 B. Koneksi Basis Data
 
