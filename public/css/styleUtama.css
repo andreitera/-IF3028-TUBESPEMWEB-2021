@@ -1,0 +1,49 @@
+.title {
+    margin: 30px 0;
+}
+
+.container {
+    width: 86%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+li {
+    list-style: none;
+}
+
+.bettwen {
+ justify-content: space-between;
+}
+
+#header {
+    background-color: white;
+    height: auto;
+    width: 100vw;
+    padding: 10px 0;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.flex-display {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menus > li {
+    padding: 10px 20px;
+}
+
+.user > span {
+    margin-top: -30px;
+}
+
+footer {
+    padding: 10px;
+    color: rgb(58, 52, 52);
+    background-color: white;
+    text-align: center;
+ }
