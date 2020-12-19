@@ -30,11 +30,11 @@ class Detail extends CI_Controller {
 		
 		$this->load->view('detail', $data);
 		
-    }
-    function hapus($id) {
-        $data = array('id' => $id);
-	    $this->Auth_model->hapusdata($data);
-	    redirect('auth/');
+	}
+	
+	public function hapus($id) {
+		$this->db->delete('lapor', array('id_lapor' => $id));
+		redirect('Utama');
 	}
 	
  
