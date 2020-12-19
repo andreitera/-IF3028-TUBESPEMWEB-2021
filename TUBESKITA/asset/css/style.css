@@ -1,3 +1,7 @@
+body{
+	
+	background-image: url(../file/bg.jpg);
+}
 .container {
     margin: auto;
     margin-top: auto;
@@ -32,7 +36,7 @@
 
 .container input{
 	border-radius: 10px;
-    margin-right: -3px;
+    margin-right: 10px;
     margin-bottom: 33px;
     margin-left:25%;
     width: 750px;
@@ -55,7 +59,7 @@
 	float: left;
 }
 
-.container .waktu , .container .detail, .container .hapus{
+.container .waktu , .container .detail, .container .ubah {
 	float: right;
 }
 
@@ -88,6 +92,7 @@ select{
 #submit{
 	float: right;
 	width: 200px;
+	height: 40px;
 	margin-bottom: 30px;
 }
 
@@ -96,4 +101,11 @@ select{
 	color: black;
 	font-weight:bold;
 }
+
+h4.hapus{
+	float: right;
+}
+ h4.hapus:hover{
+	 color: red;
+ }
 

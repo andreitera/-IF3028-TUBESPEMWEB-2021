@@ -11,7 +11,7 @@
 <div class="container">
 	<h1>SIMPLE LAPOR!</h1>
 
-	<h4>Detail...</h4>
+	<h4>Detail Laporan/Keluhan</h4>
 	<hr />
 	
 	<ul>
@@ -31,7 +31,7 @@
 
 			<div style="clear: both"></div>
 			<a href="<?php echo base_url() ?>index.php/Home/delete/<?php echo $lapor["id"]?>" onclick="return confirm('Apakah yakin ingin dihapus?');"><h4 class="hapus"> | Hapus keluhan</h4></a>
-			<a href="<?php echo base_url() ?>index.php/Home/detail2/<?php echo $lapor["id"]?>" ><h4 class="hapus">Ubah keluhan |</h4></a>
+			<a href="<?php echo base_url() ?>index.php/Home/detail2/<?php echo $lapor["id"]?>" ><h4 class="ubah">Ubah keluhan |</h4></a>
 			<h4 class="waktudetail" style="margin-right: 30px;">Waktu : <?php echo $lapor["tanggal"]; ?></h4>
 			<h4 class="aspek">Aspek : <?php echo $lapor["aspek"]; ?></h4>
 			<div style="clear: both"></div>
