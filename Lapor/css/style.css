@@ -329,8 +329,9 @@ header > .container {
 .hero-text {
 	text-align: center;
 	position: absolute;
+	float: left;
 	top: 45%;
-	left: 50%;
+	left: 25%;
 	transform: translate(-50%, -45%);
 	color: white;
 }
@@ -361,6 +362,11 @@ header > .container {
 /* backgorund */
 
 /* navigasi */
+
+#imh-head{
+	float: right;
+	
+}
 
 .nav-list {
 	list-style-type: none;
