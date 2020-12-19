@@ -1,8 +1,3 @@
-const btnSave = document.getElementById('tambah-laporan');
-btnSave.addEventListener('click', function(e) {
-    validasi();
-});
-
 function validasi(){
     const konten = document.getElementById('konten');
     const aspek = document.getElementById('aspek').value;
