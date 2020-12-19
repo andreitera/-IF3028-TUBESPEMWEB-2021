@@ -4,6 +4,7 @@
 <head>
     <title>Lapor</title>
     <link href="<?= base_url('/css/style_menu.css') ?>" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -13,13 +14,13 @@
         <div class="cari">
             <form action="<?= base_url('detail/cari') ?>">
                 <label for="cari"></label>
-                <input type="text" class="kotak" id="cari" name="cari" placeholder="cari">
+                <input type="text" class="kotak" id="cari" name="cari" placeholder="Cari">
                 <input class="up" type="submit" value="Cari">
             </form>
         </div>
         <br>
-        <a href="<?= base_url('lapor') ?>">Buat laporan/komentar</a>
-        <?php echo date("d-m-Y H:i a"); ?>
+        <a href="<?= base_url('lapor') ?>">Buat Laporan/Komentar</a>
+
     </div>
     <br>
     <br>
@@ -35,7 +36,7 @@
                 <?php } ?>
                 <p>Lampiran : <?= $lapor['file']; ?></p>
                 <div class="kanan">
-                    <p>Waktu : <?= $lapor['waktu']; ?> <a href="<?= base_url('Detail/index/') ?><?= $lapor['id'] ?>">Lihat selengkapnya</a></p>
+                    <p>Waktu : <?= $lapor['waktu']; ?> <a href="<?= base_url('Detail/index/') ?><?= $lapor['id'] ?>">Lihat selengkapnya </a></p>
                 </div>
                 <hr>
 
