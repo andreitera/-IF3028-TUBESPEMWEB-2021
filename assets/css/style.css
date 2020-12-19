@@ -1,0 +1,180 @@
+.lapor{
+    margin:0px 200px auto 200px;
+}
+.pencarian {
+    
+    /* margin:20px auto; */
+    display: flex;
+    justify-content: center;
+}
+.search {
+ 
+    margin:10px auto;
+    padding:20px;
+    width: 100%;
+    background: white;
+    border:1px solid black;
+}
+
+.button {
+    margin:10px auto;
+    /* position:relative; */
+    padding:10px 55px;
+    border:1px solid black;
+    background-color:white;
+    color:black;
+    
+}
+.button:hover  {
+    background-color:#fafafa;
+    color:#207cca;
+}
+
+h1{
+    margin:50px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+}
+h4{
+    margin:50px auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+textarea{
+    width: 100%;
+    height: 40%;
+    border: 1px solid black;
+}
+select{
+    padding: 5px 5px ;
+    border: 1px solid black;
+    font-size: 13px;
+}
+.submit{
+  
+  background-color: white; /* Green */
+  border: 1px solid black;
+  color: black;
+  padding: 8px 35px;
+  text-align: center;
+  text-decoration: none;
+  /* display: block; */
+  font-size: 16px;
+  margin-left: 100%;
+}
+.submit1{
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 13px;
+    padding: 15px 15px;
+    float: right;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.subjudul{
+    font-size: 13px;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.judul{
+    margin:50px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+}
+.buat{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+hr{
+    color: black;
+    border: 0.8px solid black;
+}
+.detail{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+    display: flex;
+    float: right;
+    margin-right: 10px;
+    color: black;
+}
+.more{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+    display: flex;
+    float: right;
+    color: black;
+
+}
+.waktu{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+    display: flex;
+    float: right;
+    margin-right: 15px;
+    color: black;
+
+}
+
+.arsip{
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+
+}
+.lampir{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+    display: flex;
+    float: left;
+    color: black;
+}
+.waktu2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+    display: flex;
+    float: left;
+    margin-right: 20px;
+    color: black;
+}
+.aspek{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+    display: flex;
+    float: left;
+    color: black;
+    margin-left: 15px;
+}
+ .gambar{
+    padding: 20px; 
+    width: 20px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gambar2{
+    width: 250px; 
+    height: 250px;
+    
+}
+
+.data{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+/* CSS Choose File */
+

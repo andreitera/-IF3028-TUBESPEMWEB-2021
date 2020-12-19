@@ -1,0 +1,11 @@
+untuk melakukan instalasi program lakukan engan langkah berikut ini.
+- Download file **lapor.sql** pada folder database
+- Buat database yang bernama **lapor**
+- Kemudian import file **lapor.sql** yang telah didownload
+- Download project ini dan ekstrak file.
+- Pastikan XAMPP/MAMP/WAMP sudah terinstall di device, lalu start server untuk menginisiasi localhost
+- Pindahkan folder hasil ekstrak(programnya, bukan kulit manggisnya) tadi ke folder c:/xampp/htdocs
+- Bukan Browser dan jalankan alamat "localhost/nama_folder"
+- Selesai.
+
+Silahkan Dicoba :)
