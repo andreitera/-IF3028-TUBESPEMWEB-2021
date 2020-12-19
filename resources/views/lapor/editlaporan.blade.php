@@ -9,10 +9,14 @@
     <form method="POST" action="{{ route('laporupdate', $lapor->unique_id) }}" enctype="multipart/form-data" class="form">
         Edit Laporan/Komentar
         <div class="bar"></div>
+        <input type="text" name="from" class="inpt" placeholder="Nama Pengirim" style="margin-top: 20px !important">
+        <br>
+        <input type="text" name="title" class="inpt" placeholder="Judul Laporan/Komentar">
         <input type="hidden" name="name" value="{{ $lapor->unique_id }}">
         <textarea id="laporan" name="laporan">{{ $lapor->content}}</textarea>
         {{-- <textarea id="laporan" name="laporan">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio voluptatem voluptatum placeat ex consequuntur vero iusto. Magnam, ratione! Nostrum eius sunt esse repudiandae dignissimos cupiditate dicta vel, consequatur tempora, omnis quia? Aut, distinctio architecto iure enim assumenda et exercitationem eligendi est, laborum aspernatur quasi laudantium dolorum autem! Illo nesciunt rem vero quod similique eligendi, porro veniam id explicabo optio. Quis, ad magni? Laborum est maxime sunt voluptatem impedit deserunt necessitatibus ut numquam animi veniam architecto, quia dolorum ipsam minima fuga velit? Autem, dignissimos illo natus incidunt molestias magni deserunt laborum sed voluptatem tempore doloremque nobis quo enim blanditiis quam odit?</textarea> --}}
         <select name="aspek" id="aspek">
+            <option value="" disabled selected>Pilih Aspek Pelaporan/Komentar</option>
             <option value="Dosen">Dosen</option>
             <option value="Mata Kuliah">Mata Kuliah</option>
             <option value="Prodi">Prodi</option>
