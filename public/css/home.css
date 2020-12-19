@@ -10,7 +10,7 @@ nav {
           justify-content: center;
 }
 
-.bar, .form textarea, .form select, .form .btn {
+.bar, .form textarea, .form select, .form .btn, .lampiran {
   margin-top: 20px;
 }
 
@@ -90,10 +90,25 @@ nav a {
           box-shadow: 3px 3px 5px 0px #b4b4b4;
 }
 
+.form-buat table {
+  color: #b4b4b4;
+}
+
 .form-container {
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.form-container-aspek {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.form-container span {
+  margin-right: 10px;
 }
 
 .form-kategori {
@@ -164,5 +179,31 @@ nav a {
   width: 80px;
   height: 5px;
   margin: 40px auto 0px auto;
+}
+
+.detail {
+  margin-top: 30px;
+  text-align: justify;
+}
+
+.cont-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.lampiran {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.icon-bawah {
+  width: 10px;
+  height: 10px;
 }
 /*# sourceMappingURL=home.css.map */
