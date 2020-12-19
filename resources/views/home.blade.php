@@ -8,8 +8,10 @@
     body{
     background: #F08080;
     }
+    
     h1{
         text-align: center;
+        font-family: Helvetica;
     }
     .kaki{
         margin-left: 20px;
@@ -25,20 +27,30 @@
         text-align: center;
     }
 
-    .input{
+    input{
         width: 400px;
-        height: 20px;
-        text-align: center;
+        height: 40px;      
+        display: inline;
+    }
+
+    button{
+        width: 100px;
+        height: 40px;      
+        display: inline;
+    }   
+     b{
+        font-size: 14px;
+        display: inline;
     }
     </style>
 </head>
 <body>
-<h1>SIMPLE LAPOR!!</h1>
+<h1>SIMPLE LAPOR!</h1>
     <form class="cari" action="{{ route('cari') }}" method="POST">
         @csrf
         <p class="p"><input type="text" name="cari">
         </label>
-        <button type="submit">cari laporan</button> </p>
+        <button type="submit"><b>cari laporan</b></button> </p>
     </form>
     <a href="{{route('buatlaporan')}}"><p class="p">Buat Laporan/Komentar</p></a>
     <p>Laporan/Komentar Terakhir</p>
