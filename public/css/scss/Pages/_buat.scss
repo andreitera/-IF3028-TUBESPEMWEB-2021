@@ -1,0 +1,39 @@
+// buat.php
+.container-buatLaporan {
+  border-bottom: 1px solid black;
+  height: 100%;
+
+  p {
+    border-bottom: 1px solid black;
+  }
+
+  form {
+    margin-top: 1rem;
+
+    textarea,
+    select,
+    input,
+    button {
+      display: block;
+      margin-bottom: 1rem;
+      padding: 1rem;
+    }
+
+    textarea {
+      width: 100%;
+    }
+
+    select {
+      border: 1px solid black;
+    }
+
+    input {
+      padding: 0;
+    }
+
+    button {
+      margin-left: auto;
+      margin-bottom: 1.5rem;
+    }
+  }
+}

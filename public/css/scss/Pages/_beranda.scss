@@ -1,0 +1,104 @@
+// beranda.php
+.container-beranda {
+  .search-box {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    margin-bottom: 1rem;
+
+    input {
+      width: 100%;
+      padding: 14px;
+      font-size: 1.5rem;
+    }
+
+    button {
+      background-color: white;
+      font-weight: 600;
+      padding: 14px 2em;
+      border: 1px solid black;
+    }
+  }
+
+  .buat-laporan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    a {
+      position: relative;
+      padding-right: 1rem;
+
+      &:before {
+        content: "+";
+        position: absolute;
+        right: 0;
+        font-weight: 900;
+      }
+    }
+  }
+
+  .container-listLaporan {
+    width: 100%;
+    margin-top: 3rem;
+
+    .flashdata {
+      padding: 1.5em;
+      vertical-align: middle;
+      border-bottom: none;
+      color: black;
+      background-color: #afeeee;
+    }
+
+    p {
+      padding-bottom: 0.5rem;
+    }
+
+    p,
+    .item-laporan {
+      border-bottom: 1px solid black;
+    }
+
+    .item-laporan {
+      p {
+        margin: 2rem 0 1rem 0;
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+
+      .detail-laporan {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+
+        p:first-child {
+          padding-left: 0;
+          width: 65%;
+        }
+
+        p:nth-child(2) {
+          padding-right: 0;
+        }
+
+        p,
+        a {
+          padding: 1em;
+          margin: 0;
+        }
+
+        a {
+          padding-right: 0;
+          position: relative;
+          padding-right: 1rem;
+
+          &:before {
+            content: ">";
+            position: absolute;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+}
