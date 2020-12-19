@@ -1,0 +1,5 @@
+1. Pastikan XAMPP telah aktif
+2. Download FIle CodeIgniter 
+3. Import database 
+4. Buka dan lakukan setting pada config->autoload, config->database, config->routes, config->config (pastikan telah sesuai)
+5. Running pada web Browser.
