@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>SIMPLE LAPOR!</title>
-	<!-- file css ada di asset/css -->
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/asset/css/style.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/asset/css/reset.css">
+	<title>LAPOR IF!</title>
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/atribut/css/style.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/atribut/css/reset.css">
 </head>
 <body >
 
-<div class="container" >
-	<h1 >SIMPLE LAPOR !</h1>
+<div class="container">
+	<h1 >LAPOR IF!</h1>
 	<input type="text" name="cari" id="cari" placeholder="ketik kata kunci pencarian">   </input>
 	<a href="<?php echo base_url() ?>index.php/Home/tambah" ><h3>Buat Laporan / Komentar</h3></a>
 	<h4>Laporan / Komentar Terakhir</h4>
@@ -33,7 +32,9 @@
 	<?php } ?>
 	</ul>
 	</div>
-	<footer>&copyCopyright 2019 - itera.ac.id</footer>
+	<footer>&copyCopyright 2019 - itera.ac.id<br>
+				118140035 118140094 118140165
+	</footer>
 </div>
 
 </div>

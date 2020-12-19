@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>SIMPLE LAPOR!</title>
+	<title>LAPOR IF!</title>
 	<!-- file css ada di asset/css -->
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/asset/css/style.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/asset/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/atribut/css/style.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/atribut/css/reset.css">
 </head>
 <body>
 
 <div class="container">
-	<h1>SIMPLE LAPOR!</h1>
+	<h1>LAPOR IF!</h1>
 
 	<h4>Detail Laporan / Komentar</h4>
 	<hr />
@@ -41,7 +41,8 @@
 	</ul>
 
 	<footer>
-		&copyCopyright 2019 - itera.ac.id
+		&copyCopyright 2019 - itera.ac.id<br>
+				118140035 118140094 118140165
 	</footer>
 </div>
 

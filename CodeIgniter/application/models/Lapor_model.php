@@ -13,7 +13,7 @@ class Lapor_model extends CI_model
 
 		$file = $_FILES['File'];
 		if($file = ''){}else{
-			$config['upload_path'] = './asset/file';
+			$config['upload_path'] = './atribut/file';
 			$config['allowed_types'] = 'jpeg|jpg|png|gif|pdf';
 
 			$this->load->library('upload',$config);
@@ -59,7 +59,7 @@ class Lapor_model extends CI_model
 
 		$file = $_FILES['File'];
 		if($file = ''){}else{
-			$config['upload_path'] = './asset/file';
+			$config['upload_path'] = './atribut/file';
 			$config['allowed_types'] = 'jpeg|jpg|png|gif|pdf';
 
 			$this->load->library('upload',$config);
