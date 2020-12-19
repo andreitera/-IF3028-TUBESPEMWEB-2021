@@ -20,7 +20,7 @@
             </div>
             <div class="head">
             <li class="card">
-                Buat Laporan/Komentar
+                <p>Buat Laporan/Komentar</p>
             </li>
             </div>
             <hr>
