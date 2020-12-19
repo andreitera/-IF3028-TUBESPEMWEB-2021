@@ -1,4 +1,4 @@
-nav {
+nav, .text-detail, .f-center {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,8 +10,8 @@ nav {
           justify-content: center;
 }
 
-.bar, .form textarea, .form select, .form .btn, .lampiran {
-  margin-top: 20px;
+.bar, .form textarea, .form select, .form .btn, .lampiran, .text-detail {
+  margin-top: 10px;
 }
 
 .bar {
@@ -205,5 +205,40 @@ nav a {
 .icon-bawah {
   width: 10px;
   height: 10px;
+}
+
+.search {
+  margin-top: 0px;
+  margin-right: 5px;
+  height: 20px;
+}
+
+.btn-search {
+  background-color: white;
+  border: 1px solid black;
+  font-size: 14px;
+  padding: 20px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#judulsearch {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.text-detail {
+  vertical-align: center;
+  text-align: center;
+}
+
+.text-detail img {
+  margin-left: 10px;
+  height: 20px;
 }
 /*# sourceMappingURL=home.css.map */
