@@ -10,7 +10,8 @@
                 <p class="flex-grow-1">Aspek : <?= $item['aspek']; ?></p>
                 <p class="text-right flex-grow-2">
                     <a href="/laporan/edit/<?= $item['id']; ?>">Edit Laporan/Komentar</a>
-                    <a href="/laporan/hapus/<?= $item['id']; ?>">Hapus Laporan/Komentar</a>
+                    <a href="/laporan/delete/<?= $item['id']; ?>" id="hapus"
+                       onclick="return confirm('Apakah anda yakin ingin menghapus laporan ini?')">Hapus Laporan/Komentar</a>
                 </p>
             </div>
         </article>
