@@ -32,7 +32,7 @@
                     <?php $id = $lapor['id']; ?>
                     <p class="waktudetail" style="margin-right: 30px;">Waktu : <?php echo $lapor["tanggal"]; ?></p>
                     <p class="aspek">Aspek : <?php echo $lapor["Aspek"]; ?></p>
-                    <a class="hapus" href="<?php echo base_url() . 'Home/hapus/' . $id; ?>">Hapus Laporan/Komentar X</a>
+                    <a class="hapus" href="<?php echo base_url() . 'Home/hapus/' . $id; ?>" onclick="return confirm('Anda yakin ingin menghapus laporan ini ?')">Hapus Laporan/Komentar X</a>
                     <a href="<?php echo base_url() ?>Home/update_data/<?php echo $lapor["id"]?>" class="ubah">Ubah laporan / komentar | </a>
                     <hr width="100%" color="grey" />
                     <a href="<?= base_url(); ?>Home">< Back </a> </div> 
