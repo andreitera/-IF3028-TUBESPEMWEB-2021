@@ -18,7 +18,7 @@ class Users extends Authenticatable
     // relation table
     public function provinces()
     {
-        return $this->hasOne('App\Models\SetLibraries', 'role_id');
+        return $this->hasMany('App\Models\SetLibraries', 'role_id');
     }
 
     public function lapor()

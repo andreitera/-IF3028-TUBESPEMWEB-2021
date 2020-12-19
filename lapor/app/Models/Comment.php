@@ -17,11 +17,11 @@ class Comment extends Model
     // relation table
     public function users()
     {
-        return $this->hasOne('App\Models\Users', 'user_id');
+        return $this->hasMany('App\Models\Users', 'user_id');
     }
 
     public function lapor()
     {
-        return $this->hasOne('App\Models\Lapor', 'lapor_id');
+        return $this->hasMany('App\Models\Lapor', 'lapor_id');
     }
 }

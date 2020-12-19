@@ -17,7 +17,7 @@ class SetLibraries extends Model
     // relation table
     public function categories()
     {
-        return $this->hasOne('App\Models\Categories', 'category_id');
+        return $this->hasMany('App\Models\Categories', 'category_id');
     }
 
     public function users()
