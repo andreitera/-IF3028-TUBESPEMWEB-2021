@@ -17,7 +17,7 @@ class LaporController extends Controller
     */
     public function home()
     {
-        $data = DB::table('laporan')->orderByDesc('id')->limit(3);
+        $data = DB::table('laporan')->orderByDesc('id')->limit(3)->get();
         return view('lapor/index', ['lapor' => $data]);
     }
 
@@ -74,8 +74,6 @@ class LaporController extends Controller
         } else {
             $linkfile = "Tidak ada lampiran";
         }
-        $time = Carbon::now();
-        $time = $time->setTimezone('Asia/Jakarta');
         try {
             DB::table('laporan')->insertGetId([
                 'from' => $name,
@@ -208,10 +206,17 @@ class LaporController extends Controller
         if ($cek != NULL) {
             switch ($req->input('action')) {
                 case 'edit':
-                    return redirect()->route('laporedit', $uniqid);
+                    return view('lapor/editlaporan', ['lapor' => $cek]);
                     break;
                 case 'delete';
-                    return redirect()->route('laporhapus', $uniqid);
+                    try {
+                        DB::transaction(function () use ($uniqid) {
+                            DB::table('laporan')->where('unique_id', 'like', $uniqid)->delete();
+                        }, 5);
+                    } catch (Exception $th) {
+                        return redirect()->route('lapor')->with('msg', 'Laporan gagal dihapus');
+                    }
+                    return redirect()->route('lapor')->with('msg', 'Laporan berhasil dihapus');
                     break;
             }
         } else {
