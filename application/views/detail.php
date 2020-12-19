@@ -1,7 +1,7 @@
 <DOCTYPE html>
 <html lang=en>
     <head>
-        <title>Detail laporan</title>
+        <title> Detail laporan </title>
         <link rel="stylesheet" type="text/css" href="<?php echo base_url('style/detailstyle.css'); ?>">
     </head>
     <body>
