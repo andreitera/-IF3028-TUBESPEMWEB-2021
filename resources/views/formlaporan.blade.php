@@ -8,7 +8,9 @@
     *{
         box-sizing: border-box;
     }
-
+    body{
+    background: #F08080;
+    }
     .container{
         max-width: 100%;
         margin-left: auto;
@@ -22,9 +24,6 @@
         font-size : 24px;
     }
     
-    body{
-        background : white;
-    }
     
     .submitarea{
         text-align : right ;
