@@ -142,6 +142,9 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
       </li>
       <li>Database kami telah kami `export` kedalam bentuk SQL di direktori `database\`</li>
    </ul>
+   <li>
+      Validate Client-side dapat dilihat pada fungsi script di 'Resources/views/laporan/create.blade.php'
+   </li>
 </ol>
          
 ### Knowledge
