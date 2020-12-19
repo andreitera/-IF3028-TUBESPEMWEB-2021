@@ -17,7 +17,7 @@
                         <option value="Pengajaran">Pengajaran</option>
                     </select>
                 </div>
-                <input type="file" name="lampiran" class="form_field" id="real-file" hidden="hidden" />
+                <input type="file" name="file_lapor" class="form_field" id="real-file" hidden="hidden" />
                 <button type="button" id="custom-button">pilih File</button>
                 <span id="custom-text">Belum Pilih File.</span>
                 <br>
