@@ -43,10 +43,12 @@ class demo extends Controller
 
        return view('data' , ['data' => $data]) ;
    }
-   
+
    public function hapus($id){
-       $data = DB::('laporan')
+       $data = DB::table('laporan')
            ->where('id', $id)
            ->delete() ;
+
+       return view('data' , ['data' => $data]) ;
    }
 }
