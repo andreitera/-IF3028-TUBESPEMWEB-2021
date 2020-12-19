@@ -1141,7 +1141,12 @@ class CI_Form_validation {
 
 		return ($val <= mb_strlen($str));
 	}
-
+	
+	public function countWord($str, $val)
+	{
+		$s = str_word_count($str);
+		return ($val <= $s);
+	}
 	// --------------------------------------------------------------------
 
 	/**
