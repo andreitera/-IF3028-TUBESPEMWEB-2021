@@ -10,7 +10,7 @@
 
 <div class="container">
 	<h1>SIMPLE LAPOR!</h1>
-    <h4>Buat Laporan/Komentar</h4>
+    <h4>Buat Laporan/Keluhanr</h4>
    <hr />
    <?php 
    if(validation_errors()):
@@ -18,7 +18,7 @@
    endif;
 	?>
    <?php echo form_open_multipart('index.php/Home/tambah'); ?>
-	    <textarea rows="16" cols="136" style="width: 800px;" name="isi" placeholder="Laporan/Komentar"></textarea><br \>
+	    <textarea rows="16" cols="136" style="width: 800px;" name="isi" placeholder="Laporan/Keluhan"></textarea><br \>
 		<select name="aspek">
 			<option >- Pilih Aspek -</option>
 			<option value="Dosen">Dosen</option>
