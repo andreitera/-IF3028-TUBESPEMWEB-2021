@@ -17,22 +17,21 @@ Project dikerjakan secara **berkelompok** dengan maksimal jumlah anggota adalah 
 contoh: fix css, membuat post done, jangan seperti final, benerin dikit, oke deh, update deh dll. 
 Disarankan untuk tidak melakukan commit dengan perubahan yang besar karena akan mempengaruhi 
 penilaian (contoh: hanya melakukan satu commit kemudian dikumpulkan).
-3. Minimal commit sebanyak personil anggota tim dengan masing-masing personil tim melakukan commit sesuai dengan kesepakatan tim, penilaian individu akan dilihat.
-4. Ubah **Penjelasan Teknis** pada bagian bawah readme.md ini dengan menjelaskan bagaimana cara anda:
+3. Ubah **Penjelasan Teknis** pada bagian bawah readme.md ini dengan menjelaskan bagaimana cara anda:
    - Instalasi Framework, Koneksi basis data 
    - Melakukan validasi pada client-side
    - Melakukan AJAX (mulai dari pengguna melakukan klik pada tombol LAPOR! sampai laporan/komentar terkirim).
-5. Pull request dari repository anda ke repository ini dengan 
+4. Pull request dari repository anda ke repository ini dengan 
 format **NIM** - **Nama Lengkap**. **Waktu terkahir proses pull request adalah 4 hari setelah 
 ujian akhir semester (UAS)**
-6. Data yang dikumpulkan adalah:
+5. Data yang dikumpulkan adalah:
    - Source code aplikasi
    - Basis data, dan
    - Cara instalasi aplikasi anda
-7. Penilaian:
+6. Penilaian:
    - Kerjasama tim
    - Kesesuaian dengan spesifikasi
-   - Pemahaman dalam penggunaan framework, penilaian efisiensi query
+   - Pemahaman dalam penggunaan framework
    - Antarmuka aplikasi
    - Bug free :beetle:
    
@@ -71,8 +70,6 @@ panjang harus dipotong. Silakan definisikan sendiri seberapa panjang agar tetap 
 
 Pada masing-masing elemen list, terdapat menu untuk mengubah dan menghapus pertanyaan.
 
-View Laporan ditampilkan secara terurut dimulai dari laporan terakhir yang diberikan highlight
-
 ### Kirim laporan/komentar `LAPOR!`
 Pengguna dapat mengajukan laporan/komentar. Form yang digunakan memiliki komentar (textarea), 
 data lapiran berupa gambar 
@@ -99,13 +96,12 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-a. Instalasi Framework : Pada program ini Framework yang digunakan adalah CodeIgniter. Pada instalasi CodeIgniter hanya perlu memindahkan file CodeIgniter yang sudah didownload ke dalam folder C:/xampp/htdocs/ dan pastikan telah menginstal Xampp pada komputer Anda, agar program dapat dijalankan.
 
-b. Koneksi Database Pada koneksi database ini, dapat dilakukan dengan menambahkan libraries database ke dalam autoload.php yang ada dalam folder application/config/ cari baris $autoload['libraries'] = array(''); dan ubah menjadi seperti ini $autoload['libraries'] = array('Database'); setelah itu setting database dengan cara buka database.php cari username dan nama database lalu isi username dan nama database tersebut menjadi seperti ini 'username' => 'root', 'database' => 'lapor'.
+    a. Instalasi Framework : Pada program ini Framework yang digunakan adalah CodeIgniter. Pada instalasi CodeIgniter hanya perlu memindahkan file CodeIgniter yang sudah didownload ke dalam folder C:/xampp/htdocs/ dan pastikan Anda telah menginstal Xampp pada komputer Anda, agar program dapat dijalankan.
+    b. Koneksi Database Pada koneksi database ini, dapat dilakukan dengan menambahkan libraries database ke dalam autoload.php yang ada dalam folder application/config/ cari baris $autoload['libraries'] = array(''); dan ubah menjadi seperti ini $autoload['libraries'] = array('Database'); setelah itu setting database dengan cara buka database.php cari username dan nama database lalu isi username dan nama database tersebut menjadi seperti ini 'username' => 'root', 'database' => 'lapor'.
+    c. Validasi Client Side Pada validasi ini menggunakan syntax document.forms["form"]["komen"].value; untuk mengambil isi/value dari data yang ingin divalidasi lalu dapat dilakukan validasi dengan JavaScript, jika validasi tidak valid akan memberikan output seperti "Isi Laporan Tidak Boleh Kosong" yang mana didapatkan dari syntax alert("Isi Laporan Tidak Boleh Kosong");.
+    d. Cara Pemakaian Sistem Ini Untuk menjalankan program website ini silahkan pindahkan semua folder ini kedalam xampp/htdocs/. Jalankan xampp terlebih dahulu dan aktifkan Module Apache dan MySQL, lalu setelah itu silahkan import file lapor.sql yang tertera ke dalam localhost/phpmyadmin dengan nama database "lapor" terlebih dahulu. Jika sudah semua silahkan buka website tersebut dengan url : http://localhost/lapor/Lapor/index.php/lapor/index
 
-c. Validasi Client Side Pada validasi ini menggunakan syntax document.forms["form"]["komen"].value; untuk mengambil isi/value dari data yang ingin divalidasi lalu dapat dilakukan validasi dengan JavaScript, jika validasi tidak valid akan memberikan output seperti "Isi Laporan Tidak Boleh Kosong" yang mana didapatkan dari syntax alert("Isi Laporan Tidak Boleh Kosong");.
-
-d. Cara Pemakaian Sistem Ini Untuk menjalankan program website ini silahkan pindahkan semua folder ini kedalam xampp/htdocs/. Jalankan xampp terlebih dahulu dan aktifkan Module Apache dan MySQL, lalu setelah itu silahkan import file lapor.sql yang tertera ke dalam localhost/phpmyadmin dengan nama database "lapor" terlebih dahulu. Jika sudah semua silahkan buka website tersebut dengan url : http://localhost/simpellapor
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
 - CSS: margin, padding, header tag, font-size, text-align, float, clear, border, color, div, span, placeholder, 
@@ -118,5 +114,6 @@ anchor tag.
 
 ### About :honeybee:
 
-Dosen       : Dicky Prima Satya, M.T., Andre Febrianto, S.Kom., M.Eng., Amirul Iqbal, S.Kom., M.Eng.
+Dosen       : Rajif Agung Yunmar, S.Kom., M.Cs.	,Ahmad Luky Ramdani, S.Komp., M.Kom. ,
+Arief Ichwani, S.Kom., M.Cs., Andre Febrianto, S.Kom., M.Eng, Ilham Firman Ashari, S.Kom., M.T
 
