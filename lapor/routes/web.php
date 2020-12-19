@@ -16,23 +16,16 @@ use Illuminate\Support\Facades\Route;
 // Auth
 Route::get('/register',                 'AuthController@register')->name('register.user');
 Route::get('/login',                    'AuthController@login')->name('login.user');
+Route::post('/login-post',              'AuthController@loginPost')->name('login.user.post');
 
 
-<<<<<<< HEAD
 Route::get('/',                         'LaporController@index')->name('landing');
 Route::post('/post-laporan',            'LaporController@postLapor')->name('post.lapor');
 
-Route::get('/lapors/{id}',              'LaporController@listView')->name('listView');
+Route::get('/lapors',              'LaporController@listView')->name('listView');
 Route::get('/profil',                   'ProfileController@showProfile')->name('showProfile');
 Route::get('/view-lapor/{id}',          'LaporController@viewLapor')->name('viewLapor');
 Route::get('/search/{query}',           'LaporController@viewSearch')->name('viewSearch');
-=======
-Route::get('/',                 'LaporController@index')->name('landing');
-Route::get('/lapors/{id}',           'LaporController@listView')->name('listView');
-Route::get('/profil',           'ProfileController@showProfile')->name('showProfile');
-Route::get('/view-lapor/{id}',       'LaporController@viewLapor')->name('viewLapor');
-Route::get('/search',           'LaporController@viewSearch')->name('viewSearch');
->>>>>>> 580de0c4f63bc64b02151c11745de1e9776b69f7
 
 //----------- Route Comment -----------
 // Route::get('/lapor',            'LaporController@viewLapor')->name('viewLapor');

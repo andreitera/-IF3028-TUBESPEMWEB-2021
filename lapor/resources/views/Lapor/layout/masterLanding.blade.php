@@ -36,21 +36,20 @@
                             {{-- Menu --}}
                             <ul class="d-flex menus-nav menus-nav-lad">
                                 <li><a href="">Tentang Lapor!</a></li>
-                                <li><a href="">Laporan</a></li>
+                                <li><a href="{{ route('listView') }}">Laporan</a></li>
                                 <li><a href="#" onclick="showSearch()">Cari Aduan</a></li>
                             </ul>
                         </div>
 
                         <div class="profile" style="padding: 20px !important;">
-
-                            {{-- @if (!Auth::check())
+                            @if (Auth::check())
                                 <img src=" {{ asset('asset/images/user-icon.png') }} " width="50px" height="50px" alt="profile">
-                                <span class="color-white">Nestiawan Ferdiyanto</span>
+                                <span class="color-white">{{ Auth::user()->name }}</span>
                                 <span><img class="icon-down" class="color-white" src="{{ asset('asset/images/icons/caret-down.svg') }}" width="15px" height="15px" alt=""></span>
-                            @else --}}
+                            @else
                                 <a href="{{ route('login.user') }}">Masuk</a>
                                 <a href="{{ route('register.user') }}">Daftar</a>    
-                            {{-- @endif --}}
+                            @endif
 
                         </div>
                     </div>

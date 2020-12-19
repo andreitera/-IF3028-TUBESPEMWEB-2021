@@ -14,7 +14,11 @@
             <div class="masuk">MASUK</div>
         </div>
         <div class="middle"> 
-            <form >
+
+            @include('component.alert')
+
+            <form action="{{ route('login.user.post') }}" method="post">
+                @csrf
                 <div class="login-form">
                     <input type="text" name="username" class="text-box" placeholder="Enter email or username">
                     <input type="password" name="password" class="text-box" placeholder="Password">
