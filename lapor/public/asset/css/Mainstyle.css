@@ -40,6 +40,11 @@ li {
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
 
+.navbar-landing {
+    background-color: none;
+    padding-top: 12px !important;
+}
+
 .logo {
     margin: 0 20px;
 }
@@ -58,6 +63,14 @@ li {
 .menus-nav > li > a {
     color: #494949;
     transition: all .2s;
+}
+
+.menus-nav-lad > li > a {
+    color: #fafafa !important;
+}
+
+.color-white {
+    color: white !important;
 }
 
 .menus-nav > li > a:hover {
@@ -316,4 +329,23 @@ input:focus {
     position: relative;
     top: 2px;
     margin-right: 5px;
+}
+
+.page-home #hero svg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+.pb-4 {
+    padding-bottom: 10px;
+}
+
+.w-100 {
+    width: 100% !important;
 }

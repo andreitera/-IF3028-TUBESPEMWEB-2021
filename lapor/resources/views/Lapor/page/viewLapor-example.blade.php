@@ -32,45 +32,9 @@
 
             <div style="padding-left: 10px;" class="bottom-border p-left-10">
                 <div class="d-in-block padding-right"><img src="{{ asset('asset/images/icons/feedback.png') }}" class="icon">Tindak Lanjut</div>
-                <div class="active-comment d-in-block padding-right"><img src="{{ asset('asset/images/icons/comment.png') }}" class="icon">Komentar </div>
+                <div class="d-in-block padding-right"><img src="{{ asset('asset/images/icons/comment.png') }}" class="icon">Komentar </div>
                 <div class="d-in-block padding-right"><img src="{{ asset('asset/images/icons/like.png') }}" class="icon">Dukung</div>
                 <div class="d-in-block padding-right"><img src="{{ asset('asset/images/icons/share.png') }}" class="icon">Bagikan</div>
-            </div>
-            <div class="comment-section">
-                <div class="comment-alert">
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
-                </div>
-                <div class="comment">
-                    <div>
-                        <img src="{{ asset('asset/images/user-icon.png') }}" class="profile-pict"/>
-                    </div>
-                    <div class="d-in-block width-91">
-                        <div class="date">
-                            30 Februari 2077, 23:59
-                        </div>
-                        <div class="header">
-                            Samwan
-                        </div>
-                        <div>
-                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img src="{{ asset('asset/images/user-icon.png') }}" class="profile-pict"/>
-                    </div>
-                    <div class="d-in-block">
-                        <form action=#>
-                            <textarea name="add-comment" rows="4" cols="63" class="add-comment">
-                                Komentar Anda...
-                            </textarea>
-                            <br>
-                            <input type="submit" value="Kirim" class="send-button">
-                            <input type="submit" value="Tutup" class="close-button">
-                        </form>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

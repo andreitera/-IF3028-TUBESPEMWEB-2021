@@ -1,0 +1,60 @@
+.banner {
+    width: 100%;
+    height: 580px;
+    background-size: cover;
+    position: relative;
+    /* top: -5.2rem; */
+    /* z-index: -999; */
+}
+
+.red-background-transparent {
+    background: -webkit-linear-gradient(-148deg, #ae0b1b90, #d20d488a);
+    height: 580px;
+}
+
+.center-content-banner {
+    text-align: center;
+    position: relative;
+    top: 5rem;
+}
+
+.title-banner {
+    font-size: 35px;
+    margin-bottom: 16px;
+}
+
+.text-banner {
+    font-size: 20px;
+}
+
+.border-bttn {
+    width: 90px;
+    border: 3px solid #fff;
+    margin: 0 auto;
+    border-radius: 2px;
+    margin-top: 30px;
+}
+
+.svg-btn {
+    position: absolute;
+    bottom: 0;
+}
+
+.btn-50 {
+   margin-bottom: -50px;
+}
+
+.absolute-svg {
+    position: relative;
+    bottom: -95px;
+    /* z-index: ; */
+}
+
+#formLaporan {
+    width: 60%;
+    margin: 20px auto;
+    z-index: 999;
+    padding: 20px;
+    position: relative;
+    top: -15rem;
+}
