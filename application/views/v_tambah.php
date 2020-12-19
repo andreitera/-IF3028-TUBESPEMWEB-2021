@@ -1,4 +1,21 @@
-<!DOCTYPE html>
+<script>
+function tambahdata(){
+    var laporan=$("[name='laporan']").val();
+    var aspek=$("[name='aspek']").val();
+    var file=$("[name='myFile']").val();
+
+    $.ajax({
+        type:'POST',
+        data:'laporan='+laporan+'&aspek='+aspek+'&myFile='+file,
+        url:'<?php echo base_url().'buat/tambahdata' ?>',
+        dataType :'json',
+        success: function(hasil){
+            console.log(hasil);
+        }
+    });
+}
+</script>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -19,7 +36,7 @@
         <h1>SIMPLE LAPOR!</h1>
         <p>Buat Laporan/Komentar</p>
     <hr>
-        <form action="<?php echo base_url(). 'crud/tambah_aksi';?>" method="POST" ecntype="multipart/form-data">
+        <form action="<?php echo base_url(). 'crud/tambah_aksi';?>" onSubmit="return validasi(this)" method="POST">
             <textarea name="isi" id="" placeholder="Laporan/Komentar"></textarea>
             <br>
             <select name="aspek" id="">
@@ -30,9 +47,9 @@
                 <option value="Infra">Infrastruktur</option>
             </select>
         <br>
-            <input type="file" name="myfile">
+            <input id="myFile" type="file" name="myFile">
         <br>
-            <button type="submit" class="buat_btn">Buat LAPOR!</button>
+        <input class="submit submit1" name="uploadFile" type="submit" value="Buat LAPOR!"><br>
     </form>
     <br>
     <br>

@@ -17,11 +17,45 @@ h1 {
 }
 
 .ubah{
-    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     display: flex;
     float: right;
     margin-right: 15px;
     color: black;
 
+}
+
+.arsip{
+    text-align: justify;
+}
+
+.waktu{
+    text-decoration: none;
+    display: flex;
+    float: left;
+    margin-right: 20px;
+    color: black;
+}
+
+.aspek{
+    text-decoration: none;
+    display: flex;
+    float: left;
+    color: black;
+    margin-left: 15px;
+}
+
+.waktu2{
+    text-decoration: none;
+    display: flex;
+    float: left;
+    margin-right: 20px;
+    color: black;
+}
+
+.hapus{
+    text-decoration: none;
+    display: flex;
+    float: right;
+    color: black;
 }

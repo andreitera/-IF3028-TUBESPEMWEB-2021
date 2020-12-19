@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="<?= base_url('asset/css/hasil.css');?>">
+    <link rel="stylesheet" type="text/css" href="asset/css/hasil.css">
+    <script src="assets/js/validasi.js"></script>
     <title>Detail Laporan</title>
 </head>
 <body>
