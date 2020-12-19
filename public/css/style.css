@@ -21,11 +21,11 @@
 }
 
 #tabel tr {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid white;
 }
 
 #tabel tr.header, #tabel tr:hover {
-  background-color: #ddd;
+  background-color: white;
 }
 
 * {

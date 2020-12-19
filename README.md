@@ -100,15 +100,18 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 
 ### Penjelasan Teknis
 `Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
-1. Cara instalasi framework
-  1.1. Kami menggunakan framework Codeigniter 4
-  1.2. Unduh project ini
-  1.3. Karena salah satu anak kelomppok kami enggunakakn ubuntu (Suva), letakkan di /var/www/html atau htdocs
-  1.4. Unggah file databse yang ada di folder filedatabase ke MySQL
-  1.5. Untuk mengaskses aplikasi ini, dapat melalui localhost/IFTUBESWEB/public
+1. Cara instalasi framework</ br>
+  1.1. Kami menggunakan framework Codeigniter 4 </ br>
+  1.2. Unduh atau clone dahulu project ini </ br>
+  1.3. Unggah file databse yang ada di folder filedatabase ke MySQL</ br>
+  1.4. Untuk mengaskses aplikasi ini, dapat melalui localhost/-IF3028-TUBESPEMWEB-2021/public</ br>
 
-2. javascript
-2.1. Ada di file apa, ada aris ke berapa, kasih tau konsepnya.
+2. javascript </ br>
+  2.1. Ada di file Views/buatlapor/index.php </ br>
+  2.2. pada baris 56-61 mengecek apakah form isi laporan kosong, jika kosong maka tombol akan terdisable. </ br>
+  2.3. pada baris 63-82 tepatnya pada fungsi validlapor(). menghitung banyak kata dengan menghitung jumlah spasi yang ada. apabila jumlah  kata kurang dari 20, maka tombol akan terdisable dan muncul teks peringatan bewarna merah di samping tombol
+  </ br>
+  2.4. lalu apabila file lampiran tidak terisi, maka tombol juga terdisable
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
 - CSS: margin, padding, header tag, font-size, text-align, float, clear, border, color, div, span, placeholder,

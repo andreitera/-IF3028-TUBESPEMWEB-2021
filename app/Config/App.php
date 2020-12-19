@@ -21,7 +21,7 @@ class App extends BaseConfig
 	| environments.
 	|
 	*/
-	public $baseURL = 'http://localhost/IF3028-TUBESPEMWEB-2021/public/';
+	public $baseURL = 'http://localhost/-IF3028-TUBESPEMWEB-2021/public/';
 
 	/*
 	|--------------------------------------------------------------------------

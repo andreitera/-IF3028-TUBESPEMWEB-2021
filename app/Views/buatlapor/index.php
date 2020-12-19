@@ -13,7 +13,7 @@ $session = session();
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="<?= base_url('css'); ?>/style.css">
 
-  <body>
+  <body onload="tomboldisable()">
     <center>
       <h1>SIMPLE LAPOR!</h1>
       <table id="tabel">
@@ -41,9 +41,11 @@ $session = session();
                 <br><br>
 
                 <p>Lampiran:</p>
-                <input type="file" name="file_laporan">
+                <input type="file" name="file_laporan" id="file_laporan" onchange="validlapor()">
                 <button type="submit" id="btn">SUBMIT</button>
                 <span id="peringatan" style="color:red; font-size:11px";></span>
+                <span id="peringatan2" style="color:red; font-size:11px";></span>
+
               </div>
               <hr style="background-color: black;">
             </form>
@@ -53,15 +55,15 @@ $session = session();
     </center>
 
     <script type="text/javascript">
-    var teks = document.getElementById('laporbaru').value;
-    var mbol = document.getElementById('btn');
 
-    if(teks.length == 0){
+    function tomboldisable(){
+      var mbol = document.getElementById('btn');
       mbol.disabled = true;
     }
 
     function validlapor(){
       var tekslapor = document.getElementById('laporbaru').value;
+
       var spasi=0;
 
       for(var i = 0 ; i < tekslapor.length ; i++){
@@ -69,16 +71,29 @@ $session = session();
           spasi++;
         }
       }
+
+      var syarat2 = document.getElementById('peringatan2');
+      var filelapor = document.getElementById('file_laporan').value;
+
       var tombol = document.getElementById('btn');
       var syarat = document.getElementById('peringatan');
-
       if(spasi < 20){
         tombol.disabled = true;
-        syarat.innerHTML = "jumlah kata harus lebih dari 20!";
+        syarat.innerHTML = "(jumlah kata harap lebih dari 20) ";
+        syarat2.innerHTML = "";
       }else{
-        tombol.disabled = false;
-        syarat.innerHTML = "";
+          syarat.innerHTML = "";
+          if(filelapor.length == 0){
+            tombol.disabled = true;
+            syarat2.innerHTML = "(file lampiran harap diisi!)";
+          }else{
+            tombol.disabled = false;
+            syarat2.innerHTML = "";
+          }
+
       }
+
+
     }
     </script>
   </body>
