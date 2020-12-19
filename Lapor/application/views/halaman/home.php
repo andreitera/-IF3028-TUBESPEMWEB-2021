@@ -8,13 +8,16 @@
                         <h1 class="display-4"> Simple Lapor!</h1>
                     </div>
                     <p>Pengelolaan pengaduan pelayanan publik di setiap organisasi penyelenggara di ITERA belum
-                        terkelola secara efektif dan terintegrasi. Masing-masing organisasi penyelenggara mengelola
-                        pengaduan secara parsial dan tidak terkoordinir dengan baik. Akibatnya terjadi duplikasi
+                        terkelola secara efektif dan terintegrasi. Akibatnya terjadi duplikasi
                         penanganan pengaduan, atau bahkan bisa terjadi suatu pengaduan tidak ditangani oleh satupun
                         organisasi penyelenggara, dengan alasan pengaduan bukan kewenangannya. Oleh karena itu,
-                        untuk mencapai visi dalam good governance maka perlu untuk mengintegrasikan sistem
+                        untuk mencapai visi maka perlu untuk mengintegrasikan sistem
                         pengelolaan pengaduan pelayanan publik dalam satu pintu. Tujuannya, masyarakat memiliki satu
-                        saluran pengaduan secara menyeluruh di ITERA.</p>
+                        saluran pengaduan secara menyeluruh di ITERA. Oleh Karena itu, pengembang menciptakan Simple Lapor guna menampung aspirasi publik yang
+                        kemudian akan menjadi bahan evaluasi dalam menciptakan lingkungan yang kolaboratif.
+                        <br>
+                        “Berani LAPOR! Untuk Pelayanan Publik yang Lebih Baik”
+                    </p>
                     <a class="btn mt-4 mb-5" href="#">Selengkapya</a>
                 </div>
                 <div class="col-12 col-md-6">
