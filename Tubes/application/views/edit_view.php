@@ -44,7 +44,7 @@
                         <input type="file" name="lampiran" class="file">
                     </div>
                     <br>
-                    <button type="submit" class="btn_edit">Edit LAPOR!</button>
+                    <button type="submit" class="btn_edit" style="color: white; background-color: green; border-radius: 5px; ">EDIT LAPOR!</button>
                     <hr><br><br>
                 </form>
             </div>

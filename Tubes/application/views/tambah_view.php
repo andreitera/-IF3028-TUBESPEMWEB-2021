@@ -33,7 +33,7 @@
                         <input type="file" name="lampiran" class="file">
                     </div>
                     <br>
-                    <button type="submit" class="btn_tambah">Buat LAPOR!</button>
+                    <button type="submit" class="btn_tambah" style="color: white; background-color: green; border-radius: 5px;">BUAT LAPOR!</button>
                     <hr><br><br>
                 </form>
             </div>
