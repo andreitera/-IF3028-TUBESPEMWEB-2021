@@ -87,7 +87,7 @@
         border-bottom-left-radius: 0px;
         display: inline-flex;
         vertical-align: bottom;
-        background-color: #c4c4c4;
+        background-color: #e5e5e5;
         outline: none;
         border: none;
     }

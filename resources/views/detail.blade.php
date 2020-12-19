@@ -1,91 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href='http://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
-</head>
 <style>
-.margin {
-    margin: auto 100px auto 100px;
-    font-family: 'Poppins';
-    font-size: 16px
-}
-.fonthead{
-    font-family: 'Poppins';
-    font-size: 40px;
-}
-.fontx{
-    font-family: 'Poppins';
-    font-size: 24px
+    #root{
+        background-color: white;
+        box-shadow: 0 0 5px grey;
+        padding: 50px 40px;
+        box-sizing: border-box;
+        font-family: 'Poppins';
+        margin-bottom: 100px;
+    }
+    .time{
+        margin-right: 30px;
+        font-weight: bold;
+    }
+    .fontx{
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .edit{
+        margin-left: auto;
+        /* display: block; */
+        /* width: fit-content; */
+        float: right;
+        /* text-shadow: 0 0 grey; */
+        color: rgb(37 35 183);
+    }
+    .hapus {
+        float: right;
+        margin-right: 6px;
+        color: rgb(199 18 18);
     }
 
-.waktu {
-    float: left;
-    width: 20%;
-}
-
-.aspek {
-    float: left;
-    width: 20%;
-    text-align: left;
-}
-
-.hapus {
-    float: left;
-    width: 60%;
-    text-align: right;
-}
-
-.clearfix {
-    clear: both;
-}
+    .clearfix {
+        clear: both;
+    }
 </style>
-<body>
-    <br><br>
-    <div class="margin">
-        <center><p class='fonthead'><b>SIMPLE LAPOR!</b></p></center>
-        <br><br><br>
+<span class='fontx'>Detail Laporan/Komentar</span>
+<hr><br>
 
-        <p class='fontx'><b>Detail Laporan/Komentar</b></p>
-        <hr><br>
-        
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        Rerum, culpa minus! Odio quidem delectus aliquam, consectetur
-        deserunt possimus ipsum corrupti in reprehenderit deleniti illum,
-        nostrum voluptates mollitia at modi ducimus. Lorem ipsum dolor
-        sit amet consectetur adipisicing elit. Voluptate inventore est,
-        nisi magnam ab sed commodi, vitae laboriosam voluptates soluta voluptatum
-        debitis praesentium recusandae repellat impedit quae consectetur assumenda.
-        Quidem.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        Rerum, culpa minus! Odio quidem delectus aliquam, consectetur
-        deserunt possimus ipsum corrupti in reprehenderit deleniti illum,
-        nostrum voluptates mollitia at modi ducimus. Lorem ipsum dolor
-        sit amet consectetur adipisicing elit. Voluptate inventore est,
-        nisi magnam ab sed commodi, vitae laboriosam voluptates soluta voluptatum
-        debitis praesentium recusandae repellat impedit quae consectetur assumenda.
-        Quidem.</p> <br>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+Rerum, culpa minus! Odio quidem delectus aliquam, consectetur
+deserunt possimus ipsum corrupti in reprehenderit deleniti illum,
+nostrum voluptates mollitia at modi ducimus. Lorem ipsum dolor
+sit amet consectetur adipisicing elit. Voluptate inventore est,
+nisi magnam ab sed commodi, vitae laboriosam voluptates soluta voluptatum
+debitis praesentium recusandae repellat impedit quae consectetur assumenda.
+Quidem.</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+Rerum, culpa minus! Odio quidem delectus aliquam, consectetur
+deserunt possimus ipsum corrupti in reprehenderit deleniti illum,
+nostrum voluptates mollitia at modi ducimus. Lorem ipsum dolor
+sit amet consectetur adipisicing elit. Voluptate inventore est,
+nisi magnam ab sed commodi, vitae laboriosam voluptates soluta voluptatum
+debitis praesentium recusandae repellat impedit quae consectetur assumenda.
+Quidem.</p> <br>
 
-        <p>Lampiran: </p><br>
+<p>Lampiran: </p><br>
 
-        <img src="kotak.png" alt="">
-
-            <div class="waktu">
-                <p>Waktu: 20-11-2019 20:00</p>
-            </div>
-
-            <div class="aspek">
-                <p>Aspek: Infrastruktur</p>
-            </div>
-
-            <div class="hapus">
-                <p>Hapus Laporan/Komentar x</p>
-            </div>
-
-            <div class="clearfix"></div>
-            <hr>
-    </div>
-</body>
-</html>
+<img src="kotak.png" alt="">
+<div clas="detail">
+    <span class="time">Waktu: 20-11-2019 20:00</span>
+    <span class="aspek">Aspek: Infrastruktur</span>
+    <span class="edit">Edit</span>
+    <span class="hapus">Hapus | </span>
+</div>
+<hr>
