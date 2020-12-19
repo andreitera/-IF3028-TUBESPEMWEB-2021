@@ -20,11 +20,11 @@
                     <div>
                         <select name="aspek" class="select">
                             <option>Pilih Aspek Pelaporan/Komentar</option>
-                            <option>Dosen</option>
-                            <option>Staff</option>
-                            <option>Mahasiswa</option>
-                            <option>Infrastruktur</option> 
-                            <option>Pengajaran</option> 
+                            <option value="Dosen">Dosen</option>
+                            <option value="Staff">Staff</option>
+                            <option value="Mahasiswa">Mahasiswa</option>
+                            <option value="Infrastruktur">Infrastruktur</option> 
+                            <option value="Pengajaran">Pengajaran</option> 
                         </select>
                     </div>
                     <div>
