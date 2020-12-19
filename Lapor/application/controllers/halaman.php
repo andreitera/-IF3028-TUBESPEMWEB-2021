@@ -10,7 +10,7 @@ class Halaman extends CI_Controller
         $data['lapor'] = $this->post_model->get_lapor();
 
         $this->load->helper('url');
-        $this->load->view('tampilan/header',$data);
+        $this->load->view('tampilan/header', $data);
         $this->load->view('halaman/' . $page, $data);
         $this->load->view('tampilan/footer');
 

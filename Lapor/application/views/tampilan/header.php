@@ -32,14 +32,13 @@
                         <a class="nav-link" href="<?php echo base_url() .'tambah#buat-lapor'; ?>">Buat Laporan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url() . 'home#laporan' ?>">Laporan</a>
+                        <a class="nav-link" href="<?php echo base_url() . 'home#detail' ?>">Laporan</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="<?php echo base_url() . 'home#footer' ?>">Our Team</a>
                     </li>
                 </ul>
             </nav>
-
             <div class="img-itera">
                     <h1>JUMLAH LAPORAN SEKARANG</h1>
                     <h1 class="big-text"><?php echo count($lapor) ?></h1>

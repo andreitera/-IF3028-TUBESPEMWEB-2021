@@ -20,14 +20,16 @@ class Tampil extends CI_Controller
     public function view($id)
     {
         $data['post_item'] = $this->post_model->get_lapor($id);
-        $this->load->view('tampilan/header');
+        $data1['lapor'] = $this->post_model->get_lapor();
+        $this->load->view('tampilan/header', $data1);
         $this->load->view('halaman/tampil', $data);
         $this->load->view('tampilan/footer');
     }
 
     public function tambah()
     {
-        $this->load->view('tampilan/header');
+        $data1['lapor'] = $this->post_model->get_lapor();
+        $this->load->view('tampilan/header', $data1);
         $this->load->view('halaman/tambah');
         $this->load->view('tampilan/footer');
     }
