@@ -11,7 +11,7 @@
     margin: auto 100px auto 100px;
 }
 .kotak {
-    background-color: burlywood;
+    /* background-color: burlywood; */
     width: 100%;
 }
 
@@ -23,6 +23,7 @@
 .desc{
     margin: auto 0 auto 0;
 }
+
 .input {
     width: 800px;
     height: 50px;
@@ -40,29 +41,121 @@
 .buatlap {
     text-decoration: none;
 }
+
+.lampiran {
+    float: left;
+    width: 60%;
+}
+
+.waktu {
+    float: left;
+    width: 20%;
+    text-align: right;
+}
+
+.lihat {
+    float: left;
+    width: 20%;
+    text-align: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
 </style>
 <body>
-    <br><br>
+    <br />
+    <br />
     <div class="margin">
-    <center><h1>SIMPLE LAPOR!</h1></center>
-    <br><br><br>
+        <center><h1>SIMPLE LAPOR!</h1></center>
+        <br />
+        <br />
+        <br />
 
-    <div class="kotak">
-        <center><input type="text" class="input"><button class="src"><img class="kaca" src="kaca.png" alt=""><span class="desc">Cari</span></button></center>
-    </div>
+        <div class="kotak">
+            <center>
+                <input type="text" class="input" /><button class="src"><img class="kaca" src="kaca.png" alt="" /><span class="desc">Cari</span></button>
+            </center>
+        </div>
 
-    <center><a class="buatlap" href="#">Buat Laporan/Komentar</a></center>
+        <br />
+        <br />
+        <div class="buat">
+            <center><a class="buatlap" href="#">Buat Laporan/Komentar</a></center>
+            <img src="tambah.png" alt="" />
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
 
-    <p>Laporan/Komentar Terakhir</p>
-    <hr>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati dolore,
-    velit ullam dignissimos, inventore saepe dolores minus quibusdam voluptatum doloremque
-    sunt alias, eos iste aut. Quisquam deleniti cupiditate doloribus officiis. Lorem,
-    ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iusto provident,
-    tenetur et inventore similique laboriosam mollitia at minima magni explicabo ab totam
-    cumque molestiae, iure soluta eveniet saepe assumenda?</p>
-    
-    <p>Lampiran:</p>
+        <p>Laporan/Komentar Terakhir</p>
+        <hr />
+        <div>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati dolore, velit ullam dignissimos, inventore saepe dolores minus quibusdam voluptatum doloremque sunt alias, eos iste aut. Quisquam deleniti cupiditate doloribus
+                officiis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iusto provident, tenetur et inventore similique laboriosam mollitia at minima magni explicabo ab totam cumque molestiae, iure soluta eveniet saepe
+                assumenda?
+            </p>
+
+            <div class="lampiran">
+                <p>Lampiran: Gambar.jpg</p>
+            </div>
+
+            <div class="waktu">
+                <p>Waktu: 20-11-2019 20:00</p>
+            </div>
+            <div class="lihat">
+                <p>Lihat Selengkapnya ></p>
+            </div>
+
+            <div class="clearfix"></div>
+            <hr />
+        </div>
+        <div>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati dolore, velit ullam dignissimos, inventore saepe dolores minus quibusdam voluptatum doloremque sunt alias, eos iste aut. Quisquam deleniti cupiditate doloribus
+                officiis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iusto provident, tenetur et inventore similique laboriosam mollitia at minima magni explicabo ab totam cumque molestiae, iure soluta eveniet saepe
+                assumenda?
+            </p>
+
+            <div class="lampiran">
+                <p>Lampiran: Gambar.jpg</p>
+            </div>
+
+            <div class="waktu">
+                <p>Waktu: 20-11-2019 20:00</p>
+            </div>
+            <div class="lihat">
+                <p>Lihat Selengkapnya ></p>
+            </div>
+
+            <div class="clearfix"></div>
+            <hr />
+        </div>
+        <div>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati dolore, velit ullam dignissimos, inventore saepe dolores minus quibusdam voluptatum doloremque sunt alias, eos iste aut. Quisquam deleniti cupiditate doloribus
+                officiis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iusto provident, tenetur et inventore similique laboriosam mollitia at minima magni explicabo ab totam cumque molestiae, iure soluta eveniet saepe
+                assumenda?
+            </p>
+
+            <div class="lampiran">
+                <p>Lampiran: Gambar.jpg</p>
+            </div>
+
+            <div class="waktu">
+                <p>Waktu: 20-11-2019 20:00</p>
+            </div>
+            <div class="lihat">
+                <p>Lihat Selengkapnya ></p>
+            </div>
+
+            <div class="clearfix"></div>
+            <hr />
+        </div>
     </div>
 </body>
+
 </html>
