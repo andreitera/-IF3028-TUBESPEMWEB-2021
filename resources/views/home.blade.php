@@ -48,10 +48,14 @@
     <div class="card">
     <p>{{$lapor->isilaporan}}</p>
     <div class="kaki">
-    <span>Lampiran : {{$lapor->file}}</span>
+    <span>Lampiran : {{substr($lapor->file,35)}}"</span>
+    
+   
+
+
     <span class="kanan">
     <span>Waktu : {{$lapor->created_at}}</span>
-    <span> <a href="/laporan/{{$lapor->id}}">Lihat Selengkapnya X</a></span>
+    <span> <a href="/laporan/{{$lapor->id}}">Lihat Selengkapnya ></a></span>
     </span>
     </div> 
     <hr>
