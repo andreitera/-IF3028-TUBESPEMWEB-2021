@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html>
+@extends('Master.master')
 
-<head>
-    <title>Buat Laporan/Komentar</title>
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css">
-</head>
-
+@section('content')
 <body>
     @if (session('msg'))
     {{ session('msg') }}
@@ -27,11 +22,11 @@
                 @csrf
                 <div>
                     Pengirim:
-                    <input type="text" name="pengirim">
+                    <input type="text" name="pengirim"><br>
                 </div>
                 <div>
                     Judul:
-                    <input type="text" name="judul">
+                    <input type="text" name="judul"><br>
                 </div>
                 <div class="main">
                     <textarea rows="10" cols="100" name="laporan" placeholder="Laporan/Komentar" required></textarea>
@@ -58,4 +53,4 @@
     </div>
 </body>
 
-</html>
+@endsection
