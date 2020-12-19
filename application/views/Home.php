@@ -6,23 +6,28 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>LAPOR! - Laporkeun gaskuy.</title>
+		<title>LAPOR!</title>
 		<link rel="stylesheet" href="<?= base_url('resources/css/style.css') ?>">
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 		<script src="<?= base_url('resources/js/jquery-3.5.1.min.js') ?>"></script>
 	</head>
 	<body>
 		<div id="container">
-			<div class="center">
-				<h1>Layanan Aspirasi dan Pengaduan Online Rakyat</h1>
-				<h2>Sampaikan laporan Anda langsung kepada instansi pemerintah berwenang</h2>
-			</div>
+			<div class="judul">
+				<style>
+					h1{
+						color: red;
+						text-align: center;
+
+					}
+				</style>
+			<h1>Layanan Aspirasi dan Pengaduan Online Rakyat</h1>
+			<h2>Sampaikan laporan Anda langsung kepada instansi pemerintah berwenang</h2>
+			
 			<div id="body">
 				<form id="form_add" method="POST">
-					<input type="text" class="form-control" name="add_nama" placeholder="Nama" required><br>
-					<input type="text" class="form-control" name="add_judul" placeholder="Judul Laporan" required><br>
-					<textarea name="add_isi" class="form-control" rows="5" placeholder="Ketik Isi Laporan Anda" minlength="20" required></textarea><br>
+					<input type="text" name="add_nama" placeholder="Nama" required><br>
+					<input type="text" name="add_judul" placeholder="Judul Laporan" required><br>
+					<textarea name="add_isi" rows="5" placeholder="Ketik Isi Laporan Anda" minlength="20" required></textarea><br>
 					<select name="add_kategori">
 						<option disabled selected>-Pilih-</option>
 						<?php
@@ -36,7 +41,7 @@
 					<input type="checkbox" name="add_is_public" id="add_is_public" value="False">
 					<label for="add_is_public"> Sembunyikan laporan saya di halaman ini</label><br>
 				</form>
-				<input class="button" type="submit" onclick="add()" value="Lapor">
+				<input type="submit" onclick="add()" value="Lapor">
 			</div>
 
 			<div id="content">
