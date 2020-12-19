@@ -38,7 +38,7 @@ class Formlapor extends CI_Controller {
 		//validasi form
 		$this->form_validation->set_rules('komentar', 'Komentar', 'required|min_length[250]');
 		if($this->form_validation->run() == FALSE){
-			$data['aspek'] = ['Pilih Aspek Pelaporan/Komentar','Akademik','Fasilitas','Infrastruktur','Keamanan','Keuangan'];
+			$data['aspek'] = ['Pilih Aspek Pelaporan/Komentar','Dosen','Staff','Mahasiswa','Infrastruktur','Pengajaran'];
 			$data['laporan'] = $this->Model_laporan->detail($id);
 			$this->load->view('header');
 			$this->load->view('editlapor',$data);

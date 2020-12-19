@@ -3,11 +3,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Model_laporan extends CI_Model {
 
-  public function getlapor(){
-		return $this->db->get('laporan')->result_array(); //ambil seluruh data dari tabel lapor
-  }
-  
-  public function tambah(){
+	public function getlapor(){
+			return $this->db->get('laporan')->result_array(); //ambil seluruh data dari tabel lapor
+	}
+	
+	public function tambah(){
 
 		//mengambil waktu saat ini
 		date_default_timezone_set('Asia/Jakarta');
@@ -31,18 +31,18 @@ class Model_laporan extends CI_Model {
 		$data = [
 			"komentar" => $this->input->post('komentar'),
 			"aspek" => $this->input->post('aspek'),
-      "lampiran" => $file,
-      "waktu" => $waktu
+      		"lampiran" => $file,
+      		"waktu" => $waktu
 		];
 
 		$this->db->insert('laporan', $data);
-  }
+  	}
   
-  public function detail($id){
+	public function detail($id){
 		return $this->db->get_where('laporan', array('id'=>$id))->row_array();
-  }	
+	}	
   
-  public function cari($cari){
+  	public function cari($cari){
 		$this->db->like('komentar', $cari);
 		$this->db->or_like('waktu', $cari);
 		$this->db->or_like('aspek', $cari);

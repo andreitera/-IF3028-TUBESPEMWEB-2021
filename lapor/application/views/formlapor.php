@@ -14,11 +14,11 @@
             <div class="data">
                 <select class="aspek" name="aspek" id="aspek">
                     <option value="default" selected='selected'>Pilih Aspek Pelaporan/Komentar</option>
-                    <option value="akademik">Akademik</option>
-                    <option value="fasilitas">Fasilitas</option>
-                    <option value="infrastruktur">Insfrasruktur</option>
-                    <option value="keamanan">Keamanan</option>
-                    <option value="keuangan">Keuangan</option>
+                    <option value="Dosen">Dosen</option>
+                    <option value="Staff">Staff</option>
+                    <option value="Mahasiswa">Mahasiswa</option>
+                    <option value="Infrastruktur">Infrastruktur</option>
+                    <option value="Pengajaran">Pengajaran</option>
                 </select>
             </div>
             <div class="data">
