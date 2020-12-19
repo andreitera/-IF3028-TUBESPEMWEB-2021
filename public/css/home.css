@@ -42,7 +42,7 @@ nav {
   color: #ffffff;
   font-weight: bold;
   height: 90px;
-  margin: 0px 100px;
+  padding: 0px 100px;
 }
 
 nav * {
