@@ -1,0 +1,62 @@
+.container {
+
+	padding: 10px;
+	margin: 10px 10px;
+	border: 1px solid #333;
+	font-family: sans-serif;
+}
+
+.container1{
+	margin: 35px 215px;
+	border: 1px solid white;
+}
+.container h1{
+	text-align:center;
+}
+.container .nav-bar a {
+	padding: 4px;
+	color: black;
+	font-weight: bold;
+	text-decoration-line: none;
+	margin-right: 10px;
+	border: 1px solid #333;
+	
+}
+.container hr {
+	border: 1px solid #333;
+}
+
+.container .nav-bar a:hover {
+	background: rgb(55, 130, 170);
+	color: black;
+}
+
+
+.container a {
+	text-decoration: none;
+}
+
+.container .laporan .details {
+	display: flex;
+	justify-content: space-between;
+}
+.container1 img {
+	padding: 15px;
+	width: 10p0x;
+	height: 100px;
+}
+.container .laporan a {
+	color: rgb(55, 130, 170);
+}
+.details .action {
+	display: flex;
+	justify-content: space-between;
+}
+
+.details .action .edit,
+.details .action .delete {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 5px;
+}

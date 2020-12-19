@@ -16,8 +16,6 @@
       <button type="submit" name="register">Register</button>
     </form>
     <br>
-    <a class="small" href="<?= base_url('auth') ?>">Already have an account? Login!</a>
-    <br>
-    <br>
-    <i class="fa fa-leaf" aria-hidden="true"></i>
+    <a class="small" href="<?= base_url('auth') ?>">Sudah punya akun? Login!</a>
+   
   </div>

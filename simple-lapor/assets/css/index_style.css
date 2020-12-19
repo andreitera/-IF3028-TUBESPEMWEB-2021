@@ -1,0 +1,113 @@
+
+.container {
+	padding: 10px;
+	margin: 10px 10px;
+	border: 1px solid #333;
+	font-family: sans-serif;
+}
+
+
+
+
+.container .nav-bar {
+	display: flex;
+
+}
+
+
+.container .nav-bar a {
+	padding: 4px;
+	color: black;
+	font-weight: bold;
+	text-decoration-line: none;
+	margin-right: 10px;
+	border: 1px solid #333;
+	
+}
+
+.container .nav-bar a:hover {
+	background: rgb(55, 130, 170);
+	color: black;
+}
+.container .heading-icon {
+	display: flex;
+	justify-content: center;
+}
+
+.container .heading-icon img {
+	padding: 15px;
+	width: 50px;
+	height: 50px;
+}
+
+
+
+.container .form {
+	text-align: center;
+}
+
+.container .form input {
+	width: 60%;
+    padding: 5px;
+    height: 45px;
+    border: 2px solid #333;
+    font-size: 24px;
+}
+.container .form button {
+	width: 110px;
+    height: 60px;
+    border: 2px solid #333;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.container form button:hover {
+	background: rgb(55, 130, 170);
+}
+
+.container .buat_comm {
+	display: flex;
+	justify-content: center;
+	color: black;
+	padding-left: 10px;
+}
+
+.container .buat_comm i {
+	padding: 2px;
+}
+
+.container a {
+	display: block;
+}
+.container a:hover {
+	color: rgb(55, 130, 170);
+}
+
+.container1{
+	margin: 35px 215px;
+	border: 1px solid white;
+}
+.container .laporan p {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.container .laporan .details {
+	display: flex;
+	justify-content: space-between;
+}
+
+.container .laporan .details .status{
+	color:rgb(71, 63, 63);
+}
+.container hr {
+	border: 1px solid #333;
+}
+
+
+
+
+

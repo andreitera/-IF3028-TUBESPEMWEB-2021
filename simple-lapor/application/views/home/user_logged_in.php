@@ -27,36 +27,32 @@ if (isset($_POST['cari'])) {
   }
   ?>
 
-  <div class="container1">
     <div class="heading-icon">
+      <img src=<?= base_url('assets/img/hmif.jpg') ?> alt="ini foto.png">
       <img src=<?= base_url('assets/img/logoitera.png') ?> alt="ini foto.png">
-      <h1>LAPOR ITERA!</h1>
+      <h1>SIMPLE LAPOR!</h1>
     </div>
+
 
     <div class="nav-bar">
-      <span>
-        <p>HAI! <?= $this->session->userdata("fullname"); ?></p>
-      </span>
-      <div class="right-menu">
-        <span><a href="<?= base_url('home/myLapor') ?>">Laporanku</a></span>
-        <span>
-          <a href="<?= base_url('home/logOut') ?>">Logout</a>
-        </span>
-      </div>
+      <a href="<?= base_url()?>">HOME</a>
+      <a href="<?= base_url('home/myLapor') ?>">Laporanku</a>
+      <a href="<?= base_url('home/logOut') ?>">Logout</a>
     </div>
-
-    <form action="" method="post">
+    <br><br>
+    <form class="form" action="" method="post">
       <label for=""></label>
       <input type="text" name="search" id="search" aria-describedby="helpId" placeholder="Masukkan keyword">
       <button type="submit" name="cari">Cari</button>
     </form>
     <br>
-    <a href="<?= base_url('comment') ?>">Buat Laporan/Komentar &plus;</a>
+    <div class="buat_comm">
+      <a href="<?= base_url('comment') ?>">Buat Laporan/Komentar </a>
+      <i class="fa fa-plus-circle" ></i>
+    </div> 
 
-  </div>
-
-  <div class="container2">
-    <h4>Laporan/Komentar Terkini</h4>
+  
+    <p><strong>Laporan/Komentar Terkini</strong></p>
 
     <hr>
 
@@ -72,12 +68,12 @@ if (isset($_POST['cari'])) {
 
         <div class="details">
           <span>
-            <span id="lampiran"><?= $d['lampiran'] ?> </span>
-            <span id="timestamp"><?= $d['timestamp'] ?> WIB</span>
+            <span id="lampiran">Lampiran :<?= $d['lampiran'] ?> </span>
+            <span id="timestamp">| Waktu: <?= $d['timestamp'] ?> WIB</span>
           </span>
 
           <span>
-            <a href="<?= base_url('home/commentDetail/') . $d['comm_id'] ?>">Selengkapnya</a>
+            <a href="<?= base_url('home/commentDetail/') . $d['comm_id'] ?>">Lihat Selengkapnya ></a>
           </span>
         </div>
         <hr>

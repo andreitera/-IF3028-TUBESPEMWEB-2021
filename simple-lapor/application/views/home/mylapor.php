@@ -6,16 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="<?= base_url('assets/css/myLapor.css') ?>">
-  <title>My Lapor</title>
+  <title>Laporanku</title>
   <link rel="stylesheet" href="<?= base_url('assets/css/mylapor_style.css') ?>">
 </head>
 
 <body>
   <div class="container">
-    <div class="container1">
+    
       <h1>Laporanku</h1>
-    </div>
-    <div class="container2">
+    
+    
+    <div class="container1">
       <?php foreach ($result as $d) :
         ?>
         <div class="laporan">
@@ -29,12 +30,12 @@
 
           <div class="details">
             <span>
-              <span id="lampiran"><?= $d['lampiran'] ?> </span>
-              <span id="timestamp"><?= $d['timestamp'] ?> WIB</span>
+              <span id="lampiran">lampiran :<?= $d['lampiran'] ?> </span>
+              <span id="timestamp">waktu :<?= $d['timestamp'] ?> WIB</span>
             </span>
 
             <span>
-              <a href="<?= base_url('home/commentDetail/') . $d['comm_id'] ?>">Selengkapnya</a>
+              <a href="<?= base_url('home/commentDetail/') . $d['comm_id'] ?>">Lihat Selengkapnya ></a>
             </span>
           </div>
           <hr>

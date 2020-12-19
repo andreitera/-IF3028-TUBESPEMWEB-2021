@@ -1,7 +1,3 @@
-<?php //$aspek = array('Dosen', 'Staff', 'Mahasiswa', 'Infrastruktur', 'Pengajaran'); 
-?>
-<?php //var_dump($result) 
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,7 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="<?= base_url('assets/css/edit_lapor.css') ?>">
+  <link rel="stylesheet" href="<?= base_url('assets/css/edit_style.css') ?>">
   <title>Edit Lapor</title>
 </head>
 
@@ -18,14 +14,12 @@
   <div class="container">
     <div class="content">
 
-      <div class="heading-icon">
-        <img src=<?= base_url('assets/img/logoitera.png') ?> alt="ini foto.png">
-        <h1>LAPOR ITERA!</h1>
-      </div>
-
-      <div class="head">
-        Buat Laporan/Komentar
-      </div>
+     
+        <h1>SIMPLE LAPOR!</h1>
+      
+<br><br>
+      <p>Buat Laporan/Komentar</p>      
+      
 
       <hr>
 
@@ -57,11 +51,10 @@
         <br>
 
         <div class="file">
-<<<<<<< HEAD
-          <input class="file_in" type="file" name="lampiran" value="C:/xampp/htdocs/referensi2/lapor-app/assets/doc/ <?= $result['lampiran'] ?>">
-=======
-          <input class="file_in" type="file" name="lampiran" value="C:/xampp/htdocs/PABW/IF3111-1920/lapor-app/assets/doc/ <?= $result['lampiran'] ?>">
->>>>>>> ff08b6ad903b3c97e096d5f485b30fadb6075b6b
+
+          <input class="file_in" type="file" name="lampiran" value="C:/xampp/htdocs/aplikasiLapor/simple-lapor/assets/img/ <?= $result['lampiran'] ?>">
+
+
         </div>
 
         <br>

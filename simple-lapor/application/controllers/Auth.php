@@ -35,7 +35,7 @@ class Auth extends CI_Controller
           redirect(base_url('home/user_logged_in'));
         } else {
           echo "<script>
-                    alert('Password Anda Salah');
+                    alert('Password / username Salah');
                 </script>
             ";
         }

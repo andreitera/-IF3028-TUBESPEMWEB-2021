@@ -5,19 +5,27 @@ class Comment extends CI_Controller
     {
         parent::__construct();
         $this->load->model('M_comment');
+        $this->load->library('form_validation');
     }
     public function index()
     {
         if ($this->session->has_userdata('logged_in')) {
             $data['title'] = "Tambah Komentar/Laporan";
+            if($this->form_validation->run()==FALSE){
+
             $this->load->view('templates/comm_header', $data);
             $this->load->view('comment/index.php', $data);
             $this->load->view('templates/footer');
 
+            }else{
+
+                echo "berhasil";
+            }
+            
             if (isset($_POST['submit'])) {
                 $this->M_comment->addComment();
                 echo "<script>
-                    alert('Report / Comment added successfully!');
+                    alert('laporan/komentar berhasil ditambahkan!');
                     window.location.href= '" . base_url('home/user_logged_in') . "'
                     </script>
                 ";
@@ -33,7 +41,7 @@ class Comment extends CI_Controller
 
     public function _uploadFile()
     {
-        $config['upload_path']          = base_url('assets/doc');
+        $config['upload_path']          = base_url('assets/img');
         $config['allowed_types']        = 'gif|jpg|png}pdf|doc|docx|xls|xcls';
         $config['max_size']             = 5000;
 

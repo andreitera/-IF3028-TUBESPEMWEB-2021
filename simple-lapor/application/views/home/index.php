@@ -16,18 +16,20 @@ if (isset($_POST['cari'])) {
 ?>
 
 <div class="container">
-  <div class="container1">
-    <div class="log-reg">
+
+    <div class="nav-bar">
       <a href="<?= base_url()?>">HOME</a>
       <a href="<?= base_url('auth') ?>">LOGIN</a>
       <a href="<?= base_url('auth/register') ?>">REGISTER</a>
     </div>
 
     <div class="heading-icon">
-      <img src=<?= base_url('assets/img/logoitera.png') ?> alt="logoItera">
-      <h1>AYO LAPORKAN!</h1>
+      <img src=<?= base_url('assets/img/hmif.jpg') ?> alt="ini foto.png">
+      <img src=<?= base_url('assets/img/logoitera.png') ?> alt="ini foto.png">
+      <h1>SIMPLE LAPOR!</h1>
     </div>
-
+   <br><br>
+  
     <form class="form" action="" method="post">
       <input type="text" name="keyword" id="keyword" aria-describedby="helpId" placeholder="Masukkan Keyword">
       <button type="submit" name="cari">Cari</button>
@@ -35,15 +37,13 @@ if (isset($_POST['cari'])) {
 
     <br>
 
-    <div class="com_link">
+    <div class="buat_comm">
       <a href="<?= base_url('comment') ?>">Buat Laporan/Komentar </a>
-      <i class="fa fa-plus-circle" aria-hidden="true"></i>
-    </div>
+      <i class="fa fa-plus-circle" ></i>
+    </div> 
 
-  </div>
-
-  <div class="container2">
-    <h4>Laporan/Komentar Terkini</h4>
+    <div class="container1">
+    <p>Laporan/Komentar Terkini</p>
     <hr>
 
     <?php foreach ($result as $d) :
@@ -57,9 +57,9 @@ if (isset($_POST['cari'])) {
         <p><?= $d['comm'] ?></p>
 
         <div class="details">
-          <span>
-            <span id="lampiran"><?= $d['lampiran'] ?> </span>
-            <span id="timestamp">| <?= $d['timestamp'] ?> WIB</span>
+          <span class="status">
+            <span id="lampiran">lampiran :<?= $d['lampiran'] ?> </span>
+            <span id="timestamp">| waktu :<?= $d['timestamp'] ?> WIB</span>
           </span>
 
           <span>
@@ -69,9 +69,10 @@ if (isset($_POST['cari'])) {
 
         <hr>
       </div>
+      
     <?php endforeach;
     ?>
   </div>
-
 </div>
+
 <script src="<?= base_url('assets/js/liveSearch.js') ?>"></script>
