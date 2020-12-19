@@ -23,4 +23,16 @@ class Home extends CI_Controller {
     //     echo json_encode($dataLaporan);
     // }
 
+<<<<<<< HEAD
+=======
+	public function index()	{
+        $data['title'] = "Tugas Besar PWB 118140048-118140103-118140105"; 
+		$this->load->view('home/index', $data);
+    }
+    
+    public function ambildata()	{
+        $dataLaporan = $this->m->ambildata('laporkuy')->result();
+        echo json_encode($dataLaporan);
+    }
+>>>>>>> 9ed1a424b5b632212be1e9a66cdee38cf78e8feb
 }
