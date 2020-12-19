@@ -1,0 +1,65 @@
+#pencarian {
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 70%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #000000;
+  margin-bottom: 12px;
+}
+
+#tabel {
+  border-collapse: collapse;
+  width: 70%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#tabel th, #tabel td {
+  text-align: left;
+  padding: 12px;
+}
+
+#tabel tr {
+  border-bottom: 1px solid white;
+}
+
+#tabel tr.header, #tabel tr:hover {
+  background-color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#btn{
+  background-color: #696969;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#btn {
+  display: inline-block;
+  padding: 7px 20px;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  background-color: #696969;
+  border-radius: 7px;
+  box-shadow: 0 4px #999;
+}
+
+#btn:hover {
+  background-color: #b8b8b8;
+  color: #696969;
+}
+
+#btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

@@ -1,5 +1,5 @@
 ## Simple `LAPOR` :heavy_exclamation_mark:
-Anda mengetahui aplikasi `lapor` yang dibuat oleh pemerintah republik indonesia? jika tidak silahkan kunjungi 
+Anda mengetahui aplikasi `lapor` yang dibuat oleh pemerintah republik indonesia? jika tidak silahkan kunjungi
 http://lapor.go.id, maka anda akan mendapatkan laman seperti gambar di bawah
 
 ![](tampilan/lapor.png)
@@ -14,16 +14,16 @@ Project dikerjakan secara **berkelompok** dengan maksimal jumlah anggota adalah 
 ### Petunjuk Pengerjaan :umbrella:
 1. Fork pada repository ini dengan akun github anda.
 2. Silakan commit pada repository anda (hasil fork). Lakukan berberapa commit dengan pesan yang bermakna,
-contoh: fix css, membuat post done, jangan seperti final, benerin dikit, oke deh, update deh dll. 
-Disarankan untuk tidak melakukan commit dengan perubahan yang besar karena akan mempengaruhi 
+contoh: fix css, membuat post done, jangan seperti final, benerin dikit, oke deh, update deh dll.
+Disarankan untuk tidak melakukan commit dengan perubahan yang besar karena akan mempengaruhi
 penilaian (contoh: hanya melakukan satu commit kemudian dikumpulkan).
 3. Minimal commit sebanyak personil anggota tim dengan masing-masing personil tim melakukan commit sesuai dengan kesepakatan tim, penilaian individu akan dilihat.
 4. Ubah **Penjelasan Teknis** pada bagian bawah readme.md ini dengan menjelaskan bagaimana cara anda:
-   - Instalasi Framework, Koneksi basis data 
+   - Instalasi Framework, Koneksi basis data
    - Melakukan validasi pada client-side
    - Melakukan AJAX (mulai dari pengguna melakukan klik pada tombol LAPOR! sampai laporan/komentar terkirim).
-5. Pull request dari repository anda ke repository ini dengan 
-format **NIM** - **Nama Lengkap**. **Waktu terkahir proses pull request adalah 4 hari setelah 
+5. Pull request dari repository anda ke repository ini dengan
+format **NIM** - **Nama Lengkap**. **Waktu terkahir proses pull request adalah 4 hari setelah
 ujian akhir semester (UAS)**
 6. Data yang dikumpulkan adalah:
    - Source code aplikasi
@@ -35,17 +35,17 @@ ujian akhir semester (UAS)**
    - Pemahaman dalam penggunaan framework, penilaian efisiensi query
    - Antarmuka aplikasi
    - Bug free :beetle:
-   
+
 ### Tools :hammer:
 1. Untuk backend, wajib menggunakan PHP framework apapun (Contoh: Codeigniter, Laravel, Slim, Yii dll).
 2. Gunakan MySQL atau basis data relasional lain untuk menyimpan data.
-3. Untuk frontend, gunakan Javascript, HTML dan CSS. **Tidak boleh menggunakan library atau framework CSS atau JS seperti 
+3. Untuk frontend, gunakan Javascript, HTML dan CSS. **Tidak boleh menggunakan library atau framework CSS atau JS seperti
 JQuery atau Bootstrap.** CSS sebisa mungkin ada di file yang berbeda (tidak inline styling/embeding styling).
 
 ### Spesifikasi Simple LAPOR!
 #### Tampilan :soccer:
-Anda diminta untuk membuat tampilan sedemikian hingga mirip dengan tampilan berikut. Website yang diminta tidak harus 
-responsive. Desain tampilan tidak perlu dibuat indah. Icon dan jenis font tidak harus sama dengan contoh. Warna font, 
+Anda diminta untuk membuat tampilan sedemikian hingga mirip dengan tampilan berikut. Website yang diminta tidak harus
+responsive. Desain tampilan tidak perlu dibuat indah. Icon dan jenis font tidak harus sama dengan contoh. Warna font,
 garis pemisah, dan perbedaan ukuran font harus terlihat sesuai contoh. Perhatikan juga tata letak elemen-elemen.
 
 ![](tampilan/utama.png)
@@ -53,7 +53,7 @@ garis pemisah, dan perbedaan ukuran font harus terlihat sesuai contoh. Perhatika
 - Tombol "cari" berada di sebelah kanan search bar.
 - **Buat LAPOR!** digunakan untuk mengirimkan laporan/komentar baru.
 - Tampilan search bar ini harus tetap ada walaupun anda tidak mengimplementasikan fitur search.
-- Tampilan pertanyaan tidak harus urut berdasarkan "Laporan/Komentar terakhir", 
+- Tampilan pertanyaan tidak harus urut berdasarkan "Laporan/Komentar terakhir",
 namun tulisan "Laporan/komentar Terakhir" ini harus ada.
 
 ![](tampilan/buat.png)
@@ -66,7 +66,7 @@ namun tulisan "Laporan/komentar Terakhir" ini harus ada.
 - Perhatikan label dari field pada form berada di dalam field (tidak di luar)
 
 ### List laporan/komentar
-Halaman utama berisi daftar judul pertanyaan, siapa yang bertanya, dan isi pertanyaan. Isi pertanyaan yang terlalu 
+Halaman utama berisi daftar judul pertanyaan, siapa yang bertanya, dan isi pertanyaan. Isi pertanyaan yang terlalu
 panjang harus dipotong. Silakan definisikan sendiri seberapa panjang agar tetap baik terlihat di layout yang Anda buat.
 
 Pada masing-masing elemen list, terdapat menu untuk mengubah dan menghapus pertanyaan.
@@ -74,12 +74,12 @@ Pada masing-masing elemen list, terdapat menu untuk mengubah dan menghapus perta
 View Laporan ditampilkan secara terurut dimulai dari laporan terakhir yang diberikan highlight
 
 ### Kirim laporan/komentar `LAPOR!`
-Pengguna dapat mengajukan laporan/komentar. Form yang digunakan memiliki komentar (textarea), 
-data lapiran berupa gambar 
+Pengguna dapat mengajukan laporan/komentar. Form yang digunakan memiliki komentar (textarea),
+data lapiran berupa gambar
 dan file berekstention `doc, docx, xls, xlsx, ppt, pptx, pdf``. Gunakan HTTP POST.
 
 ### Ubah Laporan/komentar
-Pengguna dapat mengubah laporan/komentar yang sudah dibuat. Form yang digunakan memiliki tampilan yang sama dengan 
+Pengguna dapat mengubah laporan/komentar yang sudah dibuat. Form yang digunakan memiliki tampilan yang sama dengan
 form untuk bertanya, namun field-field yang ada sudah terisi. Gunakan HTTP POST untuk menyimpan perubahan.
 
 ### Hapus Laporan/komentar
@@ -87,8 +87,8 @@ Pengguna dapat menghapus laporan/komentar yang sudah dibuat. Lakukan konfirmasi 
 
 ### Lihat Laporan/komentar
 Pengguna dapat melihat laporan/komentar. Pada halaman ini terdapat informasi aspek yang dilaporkan.
-(Dosen, Staff, Mahasiswa, Infrastruktur dan Pengajaran ), isi laporan/komentar, waktu pengiriman komentar `datetime` 
-dan file lapiran. 
+(Dosen, Staff, Mahasiswa, Infrastruktur dan Pengajaran ), isi laporan/komentar, waktu pengiriman komentar `datetime`
+dan file lapiran.
 
 ### Validasi
 Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript** bukan HTML 5 input type, yaitu:
@@ -101,9 +101,29 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 ### Penjelasan Teknis
 `Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
 
+1. instalasi
+  `instalasi menggunakan ubuntu [Karena salah satu anggota kelompok kami enggunakakn ubuntu (Suva)]`
+  - letakkan di /var/www/html atau htdocs
+  - Unggah file databse yang ada di folder filedatabase ke MySQL
+  - Untuk mengaskses aplikasi ini, dapat melalui localhost/-IF3028-TUBESPEMWEB-2021/public
+
+  `instalasi menggunakan windows`
+  - lakukan konfigurasi framework di .env
+  - lalu lakukan konfigurasi database dan impor database  yang ada di folder filedatabase
+  - lalu jalankan server, bisa menggunakan server bawaan ci4 dan bisa menggunakan server lokal anda
+  - jika menggunakan server bawaan ci4 bisa langsing menjalankan `php spark serve`
+
+2. javascript validasi
+  - Ada di file Views/buatlapor/index.php
+  - pada baris 56-61 mengecek apakah form isi laporan kosong, jika kosong maka tombol akan terdisable.
+  - pada baris 63-dst tepatnya pada fungsi validlapor(). menghitung banyak kata dengan menghitung jumlah spasi yang ada. apabila jumlah  kata kurang dari 20, maka tombol akan terdisable dan muncul teks peringatan bewarna merah di samping tombol. lalu apabila file lampiran tidak terisi, maka tombol juga terdisable
+
+3. CSS
+  - untuk css diletakan di folder public/css/
+
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
-- CSS: margin, padding, header tag, font-size, text-align, float, clear, border, color, div, span, placeholder, 
+- CSS: margin, padding, header tag, font-size, text-align, float, clear, border, color, div, span, placeholder,
 anchor tag.
 - Javascript : XMLHTTPRequest.
 - PHP Framework : [Codeigniter](https://codeigniter.com/en/docs), [Laravel](https://laravel.com/docs/6.x) dll.
@@ -114,4 +134,3 @@ anchor tag.
 ### About :honeybee:
 
 Dosen       : Dicky Prima Satya, M.T., Andre Febrianto, S.Kom., M.Eng., Amirul Iqbal, S.Kom., M.Eng.
-
