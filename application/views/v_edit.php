@@ -7,20 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-        <?php 
-        if(isset($error))
-        {
-            echo "ERROR UPLOAD : <br/>";
-            print_r($error);
-            echo "<hr/>";
-        }
-        ?>
 
         <h1>SIMPLE LAPOR!</h1>
         <p>Buat Laporan/Komentar</p>
     <hr>
-        <form action="<?php echo base_url(). 'crud/tambah_aksi';?>" method="POST" ecntype="multipart/form-data">
-            <textarea name="isi" id="" placeholder="Laporan/Komentar"></textarea>
+    <?php foreach($lapor as $u) { ?>
+        <form action="<?php echo base_url(). 'crud/update';?>" method="post" ecntype="multipart/form-data">
+            <textarea name="isi" id="" ><?php echo $u->isi ?></textarea>
             <br>
             <select name="aspek" id="">
                 <option value="">Pilih Pelapor</option>
@@ -37,5 +30,6 @@
     <br>
     <br>
     <hr>
+    <?php } ?>
 </body>
 </html>

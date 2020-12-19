@@ -29,7 +29,7 @@
                 <p class="right">Waktu : <?php echo $u -> waktu ?> </p>
             </div>
             <div class="row20">
-                <a class="right lihat" href="">lihat Selengkapnya</a>
+                <p class="link" style="float: right"><?php echo anchor('crud/hasil/'.$u->id,'Lihat Selengkapnya'); ?></P>
             </div>
         </div>
         <hr>
