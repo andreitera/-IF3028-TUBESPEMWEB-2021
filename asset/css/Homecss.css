@@ -1,0 +1,125 @@
+body {
+    font-family: 'Quicksand',sans-serif;
+        background: url(simplelapor.jpg) no-repeat fixed;
+        background-size: 100% 100%;
+    
+    margin: 0;
+    padding: 0;
+}
+
+.landing-page {
+    height: 100vh;
+    text-align: center;
+}
+
+hr{
+    height: 2px;
+    color: #2E8B57;
+}
+h1,
+h6 {
+    text-align: center;
+}
+
+h6 {
+    margin-top: 0;
+}
+
+.search-container {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.search-container>input {
+    width: 75%;
+    padding: 16px;
+    border: 1px solid;
+    font-weight: bold;
+}
+
+.search-container>input:focus::placeholder {
+    font-weight: bold;
+}
+
+.search-container>input::placeholder {
+    color: cornflowerblue;
+    font-weight: normal;
+}
+
+.search-container>a>button {
+    width: 23%;
+    cursor: pointer;
+    padding: 15px;
+    border: 1;
+}
+
+.nav {
+    text-align: right;
+    background-color: #2E8B57;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+.nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+.nav a:hover {
+    font-weight: bold;
+}
+
+.nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+.button{
+    font-weight: bold;
+    font-size: 17px;
+    padding: 2px;
+    left: 2px;
+    position: relative;
+    background-color: transparent;
+    border: 0px;
+    color: black;
+}
+
+.awal{
+    margin: 10px auto;
+    text-align: center;
+}
+.comment{
+    margin: 10px auto;
+    text-align: justify;
+    width: 50%;
+}
+
+.next{
+    margin: 10px auto;
+    text-align: right;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: rgb(192, 248, 209);
+}
+
+.footer{
+    padding: 20px;
+    color: white;
+    background-color: #2E8B57;
+    text-align: center;
+    font-weight: bold;
+    height: auto;
+}

@@ -1,0 +1,48 @@
+h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Quicksand',sans-serif;
+    background: url(simplelapor.jpg) no-repeat fixed;
+    background-size: 100% 100%;
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    width: auto;
+    height: 1px;
+}
+.nav {
+        text-align: right;
+        background-color: #2E8B57;
+        padding: 5px;
+        position: sticky;
+        top: 0;
+    }
+
+.container {
+    height: 100vh;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+}
+
+.submit-lapor {
+    float: right;
+}
+
+footer{
+    padding: 10px;
+    color: white;
+    background-color: #2E8B57;
+    text-align: center;
+    font-weight: bold;
+   
+}
