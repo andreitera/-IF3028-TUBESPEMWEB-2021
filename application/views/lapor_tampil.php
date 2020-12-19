@@ -32,6 +32,23 @@
 					</p>
 					<br>
 				</div>
+
+				<div class="latu">
+					<p>
+						Lampiran :
+						<?=$row->lampiran;?>
+					</p>
+
+					<div class="latu" style="width: 270px;">
+						<p>
+							Waktu :
+							<?=$row->waktu;?>
+						</p>
+
+						<p>Lihat selengkapnya</p>
+					</div>	
+							
+				</div>
 				<hr>
 			</tr>
 		<?php
