@@ -35,9 +35,7 @@ class Laporan_model extends CI_Model{
     }
 
     public function save(){
-
         $post = $this->input->post();
-        $this->product_id = uniqid();
         $this->isi = $post["isi"];
         $this->aspek = $post["aspek"];
         $this->lampiran = $post["lampiran"];
