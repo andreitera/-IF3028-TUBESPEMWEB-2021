@@ -1,0 +1,80 @@
+* {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    padding: 20px 0;
+}
+
+.center{
+    margin: auto;
+    width: 50%;   
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.header, .middle, .footer{
+    text-align: center;
+    font-weight: bold;
+}
+
+.header{
+    color: black;
+}
+
+.close-button{
+    text-align: center;
+    padding: 0px;
+    margin-top: -10px;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    float: right;
+    border: 1px solid grey;
+    color: grey;
+}
+
+.masuk{
+    width: 50%;
+    margin: auto;   
+    padding: 0px
+}
+
+.daftar-header{
+    font-size: 32px;
+    padding: 0px
+}
+
+.middle{
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.login-form{
+    margin: auto;   
+}
+
+.footer{
+    color: black;
+}
+
+.daftar{
+    color: blue;
+    padding: 0px
+}
+
+.text-box{
+    border: 1px solid grey;
+    margin: 20px auto;
+    margin-top: 0;
+    width: 60%;
+    padding: 20px;
+    display: block;    
+}   
+
+.button{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    width: 60%;
+    background-color: rgb(209, 8, 8);
+    border: transparent;
+    border-radius: 5px;
+}
