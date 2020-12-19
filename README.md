@@ -104,7 +104,7 @@ Cara Instalasi Project
 - install composer
 - clone repository project ini
 - pindah ke folder lapor pada project ini
-- buka terminal, lalu ketik `composer install`
+- buka terminal pada folder lapor, lalu ketik `composer install`
 - masih diterminal yang sama, lalu ketik `cp .env.example .env`
 - masih diterminal yang sama, lalu ketik `php artisan key:generate`
 - buat database dengan nama `lapor`
