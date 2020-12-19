@@ -38,6 +38,7 @@
             </form>
 
         </div>
+	<script src="<?= base_url() ?>/js/validate.js"></script>
 </body>
 
 </html>

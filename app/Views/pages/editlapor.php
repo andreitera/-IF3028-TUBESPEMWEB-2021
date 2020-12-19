@@ -153,13 +153,13 @@
         </div>
         <hr>
         <div class="conten">
-            <form class="lapor" enctype="multipart/form-data" action="<?= base_url('Lapor/update/' . $lapor['id']); ?>" method="POST">
+            <form id="form" class="lapor" enctype="multipart/form-data" action="<?= base_url('Lapor/update/' . $lapor['id']); ?>" method="POST">
                 <div class="tampilan">
                     <fieldset>
-                        <textarea name="isi" cols="100" rows="10" class="textarea" placeholder="Laporan"><?= $lapor['isi'] ?></textarea>
+                        <textarea id="isi" name="isi" cols="100" rows="10" class="textarea" placeholder="Laporan"><?= $lapor['isi'] ?></textarea>
                         <br>
                         <br>
-                        <select class="pilihan" name="aspek">
+                        <select id="aspek" class="pilihan" name="aspek">
                             <option>Pilih Aspek Pengaduan/Komentar</option>
                             <option <?php if ($lapor['aspek'] === 'pengaduan') {
                                         echo 'selected=""';
@@ -174,7 +174,7 @@
                         <br>
                         <br>
                         <input type="hiden" name="old" value="<?= $lapor['lampiran']; ?>">
-                        <input value="<?= $lapor['lampiran']; ?>" type="file" name="lampiran">
+                        <input id="lampiran" value="<?= $lapor['lampiran']; ?>" type="file" name="lampiran">
                         <br>
                         <br>
                         <div class="submit">
@@ -185,6 +185,7 @@
             </form>
 
         </div>
+<script src="<?= base_url() ?>/js/validate.js"></script>
 </body>
 
 </html>
