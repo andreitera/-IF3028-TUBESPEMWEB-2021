@@ -19,7 +19,7 @@ class CreateUsersTable extends Migration
             $table->foreignId('role_id');
             $table->string('email')->unique();
             $table->string('username')->unique();
-            $table->integer('no_tlp')->nullable();
+            $table->string('no_tlp')->nullable();
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
