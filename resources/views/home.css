@@ -1,0 +1,32 @@
+.margin {
+    margin: auto 100px auto 100px;
+}
+.kotak {
+    background-color: burlywood;
+    width: 100%;
+}
+
+.kaca{
+    width: 30px;
+    height: 30px;
+    margin: auto 0 auto 0;
+}
+.desc{
+    margin: auto 0 auto 0;
+}
+.input {
+    width: 800px;
+    height: 50px;
+    vertical-align: bottom;
+}
+
+.src {
+    width: fit-content;
+    height: 50px;
+    background: transparent;
+    display: inline-flex;
+}
+
+.buatlap {
+    text-decoration: none;
+}
