@@ -58,7 +58,7 @@ Anda diminta untuk membuat tampilan sedemikian hingga mirip dengan tampilan beri
 responsive. Desain tampilan tidak perlu dibuat indah. Icon dan jenis font tidak harus sama dengan contoh. Warna font,
 garis pemisah, dan perbedaan ukuran font harus terlihat sesuai contoh. Perhatikan juga tata letak elemen-elemen.
 
-![](assets/lampiran/dok_Halaman awal.PNG)
+![](assets/lampiran/dok_awal.PNG)
 
 - Search bar diletakkan di bagian paling atas dibawah judul.
 - Tombol "cari" berada di sebelah kanan search bar.
@@ -67,7 +67,7 @@ garis pemisah, dan perbedaan ukuran font harus terlihat sesuai contoh. Perhatika
 - Tampilan pertanyaan tidak harus urut berdasarkan "Laporan/Komentar terakhir",
   namun tulisan "Laporan/komentar Terakhir" ini harus ada.
 
-![](assets/lampiran/dok_Buat lapor.PNG)
+![](assets/lampiran/dok_Buat.PNG)
 
 - Tampilan di atas digunakan untuk mengajukan atau mengubah laporan/komentar.
 - Perhatikan label dari field pada form berada di dalam field (tidak di luar)
