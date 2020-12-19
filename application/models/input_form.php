@@ -5,7 +5,7 @@ class input_form extends CI_Model{
     }   
     
     public function do_upload(){
-        $config['upload_path'] = '../images/';
+        $config['upload_path'] = './images/';
         $config['allowed_types'] = 'jpg|png|jpeg';
         $config['max_size']  = '2048';
         $config['remove_space'] = TRUE;
