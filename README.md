@@ -9,7 +9,9 @@ di program studi teknik informatika ITERA.
 **Luangkan waktu untuk membaca spesifikasi ini sampai selesai.** :kissing_heart:
 
 ### Anggota Tim :cyclone:
-Project dikerjakan secara **berkelompok** dengan maksimal jumlah anggota adalah 2-3 orang mahasiswa.
+1. Rahmat Setiawan   118140097
+2. Siraz Tri Denira  118140100
+3. Rahmat Ramadhan   118140101
 
 ### Petunjuk Pengerjaan :umbrella:
 1. Fork pada repository ini dengan akun github anda.
@@ -100,6 +102,14 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 
 ### Penjelasan Teknis
 `Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+#### Framework :
+Menggunakan Framework CodeIgniter versi 3
+#### Basis Data :
+Menggunakan basisdata dengan nama databasenya adalah tubespwb.sql . Dalam database ini terdapat tabel dengan nama "lapor". Isi dari tabel tersebut adalah id, isi, aspek, file dan tanggal.
+#### Tampilan :
+1. Terdapat "search bar" yang digunakan untuk mencari laporan yang sudah masuk
+2. "Buat Laporan / Komentar" yang digunakan untuk membuat laporan
+3. "Daftar Laporan" menampilkan laporan-laporan yang sudah masuk
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
