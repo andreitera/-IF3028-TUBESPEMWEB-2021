@@ -15,7 +15,7 @@
 	
 			<strong>Layanan Aspirasi dan Pengaduan Online Mahasiswa IF ITERA</strong>
 			
-			<br><br>
+			<br><br><br>
 
 		</div>
 
@@ -71,7 +71,7 @@
 		
 		
 		
-		<p style="margin-top: -35.6px; margin-left: 538px;">
+		<p style="margin-top: -33.7px; margin-left: 535px;">
 			<a href="<?php echo site_url('Laporan_controller/detail/'.$value->id) ?>">Lihat Selengkapnya
 		</p>
 
