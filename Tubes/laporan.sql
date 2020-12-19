@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 18 Des 2020 pada 08.15
+-- Waktu pembuatan: 19 Des 2020 pada 06.26
 -- Versi server: 10.4.11-MariaDB
 -- Versi PHP: 7.4.4
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `lapor`
+-- Database: `laporan`
 --
 
 -- --------------------------------------------------------
@@ -40,11 +40,8 @@ CREATE TABLE `laporan` (
 --
 
 INSERT INTO `laporan` (`id`, `isi`, `aspek`, `lampiran`, `waktu`) VALUES
-(1, 'aa', 'ghl', 'cdvadb', '2020-12-18 13:35:31'),
-(2, 'qwerdfgaimd', 'audybailnd', 'nfianpf;o', '0000-00-00 00:00:00'),
-(3, 'a', 'a', 'a', '2020-12-18 13:12:14'),
-(4, 'b', 'b', 'b', '2020-12-18 13:00:00'),
-(6, 'e', 'e', 'e', '2020-12-18 13:12:26');
+(7, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\n			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\n			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\n			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'Mahasiswa', 'file.pdf', '2020-12-19 11:17:36'),
+(8, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\n			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\n			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\n			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'Mahasiswa', 'file.pdf', '2020-12-19 11:17:36');
 
 --
 -- Indexes for dumped tables
@@ -64,7 +61,7 @@ ALTER TABLE `laporan`
 -- AUTO_INCREMENT untuk tabel `laporan`
 --
 ALTER TABLE `laporan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
