@@ -17,8 +17,8 @@
 			<div class="container">
 				<center>
 					<h1><a href="<?php echo base_url() ?>" style="color: white; text-decoration: none;">Layanan Aspirasi
-							dan Pengaduan Online Rakyat <br>
-							Sampaikan laporan Anda langsung kepada instansi pemerintah berwenang</a></h1>
+							dan Pengaduan Mahasiswa ITERA <br>
+							Sampaikan laporan Anda langsung kepada layanan lapor Kampus ITERA</a></h1>
 					<hr style="width: 80px;">
 				</center>
 			</div>
