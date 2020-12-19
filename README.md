@@ -46,7 +46,7 @@ Project dikerjakan secara **berkelompok** dengan maksimal jumlah anggota adalah 
 3. Untuk frontend, gunakan Javascript, HTML dan CSS. **Tidak boleh menggunakan library atau framework CSS atau JS seperti
    JQuery atau Bootstrap.** CSS sebisa mungkin ada di file yang berbeda (tidak inline styling/embeding styling).
 
-### Spesifikasi Simple LAPOR!
+### Spesifikasi SIMPLE LAPOR!!
 
 #### Tampilan :soccer:
 

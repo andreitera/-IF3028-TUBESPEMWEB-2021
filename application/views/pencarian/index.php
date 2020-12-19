@@ -11,7 +11,7 @@
      
     </head>
  <body> 
-<p class="judul">SIMPLE LAPOR!</p>
+<p class="judul">SIMPLE LAPOR!!</p>
  <div class="lapor">
 
 
@@ -30,7 +30,7 @@
     if($cari != null){
     ?>
     <?php foreach ($cari as $hm )  :?>
-            <?php $id = $hm['id_lapor']; ?>
+            <?php $id = $hm['id_pelapor']; ?>
             <?php $now = date("Y-m-d H:i"); ?>
             
           <div class="arsip"> 

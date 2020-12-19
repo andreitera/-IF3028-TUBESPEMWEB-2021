@@ -4,7 +4,7 @@ class Hapus_model extends CI_model{
 
         $id = $_GET["hapus_id"];
        
-        $this->db->delete('simple_lapor', array('id_lapor' => $id));
+        $this->db->delete('simple_lapor', array('id_pelapor' => $id));
         echo "<script>alert('data terhapus');</script>";
         echo "<script>location='home';</script>"; 
      

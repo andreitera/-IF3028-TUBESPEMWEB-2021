@@ -10,14 +10,14 @@
     <script src="assets/js/validasi.js"></script>
 </head>
 <body>
-<p class="judul">LAPORIN!</p>
+<p class="judul">SIMPLE LAPOR!!</p>
     <div class="lapor">
     <p class="subjudul">Detail Laporan / Komentar</p>
     <hr>
 <br>
 <div class="arsip">
     <?php foreach ($detail as $hm )  :?>
-        <?php $id = $hm['id_lapor']; ?>
+        <?php $id = $hm['id_pelapor']; ?>
         <p><?= $hm['laporan']; ?> </p>
     <?php endforeach; ?>
  </div>

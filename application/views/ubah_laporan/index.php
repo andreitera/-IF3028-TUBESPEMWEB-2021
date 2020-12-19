@@ -11,20 +11,20 @@
 </head>
 <body>
 <?php foreach ($ubah as $hm )  :?>
-        <?php $id = $hm['id_lapor']; ?>
+        <?php $id = $hm['id_pelapor']; ?>
         <?php $laporan = $hm['laporan']; ?>
         <?php $aspek = $hm['aspek']; ?>
         <?php $file = $hm['lampiran']; ?>
         
    
 
-<p class="judul">SIMPLE LAPOR!</p>
+<p class="judul">SIMPLE LAPOR!!</p>
     <div class="lapor">
     <p class="subjudul">Ubah Laporan / Komentar</p>
     <hr>
 
         <form action="" method="post" onSubmit="return validasi(this)" enctype="multipart/form-data">
-        <input type="hidden" name="id_lapor" value="<?php $hm['id_lapor']; ?>" >
+        <input type="hidden" name="id_pelapor" value="<?php $hm['id_pelapor']; ?>" >
             <br>
                 <textarea name="laporan" ><?php echo $laporan ?></textarea><br>
             <br>

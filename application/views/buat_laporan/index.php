@@ -26,7 +26,7 @@ function tambahdata(){
    
 </head>
 <body>
-<p class="judul">LAPORIN</p>
+<p class="judul">SIMPLE LAPOR!</p>
     <div class="lapor">
     <p class="subjudul">Buat Laporan / Komentar</p>
     <hr>

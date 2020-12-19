@@ -11,7 +11,7 @@
      
     </head>
  <body background="<?php base_url(); ?>assets/images/awn.jpg"> 
-<p class="judul">LAPORIN</p>
+<p class="judul">SIMPLE LAPOR!</p>
  <div class="lapor">
 
 
@@ -30,7 +30,7 @@
     <br>
       
          <?php foreach ($home as $hm )  :?>
-            <?php $id = $hm['id_lapor']; ?>
+            <?php $id = $hm['id_pelapor']; ?>
             <?php $now = date("Y-m-d H:i"); ?>
             
           <div class="arsip"> 

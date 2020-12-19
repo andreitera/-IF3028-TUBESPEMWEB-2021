@@ -3,9 +3,9 @@ class Ubah_model extends CI_model{
     public function getUbahLaporan(){
         // return $this->db->get('simple_lapor')->result_array();
         $id = $_GET["ubah_id"];
-        // return "SELECT * FROM simple_lapor WHERE id_lapor= '$id'";
+        // return "SELECT * FROM simple_lapor WHERE id_pelapor= '$id'";
         // return $this->db->get('simple_lapor')->result_array();
-        $query = $this->db->get_where('simple_lapor', array('id_lapor' => $id));
+        $query = $this->db->get_where('simple_lapor', array('id_pelapor' => $id));
         return $query->result_array();
         
     }
@@ -35,7 +35,7 @@ class Ubah_model extends CI_model{
     ];
 
 
-    $this->db->update('simple_lapor', $data, array('id_lapor' => $id));
+    $this->db->update('simple_lapor', $data, array('id_pelapor' => $id));
     echo "<script>alert('Berhasil di ubah');</script>";
     echo "<script>location='home';</script>";
     }

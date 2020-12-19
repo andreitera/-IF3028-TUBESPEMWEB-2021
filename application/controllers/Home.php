@@ -12,7 +12,7 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		$data ['judul'] = 'LAPORIN';
+		$data ['judul'] = 'SIMPLE LAPOR!';
 		$data ['home'] = $this->Home_model->getAllHome();
 		// $this->load->database();
 		$this->load->view('home/index',$data);
