@@ -72,6 +72,9 @@ class Home extends BaseController
 	
 	public function delete($id)
 	{
+		$data['item'] = $this->homeModel->get($id);
+		$file = $data['item']['lampiran'];
+		unlink("assets/uploaded_file/$file");
 		$this->homeModel->delete($id);
 		return redirect()->to('/');
 	}
