@@ -20,7 +20,7 @@
 			<h4 class="lampiran">Lampiran : </h4><br \>
 
 			<?php 
-				$ekstensifile = explode('.',$lapor["file"]); //fungsi untuk mecah string dengan pemecah . ,aldi.jpg = ['aldi','jpg']
+				$ekstensifile = explode('.',$lapor["file"]);
 				$ekstensifile = strtolower(end($ekstensifile));
 				if($ekstensifile == "pdf"){
 			?>
