@@ -53,7 +53,7 @@
 
 			<p>Lampiran File: Nama File </p>
 
-			<div class="detail">Tampilan Waktu <a href="#">Lihat Selengkapnya</a></div>
+			<div class="detail">Tampilan Waktu <a href="<?php  echo site_url('Laporan_controller/detail') ?>">Lihat Selengkapnya</a></div>
 			
 
 		<hr>
@@ -68,7 +68,7 @@
 			
 			<p>Lampiran File: Nama File </p>
 
-			<div class="detail">Tampilan Waktu <a href="#">Lihat Selengkapnya</a></div>
+			<div class="detail">Tampilan Waktu <a href="<?php  echo site_url('Laporan_controller/detail') ?>">Lihat Selengkapnya</a></div>
 
 		<hr>
 			<p>
@@ -82,7 +82,7 @@
 
 			<p>Lampiran File: Nama File </p>
 
-			<div class="detail">Tampilan Waktu <a href="#">Lihat Selengkapnya</a></div>
+			<div class="detail">Tampilan Waktu <a href="<?php  echo site_url('Laporan_controller/detail') ?>">Lihat Selengkapnya</a></div>
 
 		</div>
 

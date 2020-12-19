@@ -26,6 +26,13 @@
         public function tambah(){
             $this->load->view("tambah_view");
         }
+<<<<<<< HEAD
       
+=======
+
+        public function detail(){
+            $this->load->view("detail_view");
+        }
+>>>>>>> 5ccc1a962fdba8e9ea7470feed2b00b96da99c85
     }
 ?>
