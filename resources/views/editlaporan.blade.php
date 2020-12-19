@@ -1,4 +1,7 @@
 @extends('Master.master')
+{{-- @section('css')
+
+<link rel="stylesheet" href="{{ asset('css/styleEditcss') }}"> --}}
 
 @section('content')
 <body>
@@ -28,8 +31,10 @@
         <div class="file">
             <input type="file" name="lampiran" value="{{$data->lampiran}}" required style="display: block; padding-top: 5px">
         </div><br>
+        <div class="buttonedit"
             <button type="submit" style="display: block; padding-top: 5px;">Ganti LAPOR!</button>
         <br>
+    </div>
     
 </body>
 @endsection
