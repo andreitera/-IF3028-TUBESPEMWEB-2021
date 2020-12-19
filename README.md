@@ -99,7 +99,19 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+- Download project pada repositori.
+- Extract dan letakan hasilnya pada folder yang diinginkan 
+- Pastikan terinstal xampp
+- Create database dengan nama report
+- Import reports.sql dan masukkan ke local database anda
+- Pastikan terinstal composer
+- Kemudian, buka cmd ubah path-nya ke folder tempat project  
+- ketik perintah, composer install
+- setelah selesai, kita perlu membuat file .env dari file .env.example
+- ketik perintah, copy .env.example .env
+- setelah berhasil membuat file .env, kita meng-generate key untuk dimasukkan ke APP_KEY di file .env
+- ketik perintah, php artisan key:generate
+- terakhir untuk membukanya di web browser jalankan perintah, php artisan serve
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
