@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\DB;
 class demo extends Controller
 {
     //
-   public function home(){
+   public function home(){ //fungsihome
        $data = DB::table('laporan')->get() ;
        return view('home',['data' => $data]) ;
    }
@@ -28,7 +28,7 @@ class demo extends Controller
 
        $file->move('file_baru' , $name) ;
 
-       DB::table('laporan')->insert([
+       DB::table('laporan')->insert([ //insert
            'komentar' => $komentar ,
            'aspek' => $aspek ,
            'lampiran' => $name ,
@@ -36,7 +36,7 @@ class demo extends Controller
        ]);
    }
 
-   public function detail($id){
+   public function detail($id){ //fungsidetaillaporan
        $data = DB::table('laporan')
            ->where('id' , $id)
            ->get() ;
@@ -44,7 +44,7 @@ class demo extends Controller
        return view('data' , ['data' => $data]) ;
    }
 
-   public function hapus($id){
+   public function hapus($id){ //fungsihapuslaporan
        $data = DB::table('laporan')
            ->where('id', $id)
            ->delete() ;
