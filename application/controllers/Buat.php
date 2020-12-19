@@ -45,8 +45,7 @@ class Buat extends CI_Controller {
 			$this->form_validation->set_rules($config);
 
 			if ($this->form_validation->run() == FALSE){
-				// ini waktu error
-				echo "ada yang error &#9874;";
+				echo "Silahkan lengkapi form";
 			}else{
 				$isi = $_POST['isi'];
 				$id_aspek = $_POST['id_aspek'];
@@ -70,21 +69,20 @@ class Buat extends CI_Controller {
 	
 				if(! $this->upload->do_upload('lampiran')){
 					$error = array('error' => $this->upload->display_errors());
-					var_dump($error);
-					die;
+					echo "error : " . $error['error'];
 				}else{
-					
+					echo 'Laporan berhasil dibuat <a href=' . base_url('buat') . ' >Kembali ke halaman buat laporan</a>';
 				}
 				
 			}  
 
 			$db_error = $this->db->error();
-			if (!empty($db_error)) {
+			if (!empty($db_error) && $db_error['code'] != 0) {
 				throw new Exception('Database error! Error Code [' . $db_error['code'] . '] Error: ' . $db_error['message']);
 				return false; // unreachable retrun statement !!!
 			}
 		} catch (Exception $e) {
-			//throw $th;
+			echo "error : " . $e->getMessage();
 		}
     }
 }
