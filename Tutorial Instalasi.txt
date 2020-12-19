@@ -1,0 +1,8 @@
+Nama : 1. Ezra Kornel Arthur Naibaho (118140171)
+		   2. Deo Alif Alfitrah (118140104)
+			 3. Nur Muhammad Husein Paku Alamsyah (118140150)
+
+Cara Instalasi :
+1. Copy folder web ke dalam direktori server
+2. Import file .sql
+3. Buka web di web browser dengan cara memasukan http://localhost/IF3028-TUBESPEMWEB-2020

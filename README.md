@@ -17,22 +17,21 @@ Project dikerjakan secara **berkelompok** dengan maksimal jumlah anggota adalah 
 contoh: fix css, membuat post done, jangan seperti final, benerin dikit, oke deh, update deh dll. 
 Disarankan untuk tidak melakukan commit dengan perubahan yang besar karena akan mempengaruhi 
 penilaian (contoh: hanya melakukan satu commit kemudian dikumpulkan).
-3. Minimal commit sebanyak personil anggota tim dengan masing-masing personil tim melakukan commit sesuai dengan kesepakatan tim, penilaian individu akan dilihat.
-4. Ubah **Penjelasan Teknis** pada bagian bawah readme.md ini dengan menjelaskan bagaimana cara anda:
+3. Ubah **Penjelasan Teknis** pada bagian bawah readme.md ini dengan menjelaskan bagaimana cara anda:
    - Instalasi Framework, Koneksi basis data 
    - Melakukan validasi pada client-side
    - Melakukan AJAX (mulai dari pengguna melakukan klik pada tombol LAPOR! sampai laporan/komentar terkirim).
-5. Pull request dari repository anda ke repository ini dengan 
+4. Pull request dari repository anda ke repository ini dengan 
 format **NIM** - **Nama Lengkap**. **Waktu terkahir proses pull request adalah 4 hari setelah 
 ujian akhir semester (UAS)**
-6. Data yang dikumpulkan adalah:
+5. Data yang dikumpulkan adalah:
    - Source code aplikasi
    - Basis data, dan
    - Cara instalasi aplikasi anda
-7. Penilaian:
+6. Penilaian:
    - Kerjasama tim
    - Kesesuaian dengan spesifikasi
-   - Pemahaman dalam penggunaan framework, penilaian efisiensi query
+   - Pemahaman dalam penggunaan framework
    - Antarmuka aplikasi
    - Bug free :beetle:
    
@@ -48,7 +47,7 @@ Anda diminta untuk membuat tampilan sedemikian hingga mirip dengan tampilan beri
 responsive. Desain tampilan tidak perlu dibuat indah. Icon dan jenis font tidak harus sama dengan contoh. Warna font, 
 garis pemisah, dan perbedaan ukuran font harus terlihat sesuai contoh. Perhatikan juga tata letak elemen-elemen.
 
-![](tampilan/utama.png)
+![](tampilan/Utama.png)
 - Search bar diletakkan di bagian paling atas dibawah judul.
 - Tombol "cari" berada di sebelah kanan search bar.
 - **Buat LAPOR!** digunakan untuk mengirimkan laporan/komentar baru.
@@ -56,12 +55,12 @@ garis pemisah, dan perbedaan ukuran font harus terlihat sesuai contoh. Perhatika
 - Tampilan pertanyaan tidak harus urut berdasarkan "Laporan/Komentar terakhir", 
 namun tulisan "Laporan/komentar Terakhir" ini harus ada.
 
-![](tampilan/buat.png)
+![](tampilan/Buat.png)
 - Tampilan di atas digunakan untuk mengajukan atau mengubah laporan/komentar.
 - Perhatikan label dari field pada form berada di dalam field (tidak di luar)
 - Apek yang dilaporkan ditampilkan dalam bentuk `select`
 
-![](tampilan/detail.png)
+![](tampilan/Search.png)
 - Bagian ini menampilkan laporan/komentar. Bagian `datetime` harus ada. Tanda `kuote` tidak harus ada
 - Perhatikan label dari field pada form berada di dalam field (tidak di luar)
 
@@ -70,8 +69,6 @@ Halaman utama berisi daftar judul pertanyaan, siapa yang bertanya, dan isi perta
 panjang harus dipotong. Silakan definisikan sendiri seberapa panjang agar tetap baik terlihat di layout yang Anda buat.
 
 Pada masing-masing elemen list, terdapat menu untuk mengubah dan menghapus pertanyaan.
-
-View Laporan ditampilkan secara terurut dimulai dari laporan terakhir yang diberikan highlight
 
 ### Kirim laporan/komentar `LAPOR!`
 Pengguna dapat mengajukan laporan/komentar. Form yang digunakan memiliki komentar (textarea), 
@@ -100,6 +97,30 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 
 ### Penjelasan Teknis
 `Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+1. Instalasi Framework
+	- Download file Codeigniter dari www.codeigniter.com, kemudian extract file tersebut
+	- Pindahkan seluruh hasil extract ke dalam folder web pada direktori server. Misal jika menggunakan server apache pada XAMPP, lokasi web ada di folder htdocs pada folder instalasi XAMPP.
+	- Atur konfigurasi CodeIgniter pada folder config.
+	
+2. Koneksi database
+	- Import file SQL yang dilampirkan pada repository ini dengan nama database lapor.
+	- Buka file database.php pada folder config.
+	- Atur nama database, username, password dan konfigurasi lain.
+	- Jika konfigurasi benar, database telah terkoneksi.
+	
+3. Validasi pada client side
+	- File javascript mengambil elemen form dan setiap field input dari HTML berdasarkan id.
+	- Elemen form ditambahkan event listener submit
+	- Setiap kali form disubmit, event listener akan melakukan aksi berikut:
+		a. Memastikan isi dari field laporan dan aspek tidak kosong. Jika isi field tersebut kosong, akan muncul alert "Tidak boleh ada kolom yang kosong".
+		b. Menghitung jumlah kata dari isi laporan. Jika jumlah kata kurang dari 20, akan muncul alert "Jumlah kata dalam laporan minimal 20".
+		c. Mengecek apakah ada file yang diinput. Jika tidak ada file yang diinput, akan muncul alert "Harap pilih file lampiran".
+		
+4. Menginput Laporan
+	- Pengguna menekan tombol LAPOR
+	- Setelah submit form, akan diarahkan ke fungsi input() di dalam controller Laporan.php
+	- Pada fungsi input(), beberapa variabel menyimpan data yang dikirimkan dengan method post. Kemudian akan mengatur konfigurasi upload_path, file_types, dan file_name, kemudian file upload akan dipindahkan dan diubah dengan konfigurasi tersebut. Setelah itu, data yang disimpan dalam variabel tadi akan dikirimkan de dalam method input_laporan() dalam model post_model.php.
+	- Pada fungsi input_laporan() dalam model post_model.php, data yang dikirimkan dari controller akan diinsert ke dalam database menggunakan CodeIgniter query builder.
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
@@ -113,5 +134,6 @@ anchor tag.
 
 ### About :honeybee:
 
-Dosen       : Dicky Prima Satya, M.T., Andre Febrianto, S.Kom., M.Eng., Amirul Iqbal, S.Kom., M.Eng.
+Dosen       : Rajif Agung Yunmar, S.Kom., M.Cs.	,Ahmad Luky Ramdani, S.Komp., M.Kom. ,
+Arief Ichwani, S.Kom., M.Cs., Andre Febrianto, S.Kom., M.Eng, Ilham Firman Ashari, S.Kom., M.T
 
