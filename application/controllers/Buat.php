@@ -50,8 +50,8 @@ class Buat extends CI_Controller {
 			}else{
 				$isi = $_POST['isi'];
 				$id_aspek = $_POST['id_aspek'];
-				$lampiran = $_FILES['lampiran']['name'];
 				$waktu = date("Y-m-d");
+				$lampiran = $waktu . '-' . $_FILES['lampiran']['name'];
 	
 				$data = array(
 					'isi' => $isi,
@@ -62,20 +62,20 @@ class Buat extends CI_Controller {
 	
 				$this->db->insert('lapor', $data);
 	
-				if(isset($_FILES['name'])){
-					$config['upload_path'] = './uploads/';
-					$config['allowed_types'] = 'doc|docx|xls|xlsx|ppt|pptx|pdf|txt|png|jpg|jpeg|mp3|mp4|wav|mkv|txt';
-		
-					$this->load->library('upload', $config);
-		
-					if(! $this->upload->do_upload('lampiran')){
-						$error = array('error' => $this->upload->display_errors());
-						var_dump($error);
-						die;
-					}else{
-						
-					}
+				$config['upload_path'] = './uploads/';
+				$config['allowed_types'] = 'doc|docx|xls|xlsx|ppt|pptx|pdf|txt|png|jpg|jpeg|mp3|mp4|wav|mkv|txt';
+				$config['file_name'] = $lampiran;
+	
+				$this->upload->initialize($config);
+	
+				if(! $this->upload->do_upload('lampiran')){
+					$error = array('error' => $this->upload->display_errors());
+					var_dump($error);
+					die;
+				}else{
+					
 				}
+				
 			}  
 
 			$db_error = $this->db->error();
