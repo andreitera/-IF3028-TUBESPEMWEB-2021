@@ -100,18 +100,27 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 
 ### Penjelasan Teknis
 `Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
-1. Cara instalasi framework</ br>
-  1.1. Kami menggunakan framework Codeigniter 4 </ br>
-  1.2. Unduh atau clone dahulu project ini </ br>
-  1.3. Unggah file databse yang ada di folder filedatabase ke MySQL</ br>
-  1.4. Untuk mengaskses aplikasi ini, dapat melalui localhost/-IF3028-TUBESPEMWEB-2021/public</ br>
 
-2. javascript </ br>
-  2.1. Ada di file Views/buatlapor/index.php </ br>
-  2.2. pada baris 56-61 mengecek apakah form isi laporan kosong, jika kosong maka tombol akan terdisable. </ br>
-  2.3. pada baris 63-82 tepatnya pada fungsi validlapor(). menghitung banyak kata dengan menghitung jumlah spasi yang ada. apabila jumlah  kata kurang dari 20, maka tombol akan terdisable dan muncul teks peringatan bewarna merah di samping tombol
-  </ br>
-  2.4. lalu apabila file lampiran tidak terisi, maka tombol juga terdisable
+1. instalasi
+  `instalasi menggunakan ubuntu [Karena salah satu anggota kelompok kami enggunakakn ubuntu (Suva)]`
+  - letakkan di /var/www/html atau htdocs
+  - Unggah file databse yang ada di folder filedatabase ke MySQL
+  - Untuk mengaskses aplikasi ini, dapat melalui localhost/-IF3028-TUBESPEMWEB-2021/public
+
+  `instalasi menggunakan windows`
+  - lakukan konfigurasi framework di .env
+  - lalu lakukan konfigurasi database dan impor database  yang ada di folder filedatabase
+  - lalu jalankan server, bisa menggunakan server bawaan ci4 dan bisa menggunakan server lokal anda
+  - jika menggunakan server bawaan ci4 bisa langsing menjalankan `php spark serve`
+
+2. javascript validasi
+  - Ada di file Views/buatlapor/index.php
+  - pada baris 56-61 mengecek apakah form isi laporan kosong, jika kosong maka tombol akan terdisable.
+  - pada baris 63-dst tepatnya pada fungsi validlapor(). menghitung banyak kata dengan menghitung jumlah spasi yang ada. apabila jumlah  kata kurang dari 20, maka tombol akan terdisable dan muncul teks peringatan bewarna merah di samping tombol. lalu apabila file lampiran tidak terisi, maka tombol juga terdisable
+
+3. CSS
+  - untuk css diletakan di folder public/css/
+
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
 - CSS: margin, padding, header tag, font-size, text-align, float, clear, border, color, div, span, placeholder,
