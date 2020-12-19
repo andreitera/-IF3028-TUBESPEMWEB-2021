@@ -1,0 +1,66 @@
+// beranda.php
+.container-beranda {
+  .search-box {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    margin-bottom: 1rem;
+
+    input {
+      width: 100%;
+      padding: 14px;
+      font-size: 1.5rem;
+    }
+
+    button {
+      background-color: white;
+      font-weight: 600;
+      padding: 14px 2em;
+      border: 1px solid black;
+    }
+  }
+
+  .buat-laporan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container-listLaporan {
+    width: 100%;
+    margin-top: 3rem;
+
+    p,
+    .item-laporan {
+      border-bottom: 1px solid black;
+    }
+
+    .item-laporan {
+      p {
+        margin: 2rem 0 1rem 0;
+        border-bottom: none;
+      }
+
+      .detail-laporan {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+
+        p:first-child {
+          padding-left: 0;
+          width: 65%;
+        }
+
+        p,
+        a {
+          padding: 1em;
+          margin: 0;
+        }
+
+        a {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}

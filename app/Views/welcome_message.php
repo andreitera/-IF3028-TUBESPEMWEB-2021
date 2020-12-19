@@ -7,6 +7,7 @@
 	<meta name="description" content="The small framework with powerful features">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+	<link rel="stylesheet" href="<?php base_url('public/css/style.css'); ?>">
 
 	<!-- STYLES -->
 
@@ -285,6 +286,7 @@
 		<section>
 
 			<h1>Go further</h1>
+
 			<h2>
 				<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
 					<rect x='32' y='96' width='64' height='368' rx='16' ry='16' style='fill:none;stroke:#000;stroke-linejoin:round;stroke-width:32px' />
@@ -346,6 +348,7 @@
 
 		</div>
 
+		<h1 class="h1">hello</h1>
 	</footer>
 
 	<!-- SCRIPTS -->
