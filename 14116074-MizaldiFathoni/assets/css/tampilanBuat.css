@@ -1,0 +1,47 @@
+	*{
+		font-family: constantia;
+	}
+
+	body {
+		font-family: constantia;
+		margin: 80px;
+	}
+
+	body h1{
+		text-align: center;
+	}
+	label{
+		text-align: left;
+	}
+	hr{
+		border: 1px solid;
+		color: black;
+	}
+	.area{
+		height: 300px;
+		border: 2px solid;
+		width: 100%;
+		padding-top: 10px;
+	}
+
+	a{
+		text-decoration: none;
+		color: black;
+	}
+
+	select{
+		border: 2px solid;
+	}
+	.but{
+		text-align: center;
+		height: 50px; 
+		width: 110px; 
+		border: 2px solid; 
+		background-color: white;
+	}
+
+	.nama, .judul{
+		border: 2px solid;
+		width: 200px;
+		height: 30px;
+	}

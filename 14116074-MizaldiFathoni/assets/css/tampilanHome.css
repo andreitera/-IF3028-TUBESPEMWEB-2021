@@ -1,0 +1,43 @@
+*{
+		font-family: constantia;
+	}
+
+body {
+		font-family: constantia;
+		margin: 80px;
+	}
+
+	body h1{
+		text-align: center;
+	}
+
+	body form{
+		text-align: center;
+	}
+
+	body form input[type=text]{
+		width: 800px;
+		height: 40px;
+		margin-top: 30px;
+		border: 2px solid;
+	}
+
+	body form button[type=submit]{
+		height: 45px;
+		background-color: white;
+		border: 2px solid;
+	}
+
+	}
+	label{
+
+		text-align: left;
+	}
+	hr{
+		border: 1px solid;
+		color: black;
+	}
+	span{
+		position: fixed;
+		left: 76%;
+	}

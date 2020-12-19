@@ -1,0 +1,7 @@
+Cara Install Aplikasi
+
+1. Pindahkan folder '-IF3028-TUBESPEMWEB-2021' ke dalam folder htdocs. (bentuknya menjadi xampp/htdocs/-IF3028-TUBESPEMWEB-2021/..)
+2. Import basis data dari file tubeweb.sql yang tertera didalam folder.
+3. Masuk ke dalam localhost/-IF3028-TUBESPEMWEB-2021/14116074-MizaldiFathoni/. Maka itulah hasil dari projectnya :)
+
+Terimakasih.
