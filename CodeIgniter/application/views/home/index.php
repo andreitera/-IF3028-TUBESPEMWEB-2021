@@ -40,7 +40,7 @@
 </div>
 
 <input id="alamat" value="<?php echo base_url() ?>index.php/Home/cari/" hidden>
-<script src="<?php echo base_url() ?>/asset/ajax/ajax.js"></script>
+<script src="<?php echo base_url() ?>/atribut/ajax/ajax.js"></script>
 
 </body>
 </html>
