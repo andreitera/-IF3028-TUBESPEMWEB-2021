@@ -11,7 +11,7 @@
 		<header>SIMPLE LAPOR!</header>
 
 		<div class="konten">
-			<form action="http://localhost/-IF3028-TUBESPEMWEB-2021-master/-IF3028-TUBESPEMWEB-2021-master/CodeIgniter-3.1.11/" method="POST" onSubmit="Validasi()">
+			<form action="http://localhost/-IF3028-TUBESPEMWEB-2021-master/" method="POST" onSubmit="Validasi()">
 				<p>Ubah Laporan/Komentar</p>
 				<hr><br>
 				<?php
@@ -47,7 +47,7 @@
 		var waktu = date_timestamp_get();
 
 		if (laporan == "" || aspek == "") {
-			alert('Mohon isi data dengan lengkap!');
+			alert('Mohon lemgkapi isi pada data!');
 			return false;
 		} else {
 			var yakin = confirm("Apakah Anda yakin?");
@@ -55,7 +55,7 @@
 			if (yakin) {
 
 
-				$this - > modelLapor - > UpdateData(
+				$this - > ModelLapor - > UpdateData(
 					array(
 						"id" => "",
 						"laporan" => laporan,
