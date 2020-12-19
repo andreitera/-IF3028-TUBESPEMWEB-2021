@@ -18,10 +18,12 @@ Route::get('/register',                 'AuthController@register')->name('regist
 Route::get('/login',                    'AuthController@login')->name('login.user');
 
 
-Route::get('/',                 'LaporController@index')->name('landing');
-Route::get('/lapors/{id}',           'LaporController@listView')->name('listView');
-Route::get('/profil',           'ProfileController@showProfile')->name('showProfile');
-Route::get('/view-lapor/{id}',       'LaporController@viewLapor')->name('viewLapor');
+Route::get('/',                         'LaporController@index')->name('landing');
+Route::post('/post-laporan',            'LaporController@postLapor')->name('post.lapor');
+
+Route::get('/lapors/{id}',              'LaporController@listView')->name('listView');
+Route::get('/profil',                   'ProfileController@showProfile')->name('showProfile');
+Route::get('/view-lapor/{id}',          'LaporController@viewLapor')->name('viewLapor');
 Route::get('/search/{query}',           'LaporController@viewSearch')->name('viewSearch');
 
 //----------- Route Comment -----------
