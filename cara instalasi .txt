@@ -1,0 +1,9 @@
+# -IF3028-TUBESPEMWEB-2021
+Tugas Besar Mata Kuliah Pemrograman Web TA 2020/2021
+
+Cara Instalasi :
+
+1. Clone repositori ini
+2. Import database dengan nama tubes_lapor
+3. jalankan xampp.
+4. buka lewat localhost pada browser
