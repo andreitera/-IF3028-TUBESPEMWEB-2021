@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tampilan</title>
     <link rel="stylesheet" href="home.css">
+    <link href='http://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
 </head>
 <style>
-    .margin {
+.margin {
     margin: auto 100px auto 100px;
-    <link href='http://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
 }
 
 .font{
@@ -24,8 +24,12 @@
 
 .font2{
     font-family: 'Poppins';
-    margin-bottom: 0px;
     font-size: 28px
+    }
+
+.fontlaporanmasuk{
+    font-family: 'Poppins';
+    font-size: 16px
     }
 
 .kotak {
@@ -70,8 +74,12 @@
     vertical-align: bottom;
 }
 
-.buatlap {
+.buatlap{
+    font-family: 'Poppins';
     text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    padding-top: 10px;
 }
 
 .lampiran {
@@ -112,18 +120,17 @@
             </center>
         </div>
 
-        <br />
-        <br />
         <div class="buat">
-            <center><a class="buatlap" href="#">Buat Laporan/Komentar</a></center>
-            <img src="tambah.png" alt="" />
+            <center><a class="buatlap" href="#" >Buat Laporan/Komentar</a></center>
+            <img src="https://docs.updatefactory.io/images/plus-icon.png" alt="" />
         </div>
         <br />
         <br />
         <br />
         <br />
 
-        <p>Laporan/Komentar Terakhir</p>
+<div class='fontlaporanmasuk'>
+        <p class='font1'><b>Laporan/Komentar Terakhir</b></p>
         <hr />
         <div>
             <p>
@@ -189,6 +196,8 @@
             <hr />
         </div>
     </div>
+</div>
+
 </body>
 
 </html>

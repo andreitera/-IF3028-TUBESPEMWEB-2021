@@ -4,11 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href='http://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
 </head>
 <style>
 .margin {
     margin: auto 100px auto 100px;
+    font-family: 'Poppins';
+    font-size: 16px
 }
+.fonthead{
+    font-family: 'Poppins';
+    font-size: 40px;
+}
+.fontx{
+    font-family: 'Poppins';
+    font-size: 24px
+    }
 
 .waktu {
     float: left;
@@ -34,10 +45,10 @@
 <body>
     <br><br>
     <div class="margin">
-        <center><h1>SIMPLE LAPOR!</h1></center>
+        <center><p class='fonthead'><b>SIMPLE LAPOR!</b></p></center>
         <br><br><br>
 
-        <p>Detail Laporan/Komentar</p>
+        <p class='fontx'><b>Detail Laporan/Komentar</b></p>
         <hr><br>
         
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.

@@ -15,7 +15,7 @@ use App\Http\Controllers\LaporanController;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('detail');
 });
 Route::post('edit', [LaporanController::class, 'edit']);
 Route::post('update', [LaporanController::class, 'update']);
