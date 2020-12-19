@@ -37,7 +37,8 @@
 	<hr>
 	<footer>
 		&copyCopyright 2020 - INFORMATIKA ITERA 2018
-		<br>Rahmat Ramadhan - Siraz Tri Denira - Rahmat Setiawan</br>
+		<br>Rahmat Setiawan - Siraz Tri Denira - Rahmat Ramadhan</br>
+118140097	-	118140100	-	118140101
 	</footer>
 
 </div>
