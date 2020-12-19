@@ -99,11 +99,13 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
 1. Instalasi Framework
 Menggunakan CodeIgniter yang diunduh di https://codeigniter.com/, lalu file zip diekstrak di htdocs pada drive(C:\). Setelah itu, lakukan konfigurasi CI dengan membuat tampilan sesuai dengan spesifikasi tugas besar.
 Koneksi Basis Data
 
+2. Validasi pada client-side
+
+3. Melakukan AJAX
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
