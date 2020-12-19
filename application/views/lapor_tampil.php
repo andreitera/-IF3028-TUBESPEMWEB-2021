@@ -23,7 +23,7 @@
 	<input type="submit" value="Cari">
 </form>
 
-<p style="text-align: center;">Buat Laporan/Komentar</p>
+<p style="text-align: center;"><a href="Buat">Buat Laporan/Komentar &#10010;</a></p>
 
 <p>Laporan/Komentar Terakhir</p>
 <hr>
@@ -33,6 +33,7 @@
 			<tr>
 				<div class="isi">
 					<p>
+						<br>
 						<?=$row->isi;?>
 					</p>
 					<br>
@@ -44,13 +45,14 @@
 						<?=$row->lampiran;?>
 					</p>
 
-					<div class="latu" style="width: 270px;">
+					<div class="latu" style="width: 280px;">
 						<p>
 							Waktu :
 							<?=$row->waktu;?>
 						</p>
 
-						<p>Lihat selengkapnya</p>
+						<p><a href="#">Lihat Selengkapnya</a></p>
+						<p>&#10097;</p>
 					</div>	
 
 				</div>
