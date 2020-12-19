@@ -1,3 +1,4 @@
+Link asli : https://github.com/defanggaabypn/-IF3028-TUBESPEMWEB-2021
 ## Simple `LAPOR` :heavy_exclamation_mark:
 Anda mengetahui aplikasi `lapor` yang dibuat oleh pemerintah republik indonesia? jika tidak silahkan kunjungi 
 http://lapor.go.id, maka anda akan mendapatkan laman seperti gambar di bawah
@@ -9,7 +10,9 @@ di program studi teknik informatika ITERA.
 **Luangkan waktu untuk membaca spesifikasi ini sampai selesai.** :kissing_heart:
 
 ### Anggota Tim :cyclone:
-Project dikerjakan secara **berkelompok** dengan maksimal jumlah anggota adalah 2-3 orang mahasiswa.
+-  **Defangga Aby Vonega**
+-  **M. Fazar Zuhdi**
+-  **Abdul Gani**
 
 ### Petunjuk Pengerjaan :umbrella:
 1. Fork pada repository ini dengan akun github anda.
@@ -98,9 +101,41 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 ### Bonus
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
-### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+### **Penjelasan Teknis**
+**Instalasi Framework Codeigniter 3.1**
+      -Download Framework CI
+      -Melakukan konfigurasi dasar CI pada folder config
+      -Perancangan roadmap flowchart pembuatan aplikasi
+      -Coding dan Debugging
 
+## **Spesifikasi Simple LAPOR!**
+   - framework  : Codeigniter 3.1
+   - DBMS       : mysql
+   - Languange  : PHP, Javascript (Native)
+   - Fitur      : CRUD Laporan , Validisasi form, Search komentar. 
+
+## **CARA INSTALASI**
+   - Clone git dengan gitbash / Download repository ini ke PC anda masing masing, Letakkan di folder XAMPP/ WAMP/ LAMP.
+   - Hidupkan database anda, lalu import database yang ada dalam repository ini yang berfilename `lapor.sql`. lalu beri nama "lapor" tanpa tanda petik
+   -setting base_url sesuai dengan folder server local
+   -Nikmati layanan website lapor kami tanpa bugfree!. 
+   -Terimakasih telah menggunakan program kami.
+
+![](tampilan/tampilan_utama.jpeg)
+   -tampilan utama ketika membuka website
+   -terdapat beberapa menu seperti buat laporan, pencarian laporan serta detail laporan
+
+![](tampilan/buat_laporan.jpeg)
+   -tampilan ketika ingin mebuat laporan 
+
+![](tampilan/laporan_berhasil.jpeg)
+   -tampilan ketika selesai membuat laporan
+![](tampilan/detail_laporan.jpeg)
+   -tampilan ketika membuka lihat selengkapnya pada laporan
+![](tampilan/ubah_laporan.jpeg)
+   -tampilan ketika ingin mengubah laporan yang telah dibuat
+![](tampilan/pencarian_laporan.jpeg)
+   -tampilan ketika ingin mencari laporan sesuai dengan keywordnya.
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
 - CSS: margin, padding, header tag, font-size, text-align, float, clear, border, color, div, span, placeholder, 
@@ -114,4 +149,3 @@ anchor tag.
 ### About :honeybee:
 
 Dosen       : Dicky Prima Satya, M.T., Andre Febrianto, S.Kom., M.Eng., Amirul Iqbal, S.Kom., M.Eng.
-

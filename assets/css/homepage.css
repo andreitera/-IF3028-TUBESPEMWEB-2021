@@ -1,0 +1,71 @@
+body {
+	font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.618;
+	color: #333333;
+	background-image: url('https://image.freepik.com/free-photo/white-concrete-wall_53876-92803.jpg');
+}
+
+font {
+  font-family: inherit;
+  font-weight: 600;
+  line-height: inherit;
+  color: inherit;
+}
+
+/* global */
+fieldset,
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+/* header */
+header {
+	background-image: url('https://img.pngio.com/red-an-orange-gradient-abstract-wallpaper-free-images-at-clker-red-wallpaper-png-600_375.png');
+	color: white;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	min-height: 70px;
+}
+
+/* bagian search */
+#searchlaporan {
+	padding: 15px;
+	color: white;
+}
+
+#searchlaporan form {
+	margin-top: 15px;
+	margin-	ottom: 15px;
+}
+
+#searchlaporan input[type="text"] {
+	padding: 4px;
+	height: 30px;
+	width: 85%;
+}
+
+.button-1 {
+	height: 42px;
+	background: #d0021b;
+	border: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: white;
+}
+
+/* box-h */
+#boxes .container .box-h {
+	float: left;
+	width: 32.5%;
+}
+
+#boxes .container .box-h .waktu {
+	text-align: right;
+}
+
+#boxes .container .box-h .lihat {
+	text-align: right;
+}
