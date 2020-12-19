@@ -48,7 +48,7 @@
             
             <?php
                 echo "
-                    <a class='more' href= javascript:confirmDelete('Delete?hapus_id=$id')>Hapus Laporan/Komentar  &nbsp<img src='assets/icon/hapus.png' height=13px> </a>
+                    <a class='more' href= javascript:confirmDelete('Delete?hapus_id=$id')>Hapus Laporan/Komentar  &nbsp<img src='assets/icon/delete.png' height=13px> </a>
                     <a class='waktu' href='Update?ubah_id=$id'>Ubah Laporan/Komentar  &nbsp<img src='assets/icon/edit.png' height=13px> </a>		
                     ";
                 ?>

@@ -23,7 +23,7 @@
         <input class="button cari" type="submit" name="submit"  placeholder="cari" value="Cari">	 
     </form>
 
-    <a class="linkcreate" href="<?php base_url(); ?>Create">Buat Laporan / Komentar &nbsp<img src="<?php echo base_url(); ?>assets/icon/tambah.png" height="15px"></a>
+    <a class="linkcreate" href="<?php base_url(); ?>Create">Buat Laporan / Komentar &nbsp<img src="<?php echo base_url(); ?>assets/icon/add.png" height="15px"></a>
     <p class="subtitle">Hasil Pencarian</p>
     <hr>
     <br>
@@ -77,8 +77,8 @@
  <?php } ?>
 
 
-        <img class="gambar" src="<?php echo base_url(); ?>assets/icon/menu.png">
-        <img class="gambar" src="<?php echo base_url(); ?>assets/icon/menu.png">
+        <img class="gambar" src="<?php echo base_url(); ?>assets/icon/titik.png">
+        <img class="gambar" src="<?php echo base_url(); ?>assets/icon/titik.png">
         <br>
      
   </div>
