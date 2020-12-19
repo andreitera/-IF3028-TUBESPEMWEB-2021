@@ -59,17 +59,15 @@
 			</button>
 			</div>
 			<div class="detail">
-<<<<<<< HEAD
-				<button type="submit" style="background-color: rgb(212, 54, 36); margin-top: -2px; margin-right: 10px; border-radius: 5px; ">
-				<a href="<?php echo site_url('Laporan_controller/delete/'.$laporan->id) ?>" style="color: white;">
-				Hapus Laporan/Komentar</a>
-				</button>
-=======
 
-				<a href="<?php echo site_url('Laporan_controller/delete/'.$laporan->id) ?>" onclick="return confirm('Anda yakin ingin menghapus laporan ini?');" style="color: rgb(212, 54, 36);">
+				<button type="submit" style="background-color: rgb(212, 54, 36); margin-top: -2px; margin-right: 10px; border-radius: 5px; ">
+
+				<a href="<?php echo site_url('Laporan_controller/delete/'.$laporan->id) ?>" onclick="return confirm('Anda yakin ingin menghapus laporan ini?');" style="color: white; ">
 				Hapus Laporan/Komentar
-			</a>
->>>>>>> f1ea14990619c6c30631b2e4466933108e7d84d6
+				</a>
+
+				</button>
+
 			</div>
 
 			<div style="margin-left: 495px; margin-top:-28px;">
