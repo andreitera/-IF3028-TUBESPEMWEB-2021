@@ -1,0 +1,15 @@
+.jumbotron {
+    font-size: 20px;
+    padding: 10px;
+    background-color: #ac1723;
+    text-align: center;
+    color: white;
+  }
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 16px;
+ }
