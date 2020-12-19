@@ -100,6 +100,15 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 
 ### Penjelasan Teknis
 `Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+web kami, harus masuk kedalam link = http://localhost/-IF3028-TUBESPEMWEB-2021/Lapor
+
+Instalasi framework CodeIgniter kami menggunakan controller, view, dan model. Dimana controller akan melakukan fungsi pemanggilan view dan model, model akan mengatur koneksi database dengan controller, yang akan diminta atau diberikan data oleh bagian view. Lalu untuk bagian css, javascript, dan lampiran akan disimpan pada folder assets diluar application. Dan pada bagian upload file hanya bisa mengupload file yang ada dalam folder assets/lampiran/ selain didalam folder tersebut, maka tidak bisa mengupload atau mengedit lampiran file atau melihat lampiran file.
+
+Kami menggunakan 4 view berbeda yaitu tampilan utama (index), tampilan detail (view), tampilan update laporan (edit), tampilan membuat laporan (create). Untuk koneksi ke database maka pada config didalam aplikasi kita harus mengedit isi nama database yang kita buat dan menambahkan database pada bagian libraries pada file autoload.php.
+
+Validasi deskripsi tidak boleh kosong dan dibawah 20 kata, lampiran hanya menerima ekstensi filedoc, docx, xls, xlsx, ppt, pptx, pdf. Jika tidak sesuai maka tidak akan diterima oleh sistem dan harus menulis ulang
+
+Javascript kita buat pada tombol delete pada view detail. Jika ingin men delete laporan maka akan muncul mengkonfirmasian menggunakan javascript.
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.

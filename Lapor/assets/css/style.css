@@ -1,0 +1,270 @@
+
+/* Add a black background color to the top navigation */
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  top: 0;
+  left: 0;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  font-family: corbel;
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  top: 0;
+  left: 0;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: grey;
+  font-family: corbel;
+}
+
+/* logo navbar*/
+.logo img{float:left;}
+
+/* footer */
+.footer {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 2px 2px;
+  background-color: #efefef;
+  text-align: center;
+  font-family: corbel;
+  font-size: 17px;
+}
+
+/* container pada body*/
+.container h2{
+  font-size: 80px;
+  font-family: corbel;
+  text-align: center;
+}
+
+.container {
+  font-family: corbel;
+}
+
+/* */
+/* Style the search box inside the navigation bar */
+.searchTerm {
+  width: 60%;
+  padding: 5px;
+  height: 70px;
+  border: 2px solid black;
+  font-size: 24px;
+  font-family: corbel;
+}
+
+.searchButton {
+  width: 110px;
+  height: 70px;
+  border: 2px solid black;
+  background: white;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+  font-size: 24px;
+  font-family: corbel;
+}
+
+.searchButton:hover{
+  color: grey;
+}
+
+.search {
+  left: 30%;
+  width: 60%;
+  position: relative;
+  display: flex;
+}
+
+/* Lapor button */
+.lapor{
+  left: 45%;
+  position: relative;
+  background: white;
+  border: none;
+  cursor: pointer;
+}
+
+.lapor:hover {
+  color: grey;
+}
+
+
+/* Kris */
+body {
+  background: #eee;
+  font-family: corbel;
+}
+
+/*Header*/
+header{
+  text-align: center;
+  color: #232323;
+}
+ 
+header .judul{
+  font-size: 60px;
+  font-family: corbel;
+}
+/*Akhir Header*/
+
+/*Pencarian*/
+form {
+  text-align: center;
+    width:500px;
+    margin:40px auto;
+}
+
+/*Akhir Pencarian*/
+
+/*Isi*/
+.wrap {
+  width: 950px;
+  margin:25px auto;
+}
+ 
+.konten {
+  text-align: justify;
+  text-justify: inter-word;
+  width:600px;
+  padding:25px;
+  margin:25px auto;
+  background: #fff;
+  border:1px solid #dedede;
+  -webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+  -moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+  box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+}
+ 
+.konten img {
+  min-width: 650px;
+  margin:0 0 25px -25px;
+  max-width: 650px;
+}
+
+hr {
+  border:0;
+  background:#000001;
+  height:2px;
+}
+ 
+.konten h1 {
+  padding:0;
+  margin:0 0 15px;
+  font-weight: normal;
+  color: #666;
+  font-family: corbel;
+}
+
+.wrap h3{
+  text-align: center;
+  padding:0;
+  margin:0 0 15px;
+  font-weight: normal;
+  color: #666;
+  font-family: corbel;
+}
+ 
+.konten p:last-child {
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 0;
+}
+ 
+.konten .next {
+  color:#000;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  font-weight: 700; 
+}
+ 
+.konten .next:hover {
+  margin-left:10px;
+}
+/*Akhir Isi*/   
+
+/*Form Komentar*/ 
+#formKomentar{
+    border: 5px solid #d1d1d1;
+    width: 500px;
+    padding: 10px;
+}
+
+input, textarea{
+     padding: 10px;
+     border:3px solid #e6e6e6;
+     margin-bottom: 15px; 
+}
+  
+input:focus, textarea:focus{
+    border:3px solid #5E4F4F;
+}
+ 
+textarea{
+    width:300px;
+}
+
+input[type="submit"]{
+     cursor: pointer;
+     background: -webkit-linear-gradient(top, #efefef, #ddd);
+     background: -moz-linear-gradient(top, #efefef, #ddd);
+     background: -ms-linear-gradient(top, #efefef, #ddd);
+     background: -o-linear-gradient(top, #efefef, #ddd);
+     background: linear-gradient(top, #efefef, #ddd);
+     color: #333;
+     text-shadow: 0px 1px 1px rgba(255,255,255,1);
+     border: 1px solid #ccc;
+     float: right;
+}
+ 
+input[type="submit"]:hover {
+     background: -webkit-linear-gradient(top, #eee, #ccc);
+     background: -moz-linear-gradient(top, #eee, #ccc);
+     background: -ms-linear-gradient(top, #eee, #ccc);
+     background: -o-linear-gradient(top, #eee, #ccc);
+     background: linear-gradient(top, #eee, #ccc);
+     border: 1px solid #bbb;
+}
+
+/*Dropdown*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.pilih {
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding:10px;
+    margin-top:10px;
+}
+ 
+.pilih:hover {
+    background-color: blue;
+}
+.dropdown-child {
+    display: none;
+    background-color: black;
+    min-width: 200px;
+}
+.dropdown-child a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
