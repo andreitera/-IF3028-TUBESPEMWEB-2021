@@ -18,6 +18,11 @@
 <h1 style="text-align: center;">SIMPLE LAPOR!</h1>
 <br>
 
+<form style="text-align: center;" action="Utama.php" method="get">
+	<input type="text" name="cari">
+	<input type="submit" value="Cari">
+</form>
+
 <p style="text-align: center;">Buat Laporan/Komentar</p>
 
 <p>Laporan/Komentar Terakhir</p>
@@ -47,7 +52,7 @@
 
 						<p>Lihat selengkapnya</p>
 					</div>	
-							
+
 				</div>
 				<hr>
 			</tr>
