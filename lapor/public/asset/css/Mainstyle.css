@@ -341,3 +341,11 @@ input:focus {
 svg:not(:root) {
     overflow: hidden;
 }
+
+.pb-4 {
+    padding-bottom: 10px;
+}
+
+.w-100 {
+    width: 100% !important;
+}

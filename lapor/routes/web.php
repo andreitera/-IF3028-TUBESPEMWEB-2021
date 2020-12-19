@@ -14,8 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/',                 'LaporController@index')->name('landing');
-Route::get('/lapors',            'LaporController@listView')->name('listView');
+Route::get('/lapors',           'LaporController@listView')->name('listView');
 Route::get('/profil',           'ProfileController@showProfile')->name('showProfile');
-Route::get('/comment',          'LaporController@viewComment')->name('viewComment');
-Route::get('/lapor',            'LaporController@viewLapor')->name('viewLapor');
+Route::get('/view-lapor',       'LaporController@viewLapor')->name('viewComment');
 Route::get('/search',           'LaporController@viewSearch')->name('viewSearch');
+
+//----------- Route Comment -----------
+// Route::get('/lapor',            'LaporController@viewLapor')->name('viewLapor');
