@@ -1,5 +1,5 @@
 body {
-  background-image: url(laptop.jpg);
+  background-image: url(/asset/blue.png);
    background-attachment: fixed;
    background-repeat: no-repeat;
   background-size: cover;
@@ -15,16 +15,18 @@ body {
   margin-left: 150px;
 }
 .header {
-    margin-top: 5%;
-    margin-bottom: 10px;
+    margin-top: 10%;
+    margin-bottom: 10%;
     text-align: center;
     font-size: 250%;
     font-family: 'Philosopher', sans-serif;
 }
-.search {
-  width: 80%;
-  height: 40px;
+.pencarian{
   margin: auto;
+  position: relative;
+}
+.search {
+  height: 40px;
   background: #444;
   background: rgba(0, 0, 0, 0.2);
   border-radius: 3px;
@@ -44,7 +46,7 @@ body {
   outline: 0;
   background: transparent;
 }
-.search button {
+.search input[type='submit'] {
   position: relative;
   float: right;
   border: 0;
@@ -57,14 +59,14 @@ body {
   border-left: 1px solid #fff;
   border-radius: 0 3px 3px 0;
 }
-.search button:hover {
+.search input[type='submit']:hover {
   background: #fff;
   color: #444;
 }
-.search button:active {
+.search input[type='submit']:active {
   box-shadow: 0px 0px 12px 0px #e1e1e1;
 }
-.search button:focus {
+.search input[type='submit']:focus {
   outline: 0;
 }
 
@@ -79,15 +81,36 @@ body {
     color: white;
     text-decoration: none;
 }
-.konten{
+#konten{
    box-sizing: border-box;
-   background-color: #5a5a5a60;
+   background-color: rgba(0, 0, 0, 0.411);
    color: white;
    padding: 20px;
    margin-top: 5%;
 }
-.isi-laporan, .judul-laporan{
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 10pt;
+.judul-laporan {
+    font-family: 'Ubuntu';
+    font-size: 20pt;
 }
-
+.isi-laporan{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 12pt;
+  margin-top: 20px;
+}
+.atribut{
+  width: 100%;
+  margin-bottom: 10%;
+  margin-top: 6%;
+}
+.left a{
+  float: left;
+}
+.right{
+  margin-right: 20px;
+  color: white;
+  float: right;
+}
+.right .readmore{
+  text-decoration:none;
+ color: yellow;
+}
