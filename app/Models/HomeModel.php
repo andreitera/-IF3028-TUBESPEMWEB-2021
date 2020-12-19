@@ -1,14 +1,19 @@
-<?php
-    namespace App\Models;
+<?php namespace App\Models;
 
-    use CodeIgniter\Model;
+use CodeIgniter\Model;
 
-    class HomeModel extends Model{
-        protected $table = 'laporan';
-        protected $useTimeStamps = true;
-        protected $allowedFields = ['isi', 'lampiran', 'aspek'];
-        public function tampil(){
-            return $this->table('laporan')->findAll();
+class HomeModel extends Model
+{
+    protected $table = 'laporan';
+    protected $useTimeStamps = true;
+    protected $allowedFields = ['isi', 'lampiran', 'aspek'];
+    
+    public function get($id = NULL){
+        if (!$id) {
+            return $this->findAll();
         }
+
+        return $this->find($id);
     }
+}
 ?>

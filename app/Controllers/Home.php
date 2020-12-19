@@ -10,7 +10,7 @@ class Home extends BaseController
 	}
 	public function index()
 	{
-		$data['laporan'] = $this->homeModel->tampil();
+		$data['laporan'] = $this->homeModel->get();
 		echo view('templates/header');
 		echo view('index', $data);
 		echo view('templates/footer');
@@ -21,6 +21,16 @@ class Home extends BaseController
 		echo view('templates/header');
 		echo view('create');
 		echo view('templates/footer');
+	}
+
+	public function view($id)
+	{
+		$data['item'] = $this->homeModel->get($id);
+		
+		echo view('templates/header');
+		echo view('detail', $data);
+		echo view('templates/footer');
+		
 	}
 
 	public function save()

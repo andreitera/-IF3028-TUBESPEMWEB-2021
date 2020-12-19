@@ -9,7 +9,7 @@
 <body>
     <div class="hero">
         <div class="container text-center">
-            <h1 class="mb-1">Simple <a href="#" class="white-text">LAPOR!</a></h1>
+            <h1 class="mb-1">Simple <a href="/" class="white-text">LAPOR!</a></h1>
             <h1 class="headline">Layanan Aspirasi dan Pengaduan Online</h1>
             <h2>Mari bantu kami mengetahui permasalahan yang ada di lingkungan kita</h2>
         </div>
