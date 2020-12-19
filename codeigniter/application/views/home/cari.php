@@ -1,4 +1,4 @@
-<<<<<<< HEAD <ul>
+<ul>
 	<?php foreach ($lapor as $value) { ?>
 		<!--$lapor didapet dari controller home -->
 		<li>
@@ -12,4 +12,4 @@
 		<hr />
 	<?php } ?>
 
-	</ul>
+</ul>
