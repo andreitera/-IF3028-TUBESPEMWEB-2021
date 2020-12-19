@@ -8,9 +8,18 @@ class Beranda extends BaseController
 	{
 		return view('beranda');
 	}
-	public function detail()
+	public function detail($id)
 	{
-		return view('detailLaporan');
+		$data = [
+			'title' => 'Detail Laporan',
+			'laporan' => $this->laporanModel->getLaporan($id)
+		];
+
+		if (empty($data['laporan'])) {
+			throw new \CodeIgniter\Exceptions\PageNotFoundException('Laporan tidak ditemukan');
+		}
+
+		return view('detailLaporan', $data);
 	}
 
 	//--------------------------------------------------------------------

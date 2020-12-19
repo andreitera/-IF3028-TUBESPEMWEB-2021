@@ -33,6 +33,7 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Beranda::index');
 $routes->get('/detail', 'Beranda::detail');
+$routes->get('/detail/(:segment)', 'Beranda::detail/$1');
 /**
  * --------------------------------------------------------------------
  * Additional Routing
