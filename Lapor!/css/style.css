@@ -1,0 +1,215 @@
+.back-beranda{
+    float: right;
+    width: 10%;
+    padding: 10px;
+    background: #696969;
+    color: white;
+    font-size: 17px;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+.back-beranda:hover{
+    background: #999999;
+}
+.lampiran img{
+    width : 100%;
+    
+}
+body{
+    background-color :#999999;
+}
+.waktu-selengkapnya{
+    text-align:right;
+}
+hr{
+    border:1px solid black;
+    border-radius:5px;
+}
+.buat-laporan p{
+    text-align:left;
+}
+
+.container{
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    padding : 50px 150px;
+    font-family : sans-serif;
+    border-radius:20px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.8);
+    
+
+}
+.buat-laporan{
+    text-align : center;
+    color : black;
+}
+
+.header h1{
+    text-align : center;
+    font-size:50px;
+}
+* {
+box-sizing: border-box;
+border: 2px black;
+
+}
+
+/* Style the search field */
+form.searchbar input[type=search] {
+padding: 10px;
+font-size: 17px;
+border: 1px solid grey;
+float: left;  
+width: 80%;
+background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.searchbar input[type=submit] {
+float: left;
+width: 20%;
+padding: 10px;
+background: #696969;
+color: white;
+font-size: 17px;
+border: 1px solid grey;
+border-left: none; /* Prevent double borders */
+cursor: pointer;
+margin-top:-1px;
+}
+
+form.searchbar input[type=submit]:hover {
+background: #999999;
+}
+/* Clear floats */
+form.seacrhbar::after {
+content: "";
+clear: both;                
+display: table;
+}
+.buat-laporan{
+
+}
+
+textarea {
+    border: 2px solid black;
+    width: 100%;
+    height: 300px;
+  
+    margin-top: 3vh;
+    outline: none;
+    resize: none;
+    min-height: 50%;
+    padding: 5px;
+    overflow: auto;
+    box-sizing: border-box;
+    font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: grey;
+}
+/*the container must be positioned relative:*/
+.custom-select {
+   
+    width : 30%;
+    position: relative;
+}
+
+.custom-select select {
+display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+background-color: #999999;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+position: absolute;
+content: "";
+top: 32px;
+right: 10px;
+width: 0;
+height: 0;
+border: 6px solid transparent;
+border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+border-color: transparent transparent #fff transparent;
+top: 25px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+color: #ffffff;
+padding: 8px 16px;
+border: 1px solid transparent;
+border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+cursor: pointer;
+user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+position: absolute;
+background-color: #696969;
+top: 100%;
+left: 0;
+right: 0;
+z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+background-color: rgba(0, 0, 0, 0.1);
+}
+#custom-button{
+    background-color: #999999; /* Green */
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float:left;
+    
+}
+#send-button{
+    background-color: #999999; /* Green */
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float:right;
+    margin-right:5%;
+}
+.footer{
+    text-align: center;
+}
+#custom-text{
+    float:left;
+    margin-left:0.5%;
+}
+.gambar-itera{
+    float: left;
+    width:100%;
+    height:300px;
+}
+.logo-itera{
+    float: right;
+    width :100px;
+    height : 100%;
+}
