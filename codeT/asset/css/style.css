@@ -1,0 +1,243 @@
+ul.navbar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-image: url("home.png");
+	width: 100%;
+}
+.navbar {
+	top: 10%;
+}
+a li.navbar {
+	float: left;
+}
+
+li.logo {
+	float: left;
+}
+#si_foto {
+	padding-left: 35px;
+}
+#si_waktu {
+	padding-left: 29px;
+	height: -100px;
+}
+#si_aspek {
+	margin-left: -200px;
+}
+#pening {
+	text-align: right;
+}
+#pening a {
+	text-decoration: none;
+	margin: -1px;
+	color: black;
+}
+li.navbar a.navbar {
+	display: block;
+	color: black;
+	text-align: center;
+	width: 65px;
+	height: 65px;
+	padding: 20px 1px;
+	text-decoration: none;
+	transition: background-color 0.3s;
+}
+li a.navbar:hover {
+	border-radius: 5px;
+	background-color: lightseagreen;
+}
+ul.detail li.detail {
+	margin-right: 5%;
+	list-style-type: none;
+	text-align: right;
+}
+
+body {
+	margin-left: 10%;
+	margin-right: 10%;
+	background-size: cover;
+	background-attachment: absolute;
+}
+#container_regis {
+	text-align: center;
+}
+#container_login {
+	margin-top: -30px;
+	padding: 5px;
+	text-align: center;
+}
+#div_tambah {
+	padding: 5px;
+}
+#password {
+	height: 25px;
+	width: 17%;
+}
+
+#username {
+	height: 25px;
+	width: 17%;
+}
+p {
+	color: red;
+}
+
+.wrapper {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+.keyword {
+	width: 100%;
+}
+h1 {
+	text-align: center;
+	font-family: "Perpetua";
+	padding: 8px 8px;
+	font-size: 50px;
+}
+
+h2 {
+	font-size: 30px;
+	font-family: cambria;
+}
+
+.search {
+	text-align: center;
+	position: static;
+}
+
+.search input {
+	height: 40px;
+	width: 70%;
+}
+
+.search button {
+	margin-left: -4px;
+	height: 46px;
+	width: 100px;
+	background-color: teal;
+}
+
+.buat {
+	text-align: center;
+	font-size: 20px;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+.buat a {
+	text-decoration: none;
+}
+
+.tulisan {
+	margin: auto;
+	font-weight: bold;
+	font-size: 16pt;
+}
+
+.tulisan2 {
+	margin: auto;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+table {
+	width: 100%;
+}
+#waktu {
+	text-align: right;
+}
+.newshead {
+	text-align: left;
+	margin-top: 5%;
+	padding: 2px 2px;
+	font-size: 20px;
+	color: black;
+}
+
+.pusing {
+	border-style: solid;
+	padding-left: 10px;
+}
+
+p {
+	margin-left: 1cm;
+	font-family: Cambria;
+	color: black;
+}
+
+img {
+	text-align: censter;
+}
+
+a {
+	text-decoration: nones;
+	margin-left: 1cm;
+	font-family: Cambria;
+	font-weight: bold;
+}
+
+.tambah {
+	border: 2px solid chartreuse;
+	align-items: center;
+	font-size: 20px;
+}
+
+label {
+	margin-left: 1cm;
+	margin-bottom: 1cm;
+	font-weight: bold;
+}
+
+textarea {
+	margin-left: 1cm;
+	width: 600px;
+	height: 300px;
+	resize: none;
+	box-sizing: border-box;
+	border: 2px solid orangered;
+	border-radius: 4px;
+	background-color: #f8f8f8;
+}
+
+select {
+	margin-left: 1cm;
+}
+
+input {
+	margin-left: 1cm;
+}
+#log_login {
+	font-size: 40px;
+	text-decoration: none;
+	color: black;
+}
+button {
+	width: 20%;
+	height: 32px;
+	margin-bottom: 2px;
+	font-size: 15px;
+	font-weight: bold;
+	background-color: teal;
+}
+
+button:hover {
+	background: rgb(255, 183, 48);
+}
+
+.footer {
+	left: 0;
+	bottom: 0%;
+	width: 100%;
+	height: auto;
+	background-color: orangered;
+	text-align: center;
+}
+
+h6 {
+	color: white;
+}
+
+option {
+	width: 100%;
+}
