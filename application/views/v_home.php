@@ -11,9 +11,9 @@
     <br>
         <form class="form_div" onSubmit="return pencarian(this)" action="<?php echo base_url('cari')?>" method="post">
             <input type="text" class="search_bar" name="keyword" placeholder="search" autocomplete="off" autofocus>
-            <input class="search_btn" type="submit" name="submit"  placeholder="cari" value="Cari">
+            <input class="search_btn" type="submit" name="submit"  placeholder="cari" value="Cari" >
         </form>
-        <a class="komentar" href="<?php base_url();?>crud/tambah">Buat Laporan / Komentar</a>
+        <a class="komentar" href="<?php base_url();?>crud/tambah">Buat Laporan / Komentar <img src="asset/icon/tambah.png" height="15px"></a>
     <br>
         <p>Laporan/Komentar Terakhir</p>
     <hr>
@@ -29,7 +29,7 @@
                 <p class="right">Waktu : <?php echo $u -> waktu ?> </p>
             </div>
             <div class="row20">
-                <p class="link" style="float: right"><?php echo anchor('crud/hasil/'.$u->id,'Lihat Selengkapnya'); ?></P>
+                <p class="link" style="float: right"><?php echo anchor('crud/hasil/'.$u->id,'Lihat Selengkapnya'); ?><img src="asset/icon/more.png" height="15px"></P>
             </div>
         </div>
         <hr>

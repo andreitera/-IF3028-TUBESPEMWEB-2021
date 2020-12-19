@@ -21,6 +21,42 @@
             $this->db->where($where);
             $this->db->update($table,$data);
         }
+
+        public function getUbahLaporan(){
+            $id = $_GET["ubah_id"];
+            $query = $this->db->get_where('lapor', array('id' => $id));
+            return $query->result_array();
+            
+        }
+        public function updateLaporan(){
+            $id = $_GET["ubah_id"];
+    
+            $ekstensi_diperbolehkan	= array('doc','docx','xls','xlsx','ppt','pptx','pdf');
+            $file = $_FILES['myFile']['name'];
+            $x = explode('.', $file);
+            $ekstensi = strtolower(end($x));
+            $ukuran	= $_FILES['myFile']['size'];
+            $file_tmp = $_FILES['myFile']['tmp_name'];
+            
+            move_uploaded_file($file_tmp, 'assets/file/'.$file);
+    
+          
+    
+        date_default_timezone_set("Asia/Jakarta");
+        $now = date("Y-m-d H:i:s");
+        
+        $data = [ 
+            "isi" => $this->input->post('isi',true),
+            "lampiran" => $file,
+            "waktu" => $now,
+            "aspek" => $this->input->post('aspek',true)
+        ];
+    
+    
+        $this->db->update('lapor', $data, array('id' => $id));
+        // echo "<script>alert('Berhasil di ubah');</script>";
+        // echo "<script>location='home';</script>";
+        }
         
     }
 ?>

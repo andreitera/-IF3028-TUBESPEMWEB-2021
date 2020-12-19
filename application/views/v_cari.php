@@ -35,7 +35,7 @@
               <?php
                 echo "<tr>
                 
-                <a class='link' href='detail?detail_id=$id'>Lihat Selengkapnya</a>		
+                <a class='link' href='detail?detail_id=$id'>Lihat Selengkapnya </a>
               
                 
                 </tr>";

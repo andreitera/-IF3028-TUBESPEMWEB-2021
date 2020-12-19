@@ -6,8 +6,9 @@ class Crud extends CI_Controller{
 	function __construct(){
 		parent::__construct();		
 		$this->load->model('m_data');
-		$this->load->helper('url');
- 
+		$this->load->helper('url','form');
+    $this->load->library('upload');
+    $this->load->library('form_validation');
 	}
  
 	function index(){
@@ -76,4 +77,22 @@ class Crud extends CI_Controller{
         $this->m_data->update($where,$data,'lapor');
         redirect('');
     }
+
+    // public function update()
+    // {
+
+    //     $data ['ubah'] = $this->m_data->getUbahLaporan();
+       
+    //     $this->form_validation->set_rules('isi','isi','required');
+    //     $this->form_validation->set_rules('aspek','Aspek','required');
+
+    //     if($this->form_validation->run() == FALSE){
+    //         $data ['judul'] = 'Ubah Laporan';
+    //         $this->load->view('v_edit',$data);
+    //     }
+    //     else{
+    //         $this->m_data->updateLaporan();
+         
+    //     }
+    // }
 }
