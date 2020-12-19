@@ -102,14 +102,17 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 
 ### Penjelasan Teknis
 `Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
-#### Framework :
-Menggunakan Framework CodeIgniter versi 3
-#### Basis Data :
-Menggunakan basisdata dengan nama databasenya adalah tubespwb.sql . Dalam database ini terdapat tabel dengan nama "lapor". Isi dari tabel tersebut adalah id, isi, aspek, file dan tanggal.
-#### Tampilan :
-1. Terdapat "search bar" yang digunakan untuk mencari laporan yang sudah masuk
-2. "Buat Laporan / Komentar" yang digunakan untuk membuat laporan
-3. "Daftar Laporan" menampilkan laporan-laporan yang sudah masuk
+#### Instalasi Framework
+dalam tugas besar ini kami menggunakan framework CodeIgniter versi 3, -langkah pertama kunjungi halaman CodeIgniter lalu download sesuai versi yang diinginkan,disini kami menggunakan versi 3.0 -jika sudah di download, ekstrak CodeIgniter-3.0.*.zip menggunakan WinRAR atau 7Zip kedalam folder htdocs jika Kamu menggunakan XAMPP. setelah itu letakkan file codeIgniter yang telah di ekstrak dalam folde TubesWeb/-IF3208-TUBESPEMWEB-2021 -sekarang silahkan coba akses URL http://localhost/TubesWeb/-IF3208-TUBESPEMWEB-2021/codeIgniter melalui browser, akan langsung ditampilkan halaman awal Codeigniter yang berarti Instalasi telah berhasil.
+
+#### Koneksi Database
+Koneksi Basis data -buka codeIgniter, lalu klik application->config->database.php -lalu buka database.php, setelah itu ketikkan sesuai nama database yang kita buat. -contohnya: $db['default'] = array( 'dsn' => '', 'hostname' => 'localhost', 'username' => 'root', 'password' => '', 'database' => 'tubespwb', 'dbdriver' => 'mysqli', 'dbprefix' => '', 'pconnect' => FALSE, 'db_debug' => (ENVIRONMENT !== 'production'), 'cache_on' => FALSE, 'cachedir' => '', 'char_set' => 'utf8', 'dbcollat' => 'utf8_general_ci', 'swap_pre' => '', 'encrypt' => FALSE, 'compress' => FALSE, 'stricton' => FALSE, 'failover' => array(), 'save_queries' => TRUE );
+
+#### Validasi client-side
+pada saat menambahkan laporan sistem akan melakukan validasi pada isi dan file yang akan diinput,isi laporan tidak boleh kosong dan minimal 20 kata/100 karakter,untuk file sistem hanya menerima file dengan ekstensi pdf atau gambar,selain itu laporan tetap terkirim tetapo file tidak akan muncul di hasil laporan
+
+#### AJAX
+penggunaan ajax pada menu pencarian,dimana data yang kita input di field cari akan diolah di halaman yang sama,saat kita memasukkan kata pencarian bagian konten akan berubah menampilkan data hasil pencarian,dimana pencarian dilakukan dengan menggunakan fungsi LIKE pada bagian isi dan tanggal laporan
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
