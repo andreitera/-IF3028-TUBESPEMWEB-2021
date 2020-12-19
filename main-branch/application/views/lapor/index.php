@@ -1,12 +1,13 @@
-<a href="<?= base_url('menu') ?>" class="back">Kembali</a>
-
 <!DOCTYPE html>
 <html>
 
 <head>
     <title>Lapor</title>
     <link href="<?= base_url('css/style_lapor.css') ?>" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
+<a href="<?= base_url('menu') ?>" class="back"><i class="fa fa-chevron-left"></i> Kembali</a>
 
 <body>
     <div class="judul">
@@ -17,7 +18,7 @@
         <p>Buat Laporan/Komentar</p>
         <hr>
         <form method="POST" action="<?= base_url('lapor/lapor') ?>" enctype="multipart/form-data">
-            <textarea name="isi" style="height: 50%; width:100%"></textarea>
+            <textarea name="isi" style="height: 50%; width:100%;"></textarea>
 
             <br><br>
 
@@ -37,7 +38,8 @@
 
             <div class="u">
                 <input class="up" type="submit" value="Buat LAPOR">
-            </div>
+            </div>  
+            <hr>
         </form>
     </div>
 </body>
