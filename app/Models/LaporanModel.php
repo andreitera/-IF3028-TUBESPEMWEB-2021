@@ -9,13 +9,13 @@ class LaporanModel extends Model
     protected $table = 'data_laporan';
     protected $primaryKey = 'id';
     protected $allowedFields = [
-        'laporan', 'aspel_pelapor', 'lampiran', 'created_date', 'created_update'
+        'laporan', 'aspek_pelapor', 'lampiran', 'created_date', 'created_update'
     ];
     protected  $returnType = 'App\Entities\Laporan';
     protected $useTimestamps = false;
 
 
-    
+
     public function queryData()
     {
         return $this->table($this->table)->findAll();

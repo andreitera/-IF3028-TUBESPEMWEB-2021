@@ -58,7 +58,8 @@ $errors = $session->getFlashdata('errors');
       <h1>SIMPLE LAPOR!</h1>
       <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
       <br>
-      <button id="myBtn">Lapor</button>
+      <a href="<?= base_url('buatlapor');?>"><b>+</b> Buat Laporan</a>
+      <!-- <button id="myBtn">Lapor</button> -->
 
       <table id="myTable">
           <tr class="header">
@@ -81,11 +82,11 @@ $errors = $session->getFlashdata('errors');
     </center>
 
     <!-- modal -->
-    <div id="myModal" class="modal">
+    <!-- <div id="myModal" class="modal"> -->
         <!-- Modal content -->
-        <div class="modal-content">
+        <!-- <div class="modal-content">
             <span class="close">&times;</span>
-            <?= form_open_multipart('laporan/insertData'); ?>
+            <?=   form_open_multipart('laporan/insertData'); ?>
             <div class="form-group">
                 <?= form_label("Judul laporan", "laporan") ?>
                 <div class="input-group-append">
@@ -99,14 +100,14 @@ $errors = $session->getFlashdata('errors');
                 </div>
             </div>
             <label for="lampiran">Lampiran</label>
-            <?= form_upload($gambar) ?>
+            <?= form_upload($gambar) ?> -->
             <!-- </div>
         <div class="modal-footer"> -->
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             <?= form_submit($submit) ?>
         </div>
         <?= form_close() ?>
-    </div>
+    </div> -->
 
     <script>
         // Get the modal
