@@ -7,8 +7,8 @@
         <title>Tampilan Buat Laporan</title>
         <link rel="stylesheet" href="<?php echo base_url('style/style_tambah.css') ?>">
     </head>
-    <body>
-        <div class="container">
+    <body style="background-image: url('<?php echo base_url('img/bg1.jpg') ?>'); background-size: cover;">
+        <div class="container" style="margin: 0 auto; margin-top: 100px; margin-bottom: 100px; width: 850px; height: auto;border: 1px solid gray; background-color: white; border-radius: 15px; box-shadow: 2px 5px 20px rgba(0,0,0,100%);">
             <div class="content">
                 <h1>Layanan Aspirasi dan Pengajuan Online Mahasiswa IF ITERA</h1>
                 <form method="POST">
