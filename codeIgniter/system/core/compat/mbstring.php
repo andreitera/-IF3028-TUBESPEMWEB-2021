@@ -146,4 +146,29 @@ if ( ! function_exists('mb_substr'))
 			? substr($str, $start, $length)
 			: substr($str, $start);
 	}
+
+	if ( ! function_exists('mb_strlen'))
+{
+	/**
+	 * mb_strlen()
+	 *
+	 * WARNING: This function WILL fall-back to strlen()
+	 * if iconv is not available!
+	 *
+	 * @link	http://php.net/mb_strlen
+	 * @param	string	$str
+	 * @param	string	$encoding
+	 * @return	int
+	 */
+	function str_word_count($string, $format = null, $charlist = null)
+	{
+		if (ICONV_ENABLED === TRUE)
+		{
+			return iconv_strlen($str, isset($encoding) ? $encoding : config_item('charset'));
+		}
+
+		log_message('debug', 'Compatibility (mbstring): iconv_strlen() is not available, falling back to strlen().');
+		return strlen($str);
+	}
+}
 }

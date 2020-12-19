@@ -1144,8 +1144,13 @@ class CI_Form_validation {
 	
 	public function countWord($str, $val)
 	{
-		$s = str_word_count($str);
-		return ($val <= $s);
+		
+		if ( ! is_numeric($val))
+		{
+			return FALSE;
+		}
+		
+		return ($val <= str_word_count($str));
 	}
 	// --------------------------------------------------------------------
 
