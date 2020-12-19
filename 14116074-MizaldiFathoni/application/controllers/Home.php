@@ -5,11 +5,14 @@ class Home extends CI_Controller {
 
 	function __construct(){
 		parent::__construct();
+		$this->load->model('ModelData');
+		$this->load->helper('url','form');
 	}
 
 	public function index()
 	{
-		$this->load->view('tampilanHome');
+		$data ['lapor'] = $this->ModelData->tampil_data();
+		$this->load->view('tampilanHome', $data);
 	}
 
 	public function lapor()
@@ -34,6 +37,7 @@ class Home extends CI_Controller {
 			'file' => $file,
 			'waktu' => $waktu
 			);
+		$this->ModelData->input_data($data,'lapor');
 		redirect('home');
 	}
 }

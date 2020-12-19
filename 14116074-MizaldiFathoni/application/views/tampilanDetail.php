@@ -12,20 +12,30 @@
 
 	<label>Detail Laporan/Komentar</label>
 	<hr>
- 			<p align="left"> <i class="fa fa-user-circle"></i> Nama: 
-          <i class="fa fa-pencil"></i> Judul: </p>
-    	Isi
-	<br>
+ 		<?php foreach ($detail as $d )  :?>
+		<p align="left"> <i class="fa fa-user-circle"></i> Nama: <?= $d['nama'] ?> &nbsp &nbsp
+      	  <i class="fa fa-pencil"></i> Judul: <?= $d['judul'] ?></p>
+   	    	<?php $id = $d['id']; ?>
+        		<p><?= $d['laporan']; ?> </p>
+    				<?php endforeach; ?>
+						<br>
 		</p>
 		
-		<p align="left"> Lampiran: <br><br>
-		<img src="<?php echo base_url(); ?>assets/image/doc.png" width="250" height="250">
+		<p align="left"> Lampiran: <?= $d['file']?><br><br>
+		<img src="<?php echo base_url(); ?>assets/image/image.png" width="250" height="250">
 
 		<br><br><br>
-		Waktu: 
-		Aspek: 
+		Waktu: <?= $d['waktu']; ?> &nbsp &nbsp
+		Aspek: <?= $d['aspek']; ?>
 
-		<span>Hapus<i class="fa fa-close"></i>/Ubah<i class="fa fa-edit"></i></a>
+		<span><i class="fa fa-close"></i><?php
+                echo "
+                <a href= javascript:confirmDelete('delete?hapus_id=$id')> Hapus Laporan/Komentar &nbsp</a>
+               	
+               	<a href='update?ubah_id=$id'> || Ubah Laporan/Komentar
+               	";
+
+               	?><i class="fa fa-edit"></i></a>
                 
 		</span></p>
 		<hr>
