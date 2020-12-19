@@ -14,8 +14,8 @@
         <h4>Buat Laporan / Komentar</h4>
         <hr>
         <?php
-            if(validation_errors());
-            echo validation_errors();
+            if(validation_errors()):
+                echo validation_errors();
             endif;
         ?>
 
@@ -23,7 +23,8 @@
         <textarea rows="16" cols="136" style="widt: 800px" name="isi" ><?php echo $lapor["isi"]; ?>></textarea><br \>
         <select name="aspek">
             <?php foreach ($aspek as $i) { ?>
-                <option value="<?= $i; ?>" selected><?= $i; ?></option>
+                <?php if($i==$lapor["aspek"]){ ?>
+                    <option value="<?= $i; ?>" selected><?= $i; ?></option>
             <?php } else{?>
                     <option value="<?= $i; ?>"><?=$i; ?></option>
             <?php } ?>
