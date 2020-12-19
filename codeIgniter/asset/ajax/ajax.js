@@ -5,7 +5,7 @@ var konten = document.getElementById('konten');
 var alamat = document.getElementById('alamat');
 
 cari.addEventListener('keyup', function(){
-	//buat objeck
+	//buat object
 	
 	var ajaxCari = new XMLHttpRequest();
 

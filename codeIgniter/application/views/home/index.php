@@ -9,8 +9,8 @@
 <body >
 
 <div class="container" >
-	<h1 >SIMPLE LAPOR !</h1>
-	<input type="text" name="cari" id="cari" placeholder="ketik kata kunci pencarian">   </input>
+	<a href="<?php echo base_url() ?>index.php" ><h1>SIMPLE LAPOR !</h1></a>
+	<input type="text" name="cari" id="cari" placeholder="ketik kata kunci pencarian"> </input>
 	<a href="<?php echo base_url() ?>index.php/Home/tambah" ><h3>Buat Laporan / Komentar</h3></a>
 	<h4>Laporan / Komentar Terakhir</h4>
 	<hr />

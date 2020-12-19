@@ -9,7 +9,7 @@
 <body>
 
 <div class="container">
-	<h1>SIMPLE LAPOR!</h1>
+	<a href="<?php echo base_url() ?>index.php" ><h1>SIMPLE LAPOR !</h1></a>
     <h4>Buat Laporan/Komentar</h4>
    <hr />
    <?php 
