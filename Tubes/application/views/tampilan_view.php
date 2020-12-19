@@ -25,7 +25,7 @@
 			
 				<input type="text" name="cari">
 			
-				<button type="submit" name="btncari">Cari</button>
+				<button type="submit" name="btncari" style="width: 10%; ">Cari</button>
 			
 			</center>
 
