@@ -99,7 +99,18 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+1. Intalasi Framework
+	untuk instalasi framework, disini kami menggunakan framework codeigniter. 
+	dalam codeigniter tersebut terdapat controller sebagai fungsi utama,
+	model sebagai jalan penghubung antara controller dan database ke view untuk menampilkan data.
+	
+	
+	Untuk koneksi pada database, kami mengedit file database.php yang berada di application -> config ->database.php didalamnya isi nama database sesuai nama database.
+	lalu pada application ->config -> autoload.php, tambahkan padarameter database pada libraries agar database terkoneksi dengan sistem
+
+2. Validasi client
+   pada validasi client, sistem akan melakukan validasi laporan yang diinput yang dimana isi laporan harus diisi.
+   file sistem dapata menerima extensi berupa gambar dan pdf.
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
