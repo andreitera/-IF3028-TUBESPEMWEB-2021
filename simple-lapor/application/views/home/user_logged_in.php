@@ -83,3 +83,4 @@ if (isset($_POST['cari'])) {
   </div>
 
 </div>
+<script src="<?= base_url('assets/js/liveSearch.js') ?>"></script>

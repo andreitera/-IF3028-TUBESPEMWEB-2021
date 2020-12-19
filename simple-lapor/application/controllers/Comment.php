@@ -11,17 +11,10 @@ class Comment extends CI_Controller
     {
         if ($this->session->has_userdata('logged_in')) {
             $data['title'] = "Tambah Komentar/Laporan";
-            if($this->form_validation->run()==FALSE){
-
             $this->load->view('templates/comm_header', $data);
             $this->load->view('comment/index.php', $data);
             $this->load->view('templates/footer');
 
-            }else{
-
-                echo "berhasil";
-            }
-            
             if (isset($_POST['submit'])) {
                 $this->M_comment->addComment();
                 echo "<script>

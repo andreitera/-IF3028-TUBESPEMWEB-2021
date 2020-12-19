@@ -15,23 +15,24 @@
 
         <hr>
 
-        <form method="post" action="" enctype="multipart/form-data">
+        <form id="form" method="post" action="" enctype="multipart/form-data">
 
 
             <div class="main">
-            <input type="text" placeholder="Judul Laporan/Komentar" name="comm_title"> <br>
-                <textarea minlength="50" name="comment" placeholder="Laporan/Komentar (Minimal 50 Karakter/20 kata)"></textarea>
+            <input id="judul" type="text" placeholder="Judul Laporan/Komentar" name="comm_title" required> <br>
+                <textarea id="teks" minlength="50" name="comment" placeholder="Laporan/Komentar (Minimal 50 Karakter/20 kata)" required></textarea>
             </div>
 
             <br>
 
             <div class="aspect">
-                <select name="aspect">
+                <select id="aspek" name="aspect" required>
                     <option value="">Pilih Aspek Pelaporan/Komentar</option>
                     <option value="Dosen">Dosen</option>
                     <option value="Staff">Staff</option>
                     <option value="Mahasiswa">Mahasiswa</option>
                     <option value="infrastruktur">Infrastruktur</option>
+                    <option value="pengajar">Pengajar</option>
                 </select>
             </div>
             <br>
@@ -43,7 +44,7 @@
                 <button type="submit" name="submit">Buat LAPOR!</button>
             </div>
         </form>
-
+                
         <br>
 
         <br>
