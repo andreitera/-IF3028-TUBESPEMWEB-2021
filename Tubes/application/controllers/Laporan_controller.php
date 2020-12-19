@@ -56,7 +56,8 @@
             if (!isset($id)) show_404();
             
             if ($this->laporan_model->delete($id)) {
-                $this->load->view("tampilan_view");
+                $data["laporan"] = $this->laporan_model->getAll();
+                $this->load->view("tampilan_view", $data);
             }
         }
 
