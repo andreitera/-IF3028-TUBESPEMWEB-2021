@@ -27,16 +27,7 @@
             $this->load->view("tambah_view");
         }
 
-        public function edit(){
-
-            $this->load->view("edit_view");
-
-        }   
-
-/*        public function edit($id = null){
-
-            $this->load->view("edit_view");
-
+        public function edit($id = null){
             if (!isset($id)) redirect('tampilan_view');
         
             $laporan = $this->laporan_model;
@@ -52,7 +43,7 @@
             if (!$data["laporan"]) show_404();
             
             $this->load->view("edit_view", $data);
-        }*/
+        }
 
         public function detail($id = null){
             if (!isset($id)) redirect('tampilan_view');
