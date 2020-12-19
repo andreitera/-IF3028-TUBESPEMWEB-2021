@@ -42,7 +42,7 @@ CREATE TABLE `laporan` (
 
 INSERT INTO `laporan` (`id`, `deskripsi`, `aspek`, `berkas`, `created_at`) VALUES
 (8, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\n			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n			consequat. Duis aute ', 'Infrastruktur', '1.JPG', '2019-12-13 13:27:39'),
-(10, 'Hallo.. nah kali ini saya akan memposting bagaimana cara menghapus file dari aplikasi codeigniter, berawal dari iseng-iseng membayangkan seumpama kita mempunyai aplikasi di server sedangkan aplikasi itu tugasnya hanya memposting berita2 dan nantinya berit', 'Umum', '2.JPG', '2019-12-13 14:30:10');
+(10, 'Hallo.. nah kali ini saya akan memposting bagaimana cara menghapus file dari aplikasi codeigniter, berawal ......................', 'Umum', '2.JPG', '2019-12-13 14:30:10');
 
 --
 -- Indexes for dumped tables
