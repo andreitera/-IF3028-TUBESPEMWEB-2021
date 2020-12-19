@@ -1,7 +1,7 @@
 <fieldset>
     <br><br>
     <div class="wrapper">
-        <h1> SIMPLE LAPOR </h1>
+        <h1> LAPOR.ID </h1>
     </div>
     <h3>Detail laporan/Komentar oleh <?= $keluhan['username'] ?></h3>
     <div class="pusing">
