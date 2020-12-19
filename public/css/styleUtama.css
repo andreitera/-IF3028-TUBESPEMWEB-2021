@@ -40,3 +40,10 @@ li {
 .user > span {
     margin-top: -30px;
 }
+
+footer {
+    padding: 10px;
+    color: rgb(94, 88, 88);
+    background-color: white;
+    text-align: center;
+ }
