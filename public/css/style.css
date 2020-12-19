@@ -1,4 +1,4 @@
-#myInput {
+#pencarian {
   background-position: 10px 10px;
   background-repeat: no-repeat;
   width: 70%;
@@ -8,24 +8,28 @@
   margin-bottom: 12px;
 }
 
-#myTable {
+#tabel {
   border-collapse: collapse;
   width: 70%;
   border: 1px solid #ddd;
   font-size: 18px;
 }
 
-#myTable th, #myTable td {
+#tabel th, #tabel td {
   text-align: left;
   padding: 12px;
 }
 
-#myTable tr {
+#tabel tr {
   border-bottom: 1px solid #ddd;
 }
 
-#myTable tr.header, #myTable tr:hover {
+#tabel tr.header, #tabel tr:hover {
   background-color: #ddd;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 #btn{

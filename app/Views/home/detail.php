@@ -12,7 +12,7 @@
 <body>
   <center>
     <h1>SIMPLE LAPOR!</h1>
-    <table id="myTable">
+    <table id="tabel">
       <tr>
         <td>
           <p style="width:60%;font-weight: bold;">Detail laporan</p>
@@ -24,7 +24,9 @@
             <p style="font-weight: bold;">Aspek:</p>
             <p> <?= $all->aspek_pelapor;?></p>
             <p style="font-weight: bold;">Lampiran: </p>
-            <img src="<?= base_url('lampiran/'. $all->lampiran)?>" alt="">
+            <img src="<?= base_url('lampiran/'. $all->lampiran);?>" alt="<?= $all->lampiran?>">
+            <br>
+            <a href="<?= base_url('lampiran/'. $all->lampiran);?>">Unduh Lampiran</a>
             <p style="font-weight: bold;">Waktu :</p>
             <p><?= $all->created_date ;?></p>
             <a href="<?= base_url('laporan/deleteData/' . $all->id); ?>">Hapus laporan</a>
