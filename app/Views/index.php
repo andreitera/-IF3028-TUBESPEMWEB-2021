@@ -25,7 +25,7 @@
         <?php foreach($laporan as $item){?>
         <section class="main__lapor-list">
             <article class="laporan">
-                <p><?= $item['isi'];?></p>
+                <p><?= strlen($item['isi']) > 255 ? substr($item['isi'], 0, 255) . "......" : $item['isi']; ?></p>
                 <div class="d-flex detil-laporan">
                     <span class="lampiran">
                         Lampiran : <?= $item['lampiran'];?>
