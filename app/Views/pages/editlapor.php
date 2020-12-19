@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html <html>
 
 <head>
     <title>lapor.go.id</title>
@@ -16,50 +15,176 @@
     }
 
     .container {
+        max-width: 100%;
         margin-left: auto;
         margin-right: auto;
         padding-left: 30px;
         padding-right: 30px;
-        width: 100% !important;
         background-color: white;
         position: relative;
+        background-image: url(../gambar/h5.jpg);
+    }
+
+    .h1 {
+        text-align: center;
+        font-size: 40px;
+        padding: 20px;
+    }
+
+    .h3 {
+        text-align: center;
+        font-size: 20px;
     }
 
     .header {
-        font-size: 24pt;
-        font-style: Calibri;
+        background-image: url(../gambar/h1.jpg);
+        color: gold;
+        padding: 25px 25px 25px 0px;
+    }
+
+    .conten {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tampilan {
+        max-width: 500px;
+        padding: 10px 20px;
+        background: #f4f7f8;
+        margin: 10px auto;
         padding: 20px;
+        background: #f4f7f8;
+        border-radius: 8px;
+        font-family: "Gill Sans", sans-serif;
+    }
+
+    .textarea {
+        padding: 5px 10px 5px 10px;
+        height: 200px;
+        width: 300px;
+        font-family: "Courier New", Courier, monospace;
+        background: rgba(255, 255, 255, 0.1);
+        border: none;
+        border-radius: 4px;
+        font-size: 15px;
+        margin: 0;
+        outline: 0;
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        background-color: #e8eeef;
+        color: #8a97a0;
+        -webkit-box-shadow: 0 1px 0 rgba(238, 28, 28, 1) inset;
+        box-shadow: 5px 2.5px 2.5px #f2fa07;
+        margin-bottom: 30px;
+    }
+
+
+
+    .tampilan select {
+        font-family: "Courier New", Courier, monospace;
+        background: rgba(255, 255, 255, 0.1);
+        border: none;
+        border-radius: 4px;
+        font-size: 15px;
+        margin: 0;
+        outline: 0;
+        padding: 10px;
+        width: 75%;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        background-color: #e8eeef;
+        color: #8a97a0;
+        -webkit-box-shadow: 0 1px 0 rgba(238, 28, 28, 1) inset;
+        box-shadow: 5px 2.5px 2.5px #f2fa07;
+        margin-bottom: 30px;
+        -webkit-appearance: menulist-button;
+        height: 35px;
+    }
+
+    .tampilan input {
+        font-family: "Courier New", Courier, monospace;
+        background: rgba(255, 255, 255, 0.1);
+        border: none;
+        border-radius: 4px;
+        font-size: 15px;
+        margin: 0;
+        outline: 0;
+        padding: 10px;
+        width: 75%;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        background-color: #e8eeef;
+        color: #8a97a0;
+        -webkit-box-shadow: 0 1px 0 rgba(238, 28, 28, 1) inset;
+        box-shadow: 5px 2.5px 2.5px #f2fa07;
+        margin-bottom: 30px;
+        -webkit-appearance: menulist-button;
+        height: 35px;
+    }
+
+    .submit button {
+        position: relative;
+        display: block;
+        padding: 19px 39px 18px 39px;
+        color: #fff;
+        margin: 0 auto;
+        background: #f2fa07;
+        font-size: 18px;
+        text-align: center;
+        font-style: normal;
+        width: 100%;
+        border: 1px solid #f2fa07;
+        border-width: 1px 1px 3px;
+        margin-bottom: 10px;
     }
 </style>
 
 <body>
     <div class="container">
-        <h1>SIMPLE LAPOR</h1>
-        <p>Buat Laporan Komentar</p>
-        <hr>
-        <div enctype="multipart/form-data" action="<?= base_url('Lapor/simpan'); ?>" method="POST">
-            <textarea name="isi" cols="100" rows="10" class="textarea"><?= $lapor['isi'] ?></textarea>
-            <br>
-            <br>
-            <select class="select" name="aspek">
-                <option selected=<?= $lapor['aspek'] ?>>Pilih Aspek Pengaduan/Komentar</option>
-                <option value="pengaduan">PENGADUAN</option>
-                <option value="aspirasi">ASPIRASI</option>
-                <option value="permintaan">PERMINTAAN INFORMASI</option>
-            </select>
-            <br>
-            <br>
-            <img style="width: 100px; height:100px" src="/gambar/<?= $lapor['lampiran'] ?>" alt="">
-            <input type="file" name="lampiran">
-            <br>
-            <br>
-            <div class="submit">
-                <button type="submit">Buat LAPOR!</button>
-            </div>
-            </form>
-            <hr>
+        <div class="header">
+            <h1>SIMPLE LAPOR</h1>
+            <h3>Edit Laporan Komentar</h3>
         </div>
-    </div>
+        <hr>
+        <div class="conten">
+            <form class="lapor" enctype="multipart/form-data" action="<?= base_url('Lapor/update/' . $lapor['id']); ?>" method="POST">
+                <div class="tampilan">
+                    <fieldset>
+                        <textarea name="isi" cols="100" rows="10" class="textarea" placeholder="Laporan"><?= $lapor['isi'] ?></textarea>
+                        <br>
+                        <br>
+                        <select class="pilihan" name="aspek">
+                            <option>Pilih Aspek Pengaduan/Komentar</option>
+                            <option <?php if ($lapor['aspek'] === 'pengaduan') {
+                                        echo 'selected=""';
+                                    }; ?> value="pengaduan">PENGADUAN</option>
+                            <option <?php if ($lapor['aspek'] === 'aspirasi') {
+                                        echo 'selected=""';
+                                    }; ?> value="aspirasi">ASPIRASI</option>
+                            <option <?php if ($lapor['aspek'] === 'permintaan') {
+                                        echo 'selected=""';
+                                    }; ?> value="permintaan">PERMINTAAN INFORMASI</option>
+                        </select>
+                        <br>
+                        <br>
+                        <input type="hiden" name="old" value="<?= $lapor['lampiran']; ?>">
+                        <input value="<?= $lapor['lampiran']; ?>" type="file" name="lampiran">
+                        <br>
+                        <br>
+                        <div class="submit">
+                            <button type="submit">LAPOR!</button>
+                        </div>
+                    </fieldset>
+                </div>
+            </form>
+
+        </div>
 </body>
 
 </html>
