@@ -20,7 +20,7 @@ class Lapor_model extends CI_model
 
 			$this->load->library('upload',$config);
 			if(!$this->upload->do_upload('File')){
-				echo "gagal";
+				echo "failed";
 			}else{
 				$file = $this->upload->data('file_name');
 			}
@@ -68,7 +68,7 @@ class Lapor_model extends CI_model
 
 			$this->load->library('upload',$config);
 			if(!$this->upload->do_upload('File')){
-				echo "gagal";
+				echo "failed";
 			}else{
 				$file = $this->upload->data('file_name');
 			}
