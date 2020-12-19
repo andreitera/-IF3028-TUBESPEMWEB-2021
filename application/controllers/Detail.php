@@ -18,9 +18,8 @@ class Detail extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index($id)
+	public function id($id)
 	{
-
 		$this->db->select('*');
 		$this->db->where('id_lapor', $id);
 		$this->db->from('lapor');

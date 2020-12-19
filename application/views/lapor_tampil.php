@@ -50,7 +50,9 @@
 							<?php echo $row->waktu; ?>
 						</p>
 
-						<p><a href="<?= base_url("detail/index/" . $row->id_lapor) ?>">Lihat Selengkapnya</a></p>
+
+						<p><a href="<?= base_url("detail/id/" . $row->id_lapor) ?>">Lihat Selengkapnya</a></p>
+
 						<p>&#10097;</p>
 					</div>	
 
