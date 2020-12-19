@@ -6,10 +6,10 @@ http://lapor.go.id, maka anda akan mendapatkan laman seperti gambar di bawah
 
 Kali ini kita akan membuat aplikasi web seperti `lapor` untuk mengumpulkan laporan/komentar terkait layanan
 di program studi teknik informatika ITERA.
-**Luangkan waktu untuk membaca spesifikasi ini sampai selesai.** :kissing_heart:
+*Luangkan waktu untuk membaca spesifikasi ini sampai selesai.* :kissing_heart:
 
 ### Anggota Tim :cyclone:
-Project dikerjakan secara **berkelompok** dengan maksimal jumlah anggota adalah 2-3 orang mahasiswa.
+Project dikerjakan secara *berkelompok* dengan maksimal jumlah anggota adalah 2-3 orang mahasiswa.
 
 ### Petunjuk Pengerjaan :umbrella:
 1. Fork pada repository ini dengan akun github anda.
@@ -18,12 +18,12 @@ contoh: fix css, membuat post done, jangan seperti final, benerin dikit, oke deh
 Disarankan untuk tidak melakukan commit dengan perubahan yang besar karena akan mempengaruhi 
 penilaian (contoh: hanya melakukan satu commit kemudian dikumpulkan).
 3. Minimal commit sebanyak personil anggota tim dengan masing-masing personil tim melakukan commit sesuai dengan kesepakatan tim, penilaian individu akan dilihat.
-4. Ubah **Penjelasan Teknis** pada bagian bawah readme.md ini dengan menjelaskan bagaimana cara anda:
+4. Ubah *Penjelasan Teknis* pada bagian bawah readme.md ini dengan menjelaskan bagaimana cara anda:
    - Instalasi Framework, Koneksi basis data 
    - Melakukan validasi pada client-side
    - Melakukan AJAX (mulai dari pengguna melakukan klik pada tombol LAPOR! sampai laporan/komentar terkirim).
 5. Pull request dari repository anda ke repository ini dengan 
-format **NIM** - **Nama Lengkap**. **Waktu terkahir proses pull request adalah 4 hari setelah 
+format *NIM* - *Nama Lengkap*. **Waktu terkahir proses pull request adalah 4 hari setelah 
 ujian akhir semester (UAS)**
 6. Data yang dikumpulkan adalah:
    - Source code aplikasi
@@ -51,7 +51,7 @@ garis pemisah, dan perbedaan ukuran font harus terlihat sesuai contoh. Perhatika
 ![](tampilan/utama.png)
 - Search bar diletakkan di bagian paling atas dibawah judul.
 - Tombol "cari" berada di sebelah kanan search bar.
-- **Buat LAPOR!** digunakan untuk mengirimkan laporan/komentar baru.
+- *Buat LAPOR!* digunakan untuk mengirimkan laporan/komentar baru.
 - Tampilan search bar ini harus tetap ada walaupun anda tidak mengimplementasikan fitur search.
 - Tampilan pertanyaan tidak harus urut berdasarkan "Laporan/Komentar terakhir", 
 namun tulisan "Laporan/komentar Terakhir" ini harus ada.
@@ -91,7 +91,7 @@ Pengguna dapat melihat laporan/komentar. Pada halaman ini terdapat informasi asp
 dan file lapiran. 
 
 ### Validasi
-Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript** bukan HTML 5 input type, yaitu:
+Validasi *wajib* dilakukan pada client-side, dengan menggunakan *javascript* bukan HTML 5 input type, yaitu:
 - Setiap field pada form tidak boleh kosong.
 - minimal jumlah kata dalam laporan/komentar adalah 20 kata.
 
@@ -99,7 +99,34 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+Installasi framework 
+ - install composer 
+ - composer create-project laravel/laravel nama_project
+Koneksi Basis Data
+ - setting file .env 
+     
+     DB_CONNECTION=mysql
+     DB_HOST=127.0.0.1
+     DB_PORT=3306
+     DB_DATABASE=laravel
+     DB_USERNAME=root
+     DB_PASSWORD=
+ 
+Validation Javascript
+
+- buat function untuk mengolah data input 
+- berikan atributte tambahan pada tag form yaitu onsubmit
+- ketika button submit di klik javascript melakukan pemangilan fungsi yang sudah dibuat
+- jika form valid maka data akan dikirimkan dengan menggunakan method post
+
+Ajax 
+- fitur search
+- buat sebuah function untuk melakukan ajax
+- buat object request dalam function 
+- lakukan request terhadap server menggunakan method open dan send 
+- kemudian ambil data response dari request yang kita kirimkan
+- implementasikan ke dalam html .
+
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
@@ -114,4 +141,3 @@ anchor tag.
 ### About :honeybee:
 
 Dosen       : Dicky Prima Satya, M.T., Andre Febrianto, S.Kom., M.Eng., Amirul Iqbal, S.Kom., M.Eng.
-
