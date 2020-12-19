@@ -11,6 +11,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </head>
 <body>
     
+    <a href="<?php echo base_url('home')?>"></a>
     <h1>SIMPLE LAPOR!</h1>
 
     <form action="#" method="POST">
@@ -21,14 +22,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <a href="<?php echo base_url('Home/lapor') ?>">Buat Laporan/Komentar
         <i class="fa fa-plus-square"></i></p></a>
 
-      <label>Laporan/Komentar Terakhir</label>
+      <label style="text-align: left !important;">Laporan/Komentar Terakhir</label>
   <hr>
       
-          <p align="left"> <i class="fa fa-user-circle"></i> Nama:
+          <p align="left"> <i class="fa fa-user-circle"></i> Nama: 
           <i class="fa fa-pencil"></i> Judul: </p>
           <p align="justify">Isi</p>
             <p align="left">
             <i class="fa fa-folder"></i>Lampiran:
+
           <span>
             <i class="fa fa-calendar"></i>Waktu:
             Lihat Selengkapnya<i class="fa fa-arrow-right"></i></span>

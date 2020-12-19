@@ -16,4 +16,26 @@ class Home extends CI_Controller {
 	{
 		$this->load->view('tampilanBuat');
 	}
+
+	public function tambah_aksi()
+	{
+		$nama = $this->input->post('nama');
+		$judul = $this->input->post('judul');
+		$laporan = $this->input->post('laporan');
+		$aspek = $this->input->post('aspek');
+		$file = $this->input->post('file');
+		$waktu = $this->input->post('waktu');
+ 
+		$data = array(
+			'nama' => $nama,
+			'judul' => $judul,
+			'laporan' => $laporan,
+			'aspek' => $aspek,
+			'file' => $file,
+			'waktu' => $waktu
+			);
+		redirect('home');
+	}
 }
+
+?>

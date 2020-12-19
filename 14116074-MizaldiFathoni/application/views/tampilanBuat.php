@@ -9,10 +9,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/tampilanBuat.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
+	<script type='text/javascript' src="<?php echo base_url(); ?>assets/js/jquery.min.js"></script>
+
 </head>
 
 <body>
-	<h1>SIMPLE LAPOR!</h1>
+	<a href="<?php echo base_url('home')?>">
+	<h1>SIMPLE LAPOR!</h1></a>
 	<label>Buat Laporan</label>
 	<hr><br>
 
@@ -31,7 +34,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</select>
 		<br><br>
 		Pilih File : <input type="file" name="file" placeholder="File"  name="kirim" accept=".img, .png, .jpeg, .jpg, .doc, .docx, .xls, .xlsx, .ppt, .pptx, .pdf">
-	
+		<?php
+		date_default_timezone_set('Asia/Jakarta'); //memanggil fungsi waktu dan membuat format waktu Jakarta 
+		?>
 		<input type="text" name="waktu" value="<?php echo date('d-m-Y H:i:s')?>" hidden>
 		<br><br>
 		<p align="right">
