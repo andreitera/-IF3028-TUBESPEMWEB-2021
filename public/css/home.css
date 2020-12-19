@@ -10,7 +10,7 @@ nav, .text-detail, .f-center {
           justify-content: center;
 }
 
-.bar, .form select, .form .btn, .lampiran, .text-detail {
+.bar, .form .inpt, .form textarea, .form select, .form .btn, .lampiran, .text-detail {
   margin-top: 10px;
 }
 
@@ -82,9 +82,8 @@ nav a {
 
 .form-buat {
   padding: 30px;
-  margin: 0px auto;
+  margin: 0px auto 40px auto;
   width: 750px;
-  min-height: 500px;
   background-color: #ffffff;
   -webkit-box-shadow: 3px 3px 5px 0px #b4b4b4;
           box-shadow: 3px 3px 5px 0px #b4b4b4;
@@ -122,8 +121,14 @@ nav a {
   border: 1px solid #D0021B;
 }
 
+.form .inpt {
+  font-weight: bold;
+  padding: 5px;
+  width: 300px;
+  font-size: 12px;
+}
+
 .form textarea {
-  margin-top: 20px;
   font-weight: bold;
   padding: 10px;
   width: 100%;
@@ -207,6 +212,27 @@ nav a {
 .icon-bawah {
   width: 10px;
   height: 10px;
+  margin-left: 5px;
+}
+
+.btn-detail {
+  border: solid 1px #D0021B;
+  padding: 3px 5px;
+  border-radius: 3px;
+  font-weight: bold;
+  color: #D0021B;
+  background-color: white;
+}
+
+.detil {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.input-uniq {
+  padding: 3px;
+  margin-right: 5px;
 }
 
 .search {
@@ -242,5 +268,54 @@ nav a {
 .text-detail img {
   margin-left: 10px;
   height: 20px;
+}
+
+.info {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border: dotted 5px #D0021B;
+  padding: 20px;
+  background-color: #ffa3ae;
+}
+
+.info .bell {
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.info-send {
+  border: solid 1px #D0021B;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 15px;
+}
+
+.uniq {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.uniq span {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.uniq p {
+  font-size: 30px;
+  font-weight: bold;
+  color: #D0021B;
+  margin-bottom: 40px;
+}
+
+.uniq button {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 15px 5px;
+  border: solid #D0021B 1px;
+  border-radius: 5px;
+  color: #D0021B;
+  background-color: white;
 }
 /*# sourceMappingURL=home.css.map */
