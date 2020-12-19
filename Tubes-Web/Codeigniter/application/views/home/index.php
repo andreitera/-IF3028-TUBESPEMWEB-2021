@@ -26,7 +26,7 @@
                 <?php } ?> 
                 <?php else{ ?>
                     <h4 style="margin-bottom: 20px;"><?php echo $value["isi"]; ?></h4>
-                <?php } ?>
+                    <?php } ?>
                     <h4 class="lampiran">Lampiran : <?php echo $value["file"]; ?></h4>
                     <a href="<?php echo base_url() ?>index.php/Home/detail/<?php echo $value["id"] ?>">
                     <h4 class="detail">Selengkapnya>>></h4>
