@@ -107,7 +107,8 @@ Cara Instalasi Project
 - buka terminal, lalu ketik `composer install`
 - masih diterminal yang sama, lalu ketik `cp .env.example .env`
 - masih diterminal yang sama, lalu ketik `php artisan key:generate`
-- untuk database, terdapat 2 pilihan import database, pertama menggunakan lapor.sql pada folder lapor ini pada phpmyadmin, atau yang kedua dengan menggunakan perintah `php artisan migrate:refresh --seed`
+- buat database dengan nama `lapor`
+- untuk data database, terdapat 2 pilihan import database, pertama menggunakan lapor.sql pada folder lapor ini pada phpmyadmin, atau yang kedua dengan menggunakan perintah `php artisan migrate:refresh --seed`
 - masih diterminal yang sama, lalu ketik `php artisan serve` untuk merunning project ini
 - maka project akan dijalankan pada `http://127.0.0.1:8000`
 
