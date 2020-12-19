@@ -20,7 +20,6 @@
    <?php echo form_open_multipart('index.php/Home/tambah'); ?>
 	    <textarea rows="16" cols="136" style="width: 800px;" name="isi" placeholder="Laporan/Keluhan"></textarea><br \>
 		<select name="aspek">
-			<option >- Pilih Aspek -</option>
 			<option value="Dosen">Dosen</option>
 			<option value="Staff">Staff</option>
 			<option value="Mahasiswa">Mahasiswa</option>
