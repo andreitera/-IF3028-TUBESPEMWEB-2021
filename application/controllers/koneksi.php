@@ -3,12 +3,7 @@ defined("BASEPATH") or exit("No direct script access allowed");
 
 class Koneksi extends CI_Controller
 {
-    public function __construct()
-    {
-        parent::__construct();
-        $this->load->model("m_crud");
-        $this->load->library('form_validation');
-    }
+
     public function index()
     {
         $data["laporan"] = $this->m_crud->getAll();
