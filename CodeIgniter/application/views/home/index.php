@@ -23,7 +23,7 @@
 				<h4 style="margin-bottom: 20px;"><?php echo $value["isi"]; ?></h4>
 			<?php } ?>
 			<h4 class="lampiran">Lampiran : <?php echo $value["file"]; ?></h4>
-			<a href="<?php echo base_url() ?>index.php/Home/detail/<?php echo $value["id"] ?>"><h4 class="detail">Baca>></h4></a>
+			<a href="<?php echo base_url() ?>index.php/Home/detail/<?php echo $value["id"] ?>"><h4 class="detail">Baca...</h4></a>
 			<h4 class="waktu" style="margin-right: 10px;">Waktu : <?php echo $value["tanggal"]; ?></h4>
 			<div style="clear: both"></div>
 		</li>
