@@ -4,12 +4,12 @@
     class Laporan_controller extends CI_Controller{
         public function __construct(){
             parent::__construct();
-            $this->load->model("Laporan_model");
+            $this->load->model("laporan_model");
             $this->load->library('form_validation');
-        }
+	    }
         public function index(){
-            $data["laporan"] = $this->Laporan_model->getAll();
-            $this->load->view("tampilan_view", $data);
+            $data["laporan"] = $this->laporan_model->getAll();
+            $this->load->view("tampilan_view", $data); 
         }
 
         public function add(){
@@ -23,8 +23,9 @@
             }
         }
 
-            public function tambah(){
+        public function tambah(){
             $this->load->view("tambah_view");
         }
+      
     }
 ?>

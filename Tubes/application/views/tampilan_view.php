@@ -4,8 +4,6 @@
 	<title>Tampilan Laporan</title>
 	<link rel="stylesheet" href="<?php echo base_url('style/style_tampilan.css') ?>">
 
-
-
 </head>
 <body>
 
@@ -36,6 +34,13 @@
 
 		<br>
 
+		<?php 
+		foreach ($laporan as $value):
+			 echo $value->isi; 
+			 echo $value->aspek; 
+			 echo $value->lampiran; 
+			 echo $value->waktu; 
+		 endforeach; ?>
 		<hr>
 			<p>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
