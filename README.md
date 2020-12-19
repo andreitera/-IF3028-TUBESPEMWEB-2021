@@ -103,8 +103,16 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 - Instalasi Framework menggunakan Codeigniter
 - Pembuatan Database menggunakan MySql
 - Koneksi Database menggunakan atribut Codeigniter
-- Validasi client side:
-	(Pada fungsi membuat laporan baru) Dengan menggunakan javascript mengecek setiap inputan sudah terisi atau belum. Jika belum maka akan menghentikan behaviour default dari form menggunakan fungsi preventDefault().
+- Validasi client side: (Pada fungsi membuat laporan baru) Dengan menggunakan javascript mengecek setiap inputan sudah terisi atau belum. Jika belum maka akan menghentikan behaviour default dari form menggunakan fungsi preventDefault().
+```javascript
+	function isEmpty(e) {
+            // validasi
+            if (document.getElementById("input_isi").value == "" || document.getElementById("input_aspek").value == "") {
+                alert('masih ada yang kosong');
+                e.preventDefault();
+            }
+        }
+```
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
