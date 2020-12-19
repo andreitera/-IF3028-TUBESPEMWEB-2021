@@ -6,7 +6,6 @@ class Laporan extends CI_Model {
         if($id === NULL) {
             $query = $this->db->select('*')->from('laporan')->get();
         } else {
-            //load specific laporan by id
             $query = $this->db->select('*')->from('laporan')->where('id', $id)->get();
         }
 
