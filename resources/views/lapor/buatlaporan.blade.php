@@ -1,43 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('master.master')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lapor</title>
-</head>
+@section('css')
+<link rel="stylesheet" href="{{ asset('css/home.css') }}">
+@endsection
 
-<body>
-    <form method="POST" action="{{ route('laporbuat') }}" enctype="multipart/form-data">
-        @csrf
-        <label for="">
-            Nama:
-            <input type="text" name="name">
-        </label>
-        <label for="" style="display: block;">
-            Judul:
-            <input type="text" name="title">
-        </label>
-        <label for="" style="display: block;">
-            Content:
-            <textarea name="content" rows="4" column="50"></textarea>
-        </label>
-        <label for="" style="display: block; margin-top: 20px;">
-            Aspect:
-            <select name="aspect" id="">
-                <option value="Dosen">Dosen</option>
-                <option value="Staff">Staff</option>
-                <option value="Mahasiswa">Mahasiswa</option>
-                <option value="Infrastruktur">Infrastruktur</option>
-                <option value="Pengajaran">Pengajaran</option>
-            </select>
-        </label>
-        <label for="">
-            File
-            <input type="file" name="filelapor">
-        </label>
-        <button type="submit">Buat lapor</button>
+@section('isi')
+<div class="judul">
+    <div class="judul-kata1">Layanan Aspirasi dan Pengaduan Online Teknik Informatika ITERA</div>
+    <div class="judul-kata2">Sampaikan Laporan Anda Langsung Kepada Pihak Terkait</div>
+    <div class="judul-bar"></div>
+</div>
+<div class="form-buat">
+        <form method="POST" action="{{ route('laporbuat') }}" enctype="multipart/form-data" class="form">
+        Buat Laporan/Komentar
+        <div class="bar"></div>
+        <textarea id="laporan" name="laporan" placeholder="Laporan/Komentar"></textarea>
+        <select name="aspek" id="aspek">
+            <option value="" disabled selected>Pilih Aspek Pelaporan/Komentar</option>
+            <option value="Dosen">Dosen</option>
+            <option value="Mata Kuliah">Mata Kuliah</option>
+            <option value="Prodi">Prodi</option>
+        </select>
+        <br>
+        <input type="button" value="Choose File" onclick="document.getElementById('pic').click()" class="btn">
+        <input type="text" id="filename" value="No File Choosen">
+        <input type="file" id="pic" name="pic" style="display:none" onchange="document.getElementById('filename').value=this.value">
+        <div class="container">
+            <button id="submit" class="btn">Buat LAPOR!</button>
+        </div>
+        <div class="bar"></div>
     </form>
-</body>
-
-</html>
+</div>
+@endsection
