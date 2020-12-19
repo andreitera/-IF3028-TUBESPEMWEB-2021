@@ -5,6 +5,8 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/tampilanDetail.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
+	<script type='text/javascript' src="<?php echo base_url(); ?>assets/js/jquery.min.js"></script>
+
 </head>
 <body>
 	
@@ -32,7 +34,7 @@
                 echo "
                 <a href= javascript:confirmDelete('delete?hapus_id=$id')> Hapus Laporan/Komentar &nbsp</a>
                	
-               	<a href='update?ubah_id=$id'> || Ubah Laporan/Komentar
+               	<a href='ubah?ubah_id=$id'> || Ubah Laporan/Komentar
                	";
 
                	?><i class="fa fa-edit"></i></a>
