@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="<?php echo base_url() ?>/assets/css/master.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url('/assets/css/master.css'); ?>" type="text/css">
   </head>
 <body>
 <div>
