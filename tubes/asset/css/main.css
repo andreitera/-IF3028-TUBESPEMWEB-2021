@@ -1,0 +1,136 @@
+header{
+	background-color: #333333;
+	height: 1.5em;
+	text-align:center;
+	padding: 0.5em 2em;
+}
+#head{
+	background-color: white;
+	margin: 0em 0em 3em;
+	text-align: center;
+	font-family: sans-serif;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+#conten{
+	background-color:#4d4d4d;
+}	
+	#badan {
+		text-align: center;
+		line-height: 2.5em;
+	}
+		#badan a{
+			color: #6A0606;
+		}
+		#badan input{
+			border: 1px solid grey;
+			padding: 0.5em;
+			background-color:white;
+			transition: 0.3s all ease-out;
+			height:2em; 
+			width: 63%;
+		}
+		#badan input:hover{
+		    box-shadow: 0px 5px 8px 0px;
+		    color: #562121;
+		    transition: 0.3s all ease-out;
+		    background:#EEEEEE;
+		}
+		#badan input[type=submit]{
+		    cursor: pointer;
+		    height:3.2em; 
+			width:7%;
+		}
+		
+	#konten{
+		padding: 0em 1em 1em 1em;
+		text-align:left;
+	}
+		#konten p{
+			text-align: justify;
+			font-size: 20pt;
+		}
+		#konten .textarea{
+			resize:none; 
+			width:98.5%; 
+			height:191px;
+			font-family: times new roman,sans-serif;
+			padding: 0.5em;
+		}
+		#konten select{
+			margin: 1.5em 0em;
+			padding: 0.5em;
+			cursor: pointer;
+		}
+	
+		#konten input{
+		    cursor: pointer;
+			font-family: serif;
+			font-size: 14px;
+		}
+		#konten .textinput input{
+			cursor: text;
+			width:99.5%; 
+			height: 30px;
+			padding-left: 0.5em;
+		}
+		#konten .jarak{
+			text-align: right;
+		}
+		#konten .button{
+		    padding : 0.5em 0.6em 0.7em 0.6em;
+		    background-color: #C21111;
+		}
+		#konten input[type=submit]{;
+		    padding: 0.5em;
+		    background-color: #C21111;
+		    margin: 1em 0.5em;
+		    height: 38px;
+		    color: white;
+		}
+		
+		#konten .wrapper{
+		    height: 6em;
+		}
+		
+			#konten .wrapper b{
+				float: left; 
+				padding : 20px 0px 0px 15px;
+				font-family: arial;
+			}
+				
+				#konten .wrapper b span{
+					font-family: serif;
+					font-weight: lighter;
+					font-size: 11pt;
+				}
+		
+			#konten .wrapper .gambar{
+				float: left;
+				padding-top: 15px;
+			}
+		#konten span p{
+			padding: 20px 0px;
+			text-align: right;
+		}
+			#konten span p b{
+				padding: 20px 0px;
+				cursor: pointer;	
+			}
+
+footer{
+	background-color: #333333;
+	color:#E2E1E1;
+	line-height:1em;
+	text-align:center;
+}
+*{
+	margin : 0;
+	padding: 0;
+}
+a{
+	text-decoration: underline;
+	color:#f4f4f4;
+}
+/*

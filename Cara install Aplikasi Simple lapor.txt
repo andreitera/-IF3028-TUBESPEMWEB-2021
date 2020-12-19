@@ -1,0 +1,11 @@
+Cara install Apllikasi Simple lapor
+- Download source code dalam berbentuk zip pada github
+- extract folder tubes ke dalam directori C:\xampp\htdocs
+- Kemudian buka aplikasi xampp dan aktifkan Apache dan MySql
+- Import database yang tersedia dalam folder kedalam localhost/phpmyadmin dengan nama database "lapor"
+- Kunjungi alamat url "http://localhost/tubes/" untuk menjalankan aplikasi
+Cara Pemakaian aplikasi simple lapor
+- Untuk membuat laporan, ada batasan dalam memasukkan kata-kata dan ukuran file kurang dari 2mb
+- Untuk melihat 10 laporan terakhir yang telah dibuat sebelumnya, bisa dilihat pada halaman home screen dan dapat dilihat secara lengkap dengan klik "Lihat Selengkapnya"
+- Untuk mencari laporan yang sudah dibuat, dapat menginput kata pencarian pada kolom yang telah disediakan kemudian tekan tombol cari
+Terimakasih~~
