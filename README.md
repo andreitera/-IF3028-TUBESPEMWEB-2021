@@ -46,27 +46,27 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 
 ### Penjelasan Teknis
 'Instalasi Framework Code Igniteter 3 dan database'
-~ Mendownload file code igniter 3 melalui https://codeigniter.com/download
-~ Melakukan ekstraksi file ke dalam file htdocs di xampp
-~ framework Code Igniter siap untuk di konfigurasi
-~ Untuk mengkoneksikan database, terlebih dahulu membuat database pada my sql
-~ Setelah database dibuat, proses koneksi database dapat dikonfigurasi pada path file config/database.php 
-~ ubah pada variabel database dengan mengisikan database yang dimaksud
-~ framework dan database siap digunakan
+- Mendownload file code igniter 3 melalui https://codeigniter.com/download
+- Melakukan ekstraksi file ke dalam file htdocs di xampp
+- framework Code Igniter siap untuk di konfigurasi
+- Untuk mengkoneksikan database, terlebih dahulu membuat database pada my sql
+- Setelah database dibuat, proses koneksi database dapat dikonfigurasi pada path file config/database.php 
+- ubah pada variabel database dengan mengisikan database yang dimaksud
+- framework dan database siap digunakan
 
 'Validasi Client-Side'
-~ Validasi client-side digunakan untuk memvalidasi mengenai data yang user inputkan
-~ Apabila terdapat ketidaksesuaian data yang diinputkan oleh pengguna maka akan ada pemberitahuan mengenai kesalahan
-~ Konfigurasi terhadap client-side terdapat pada application/models/Lapor_Model
-~ Didalam folder tersebut didefinisikan bahwa minimal inputan komentar/keterangan 100 karakter,
-~ file yang dapat diinputkan berupa (doc, docx, xls, xlsx, ppt, pptx, pdf)
-~ Komentar/keterang wajib diisi apabila ingin melanjutkan proses
+- Validasi client-side digunakan untuk memvalidasi mengenai data yang user inputkan
+- Apabila terdapat ketidaksesuaian data yang diinputkan oleh pengguna maka akan ada pemberitahuan mengenai kesalahan
+- Konfigurasi terhadap client-side terdapat pada application/models/Lapor_Model
+- Didalam folder tersebut didefinisikan bahwa minimal inputan komentar/keterangan 100 karakter,
+- file yang dapat diinputkan berupa (doc, docx, xls, xlsx, ppt, pptx, pdf)
+- Komentar/keterang wajib diisi apabila ingin melanjutkan proses
 
 'Melakukan AJAX'
-~ dalam konfigurasi ajax, terutama pada fitur LAPOR, aplikasi akan melakukan proses tambah tampah harus mereload
-~ konfigurasi ajax dapat dilihat pada path file asset/ajax
+- dalam konfigurasi ajax, terutama pada fitur LAPOR, aplikasi akan melakukan proses tambah tampah harus mereload
+- konfigurasi ajax dapat dilihat pada path file asset/ajax
 
-''
+
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
 - CSS: margin, padding, header tag, font-size, text-align, float, clear, border, color, div, span, placeholder, 
