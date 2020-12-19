@@ -26,10 +26,41 @@
 
             $this->load->view("tambah_view");
         }
+<<<<<<< HEAD
+=======
+
+        public function edit($id = null){
+            if (!isset($id)) redirect('tampilan_view');
+        
+            $laporan = $this->laporan_model;
+            $validation = $this->form_validation;
+            $validation->set_rules($laporan->rules());
+
+            if ($validation->run()) {
+                $laporan->update();
+                $this->session->set_flashdata('success', 'Berhasil diubah');
+            }
+
+            $data["laporan"] = $laporan->getById($id);
+            if (!$data["laporan"]) show_404();
+            
+            $this->load->view("", $data);
+        }
+>>>>>>> 79b1301cab376c90503646d710313c819be9fda2
 
         public function detail(){
             $this->load->view("detail_view");
         }
+<<<<<<< HEAD
 
+=======
+        public function delete($id=null){
+            if (!isset($id)) show_404();
+            
+            if ($this->laporan_model->delete($id)) {
+                redirect(site_url('tampilan_view'));
+            }
+        }
+>>>>>>> 79b1301cab376c90503646d710313c819be9fda2
     }
 ?>
