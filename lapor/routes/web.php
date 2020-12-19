@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Auth
+Route::get('/register',                 'AuthController@register')->name('register.user');
+Route::get('/login',                    'AuthController@login')->name('login.user');
+
+
 Route::get('/',                 'LaporController@index')->name('landing');
 Route::get('/lapors',           'LaporController@listView')->name('listView');
 Route::get('/profil',           'ProfileController@showProfile')->name('showProfile');

@@ -1,8 +1,8 @@
 @extends('Lapor.layout.masterlanding')
 
 @section('css')
-    <link rel="stylesheet" href=" {{ asset('asset/css/listStyle.css') }} ">
-    <link rel="stylesheet" href=" {{ asset('asset/css/landingStyle.css') }} ">
+<link rel="stylesheet" href=" {{ asset('asset/css/listStyle.css') }} ">
+<link rel="stylesheet" href=" {{ asset('asset/css/landingStyle.css') }} ">
 @endsection
 
 @section('content')
