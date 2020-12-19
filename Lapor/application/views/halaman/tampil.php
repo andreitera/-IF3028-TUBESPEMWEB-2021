@@ -12,7 +12,7 @@
             <span>Aspek : <?php echo $post_item['aspek']; ?></span><br>
             <span>Dibuat pada : <?php echo $post_item['waktu']; ?> </span>
             <?php $id = $post_item['id']; ?>
-            <a class="black" href="<?php echo base_url('tampil/delete/') . $id; ?>">Hapus</a>
+            <a class="black" href="<?php echo base_url('tampil/delete/') . $id;?>" onclick="return confirm('Are you sure you want to delete this item?');">Hapus</a>
             <a class="black" href="<?php echo base_url('tampil/edit/') . $id; ?>">Edit</a>
         </div>
     </div>
