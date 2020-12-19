@@ -7,7 +7,7 @@ class Utama extends CI_Controller {
 	{
 		$this->load->model('lapor_m');
 		$query = $this->lapor_m->get();
-		$data['header'] = 'Tubes PemWEB RD';
+		$data['header'] = 'Halaman Utama';
 		$data['utama'] = $query->result();
 		$this->load->view('lapor_tampil', $data);
 

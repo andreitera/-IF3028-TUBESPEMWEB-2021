@@ -100,6 +100,9 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 
 ### Penjelasan Teknis
 `Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+- Instalasi Framework menggunakan Codeigniter
+- Pembuatan Database menggunakan MySql
+- Koneksi Database menggunakan atribut Codeigniter
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.

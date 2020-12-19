@@ -1,14 +1,6 @@
-<title><?=$header?></title>
+<title><?php echo $header; ?></title>
 
 <style type="text/css">
-	.data{
-		border-collapse: collapse;
-	}
-
-	.data th, td{
-		padding: 5px;
-	}
-
 	.latu{
 		display: flex;
 		justify-content: space-between;
@@ -63,5 +55,4 @@
 			</tr>
 		<?php
 		}
-		?>
-	}?>
+	?>
