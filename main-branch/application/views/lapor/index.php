@@ -18,11 +18,11 @@
         <p>Buat Laporan/Komentar</p>
         <hr>
         <form method="POST" action="<?= base_url('lapor/lapor') ?>" enctype="multipart/form-data">
-            <textarea name="isi" style="height: 50%; width:100%;"></textarea>
+            <textarea name="isi" style="padding: 15%; width:70%"></textarea>
 
             <br><br>
 
-            <select class="o" name="aspek">
+            <select class=" o" name="aspek">
                 <option hidden value="">Pilih Aspek Pelaporan/Komentar</option>
                 <option>Laporan</option>
                 <option>Komentar</option>
@@ -38,7 +38,7 @@
 
             <div class="u">
                 <input class="up" type="submit" value="Buat LAPOR">
-            </div>  
+            </div>
             <hr>
         </form>
     </div>
