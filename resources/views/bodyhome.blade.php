@@ -23,7 +23,7 @@
                     </p>
                     <?php $a = explode("/", $item->file); ?>
                     <div class="lampiran">
-                        <p>Lampiran: {{ count($a) > 2 ? $a[1] : ""}}</p>
+                        <p>Lampiran: {{ count($a) >= 2 ? $a[1] : ""}}</p>
                     </div>
 
                     <div class="waktu">
