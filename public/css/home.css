@@ -1,0 +1,321 @@
+nav, .text-detail, .f-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bar, .form .inpt, .form textarea, .form select, .form .btn, .lampiran, .text-detail {
+  margin-top: 10px;
+}
+
+.bar {
+  width: 100%;
+  height: 3px;
+  -webkit-box-shadow: 0px 2px 5px 0px #b4b4b4;
+          box-shadow: 0px 2px 5px 0px #b4b4b4;
+  background-color: black;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: relative;
+  font-size: 12px;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  color: #ffffff;
+  font-weight: bold;
+  height: 90px;
+  padding: 0px 100px;
+}
+
+nav * {
+  margin: 20px 20px 0px 20px;
+}
+
+nav .search {
+  margin-top: 0px;
+  margin-right: 5px;
+  height: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.home-cover {
+  width: 100vw;
+  height: 550px;
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+}
+
+.home-white {
+  width: 100vw;
+  position: absolute;
+  top: 400px;
+  z-index: -1;
+}
+
+.form-buat {
+  padding: 30px;
+  margin: 0px auto 40px auto;
+  width: 750px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 3px 3px 5px 0px #b4b4b4;
+          box-shadow: 3px 3px 5px 0px #b4b4b4;
+}
+
+.form-buat table {
+  color: #b4b4b4;
+}
+
+.form-container {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-container-aspek {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.form-container span {
+  margin-right: 10px;
+}
+
+.form-kategori {
+  text-align: center;
+  font-weight: bold;
+  color: #D0021B;
+  padding: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: 1px solid #D0021B;
+}
+
+.form .inpt {
+  font-weight: bold;
+  padding: 5px;
+  width: 300px;
+  font-size: 12px;
+}
+
+.form textarea {
+  font-weight: bold;
+  padding: 10px;
+  width: 100%;
+  min-height: 300px;
+}
+
+.form select {
+  padding: 10px;
+}
+
+.form .btn {
+  padding: 10px;
+  font-size: 12px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.form #filename {
+  border: none;
+  color: #b4b4b4;
+}
+
+.form .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.judul {
+  margin-top: 100px;
+  margin-bottom: 70px;
+  color: white;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.judul-kata1 {
+  font-size: 33px;
+  margin-bottom: 20px;
+}
+
+.judul-kata2 {
+  font-size: 24px;
+  font-weight: 0px;
+}
+
+.judul-bar {
+  background-color: white;
+  width: 80px;
+  height: 5px;
+  margin: 40px auto 0px auto;
+}
+
+.detail {
+  margin-top: 30px;
+  text-align: justify;
+}
+
+.cont-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.lampiran {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.icon-bawah {
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+}
+
+.btn-detail {
+  border: solid 1px #D0021B;
+  padding: 3px 5px;
+  border-radius: 3px;
+  font-weight: bold;
+  color: #D0021B;
+  background-color: white;
+}
+
+.detil {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.input-uniq {
+  padding: 3px;
+  margin-right: 5px;
+}
+
+.search {
+  margin-top: 0px;
+  margin-right: 5px;
+  height: 20px;
+}
+
+.btn-search {
+  background-color: white;
+  border: 1px solid black;
+  font-size: 14px;
+  padding: 20px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#judulsearch {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.text-detail {
+  vertical-align: center;
+  text-align: center;
+}
+
+.text-detail img {
+  margin-left: 10px;
+  height: 20px;
+}
+
+.info {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border: dotted 5px #D0021B;
+  padding: 20px;
+  background-color: #ffa3ae;
+}
+
+.info .bell {
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.info-send {
+  border: solid 1px #D0021B;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 15px;
+}
+
+.uniq {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.uniq span {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.uniq p {
+  font-size: 30px;
+  font-weight: bold;
+  color: #D0021B;
+  margin-bottom: 40px;
+}
+
+.uniq button {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 15px 5px;
+  border: solid #D0021B 1px;
+  border-radius: 5px;
+  color: #D0021B;
+  background-color: white;
+}
+/*# sourceMappingURL=home.css.map */

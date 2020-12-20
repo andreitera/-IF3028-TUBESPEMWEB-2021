@@ -1,0 +1,67 @@
+$bg : red;
+$font : 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $font;
+    height: 200vh;
+    position: relative;
+}
+
+nav{
+    position: sticky;
+    // position: absolute;
+    top: 0px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    height: 90px;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+
+
+    *{
+        // border: 1px solid green;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .search{
+        margin-top: 0px;
+        margin-right: 5px;
+        height :20px;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 15px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+
+.home{
+    &-cover{
+        width: 100vw;
+        height: 500px;
+        position: absolute;
+        top: 0px;
+        z-index: -1;
+    }
+    &-white{
+        width: 100vw;
+        position: absolute;
+        top: 350px;
+        z-index: -1;
+    }
+}
