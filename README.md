@@ -10,6 +10,9 @@ di program studi teknik informatika ITERA.
 
 ### Anggota Tim :cyclone:
 Project dikerjakan secara **berkelompok** dengan maksimal jumlah anggota adalah 2-3 orang mahasiswa.
+1. Muhammad Najie K. (118140131)
+2. Muhammad Khoirurrizqi (118140134)
+3. Khoirul Roziq (118140142)
 
 ### Petunjuk Pengerjaan :umbrella:
 1. Fork pada repository ini dengan akun github anda.
@@ -99,33 +102,47 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Instalasi Framework dan Koneksi Database`
-1. Instalasi Framework
-Framework yang digunakan adalah Codeigniter 4. Sebelum menginstall CI4 sebaiknya install terlebih dahulu Composer, XAMPP, dan Git.
-a. Menginstall XAMPP
-- Download XAMPP sesuai dengan OS anda pada link berikut ini https://www.apachefriends.org/download.html
-- Ikuti alur instalasi seperti pada umumnya.
-b. Menginstall Composer
-- Buka link berikut ini https://getcomposer.org/download/
-- Bila anda menggunakan Windows, silakan download dan install file yang tersedia di dalam link tersebut
-- Bila anda menggunakan Linux atau Mac OS, silakan copy paste code yang tersedia di dalam link teresebut ke terminal anda.
-c. Menginstall Git
-- Download Git sesuai dengan OS anda pada link berikut ini https://git-scm.com/downloads
-- Ikuti alur instalasi seperti pada umumnya
+#### `Instalasi Framework dan Koneksi Database`
+##### 1. Instalasi Framework
+Mohon untuk melakukan instalasi tools berikut untuk menjalankan proyek CI4 ini. 
+Requirement:
+1. [Composer](https://getcomposer.org/download/)
+2. [XAMPP](https://www.apachefriends.org/download.html)
+3. [Git](https://git-scm.com/downloads)
 
-Setelah menginstall ketiganya, buka folder htdocs di dalam folder XAMPP anda. Setelah itu masuk ke Git dengan melakukan klik kanan dan klik 'Git Bash Here'. Saat berada di dalam Git, mcopy dan paste code berikut ini dan ubah nama_folder sesuai keinginan anda.`composer create-project codeigniter4/appstarter nama_folder --no-dev`. Untuk menjalankan project yang telah berhasil kita buat, masuk terlebih dahulu ke dalam folder project yang baru saja kita buat. Lalu ketikkan `php spark serve`, untuk menghentikannya tekan Ctrl + C. Setelah itu, buka http://localhost:8080/ untuk melihat hasil pengerjaan project anda.
+Setelah melakukan instalasi requirement tersebut. Lakukan **```clone```** terhadap repository ini menggunakan **Git** dan simpan pada direktori penyimpanan Anda.
 
-Agar dapat push hasil pengerjaan, maka fork repository utama terlebih dahulu. Setelah itu, hasil fork diclone di device masing-masing anggota kelompok dengan cara memasukkan `git clone https://github.com/andreitera/-IF3028-TUBESPEMWEB-2021.git`. Setelah itu copy dan paste seluruh file framework yang baru saja di buat ke dalam file hasil clone.
+Download seluruh package atau library tambahan yang digunakan CodeIgniter dengan langkah-langkah berikut.
+1. Buka ```command prompt```
+2. Arahkan ke project root tempat Anda menyimpan proyek yang telah di-clone sebelumnya.
+3. Ketik perintah ```composer update``` lalu enter
+4. Tunggu sampai proses *download* selesai
 
-2. Koneksi Database
-Setelah berhasil menginstall framework, lakukan hal-hal berikut ini agar dapat mengkoneksikan database.
-a. Buka aplikasi XAMPP anda, pada bagian module Apache klik 'Config' dan pilih PHP (php.ini). Di dalam file tersebut, cari `;extension=intl` dan hapus tanda semicolonnya `'`.
-b. Buat database yang akan dipakai  di dalam project ini, dengan cara start Apache dan MySQL di XAMPP. Lalu, masuk ke dalam Shell pada XAMPP atau buka http://localhost/phpmyadmin/ pada browser kesayangan anda. Setelah itu buatlah database yang akan dipakai.
-c. Buka folder project dan cari file `env`, setelah itu ubah atau duplicate menjadi `.env`.
-d. Buka file `.env`, dan cari ![](tampilan/env.png). Setelah itu hapus tanda `#` dan ubah database sesuai dengan database yang digunakan serta ubah pula passwordnya. Cari pula ![](tampilan/environment.png), dan hapus tanda `#` serta ubah valuenya menjadi `development`.
+Aktifkan extension intl pada PHP dengan cara berikut.
+1. Buka XAMPP.
+2. Pada bagian module Apache, klik button ```Config``` dan pilih ```PHP (php.ini)```
+3. Cari ```;extension=intl``` dan hapus komentar dengan cara hapus tanda semicolon di depannya menjadi `extension=intl`
+4. Setelah selesai, simpan konfigurasi tersebut.
+Note: Apabila tidak dapat menyimpan perubahan maka pastikan anda membukanya dalam keadaan mode Administrator PC.
 
+##### 2. Koneksi Database
+1. Buka akses ke DBMS MySQLi, dapat menggunakan CLI atau pun lewat http://localhost/phpmyadmin menggunakan browser kesayangan Anda.
+2. Lakukan import [Database dan Table](db_lapor.sql) yang telah disediakan pada repository ini.
+3. Atur ulang pengaturan untuk akses ke MySQLi sesuai dengan pengaturan Anda pada file environment `.env` di project root. Pengaturannya dapat dilihat seperti gambar berikut.
+![](tampilan/env.png)
+Hapus tanda `#` pada setiap barisnya untuk mengaktifkan dan ubah database sesuai dengan database telah disediakan (`lapor`).
+4. Simpan pengaturan file.
 
-`Melakukan validasi pada client-side.`
+##### 3. Menjalankan Web App
+1. Buka kembali `command prompt`
+2. Arahkan pada project root.
+3. Jalankan perintah `php spark serve`
+4. Buka Browser kesayangan Anda.
+5. Ketik pada kotak URI, `localhost:8080` dan enter.
+6. Pada titik ini seharusnya aplikasi sudah dapat digunakan.
+**Note: Pastikan port ```127.0.0.1:8080``` sedang tidak digunakan oleh Aplikasi lain.**
+
+#### `Melakukan validasi pada client-side.`
 Saat user menekan tombol tambah atau edit laporan, form akan dikirimkan ke dalam file `validation.js`, tepatnya ke dalam fungsi validasi. File tersebut berada di dalam path public/assets/js/.
 
 Di dalam file tersebut akan dibaca value dari konten, aspek, dan nama file yang telah dimasukkan oleh user. Proses validasi terurut sebagai berikut:
@@ -134,12 +151,22 @@ Di dalam file tersebut akan dibaca value dari konten, aspek, dan nama file yang 
 3. Pada pengecekan ketiga, akan dilakukan pengecekan nama file. Bila nama filenya kosong, maka akan muncul alert "Masukkan lampiran terlebih dahulu",  dan user akan diminta untuk mengisi form kembali tanpa merestart form yang sebelumnya. Bila tdak, maka akan dilakukan pengecekan ketiga. Bila tidak, maka akan dilakukan pengecekan keempat.
 4. Pada pengecekan ini, sudah tersedia array yang berisi ekstensi-ekstensi yang diperkenankan untuk diupload. Setelah itu nama file akan dipecah dan index terakhir akan disimpan sebagai ekstensi. Lalu ekstensi file akan dicocokkan dengan array yang berisi ekstensi-ekstensi yang diperkenankan. Bila tidak terdapat ekstensi yang sama, maka hasilnya akan false, lalu akan ditampilkan alert "Ekstensi file tidak didukung!", dan user akan diminta untuk mengisi form kembali tanpa merestart form yang sebelumnya. Bila terdapat ekstensi yang tepat, maka validasi berhasil dilewati dan akan diteruskan ke dalam proses save data.
 
+#### `Melakukan AJAX`
+Pada fitur pencarian.
+1. Ketik apapun pada kolom pencarian.
+2. Klik button `cari`.
+3. Otomatis penampilan hasil pencarian dengan AJAX.
 
-
-`Melakukan AJAX (mulai dari pengguna melakukan klik pada tombol LAPOR! sampai laporan/komentar terkirim).`
-Saat user menekan tombol lapor, maka akan dialihkan ke dalam form create. Di dalam form create, akan diminta mengisi 3 data, yaitu isi laporan, aspek, dan lampiran. Setelah itu, saat user menekan tombol buat laporan, akan dijalankan validasi yang dilakukan dengan javascript. Bila tidak lolos validasi, maka akan muncul alert dan diminta untuk mengisi form kembali. Bila lolos validasi maka data akan dikirimkan ke dalam controller Home.php pada method save. 
-
-Pada method save, akan diambil data-data yang telah diisi di dalam form. Bila dari data tersebut tidak terdapat id, maka data-data tersebut akan disimpan dengan menggunakan fungsi save bawaan CI4. Created_at dan id dari data-data tersebut akan otomatis dibuat oleh DB dan CI4.
+Cara kerjanya:
+1. Ada fungsi trigger pemanggilan fungsi `fetchLaporan()` apabila button cari diklik.
+2. Fungsi akan membuat objek XMLHttpRequest.
+3. XMLHttpRequest akan melakukan request ke halaman `home/search` dengan Query String berupa nilai dari pencarian (XHR akan memastikan jalannya request secara Asynchronous).
+4. Method search akan jalan sesuai pengaturan routes.
+5. Keyword dari Query String akan disimpan dan dilakukan permintaan data dari model sesuai dengan keyword.
+6. Data disimpan dalam bentuk array dan data tersebut dioper ke dalam view `search_result`
+7. Method search akan mengembalikan view tersebut.
+8. XHR akan menimpa list laporan yang ditampilkan dengan data baru sesuai dengan kembalian view ketika XHR sudah mendeteksi adanya kembalian yang berhasil dilakukan.
+9. List Laporan akan tampil sesuai dengan keyword. Apabila tidak terdapat data yang sesuai dengan keyword maka akan ditampilkan bahwa tidak terdapat data yang sesuai.
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
