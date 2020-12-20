@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SIMPLE LAPOR!</title>
+	<!-- file css ada di asset/css -->
+	<link rel="stylesheet" type="text/css" href="style_buatlaporan.css">
+	<!-- <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/asset/css/reset.css"> -->
+</head>
+<body>
+
+<div class="container">
+	<h1>SIMPLE LAPOR !</h1>
+	<br><br>
+
+    <h4>Buat Laporan/Komentar</h4>
+   <hr>
+
+    <textarea rows="16" cols="136" name="comment" form="usrform"></textarea>
+
+	<div class="aspek" style="width: 200px;">
+	<select >
+		<option>- Pilih Aspek Pelaporan/Komentar -</option>
+		<option value="Dosen">Dosen</option>
+		<option value="Staff">Staff</option>
+		<option value="Mahasiswa">Mahasiswa</option>
+		<option value="Infrastruktur">Infrastruktur</option>
+		<option value="Pengajaran">Pengajaran</option>
+	  </select>
+	</div>
+<br><br>
+	<form action="">
+		<input type="file" name="myFile"><br>
+		</form>
+	
+	<input type="submit">
+	
+<div id="footer">
+&copyCopyright 2019 - itera.ac.id
+</div>
+
+</div>
+</body>
+</html>
