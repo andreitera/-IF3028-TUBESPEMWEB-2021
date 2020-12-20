@@ -4,6 +4,10 @@
 <link rel="stylesheet" href="{{ asset('css/home.css') }}">
 @endsection
 
+@section('judul')
+    Edit Laporan
+@endsection
+
 @section('isi')
 <div class="form-buat">
     <form method="POST" action="{{ route('laporupdate', $lapor->unique_id) }}" enctype="multipart/form-data" class="form">
@@ -19,6 +23,7 @@
             <option value="Dosen">Dosen</option>
             <option value="Mata Kuliah">Mata Kuliah</option>
             <option value="Prodi">Prodi</option>
+            <option value="Mahasiswa">Mahasisa</option>
         </select>
         <br>
         <input type="button" value="Choose File" onclick="document.getElementById('pic').click()" class="btn">
