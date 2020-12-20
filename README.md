@@ -102,7 +102,7 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 `Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
 
 ### Knowledge
-Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
+Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaiikan tugas ini.
 - CSS: margin, padding, header tag, font-size, text-align, float, clear, border, color, div, span, placeholder, 
 anchor tag.
 - Javascript : XMLHTTPRequest.
