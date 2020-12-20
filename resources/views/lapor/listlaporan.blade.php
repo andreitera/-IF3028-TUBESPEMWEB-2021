@@ -5,25 +5,28 @@
 @endsection
 
 @section('judul')
-    List Laporan
+List Laporan
 @endsection
 
 @section('isi')
 <div class="form-buat">
-    <p class="head-list">Banyak Laporan/Komentar saat ini <span class="badge">50</span></p> 
+    <p class="head-list">Banyak Laporan/Komentar saat ini <span class="badge">{{$jumlah['all']}}</span></p>
     <ul>
         <li>
-            <a href="#">Dosen</a><span class="badge-nav">50</span>
+            <a href="{{ route('lapor') }}">All</a><span class="badge-nav">{{$jumlah['all']}}</span>
         </li>
         <li>
-            <a href="#">Mata Kuliah</a><span class="badge-nav">50</span>
+            <a href="{{route('lapordosen')}}">Dosen</a><span class="badge-nav">{{$jumlah['dosen']}}</span>
         </li>
         <li>
-            <a href="#">Prodi</a><span class="badge-nav">50</span>
+            <a href="{{route('lapormatkul')}}">Mata Kuliah</a><span class="badge-nav">{{$jumlah['matkul']}}</span>
         </li>
         <li>
-            <a href="#">Mahasiswa</a><span class="badge-nav">50</span>
-        </li>   
+            <a href="{{route('laporprodi')}}">Prodi</a><span class="badge-nav">{{$jumlah['prodi']}}</span>
+        </li>
+        <li>
+            <a href="{{route('lapormahasiswa')}}">Mahasiswa</a><span class="badge-nav">{{$jumlah['mahasiswa']}}</span>
+        </li>
     </ul>
     <div class="bar"></div>
     {{-- satu laporan --}}
@@ -35,11 +38,11 @@
         <table>
             <tr>
                 <td>Judul</td>
-                <td>: Fikri</td>
+                <td>: {{$lapor->from}}</td>
             </tr>
             <tr>
                 <td>Pengirim</td>
-                <td>: halim</td>
+                <td>: {{$lapor->from}}</td>
             </tr>
         </table>
     </div>
