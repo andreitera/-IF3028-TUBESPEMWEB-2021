@@ -63,7 +63,7 @@
         document.getElementById("btn-eh").outerHTML =
             "<button type='submit' name='action' value='edit' class='btn-edit' style='margin-right: 10px'>Edit<img src='{{ asset('image/edit.svg') }}' alt='icon edit' class='btn-icon'></button>" +
             "<span> | </span>" +
-            "<button type='submit' name='action' value='hapus' class='btn-hapus'>Hapus<img src='{{ asset('image/close.svg') }}' alt='icon hapus' class='btn-icon'></button>";
+            "<button type='delete' name='action' value='hapus' class='btn-hapus'>Hapus<img src='{{ asset('image/close.svg') }}' alt='icon hapus' class='btn-icon'></button>";
     }
 </script>
 @endsection

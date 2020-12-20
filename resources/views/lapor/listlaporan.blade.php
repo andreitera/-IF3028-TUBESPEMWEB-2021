@@ -12,21 +12,75 @@ List Laporan
 <div class="form-buat">
     <p class="head-list">Banyak Laporan/Komentar saat ini <span class="badge">{{$jumlah['all']}}</span></p>
     <ul>
-        <li>
-            <a href="{{ route('lapor') }}">All</a><span class="badge-nav">{{$jumlah['all']}}</span>
-        </li>
-        <li>
-            <a href="{{route('lapordosen')}}">Dosen</a><span class="badge-nav">{{$jumlah['dosen']}}</span>
-        </li>
-        <li>
-            <a href="{{route('lapormatkul')}}">Mata Kuliah</a><span class="badge-nav">{{$jumlah['matkul']}}</span>
-        </li>
-        <li>
-            <a href="{{route('laporprodi')}}">Prodi</a><span class="badge-nav">{{$jumlah['prodi']}}</span>
-        </li>
-        <li>
-            <a href="{{route('lapormahasiswa')}}">Mahasiswa</a><span class="badge-nav">{{$jumlah['mahasiswa']}}</span>
-        </li>
+        @if(url()->current() == "http://127.0.0.1:8000/lapor")
+            <a href="{{ route('lapor') }}" class="aktif">
+                <li>
+                    All<span class="badge-nav">{{$jumlah['all']}}</span>
+                </li>
+            </a>
+        @else
+        <a href="{{ route('lapor') }}" >
+            <li>
+                All<span class="badge-nav">{{$jumlah['all']}}</span>
+            </li>
+        </a>
+        @endif
+
+        @if(url()->current() == "http://127.0.0.1:8000/lapor/dosen")
+            <a href="{{route('lapordosen')}}" class="aktif">
+                <li>
+                    Dosen<span class="badge-nav">{{$jumlah['dosen']}}</span>
+                </li>
+            </a>
+        @else
+            <a href="{{route('lapordosen')}}">
+                <li>
+                    Dosen<span class="badge-nav">{{$jumlah['dosen']}}</span>
+                </li>
+            </a>
+        @endif
+        
+        @if(url()->current() == "http://127.0.0.1:8000/lapor/matkul")
+            <a href="{{route('lapormatkul')}}" class="aktif">
+                <li>
+                    Mata Kuliah<span class="badge-nav">{{$jumlah['matkul']}}</span>
+                </li>
+            </a>
+        @else
+            <a href="{{route('lapormatkul')}}">
+                <li>
+                    Mata Kuliah<span class="badge-nav">{{$jumlah['matkul']}}</span>
+                </li>
+            </a>
+        @endif
+
+        @if(url()->current() == "http://127.0.0.1:8000/lapor/prodi")
+            <a href="{{route('laporprodi')}}" class="aktif">
+                <li>
+                    Prodi<span class="badge-nav">{{$jumlah['prodi']}}</span>
+                </li>
+            </a>
+        @else
+            <a href="{{route('laporprodi')}}">
+                <li>
+                    Prodi<span class="badge-nav">{{$jumlah['prodi']}}</span>
+                </li>
+            </a>
+        @endif
+
+        @if(url()->current() == "http://127.0.0.1:8000/lapor/mahasiswa")
+            <a href="{{route('lapormahasiswa')}}" class="aktif">
+                <li>
+                    Mahasiswa<span class="badge-nav">{{$jumlah['mahasiswa']}}</span>
+                </li>
+            </a>
+        @else
+            <a href="{{route('lapormahasiswa')}}" >
+                <li>
+                    Mahasiswa<span class="badge-nav">{{$jumlah['mahasiswa']}}</span>
+                </li>
+            </a>
+        @endif
     </ul>
     <div class="bar"></div>
     {{-- satu laporan --}}
@@ -60,8 +114,5 @@ List Laporan
     @endforeach
     @endif
     {{-- end satu laporan --}}
-    <div class="f-center" style="margin-top: 30px">
-        <img src="{{ asset('image/titik3.svg') }}" alt="icon titik3" style="height: 25px">
-    </div>
 </div>
 @endsection

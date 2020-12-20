@@ -366,27 +366,28 @@ ul {
   text-align: center;
 }
 
-ul li {
+ul a {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   padding: 10px 0px;
   margin: 5px;
+  text-decoration: none;
 }
 
-ul li:hover {
+ul a:hover {
   border-bottom: 3px solid #5ABAB6;
   -webkit-transition: 300ms;
   transition: 300ms;
 }
 
-ul li:hover a {
+ul a:hover li {
   color: #5ABAB6;
   -webkit-transition: 800ms;
   transition: 800ms;
 }
 
-ul li:hover .badge-nav {
+ul a:hover .badge-nav {
   -webkit-transition: 800ms;
   transition: 800ms;
   background-color: #5ABAB6;
@@ -394,32 +395,10 @@ ul li:hover .badge-nav {
   color: white;
 }
 
-ul li:active {
-  border: 2px solid #D0021B;
-  border-radius: 10px;
-  -webkit-transition: 300ms;
-  transition: 300ms;
-}
-
-ul li:active a {
-  color: #D0021B;
-  -webkit-transition: 800ms;
-  transition: 800ms;
-}
-
-ul li:active .badge-nav {
-  -webkit-transition: 800ms;
-  transition: 800ms;
-  background-color: white;
-  border: 2px solid #5ABAB6;
-  color: #5ABAB6;
-}
-
-ul li a {
+ul li {
   font-size: 14px;
   font-weight: bold;
   color: #b4b4b4;
-  text-decoration: none;
 }
 
 .head-list {
@@ -428,6 +407,20 @@ ul li a {
   font-weight: bold;
   color: #D0021B;
   margin-bottom: 20px;
+}
+
+.aktif {
+  border-bottom: 3px solid #D0021B;
+}
+
+.aktif li {
+  color: #D0021B;
+}
+
+.aktif .badge-nav {
+  background-color: white;
+  border: 2px solid #D0021B;
+  color: #D0021B;
 }
 
 .badge {
