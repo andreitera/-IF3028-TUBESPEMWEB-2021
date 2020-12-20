@@ -1,10 +1,12 @@
 <main>
     <div class="container">
         <section class="main__func mb-3">
-            <div class="main__search-bar d-flex">
-                <input type="text" name="search_box" 
-                        placeholder="Kata Kunci" class="search-box d-block">
-                <button type="button" class="btn-search btn-secondary">
+            <div class="d-flex main__search-bar">
+                <!-- <form class="" id="form"> -->
+                <input type="text" name="search" id="search" class="search-box d-block" placeholder="Kata Kunci">
+                <!-- <input type="text" name="search_box"
+                        placeholder="Kata Kunci" class="search-box d-block" id="search" oninput="return fetchLaporan()"> -->
+                <button type="submit" class="btn-search btn-secondary" id="btnSubmit" onclick="return fetchLaporan()">
                     <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
                     <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQ0Ni4yNSA0NDYuMjUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGcgaWQ9InNlYXJjaCI+CgkJPHBhdGggZD0iTTMxOC43NSwyODAuNWgtMjAuNGwtNy42NDktNy42NWMyNS41LTI4LjA1LDQwLjgtNjYuMyw0MC44LTEwNy4xQzMzMS41LDczLjk1LDI1Ny41NSwwLDE2NS43NSwwUzAsNzMuOTUsMCwxNjUuNzUgICAgUzczLjk1LDMzMS41LDE2NS43NSwzMzEuNWM0MC44LDAsNzkuMDUtMTUuMywxMDcuMS00MC44bDcuNjUsNy42NDl2MjAuNEw0MDgsNDQ2LjI1TDQ0Ni4yNSw0MDhMMzE4Ljc1LDI4MC41eiBNMTY1Ljc1LDI4MC41ICAgIEMxMDIsMjgwLjUsNTEsMjI5LjUsNTEsMTY1Ljc1UzEwMiw1MSwxNjUuNzUsNTFTMjgwLjUsMTAyLDI4MC41LDE2NS43NVMyMjkuNSwyODAuNSwxNjUuNzUsMjgwLjV6IiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg==" 
                             width="16" height="16" />
@@ -19,11 +21,10 @@
                 </a>
             </div>
         </section>
-
-
-        <h3 class="mt-2">Laporan/Komentar Terakhir</h3>
-        <?php foreach($laporan as $item){?>
+        
+        <h3 class="mt-2">Laporan/komentar terakhir</h3>
         <section class="main__lapor-list">
+        <?php foreach($laporan as $item){?>
             <article class="laporan">
                 <p><?= strlen($item['isi']) > 255 ? substr($item['isi'], 0, 255) . "......" : $item['isi']; ?></p>
                 <div class="d-flex detil-laporan">
@@ -39,7 +40,28 @@
                     </div>
                 </div>
             </article>
-        </section>
         <?php }?>
+        </section>
     </div>
 </main>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    // const btnSubmit = document.getElementById('btnSubmit');
+    const searchText = document.getElementById('search');
+    const laporanSection = document.getElementsByClassName('main__lapor-list')[0];
+
+    function fetchLaporan() {
+        const request = new XMLHttpRequest();
+        request.onreadystatechange = function() {
+            laporanSection.innerHTML = '';
+            if(this.readyState == 4 && this.status == 200 ) {
+                console.log(this.responseText);
+                laporanSection.innerHTML = this.responseText;
+            }
+        }
+
+        request.open("GET", "home/search?keyword=" + searchText.value, true);
+        // // request.setRequestHeader("Content-type", "text/html");
+        request.send();
+    }
+</script>
