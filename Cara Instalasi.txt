@@ -1,0 +1,6 @@
+Cara install codeigniter :
+    1. Download file zip repository tugas ini.
+    2. ekstak file zip 
+    3. Pindahkan folder tubes fix ke server local. misalnya xampp/htdocs
+    4. Running melalui web browser dengan localhost/folderyangdibuat
+    5. Selesai
