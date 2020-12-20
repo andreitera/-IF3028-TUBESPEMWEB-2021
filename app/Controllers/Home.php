@@ -26,6 +26,16 @@ class Home extends BaseController
 		
 	}
 
+	public function search() {
+		$keyword = trim($_GET['keyword']);
+		$data = [
+			'result' => $this->homeModel->getSearch($keyword),
+			'keyword' => $keyword
+		];
+		
+		return view('search_result', $data);
+	}
+
 	public function create()
 	{
 		echo view('templates/header');
