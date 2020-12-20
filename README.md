@@ -21,8 +21,8 @@ penilaian (contoh: hanya melakukan satu commit kemudian dikumpulkan).
    - Instalasi Framework, Koneksi basis data 
    - Melakukan validasi pada client-side
    - Melakukan AJAX (mulai dari pengguna melakukan klik pada tombol LAPOR! sampai laporan/komentar terkirim).
-4. Pull request dari repository anda ke repository ini dengan 
-format **NIM** - **Nama Lengkap**. **Waktu terkahir proses pull request adalah 4 hari setelah 
+5. Pull request dari repository anda ke repository ini dengan 
+format **NIM** - **Nama Lengkap**. **Waktu terkahir proses pull request adalah 4 hari setelah .
 ujian akhir semester (UAS)**
 5. Data yang dikumpulkan adalah:
    - Source code aplikasi
