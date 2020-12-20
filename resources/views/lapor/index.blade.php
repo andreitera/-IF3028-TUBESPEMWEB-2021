@@ -4,6 +4,10 @@
 <link rel="stylesheet" href="{{ asset('css/home.css') }}">
 @endsection
 
+@section('judul')
+    Home
+@endsection
+
 @section('isi')
 <div class="form-buat">
     <form method="POST" action="{{ route('searchlapor') }}" enctype="multipart/form-data" class="form">
@@ -21,7 +25,7 @@
     Tidak ada laporan terbaru
     @else
     @foreach($lapor as $lapor)
-    <div class="detail">{{$lapor->content}}</div>
+    <div class="tampil">{{$lapor->content}}</div>
     <div class="form-container">
         @if($lapor->file != "Tidak ada lampiran")
         <a href="{{ $lapor->file }}" style="text-decoration: none; flex:1;">Unduh Lampiran</a>

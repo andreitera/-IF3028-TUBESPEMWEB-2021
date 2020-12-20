@@ -4,6 +4,10 @@
 <link rel="stylesheet" href="{{ asset('css/home.css') }}">
 @endsection
 
+@section('judul')
+    detail laporan
+@endsection
+
 @section('isi')
 <div class="form-buat">
     <div class="cont-detail">
