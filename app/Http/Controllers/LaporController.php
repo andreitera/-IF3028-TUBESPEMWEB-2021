@@ -201,9 +201,9 @@ class LaporController extends Controller
                             DB::table('laporan')->where('unique_id', 'like', $uniqid)->delete();
                         }, 5);
                     } catch (Exception $th) {
-                        return redirect()->route('lapor')->with('msg', 'Laporan gagal dihapus');
+                        return redirect()->route('home')->with('msg', 'Laporan gagal dihapus');
                     }
-                    return redirect()->route('lapor')->with('msg', 'Laporan berhasil dihapus');
+                    return redirect()->route('home')->with('msg', 'Laporan berhasil dihapus');
                     break;
             }
         } else {
