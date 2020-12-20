@@ -22,6 +22,10 @@ Route::get('/',                                     'LaporController@home')->nam
  * Route List Lapor
  */
 Route::get('lapor',                                 'LaporController@index')->name('lapor');
+Route::get('lapor/dosen',                                 'LaporController@dosen')->name('lapordosen');
+Route::get('lapor/matkul',                                 'LaporController@matkul')->name('lapormatkul');
+Route::get('lapor/prodi',                                 'LaporController@prodi')->name('laporprodi');
+Route::get('lapor/mahasiswa',                                 'LaporController@mahasiswa')->name('lapormahasiswa');
 
 /**
  * Route Create Lapor and Store Lapor to database

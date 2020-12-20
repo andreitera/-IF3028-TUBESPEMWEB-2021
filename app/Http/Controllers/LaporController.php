@@ -27,8 +27,67 @@ class LaporController extends Controller
     */
     public function index()
     {
-        $data = DB::table('laporan')->orderByDesc('id')->simplePaginate(5);
-        return view('lapor/listlaporan', ['lapor' => $data]);
+        $data = DB::table('laporan')->orderByDesc('created_at')->get();
+        $count = [
+            'all' => DB::table('laporan')->count(),
+            'dosen' => DB::table('laporan')->where('aspect', 'like', 'Dosen')->count(),
+            'matkul' => DB::table('laporan')->where('aspect', 'like', 'Mata Kuliah')->count(),
+            'prodi' => DB::table('laporan')->where('aspect', 'like', 'Prodi')->count(),
+            'mahasiswa' => DB::table('laporan')->where('aspect', 'like', 'Mahasiswa')->count(),
+        ];
+        return view('lapor/listlaporan', ['lapor' => $data, 'jumlah' => $count]);
+    }
+
+    public function dosen()
+    {
+        $data = DB::table('laporan')->where('aspect', 'like', 'Dosen')->orderByDesc('created_at')->get();
+        $count = [
+            'all' => DB::table('laporan')->count(),
+            'dosen' => DB::table('laporan')->where('aspect', 'like', 'Dosen')->count(),
+            'matkul' => DB::table('laporan')->where('aspect', 'like', 'Mata Kuliah')->count(),
+            'prodi' => DB::table('laporan')->where('aspect', 'like', 'Prodi')->count(),
+            'mahasiswa' => DB::table('laporan')->where('aspect', 'like', 'Mahasiswa')->count(),
+        ];
+        return view('lapor/listlaporan', ['lapor' => $data, 'jumlah' => $count]);
+    }
+
+    public function matkul()
+    {
+        $data = DB::table('laporan')->where('aspect', 'like', 'Mata Kuliah')->orderByDesc('created_at')->get();
+        $count = [
+            'all' => DB::table('laporan')->count(),
+            'dosen' => DB::table('laporan')->where('aspect', 'like', 'Dosen')->count(),
+            'matkul' => DB::table('laporan')->where('aspect', 'like', 'Mata Kuliah')->count(),
+            'prodi' => DB::table('laporan')->where('aspect', 'like', 'Prodi')->count(),
+            'mahasiswa' => DB::table('laporan')->where('aspect', 'like', 'Mahasiswa')->count(),
+        ];
+        return view('lapor/listlaporan', ['lapor' => $data, 'jumlah' => $count]);
+    }
+
+    public function prodi()
+    {
+        $data = DB::table('laporan')->where('aspect', 'like', 'Prodi')->orderByDesc('created_at')->get();
+        $count = [
+            'all' => DB::table('laporan')->count(),
+            'dosen' => DB::table('laporan')->where('aspect', 'like', 'Dosen')->count(),
+            'matkul' => DB::table('laporan')->where('aspect', 'like', 'Mata Kuliah')->count(),
+            'prodi' => DB::table('laporan')->where('aspect', 'like', 'Prodi')->count(),
+            'mahasiswa' => DB::table('laporan')->where('aspect', 'like', 'Mahasiswa')->count(),
+        ];
+        return view('lapor/listlaporan', ['lapor' => $data, 'jumlah' => $count]);
+    }
+
+    public function mahasiswa()
+    {
+        $data = DB::table('laporan')->where('aspect', 'like', 'Mahasiswa')->orderByDesc('created_at')->get();
+        $count = [
+            'all' => DB::table('laporan')->count(),
+            'dosen' => DB::table('laporan')->where('aspect', 'like', 'Dosen')->count(),
+            'matkul' => DB::table('laporan')->where('aspect', 'like', 'Mata Kuliah')->count(),
+            'prodi' => DB::table('laporan')->where('aspect', 'like', 'Prodi')->count(),
+            'mahasiswa' => DB::table('laporan')->where('aspect', 'like', 'Mahasiswa')->count(),
+        ];
+        return view('lapor/listlaporan', ['lapor' => $data, 'jumlah' => $count]);
     }
 
     /*
