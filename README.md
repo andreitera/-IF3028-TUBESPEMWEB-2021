@@ -17,22 +17,21 @@ Project dikerjakan secara **berkelompok** dengan maksimal jumlah anggota adalah 
 contoh: fix css, membuat post done, jangan seperti final, benerin dikit, oke deh, update deh dll. 
 Disarankan untuk tidak melakukan commit dengan perubahan yang besar karena akan mempengaruhi 
 penilaian (contoh: hanya melakukan satu commit kemudian dikumpulkan).
-3. Minimal commit sebanyak personil anggota tim dengan masing-masing personil tim melakukan commit sesuai dengan kesepakatan tim, penilaian individu akan dilihat.
-4. Ubah **Penjelasan Teknis** pada bagian bawah readme.md ini dengan menjelaskan bagaimana cara anda:
+3. Ubah **Penjelasan Teknis** pada bagian bawah readme.md ini dengan menjelaskan bagaimana cara anda:
    - Instalasi Framework, Koneksi basis data 
    - Melakukan validasi pada client-side
    - Melakukan AJAX (mulai dari pengguna melakukan klik pada tombol LAPOR! sampai laporan/komentar terkirim).
-5. Pull request dari repository anda ke repository ini dengan 
+4. Pull request dari repository anda ke repository ini dengan 
 format **NIM** - **Nama Lengkap**. **Waktu terkahir proses pull request adalah 4 hari setelah 
 ujian akhir semester (UAS)**
-6. Data yang dikumpulkan adalah:
+5. Data yang dikumpulkan adalah:
    - Source code aplikasi
    - Basis data, dan
    - Cara instalasi aplikasi anda
-7. Penilaian:
+6. Penilaian:
    - Kerjasama tim
    - Kesesuaian dengan spesifikasi
-   - Pemahaman dalam penggunaan framework, penilaian efisiensi query
+   - Pemahaman dalam penggunaan framework
    - Antarmuka aplikasi
    - Bug free :beetle:
    
@@ -71,8 +70,6 @@ panjang harus dipotong. Silakan definisikan sendiri seberapa panjang agar tetap 
 
 Pada masing-masing elemen list, terdapat menu untuk mengubah dan menghapus pertanyaan.
 
-View Laporan ditampilkan secara terurut dimulai dari laporan terakhir yang diberikan highlight
-
 ### Kirim laporan/komentar `LAPOR!`
 Pengguna dapat mengajukan laporan/komentar. Form yang digunakan memiliki komentar (textarea), 
 data lapiran berupa gambar 
@@ -99,7 +96,55 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+1. Instalasi Framework
+dalam tugas besar ini kami menggunakan framework CodeIgniter, 
+-langkah pertama kunjungi halaman CodeIgniter lalu download sesuai versi yang diinginkan, disini kami menggunakan versi 3.0
+-jika sudah di download, ekstrak CodeIgniter-3.0.*.zip menggunakan WinRAR atau 7Zip kedalam folder htdocs jika Kamu menggunakan XAMPP atau /var/www/html. jika Kamu menggunakan Apache2 Standalone, setelah itu ubahlan nama foldernya menjadi IF3111-1920.
+-sekarang silahkan coba akses URL http://localhost/IF3111-1920/ melalui browser, akan langsung ditampilkan halaman awal Codeigniter yang berarti Instalasi telah berhasil.
+
+2. Koneksi Basis data
+-buka CodeIgneter, lalu klik application->config->database.php
+-lalu buka database.php, setelah itu ketikkan sesuai nama database yang kita buat.
+-contohnya:
+$db['default'] = array(
+	'dsn'	=> '',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => '',
+	'database' => 'tubes',
+	'dbdriver' => 'mysqli',
+	'dbprefix' => '',
+	'pconnect' => FALSE,
+	'db_debug' => (ENVIRONMENT !== 'production'),
+	'cache_on' => FALSE,
+	'cachedir' => '',
+	'char_set' => 'utf8',
+	'dbcollat' => 'utf8_general_ci',
+	'swap_pre' => '',
+	'encrypt' => FALSE,
+	'compress' => FALSE,
+	'stricton' => FALSE,
+	'failover' => array(),
+	'save_queries' => TRUE
+);
+
+3. Halaman home awal
+Halaman home awal digunakan untuk melihat list laporan yang telah masuk. Diurutkan sesuai dengan id terendah, agar laporan yang masuk dan belum terbaca akan terlihat terlebih dahulu. Kami menggunakan fitur $this->view untuk menunjuk halaman yang akan di load oleh controller. Title kami inisialisasi didalam controller method yang akan berjalan. Kami juga membuat views template untuk header dan footer agar tidak perlu dibuat lagi per halamannya. Dengan menggunakan $this->view->load untuk menampilkannya. Fungsi cari menggunakan $this->innput->post untuk menarik data dari inputan form yang diinputkan lalu dicari menggunakan model method cariDataKeluhan lalu ditampilkan dengan mereturn nilai yang didapatkan. Untuk membuat laporan harus melakukan login terlebih dahulu
+
+4. Login
+Untuk menu login kami menggunakan method login() untuk mencari data dalam database di tabel user. Dengan menarik inputan dari form login lalu di ambil menggunakan fungsi get_where() dan langsung dibandingkan dengan username yang ada, lalu membandingkan password yang terhubung dengan username tersebut. Apabila verifikasi gagal maka akan meredirect ke halaman login tersebut. Apabila verifikasi berhasil, maka akan disimpan session untuk username tersebut dan diredirect sesuai dengan halaman untuk user tersebut.
+
+5. Halaman User
+halaman user hampir sama dengan halaman home awal, tetapi data yang ditampilkan hanya keluhan yang di upload oleh user tersebut dengan membandingkan username yang terdapat pada laporan tersebut. Untuk penginputan kami menggunakan form input seperti biasanya, namun untuk menghubungkan data yang diinputkan dengan user tersebut kami menarik username dari user itu lalu di masukkan dengan menggunakan value dalam kolom inputan agar username yang diinputkan sesuai dengan penginputnya. Field dari laporan dan gambar juga tidak boleh dikosongkan. 
+
+6. Detail laporan
+Untuk detail laporan kami mengambil data dengan menggunakan id yang terdapat pada data lapor tersebut. Didalam detail laporan terdapat fitur ubah dan hapus data. Ubah data dengan cara menarik id yang terdapat pada data tersebut lalu ditampilkan kembali pada form ubah datanya. Metode untuk penginputan data hampir sama dengan menambahkan data pada fitur tambah data dan field juga tidak dapat dikosongkan. Untuk hapus data kami menggunakan query bawaan codeigniter untuk ditambahkan kedalam method hapus dan terdapat validasi untuk penghapusan data
+
+7. Search user
+Untuk search setelah login fungsinya sama seperti yang sebelum login, tetapi yang disearch hanya data lapor yang diinputkan oleh user tersebut.
+
+8. Upload file
+Pada upload file yang pertama dilakukan adalah masuk ke method upload untuk menarik nama dari file yang diuploadkan lalu dibandingkan didalam method tambah.
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
@@ -113,5 +158,6 @@ anchor tag.
 
 ### About :honeybee:
 
-Dosen       : Dicky Prima Satya, M.T., Andre Febrianto, S.Kom., M.Eng., Amirul Iqbal, S.Kom., M.Eng.
+Dosen       : Rajif Agung Yunmar, S.Kom., M.Cs.	,Ahmad Luky Ramdani, S.Komp., M.Kom. ,
+Arief Ichwani, S.Kom., M.Cs., Andre Febrianto, S.Kom., M.Eng, Ilham Firman Ashari, S.Kom., M.T
 
