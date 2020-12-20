@@ -3,7 +3,15 @@
         <h3 class="pt-2">Detail Laporan/Komentar</h3>
         <article id="detail">
             <p class="pt-2"><?= $item['isi']; ?></p>
-            <p class="pt-2">Lampiran: <?= $item['lampiran']; ?></p>
+            <!-- <?php
+                // $lampiran_url = base_url("/assets/uploaed_file/" + $item['lampiran']);
+
+            ?> -->
+            <form class="pt-2" method="POST">
+                Lampiran: <a href="<?= base_url('assets/uploaded_file/' . $item['lampiran']) ?>" 
+                target="_blank" rel="noopener noreferrer"><?= $item['lampiran']; ?></a>
+                <!-- Mau download, perlu send request. -->
+            </form>
             <?php
                 $lampiran = $item['lampiran'];
                 $dot = strrpos($lampiran, '.');
