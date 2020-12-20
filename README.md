@@ -99,7 +99,14 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+requirement: composer, php > 7.0.0, npm 
+1. Pull repo ini
+2. jalankan perintah `composer install`
+3. copy .env.example dan ubah namanya menjadi .env dan ubah juga nama database yang digunakan
+4. jalankan perintah `php artisan migrate`
+5. jalankan perintah `php artisan key:generate`
+6. jalankan perintah `php artisan serve` untuk menjalankan laravel
+7. akses sesuai dengan link yang diberikan perintah `php artisan serve`
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
