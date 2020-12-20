@@ -4,7 +4,7 @@ http://lapor.go.id, maka anda akan mendapatkan laman seperti gambar di bawah
 
 ![](tampilan/lapor.png)
 
-Kali ini kita akan membuat aplikasi web seperti `lapor` untuk mengumpulkan laporan/komentar terkait layanan 
+Kali ini kita akan membuat aplikasi web seperti `lapor` untuk mengumpulkan laporan/komentar terkait layanan
 di program studi teknik informatika ITERA.
 **Luangkan waktu untuk membaca spesifikasi ini sampai selesai.** :kissing_heart:
 
@@ -102,7 +102,7 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 `Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
 
 ### Knowledge
-Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaiikan tugas ini.
+Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
 - CSS: margin, padding, header tag, font-size, text-align, float, clear, border, color, div, span, placeholder, 
 anchor tag.
 - Javascript : XMLHTTPRequest.
