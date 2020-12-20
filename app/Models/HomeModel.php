@@ -15,5 +15,13 @@ class HomeModel extends Model
 
         return $this->find($id);
     }
+
+    public function getSearch($keyword){
+        // like(column, text yang dicari, letak wildcard % 'both'|before'|'after', escapestring(?), insensitive case)
+        return $this->like('isi', $keyword, 'both', NULL, TRUE)
+                    ->orderBy('created_at', 'DESC')
+                    ->findAll();
+    }
+
 }
 ?>
