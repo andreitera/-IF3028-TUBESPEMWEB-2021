@@ -299,4 +299,12 @@ class LaporController extends Controller
         ];
         return view('lapor/listlaporan', ['lapor' => $data, 'jumlah' => $count]);
     }
+
+    /**
+     * View Tentang Lapor
+     */
+    public function tentang()
+    {
+        return view('lapor/tentang');
+    }
 }

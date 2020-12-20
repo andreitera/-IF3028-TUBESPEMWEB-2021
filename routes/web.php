@@ -58,3 +58,8 @@ Route::post('lapor/{unique_id}/edit',         'LaporController@update')->name('l
  * Route Search Lapor
  */
 Route::post('lapor/search',                         'LaporController@search')->name('searchlapor');
+
+/**
+ * Route Tentang Lapor
+ */
+Route::post('lapor/tentang',                         'LaporController@tentang')->name('tentang');
