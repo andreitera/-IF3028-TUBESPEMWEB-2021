@@ -118,12 +118,16 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 ### Penjelasan Teknis
 
 - Instalasi Framework, Koneksi basis data
-  intalasi frame work menggunakan codeigniter 4 , kami melakukan instalasi menggunakan composer dengan command "composer create-project codeigniter4/appstarter project-root"
-  untuk koneksi database denagn mengubah file .env dari code igniter4
-  - Melakukan validasi pada client-side
-    untuk validasi ada pada saat ingin memasuki file dengan ketentuan format yang sudah ditentukan ada pada bagian sript di lapor.php(view)
-  - Melakukan AJAX
-    ajax digunakan pada saat serach laporan dan buat laporan
+
+  1. intalasi framework menggunakan codeigniter 4 , sebelum menginsatal codeigniter 4 kami menginstal Xammp, git dan Composer terlebih dahulu, selanjutnya kami melakukan instalasi menggunakan composer dengan command "composer create-project codeigniter4/appstarter project-root" dan untuk clone dari github menggunakan command "git clone" untuk menjalankan project terlebih dahulu masuk kedalam folder projek dan menggunakan command "php spark serve" untuk menjalankan projek dan membuka hhtps:loaclhost:8080 pada browser, untuk menghubungkan git local dengan github menggunakan commad "git remote add origin https://github.com/alifahmaaad/-IF3028-TUBESPEMWEB-2021.git"
+  2. untuk koneksi database mengaktifkan xammp pada bagian apache dan mysql serta membuka http://localhost/phpmyadmin/ pada browser serta mengubah file .env dari codeigniter4 untuk mengatur atau menghubungkan database, kami membuat tabel dan database secara manual pada phpmyadmin dengan nama database tubespemweb dan tabel laporan.pada file .env kami juga mengganti CI_ENVIRONTMENT = development pada saat pengerjaan supaya dapat melihat error kode.
+
+- Melakukan validasi pada client-side
+  untuk validasi ada pada saat ingin memasuki file dengan ketentuan format yang sudah ditentukan ada pada bagian sript di lapor.php(view), dan pada form buat laporan ada validasi untuk laporan tidak boleh kurang dari 20 kata, dan semua field harus terisi dan akan memunculkan alert ketika tidak memenuhi hal tersebut.selanjutnya ada pada bagian detail laporan pada saat laporan berextension image maka akan menampilkan foto pada lampiran dan hanya menampilkan nama file jika lampiran berupa dokumen text.
+- Melakukan AJAX
+  ajax digunakan pada saat search laporan dan buat laporan.
+  pada saat search laporan maka akan menganti bagian data pada list tanpa harus load page.
+  dan pada saat membuat laporn menggunakan formdata() untuk menyimpan datanya dan pada saat laporan terkirim maka akan menampikan alert. proses penambahan laporan tidak akan load page.namun ketika berhasil akan diarahkan ke home kembali setelah alert di klik ok.
 
 ### Knowledge
 
