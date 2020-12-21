@@ -5,7 +5,7 @@
 @endsection
 
 @section('judul')
-    Edit Laporan
+Edit Laporan
 @endsection
 
 @section('isi')
@@ -26,7 +26,7 @@
             <option value="Mahasiswa">Mahasisa</option>
         </select>
         <br>
-        <input type="button" value="Choose File" onclick="document.getElementById('pic').click()" class="btn">
+        <input type="button" value="Choose File" onclick="document.getElementById('pic').click()" class="btn-file">
         <input type="text" id="filename" name="oldfile" value="{{ $lapor->file }}">
         <input type="file" id="pic" name="filelapor" style="display:none" onchange="document.getElementById('filename').value=this.value">
         <div class="container">

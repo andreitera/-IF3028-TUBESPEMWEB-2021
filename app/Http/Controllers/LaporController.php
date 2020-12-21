@@ -114,13 +114,13 @@ class LaporController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'name' => ['nullable', 'max:255'],
+            'from' => ['nullable', 'max:255'],
             'title' => ['required'],
             'content' => ['required'],
             'aspect' => ['nullable', Rule::requiredIf($request->input('aspect') == '1')],
             'filelapor' => ['nullable', 'mimetypes:image/jpeg,image/png,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.presentationml.presentation', 'max:10240']
         ]);
-        $name = $request->input('name');
+        $name = $request->input('from');
         $title = $request->input('title');
         $content = $request->input('content');
         $word = str_word_count($content);
