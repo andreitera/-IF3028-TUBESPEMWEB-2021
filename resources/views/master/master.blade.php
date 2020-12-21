@@ -12,8 +12,9 @@
 
 <body>
     <nav>
-        <img src="{{ asset('image/logo-white.png') }}" alt="logo lapor" class="logo">
-        <a style="flex:1; border:none;" href="{{ route('laporbuatView') }}"> LAPORAN</a>
+        <a href="{{ route('home') }}" style="border:none;margin-bottom:50px;"><img src="{{ asset('image/logo-white.png') }}" alt="logo lapor" class="logo"></a>
+        <a style="border:none;" href="{{ route('laporbuatView') }}"> LAPOR</a>
+        <a style="flex:1; border:none;" href="{{ route('lapor') }}"> SEMUA LAPORAN</a>
     </nav>
     <div class="home">
         <img src="{{ asset('image/home-cover.jpg') }}" alt="home-cover" class="home-cover">
