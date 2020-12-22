@@ -5,7 +5,7 @@
 @endsection
 
 @section('judul')
-    Home
+Home
 @endsection
 
 @section('isi')
@@ -13,7 +13,7 @@
     <form method="POST" action="{{ route('searchlapor') }}" enctype="multipart/form-data" class="form">
         @csrf
         <div style="display: flex; justify-content:center">
-            <input type="text" name="judul" id="judulsearch">
+            <input type="text" name="judul" id="judulsearch" placeholder="   Cari isi laporan">
             <button type="submit" class="btn-search"><img src="{{ asset('image/search-black.svg') }}" alt="icon search" class="search">Cari</button>
         </div>
     </form>
