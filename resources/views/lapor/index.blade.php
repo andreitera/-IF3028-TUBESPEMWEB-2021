@@ -25,7 +25,7 @@ Home
     Tidak ada laporan terbaru
     @else
     @foreach($lapor as $lapor)
-    <div class="tampil">{{$lapor->content}}</div>
+    <div class="tampil">{!! nl2br(e($lapor->content)) !!}</div>
     <div class="form-container">
         @if($lapor->file != "Tidak ada lampiran")
         <a href="{{ $lapor->file }}" style="text-decoration: none; flex:1;">Unduh Lampiran</a>
