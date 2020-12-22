@@ -17,7 +17,7 @@ Home
             <button type="submit" class="btn-search"><img src="{{ asset('image/search-black.svg') }}" alt="icon search" class="search">Cari</button>
         </div>
     </form>
-    <div class="text-detail" style="margin-bottom: 40px">Buat Laporan/Komentar <img src="{{ asset('image/plus.svg') }}" alt="icon plus"></div>
+    <div class="text-detail" style="margin-bottom: 40px"><a style="color:black;" href="{{route('laporbuatView')}}">Buat Laporan/Komentar</a><img src="{{ asset('image/plus.svg') }}" alt="icon plus"></div>
     Laporan/Komentar Terakhir
     <div class="bar"></div>
     {{-- satu laporan --}}

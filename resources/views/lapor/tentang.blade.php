@@ -32,7 +32,7 @@ Tentang Lapor!
             <a href="https://api.whatsapp.com/send?phone=6282246105525" class="soc"><img src="{{ asset('image/whatsapp.svg') }}" alt=""></a>
             <a href="https://github.com/ikhbaaalll" class="soc"><img src="{{ asset('image/github.svg') }}" alt=""></a>
         </div>
-        <div class="container-social" style="background-image: url('{{ asset('image/imam.jpeg') }}');margin-top:100px;">
+        <div class="container-social" style="background-image: url('{{ asset('image/imam.jpg') }}');margin-top:100px;">
             <a href="#" class="soc"><img src="{{ asset('image/instagram.svg') }}" alt=""></a>
             <a href="#" class="soc"><img src="{{ asset('image/whatsapp.svg') }}" alt=""></a>
             <a href="#" class="soc"><img src="{{ asset('image/github.svg') }}" alt=""></a>
