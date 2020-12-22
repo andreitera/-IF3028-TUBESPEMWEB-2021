@@ -33,7 +33,7 @@
         <span style="color:#D0021B; flex:1;">Tidak ada lampiran</span>
         @endif
         <span style="margin-right: 20px !important">Waktu: {{$lapor->created_at}}</span>
-        <span class="f-center"><a href="{{ route('laporShow', $lapor->id)}}">Lihat Selengkapnya</a><img src="{{ asset('image/right-arrow.svg') }}" alt="panah kanan" class="icon-bawah" style="margin-left:2px"></span>
+        <span class="f-center"><a href="{{ route('laporShow', $lapor->id)}}">Lihat Selengkapnya</a><img src="{{ asset('image/right-arrow.svg') }}" alt="panah kanan" class="btn-icon" style="margin-left:2px"></span>
     </div>
     <div class="bar"></div>
     @endforeach
