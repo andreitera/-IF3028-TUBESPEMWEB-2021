@@ -15,7 +15,7 @@ Detail Laporan
             <table>
                 <tr>
                     <td>Pengirim</td>
-                    <td>: {{$lapor->title}}</td>
+                    <td>: {{$lapor->from}}</td>
                 </tr>
                 <tr>
                     <td>Judul</td>
@@ -28,7 +28,7 @@ Detail Laporan
 
     <div class="bar"></div>
     <input type="hidden" name="name" value="$lapor->unique_id">
-    <div class="detail">{{$lapor->content}}</div>
+    <div class="detail">{!! nl2br(e($lapor->content)) !!}</div>
     <div style="margin-top: 20px">Lampiran:</div>
     @if($lapor->file != "Tidak ada lampiran")
     <a href="{{ $lapor->file }}" style="text-decoration: none;">Unduh Lampiran</a>
@@ -63,7 +63,7 @@ Detail Laporan
         document.getElementById("btn-eh").outerHTML =
             "<button type='submit' name='action' value='edit' class='btn-edit' style='margin-right: 10px'>Edit<img src='{{ asset('image/edit.svg') }}' alt='icon edit' class='btn-icon'></button>" +
             "<span> | </span>" +
-            "<button type='delete' name='action' value='hapus' class='btn-hapus'>Hapus<img src='{{ asset('image/close.svg') }}' alt='icon hapus' class='btn-icon'></button>";
+            "<button type='submit' name='action' value='delete' class='btn-hapus'>Hapus<img src='{{ asset('image/close.svg') }}' alt='icon hapus' class='btn-icon'></button>";
     }
 </script>
 @endsection
