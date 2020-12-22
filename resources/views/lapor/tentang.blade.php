@@ -8,7 +8,7 @@
 @endsection
 
 @section('judul')
-    Tentang Lapor!
+Tentang Lapor!
 @endsection
 
 @section('isi')
@@ -16,7 +16,7 @@
     <div class="tentang">
         <p>
             Lapor! dibangun atas dasar memenuhi kebutuhan tugas besar matakuliah Pemrograman Web tahun 2020. Lapor! menyediakan layanan bagi civitas akademika Teknik Informatika ITERA untuk menyampaikan keresahan atau mengadukan persimpangan alur birokrasi yang terdapat pada lingkup prodi Teknik Informatika ITERA.
-        </p> 
+        </p>
         <img src="{{ asset('image/tentang.jpg') }}" alt="">
     </div>
     {{-- <div class="container container-crew">Alur Pembuatan Laporan</div> --}}
@@ -27,15 +27,15 @@
             <a href="https://api.whatsapp.com/send?phone=6282184981440" class="soc"><img src="{{ asset('image/whatsapp.svg') }}" alt=""></a>
             <a href="https://github.com/ryznocaHub" class="soc"><img src="{{ asset('image/github.svg') }}" alt=""></a>
         </div>
-        <div class="container-social" style="background-image: url('{{ asset('image/fikri.jpeg') }}');margin-top:100px;">
-            <a href="https://www.instagram.com/fikrihalimch/" class="soc"><img src="{{ asset('image/instagram.svg') }}" alt=""></a>
-            <a href="https://api.whatsapp.com/send?phone=6282184981440" class="soc"><img src="{{ asset('image/whatsapp.svg') }}" alt=""></a>
-            <a href="https://github.com/ryznocaHub" class="soc"><img src="{{ asset('image/github.svg') }}" alt=""></a>
+        <div class="container-social" style="background-image: url('{{ asset('image/ikhbal.jpg') }}');margin-top:100px;">
+            <a href="https://www.instagram.com/ikhbaaalll/" class="soc"><img src="{{ asset('image/instagram.svg') }}" alt=""></a>
+            <a href="https://api.whatsapp.com/send?phone=6282246105525" class="soc"><img src="{{ asset('image/whatsapp.svg') }}" alt=""></a>
+            <a href="https://github.com/ikhbaaalll" class="soc"><img src="{{ asset('image/github.svg') }}" alt=""></a>
         </div>
-        <div class="container-social" style="background-image: url('{{ asset('image/fikri.jpeg') }}');margin-top:100px;">
-            <a href="https://www.instagram.com/fikrihalimch/" class="soc"><img src="{{ asset('image/instagram.svg') }}" alt=""></a>
-            <a href="https://api.whatsapp.com/send?phone=6282184981440" class="soc"><img src="{{ asset('image/whatsapp.svg') }}" alt=""></a>
-            <a href="https://github.com/ryznocaHub" class="soc"><img src="{{ asset('image/github.svg') }}" alt=""></a>
+        <div class="container-social" style="background-image: url('{{ asset('image/imam.jpeg') }}');margin-top:100px;">
+            <a href="#" class="soc"><img src="{{ asset('image/instagram.svg') }}" alt=""></a>
+            <a href="#" class="soc"><img src="{{ asset('image/whatsapp.svg') }}" alt=""></a>
+            <a href="#" class="soc"><img src="{{ asset('image/github.svg') }}" alt=""></a>
         </div>
         {{-- <div>
             Fikri Halim Ch
