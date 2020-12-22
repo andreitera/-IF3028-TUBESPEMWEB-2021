@@ -115,6 +115,7 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
    - Ketik pada Git Bash "php artisan storage:link"
    - Ketik pada Git Bash "php artisan serve"
    - Buka browser dengan URL http://127.0.0.1:8000
+   - Atau bisa lihat hasil di lapor.pemirapmk.online
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
