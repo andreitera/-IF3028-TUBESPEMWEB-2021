@@ -16,41 +16,50 @@ use Illuminate\Support\Facades\Route;
 /**
  * Route Home
  */
-Route::get('/',                                     'LaporController@home')->name('home');
+Route::get('/',                                             'LaporController@home')->name('home');
 
 /**
  * Route List Lapor
  */
-Route::get('lapor',                                 'LaporController@index')->name('lapor');
+Route::get('lapor',                                         'LaporController@index')->name('lapor');
+Route::get('lapor/dosen',                                   'LaporController@dosen')->name('lapordosen');
+Route::get('lapor/matkul',                                  'LaporController@matkul')->name('lapormatkul');
+Route::get('lapor/prodi',                                   'LaporController@prodi')->name('laporprodi');
+Route::get('lapor/mahasiswa',                               'LaporController@mahasiswa')->name('lapormahasiswa');
 
 /**
  * Route Create Lapor and Store Lapor to database
  */
 
-Route::get('lapor/create',                          'LaporController@create')->name('laporbuatView');
-Route::post('lapor/create',                         'LaporController@store')->name('laporbuat');
+Route::get('lapor/create',                                  'LaporController@create')->name('laporbuatView');
+Route::post('lapor/create',                                 'LaporController@store')->name('laporbuat');
 
 /**
  * Route View Laporan
  */
-Route::get('lapor/show/{id}',                       'LaporController@show')->name('laporShow');
+Route::get('lapor/show/{id}',                               'LaporController@show')->name('laporShow');
 
 /**
  * Route to Send Email after Create Lapor
  */
-Route::get('lapor/success',                         'LaporController@sendEmail')->name('sendemail');
+Route::get('lapor/success',                                 'LaporController@sendEmail')->name('sendemail');
 
 /**
  * Route Get Unique Id to Edit and Delete Lapor
  */
-Route::post('lapor/getuniqid',                      'LaporController@getUniqueId')->name('laporcek');
+Route::post('lapor/getuniqid',                              'LaporController@getUniqueId')->name('laporcek');
 
 /**
  * Route Edit Lapor to database
  */
-Route::post('lapor/{unique_id}/edit',         'LaporController@update')->name('laporupdate');
+Route::post('lapor/{unique_id}/edit',                       'LaporController@update')->name('laporupdate');
 
 /**
  * Route Search Lapor
  */
-Route::post('lapor/search',                         'LaporController@search')->name('searchlapor');
+Route::post('lapor/search',                                 'LaporController@search')->name('searchlapor');
+
+/**
+ * Route Tentang Lapor
+ */
+Route::get('lapor/tentang',                                'LaporController@tentang')->name('tentang');

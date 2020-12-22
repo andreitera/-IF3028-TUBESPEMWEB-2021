@@ -4,6 +4,10 @@
 <link rel="stylesheet" href="{{ asset('css/home.css') }}">
 @endsection
 
+@section('judul')
+Detail Laporan
+@endsection
+
 @section('isi')
 <div class="form-buat">
     <div class="cont-detail">
@@ -57,9 +61,9 @@
         document.getElementById("txt").remove();
         document.getElementById("uniqueid").setAttribute("hidden", "True");
         document.getElementById("btn-eh").outerHTML =
-            "<button type='submit' name='action' value='edit' class='btn-detail' style='margin-right: 10px'>Edit<img src='{{ asset('image/edit.svg') }}' alt='icon edit' class='icon-bawah'></button>" +
+            "<button type='submit' name='action' value='edit' class='btn-edit' style='margin-right: 10px'>Edit<img src='{{ asset('image/edit.svg') }}' alt='icon edit' class='btn-icon'></button>" +
             "<span> | </span>" +
-            "<button type='submit' name='action' value='hapus' class='btn-detail'>Hapus<img src='{{ asset('image/close.svg') }}' alt='icon hapus' class='icon-bawah'></button>";
+            "<button type='delete' name='action' value='hapus' class='btn-hapus'>Hapus<img src='{{ asset('image/close.svg') }}' alt='icon hapus' class='btn-icon'></button>";
     }
 </script>
 @endsection

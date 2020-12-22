@@ -18,7 +18,7 @@
             <input type="hidden" name="uniqid" value="{{$uniqid}}">
             <p>{{$uniqid}}</p>
             <input type="text" name="email" class="info-send">
-            <button type="submit">Kirim</button>
+            <button type="submit" class="btn-uniqid">Kirim</button>
         </form>
     </div>
 </div>
