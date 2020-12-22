@@ -30,7 +30,7 @@ Edit Laporan
         <input type="text" id="filename" name="oldfile" value="{{ $lapor->file }}">
         <input type="file" id="pic" name="filelapor" style="display:none" onchange="document.getElementById('filename').value=this.value">
         <div class="container">
-            <button type="submit" id="submit" class="btn">Ubah LAPOR!</button>
+            <button type="submit" id="submit" class="btn-submit">Ubah LAPOR!</button>
         </div>
         <div class="bar"></div>
     </form>

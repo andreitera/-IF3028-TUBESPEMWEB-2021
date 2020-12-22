@@ -64,7 +64,6 @@ nav{
         margin: 0px auto 40px auto;
         width: 750px;
         background-color: $scol;
-        // box-shadow: 3px 3px 5px 0px #b4b4b4;
         box-shadow: 0 0 20px $p;
         table{
             color: #b4b4b4;
@@ -128,7 +127,6 @@ nav{
     &-kata1{
         font-size: 33px;
         margin-bottom: 20px;
-        // font-weight: bold;
     }
     &-kata2{
         font-size: 24px;
@@ -159,21 +157,6 @@ nav{
 .cont-detail{
     display: flex;
 }
-// .lampiran{
-//     @extend %mtop;
-//     width: 200px;
-//     height: 200px;
-//     border: 1px solid black;
-//     border-radius: 5px;
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     background-size: contain;
-// }
-// .icon-bawah{
-//     width: 10px;
-//     height: 10px;
-//     margin-left: 5px;
-// }
 .btn{
     &-detail{
         @include btn($tcol,3px);
@@ -205,6 +188,11 @@ nav{
         border: 1px solid black;
         font-size: 14px;
         padding: 10px;
+    }
+    &-uniqid{
+        @include btn($col,5px);
+        font-size: 15px;
+        padding: 15px 5px;
     }
     // &-detail{
     //     @include btn($col,5px);
@@ -284,15 +272,6 @@ nav{
         color:$col;
         margin-bottom: 40px;
     }
-    // button{
-    //     font-size: 15px;
-    //     font-weight: bold;
-    //     padding: 15px 5px;
-    //     border: solid $col 1px;
-    //     border-radius: 5px;
-    //     color: $col;
-    //     background-color: white;
-    // }
 }
 
 //list laporan
