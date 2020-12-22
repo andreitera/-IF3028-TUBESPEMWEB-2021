@@ -5,7 +5,7 @@
 @endsection
 
 @section('judul')
-    detail laporan
+Detail Laporan
 @endsection
 
 @section('isi')
