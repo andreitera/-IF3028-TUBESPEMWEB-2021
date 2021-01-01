@@ -99,7 +99,11 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+- Clone git dengan gitbash / Download repository ini ke PC anda masing masing.
+- Hidupkan database anda, lalu import database yang ada dalam repository ini yang berfilename `lapor.sql`. lalu beri nama "lapor" tanpa tanda petik
+-setting file .env sesuai dengan pengaturan local anda
+-jalankan web dengan command "php spark serve"
+-Nikmati layanan website lapor kami.
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
