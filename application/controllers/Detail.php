@@ -10,7 +10,7 @@ class Detail extends CI_Controller{
     
     public function index()
     {
-        $data ['judul'] = "Tugas Besar PWB 118140048-118140103-118140105"; 
+        $data ['judul'] = "Tugas Besar PWB - 118140086"; 
         $data ['detail'] = $this->Detail_model->getDetailLaporan();
         $this->load->view('detail/index',$data);
      
