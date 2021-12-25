@@ -12,7 +12,7 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		$data ['judul'] = "Tugas Besar PWB 118140048-118140103-118140105"; 
+		$data ['judul'] = "Tugas Besar PWB 118140086"; 
 		$data ['home'] = $this->Home_model->getAllHome();
 		$this->load->view('home/index',$data);
 	
