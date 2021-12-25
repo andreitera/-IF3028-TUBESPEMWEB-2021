@@ -20,7 +20,7 @@ class Update extends CI_Controller{
         // $this->form_validation->set_rules('myFile','File','required');
 
         if($this->form_validation->run() == FALSE){
-            $data ['judul'] = "Tugas Besar PWB 118140048-118140103-118140105"; 
+            $data ['judul'] = "Tugas Besar PWB 118140086"; 
             $this->load->view('Update/index',$data);
         }
         else{
